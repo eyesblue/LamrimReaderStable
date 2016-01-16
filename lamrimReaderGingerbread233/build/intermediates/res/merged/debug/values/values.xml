@@ -1,0 +1,1633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/mediaList.xml -->
+    <eat-comment/>
+    <string-array name="desc">
+		<item>-序</item>
+		<item>-序</item>
+		<item>第01頁第01行-歸敬頌-[道前基礎]</item>
+		<item>第01頁第06行-歸敬頌-[道前基礎]</item>
+		<item>第01頁第09行-歸敬頌-[道前基礎]</item>
+		<item>第02頁第01行-歸敬頌-[道前基礎]</item>
+		<item>第02頁第09行-造者殊勝-[道前基礎]</item>
+		<item>第02頁第13行-造者殊勝-[道前基礎]</item>
+		<item>第07頁第04行-教授殊勝-[道前基礎]</item>
+		<item>第08頁第11行-教授殊勝-[道前基礎]</item>
+		<item>第09頁第04行-教授殊勝-[道前基礎]</item>
+		<item>第10頁第01行-教授殊勝-[道前基礎]</item>
+		<item>第11頁第06行-教授殊勝-[道前基礎]</item>
+		<item>第11頁第10行-教授殊勝-[道前基礎]</item>
+		<item>第12頁第05行-教授殊勝-[道前基礎]</item>
+		<item>第13頁第05行-教授殊勝-[道前基礎]</item>
+		<item>第14頁第13行-聽聞軌理-[道前基礎]</item>
+		<item>第15頁第09行-聽聞軌理-[道前基礎]</item>
+		<item>第16頁第04行-聽聞軌理-[道前基礎]</item>
+		<item>第16頁第10行-聽聞軌理-[道前基礎]</item>
+		<item>第17頁第11行-聽聞軌理-[道前基礎]</item>
+		<item>第18頁第07行-聽聞軌理-[道前基礎]</item>
+		<item>第19頁第06行-聽聞軌理-[道前基礎]</item>
+		<item>第20頁第07行-說法軌理-[道前基礎]</item>
+		<item>第22頁第01行-完結軌理-[道前基礎]</item>
+		<item>第23頁第02行-完結軌理-[道前基礎]</item>
+		<item>第23頁第09行-親近善士-[道前基礎]</item>
+		<item>第24頁第13行-親近善士-[道前基礎]</item>
+		<item>第26頁第07行-親近善士-[道前基礎]</item>
+		<item>第27頁第06行-親近善士-[道前基礎]</item>
+		<item>第28頁第03行-親近善士-[道前基礎]</item>
+		<item>第28頁第10行-親近善士-[道前基礎]</item>
+		<item>第29頁第04行-親近善士-[道前基礎]</item>
+		<item>第30頁第05行-親近善士-[道前基礎]</item>
+		<item>第31頁第04行-親近善士-[道前基礎]</item>
+		<item>第32頁第06行-親近善士-[道前基礎]</item>
+		<item>第34頁第04行-親近善士-[道前基礎]</item>
+		<item>第34頁第10行-親近善士-[道前基礎]</item>
+		<item>第36頁第05行-親近善士-[道前基礎]</item>
+		<item>第37頁第08行-親近善士-[道前基礎]</item>
+		<item>第38頁第05行-親近善士-[道前基礎]</item>
+		<item>第39頁第03行-親近善士-[道前基礎]</item>
+		<item>第40頁第03行-親近善士-[道前基礎]</item>
+		<item>第41頁第04行-修習軌理-[道前基礎]</item>
+		<item>第42頁第03行-修習軌理-[道前基礎]</item>
+		<item>第44頁第02行-修習軌理-[道前基礎]</item>
+		<item>第45頁第04行-修習軌理-[道前基礎]</item>
+		<item>第45頁第11行-修習軌理-[道前基礎]</item>
+		<item>第46頁第06行-修習軌理-[道前基礎]</item>
+		<item>第47頁第05行-修習軌理-[道前基礎]</item>
+		<item>第48頁第13行-修習軌理-[道前基礎]</item>
+		<item>第50頁第13行-修習軌理-[道前基礎]</item>
+		<item>第52頁第09行-修習軌理-[道前基礎]</item>
+		<item>第53頁第08行-修習軌理-[道前基礎]</item>
+		<item>第54頁第02行-修習軌理-[道前基礎]</item>
+		<item>第55頁第05行-修習軌理-[道前基礎]</item>
+		<item>第56頁第10行-修習軌理-[道前基礎]</item>
+		<item>第58頁第03行-修習軌理-[道前基礎]</item>
+		<item>第58頁第10行-暇滿-[道前基礎]</item>
+		<item>第60頁第04行-暇滿-[道前基礎]</item>
+		<item>第61頁第10行-暇滿-[道前基礎]</item>
+		<item>第63頁第04行-暇滿-[道前基礎]</item>
+		<item>第64頁第04行-暇滿-[道前基礎]</item>
+		<item>第65頁第04行-道次引導-[道前基礎]</item>
+		<item>第66頁第02行-道次引導-[道前基礎]</item>
+		<item>第67頁第03行-道次引導-[道前基礎]</item>
+		<item>第68頁第07行-道次引導-[道前基礎]</item>
+		<item>第69頁第07行-道次引導-[道前基礎]</item>
+		<item>第70頁第08行-道次引導-[道前基礎]</item>
+		<item>第71頁第11行-道次引導-[道前基礎]</item>
+		<item>第72頁第09行-道次引導-[道前基礎]</item>
+		<item>第72頁第13行-道次引導-[道前基礎]</item>
+		<item>第74頁第01行-念死無常-[下士道]</item>
+		<item>第75頁第03行-念死無常-[下士道]</item>
+		<item>第76頁第06行-念死無常-[下士道]</item>
+		<item>第77頁第05行-念死無常-[下士道]</item>
+		<item>第79頁第11行-念死無常-[下士道]</item>
+		<item>第81頁第04行-念死無常-[下士道]</item>
+		<item>第83頁第05行-念死無常-[下士道]</item>
+		<item>第84頁第09行-念死無常-[下士道]</item>
+		<item>第85頁第12行-三惡趣苦-[下士道]</item>
+		<item>第86頁第11行-三惡趣苦-[下士道]</item>
+		<item>第96頁第05行-三惡趣苦-[下士道]</item>
+		<item>第97頁第06行-皈依三寶-[下士道]</item>
+		<item>第98頁第05行-皈依三寶-[下士道]</item>
+		<item>第99頁第09行-皈依三寶-[下士道]</item>
+		<item>第100頁第12行-皈依三寶-[下士道]</item>
+		<item>第102頁第07行-皈依三寶-[下士道]</item>
+		<item>第103頁第04行-皈依三寶-[下士道]</item>
+		<item>第104頁第07行-皈依三寶-[下士道]</item>
+		<item>第105頁第12行-皈依三寶-[下士道]</item>
+		<item>第106頁第13行-皈依三寶-[下士道]</item>
+		<item>第107頁第09行-皈依三寶-[下士道]</item>
+		<item>第108頁第10行-皈依三寶-[下士道]</item>
+		<item>第110頁第10行-皈依三寶-[下士道]</item>
+		<item>第112頁第06行-皈依三寶-[下士道]</item>
+		<item>第113頁第09行-皈依三寶-[下士道]</item>
+		<item>第114頁第07行-皈依三寶-[下士道]</item>
+		<item>第115頁第08行-皈依三寶-[下士道]</item>
+		<item>第117頁第05行-深信業果-[下士道]</item>
+		<item>第118頁第07行-深信業果-[下士道]</item>
+		<item>第119頁第02行-深信業果-[下士道]</item>
+		<item>第120頁第07行-深信業果-[下士道]</item>
+		<item>第122頁第06行-深信業果-[下士道]</item>
+		<item>第125頁第05行-深信業果-[下士道]</item>
+		<item>第126頁第09行-深信業果-[下士道]</item>
+		<item>第127頁第05行-深信業果-[下士道]</item>
+		<item>第129頁第04行-深信業果-[下士道]</item>
+		<item>第130頁第03行-深信業果-[下士道]</item>
+		<item>第131頁第09行-深信業果-[下士道]</item>
+		<item>第132頁第11行-深信業果-[下士道]</item>
+		<item>第133頁第06行-深信業果-[下士道]</item>
+		<item>第134頁第09行-深信業果-[下士道]</item>
+		<item>第135頁第11行-深信業果-[下士道]</item>
+		<item>第136頁第05行-深信業果-[下士道]</item>
+		<item>第136頁第13行-深信業果-[下士道]</item>
+		<item>第137頁第12行-深信業果-[下士道]</item>
+		<item>第139頁第10行-深信業果-[下士道]</item>
+		<item>第140頁第09行-深信業果-[下士道]</item>
+		<item>第141頁第05行-深信業果-[下士道]</item>
+		<item>第141頁第11行-深信業果-[下士道]</item>
+		<item>第142頁第06行-深信業果-[下士道]</item>
+		<item>第142頁第13行-深信業果-[下士道]</item>
+		<item>第144頁第01行-深信業果-[下士道]</item>
+		<item>第145頁第02行-深信業果-[下士道]</item>
+		<item>第145頁第08行-深信業果-[下士道]</item>
+		<item>第146頁第06行-深信業果-[下士道]</item>
+		<item>第146頁第12行-深信業果-[下士道]</item>
+		<item>第147頁第11行-深信業果-[下士道]</item>
+		<item>第149頁第10行-深信業果-[下士道]</item>
+        <item>第150頁第08行-複習</item>
+        <item>-複習</item>
+        <item>第152頁第01行-複習</item>
+		<item>第152頁第05行-希求解脫-[中士道]</item>
+		<item>第153頁第13行-思惟苦諦-[中士道]</item>
+		<item>第155頁第01行-思惟苦諦-[中士道]</item>
+		<item>第156頁第03行-思惟苦諦-[中士道]</item>
+		<item>第157頁第13行-思惟苦諦-[中士道]</item>
+		<item>第161頁第04行-思惟苦諦-[中士道]</item>
+		<item>第161頁第13行-思惟苦諦-[中士道]</item>
+		<item>第163頁第09行-思惟苦諦-[中士道]</item>
+		<item>第165頁第07行-思惟苦諦-[中士道]</item>
+		<item>第167頁第01行-思惟苦諦-[中士道]</item>
+		<item>第168頁第05行-思惟集諦-[中士道]</item>
+		<item>第170頁第05行-思惟集諦-[中士道]</item>
+		<item>第171頁第13行-思惟集諦-[中士道]</item>
+		<item>第173頁第02行-思惟集諦-[中士道]</item>
+		<item>第174頁第06行-思惟集諦-[中士道]</item>
+		<item>第175頁第03行-思惟集諦-[中士道]</item>
+		<item>第175頁第13行-思惟集諦-[中士道]</item>
+		<item>第176頁第13行-思惟集諦-[中士道]</item>
+		<item>第177頁第11行-思惟集諦-[中士道]</item>
+		<item>第178頁第06行-思惟集諦-[中士道]</item>
+		<item>第180頁第03行-十二緣起-[中士道]</item>
+		<item>第181頁第04行-思惟集諦-[中士道]</item>
+		<item>第182頁第10行-思惟集諦-[中士道]</item>
+		<item>第183頁第13行-思惟集諦-[中士道]</item>
+		<item>-十二因緣流轉圖-[中士道]</item>
+		<item>第184頁第05行-十二緣起-[中士道]</item>
+		<item>第184頁第11行-十二緣起-[中士道]</item>
+		<item>第185頁第13行-十二緣起-[中士道]</item>
+		<item>第187頁第01行-除邪分別-[中士道]</item>
+		<item>第189頁第01行-解脫正道-[中士道]</item>
+		<item>第190頁第05行-解脫正道-[中士道]</item>
+		<item>第191頁第10行-解脫正道-[中士道]</item>
+		<item>第192頁第06行-解脫正道-[中士道]</item>
+		<item>第193頁第03行-解脫正道-[中士道]</item>
+		<item>第193頁第12行-解脫正道-[中士道]</item>
+		<item>第194頁第10行-解脫正道-[中士道]</item>
+		<item>第195頁第13行-解脫正道-[中士道]</item>
+		<item>第196頁第03行-解脫正道-[中士道]</item>
+		<item>第198頁第02行-解脫正道-[中士道]</item>
+		<item>第199頁第01行-解脫正道-[中士道]</item>
+		<item>第200頁第03行-解脫正道-[中士道]</item>
+		<item>第201頁第06行-解脫正道-[中士道]</item>
+		<item>第203頁第03行-入大乘門行-[上士道]</item>
+		<item>第204頁第13行-入大乘門行-[上士道]</item>
+		<item>第206頁第10行-入大乘門行-[上士道]</item>
+		<item>第207頁第07行-入大乘門行-[上士道]</item>
+		<item>第208頁第07行-入大乘門行-[上士道]</item>
+		<item>第209頁第04行-入大乘門行-[上士道]</item>
+		<item>-複習</item>
+		<item>-複習</item>
+		<item>第210頁第11行-菩提心次第-[上士道]</item>
+		<item>第212頁第02行-菩提心次第-[上士道]</item>
+		<item>第213頁第12行-菩提心次第-[上士道]</item>
+		<item>第215頁第09行-菩提心次第-[上士道]</item>
+		<item>第216頁第04行-菩提心次第-[上士道]</item>
+		<item>第217頁第08行-菩提心次第-[上士道]</item>
+		<item>第219頁第05行-菩提心次第-[上士道]</item>
+		<item>第220頁第13行-菩提心次第-[上士道]</item>
+		<item>第222頁第05行-菩提心次第-[上士道]</item>
+		<item>第223頁第08行-菩提心次第-[上士道]</item>
+		<item>第225頁第01行-菩提心次第-[上士道]</item>
+		<item>第226頁第11行-菩提心次第-[上士道]</item>
+		<item>第228頁第10行-菩提心次第-[上士道]</item>
+		<item>第230頁第08行-儀軌受法-[上士道]</item>
+		<item>第231頁第09行-儀軌受法-[上士道]</item>
+		<item>第233頁第12行-儀軌受法-[上士道]</item>
+		<item>第236頁第11行-複習十二因緣-[上士道]</item>
+		<item>-複習十二因緣</item>
+		<item>-複習十二因緣</item>
+		<item>第237頁第10行-儀軌受法-[上士道]</item>
+		<item>第237頁第13行-儀軌受法-[上士道]</item>
+		<item>第238頁第13行-儀軌受法-[上士道]</item>
+		<item>第240頁第08行-儀軌受法-[上士道]</item>
+		<item>第241頁第13行-儀軌受法-[上士道]</item>
+		<item>第243頁第03行-儀軌受法-[上士道]</item>
+		<item>第244頁第12行-學菩薩行-[上士道]</item>
+		<item>第247頁第01行-學菩薩行-[上士道]</item>
+		<item>第248頁第07行-學菩薩行-[上士道]</item>
+		<item>第250頁第03行-學菩薩行-[上士道]</item>
+		<item>第252頁第01行-學菩薩行-[上士道]</item>
+		<item>第253頁第09行-學菩薩行-[上士道]</item>
+		<item>第254頁第13行-學菩薩行-[上士道]</item>
+		<item>第255頁第04行-學菩薩行-[上士道]</item>
+		<item>第255頁第08行-學菩薩行-[上士道]</item>
+		<item>第256頁第11行-學菩薩行-[上士道]</item>
+		<item>第258頁第12行-學菩薩行-[上士道]</item>
+		<item>第260頁第09行-學菩薩行-[上士道]</item>
+		<item>第262頁第05行-布施波羅蜜-[上士道]</item>
+		<item>第263頁第05行-布施波羅蜜-[上士道]</item>
+		<item>第264頁第05行-布施波羅蜜-[上士道]</item>
+		<item>第265頁第06行-布施波羅蜜-[上士道]</item>
+		<item>第266頁第02行-布施波羅蜜-[上士道]</item>
+		<item>第267頁第06行-布施波羅蜜-[上士道]</item>
+		<item>第268頁第12行-布施波羅蜜-[上士道]</item>
+		<item>第269頁第12行-布施波羅蜜-[上士道]</item>
+		<item>第270頁第09行-布施波羅蜜-[上士道]</item>
+		<item>第272頁第05行-布施波羅蜜-[上士道]</item>
+		<item>第275頁第04行-布施波羅蜜-[上士道]</item>
+		<item>第277頁第02行-布施波羅蜜-[上士道]</item>
+		<item>第278頁第09行-布施波羅蜜-[上士道]</item>
+		<item>第279頁第11行-布施波羅蜜-[上士道]</item>
+		<item>第280頁第11行-布施波羅蜜-[上士道]</item>
+		<item>第281頁第02行-持戒波羅蜜-[上士道]</item>
+		<item>第281頁第12行-持戒波羅蜜-[上士道]</item>
+		<item>第282頁第12行-持戒波羅蜜-[上士道]</item>
+		<item>第284頁第08行-持戒波羅蜜-[上士道]</item>
+		<item>第285頁第12行-忍波羅蜜-[上士道]</item>
+		<item>第286頁第09行-忍波羅蜜-[上士道]</item>
+		<item>第287頁第02行-忍波羅蜜-[上士道]</item>
+		<item>第288頁第04行-忍波羅蜜-[上士道]</item>
+		<item>第289頁第06行-忍波羅蜜-[上士道]</item>
+		<item>第290頁第07行-忍波羅蜜-[上士道]</item>
+		<item>第291頁第07行-忍波羅蜜-[上士道]</item>
+		<item>第293頁第10行-忍波羅蜜-[上士道]</item>
+		<item>第294頁第13行-忍波羅蜜-[上士道]</item>
+		<item>第296頁第05行-忍波羅蜜-[上士道]</item>
+		<item>第296頁第13行-忍波羅蜜-[上士道]</item>
+		<item>第299頁第03行-忍波羅蜜-[上士道]</item>
+		<item>第300頁第07行-忍波羅蜜-[上士道]</item>
+		<item>第301頁第07行-忍波羅蜜-[上士道]</item>
+		<item>第302頁第03行-忍波羅蜜-[上士道]</item>
+		<item>第303頁第01行-忍波羅蜜-[上士道]</item>
+		<item>第303頁第10行-忍波羅蜜-[上士道]</item>
+		<item>第304頁第12行-精進波羅蜜-[上士道]</item>
+		<item>第305頁第12行-精進波羅蜜-[上士道]</item>
+		<item>第307頁第08行-精進波羅蜜-[上士道]</item>
+		<item>第309頁第05行-精進波羅蜜-[上士道]</item>
+		<item>第310頁第12行-精進波羅蜜-[上士道]</item>
+		<item>第311頁第11行-精進波羅蜜-[上士道]</item>
+		<item>第312頁第11行-精進波羅蜜-[上士道]</item>
+		<item>第313頁第10行-精進波羅蜜-[上士道]</item>
+		<item>第315頁第03行-精進波羅蜜-[上士道]</item>
+		<item>第316頁第01行-精進波羅蜜-[上士道]</item>
+		<item>第316頁第12行-精進波羅蜜-[上士道]</item>
+		<item>第317頁第07行-精進波羅蜜-[上士道]</item>
+		<item>第318頁第11行-精進波羅蜜-[上士道]</item>
+		<item>第319頁第11行-精進波羅蜜-[上士道]</item>
+		<item>第320頁第06行-精進波羅蜜-[上士道]</item>
+		<item>第321頁第06行-靜慮波羅蜜-[上士道]</item>
+		<item>第322頁第03行-般若波羅蜜-[上士道]</item>
+		<item>第323頁第07行-般若波羅-[上士道]</item>
+		<item>第324頁第01行-般若波羅-[上士道]</item>
+		<item>第325頁第03行-般若波羅-[上士道]</item>
+		<item>第325頁第13行-般若波羅-[上士道]</item>
+		<item>第326頁第12行-般若波羅-[上士道]</item>
+		<item>第327頁第06行-般若波羅-[上士道]</item>
+		<item>第328頁第06行-般若波羅-[上士道]</item>
+		<item>第329頁第04行-般若波羅-[上士道]</item>
+		<item>第330頁第10行-四攝法-[上士道]</item>
+		<item>第332頁第07行-四攝法-[上士道]</item>
+        <item>第334頁第07行, 歸敬頌第561頁第01行, 歸敬頌第561頁第05行-略論</item>
+        <item>第561頁第05行-略論（止觀）</item>
+        <item>第562頁第10行-略論（止觀）</item>
+        <item>第563頁第08行-略論（止觀）</item>
+        <item>第564頁第04行-略論（止觀）</item>
+        <item>第565頁第11行-略論（止觀）</item>
+        <item>第567頁第07行-略論（止觀）</item>
+        <item>第568頁第09行-略論（止觀）</item>
+        <item>第570頁第04行-略論（止觀）</item>
+        <item>第571頁第09行-略論（止觀）</item>
+        <item>第572頁第03行-略論（止觀）</item>
+        <item>第573頁第03行-略論（止觀）</item>
+        <item>第574頁第03行-略論（止觀）</item>
+        <item>第575頁第06行-略論（止觀）</item>
+        <item>第577頁第02行-略論（止觀）</item>
+        <item>第578頁第01行-略論（止觀）</item>
+        <item>第578頁第09行-略論（止觀）</item>
+        <item>第578頁第13行-略論（止觀）</item>
+        <item>第579頁第12行-略論（止觀）</item>
+        <item>第581頁第06行, 歸敬頌第342頁第13行, 歸敬頌第555頁第04行, 歸敬頌第374頁第13行-奢摩他</item>
+        <item>第555頁第04行-毘缽舍那</item>
+        <item>第555頁第13行-毘缽舍那</item>
+        <item>第556頁第07行-毘缽舍那</item>
+        <item>第557頁第02行-毘缽舍那</item>
+        <item>第557頁第05行-毘缽舍那</item>
+        <item>第558頁第01行-毘缽舍那</item>
+        <item>第560頁第05行-總攝修要(參考法華經及華嚴經)</item>
+        <item>-總攝修要(參考華嚴經及法華經)</item>
+        <item>-總攝修要(參考華嚴經及法華經)</item>
+        <item>-總攝修要(參考華嚴經及法華經)</item>
+        <item>-總攝修要(參考華嚴經及法華經)</item>
+        <item>-總攝修要(參考華嚴經及法華經)</item>
+        <item>-總攝修要(參考華嚴經及法華經)</item>
+        <item>-總攝修要(所附：攝修求加持誦)</item>
+        <item>-總攝修要(所附：攝修求加持誦)</item>
+        <item>-總攝修要(所附：攝修求加持誦)</item>
+        <item>-總攝修要(所附：攝修求加持誦)</item>
+    </string-array>
+    <integer-array name="duration"/>
+    <integer-array name="mediaFileSize">
+        <item>3342262</item>
+        <item>3347521</item>
+        <item>3360269</item>
+        <item>3383570</item>
+        <item>3453787</item>
+        <item>3447674</item>
+        <item>3359538</item>
+        <item>3346685</item>
+        <item>3405618</item>
+        <item>3400289</item>
+        <item>3422596</item>
+        <item>3432314</item>
+        <item>3374218</item>
+        <item>3391250</item>
+        <item>3310741</item>
+        <item>3315025</item>
+        <item>3327925</item>
+        <item>3321921</item>
+        <item>3274952</item>
+        <item>3271922</item>
+        <item>3261422</item>
+        <item>3274848</item>
+        <item>3362201</item>
+        <item>3362201</item>
+        <item>3459481</item>
+        <item>3466849</item>
+        <item>3522960</item>
+        <item>3517578</item>
+        <item>3547515</item>
+        <item>3539992</item>
+        <item>3536778</item>
+        <item>3548351</item>
+        <item>3525310</item>
+        <item>3533460</item>
+        <item>3536021</item>
+        <item>3520353</item>
+        <item>3515018</item>
+        <item>3520243</item>
+        <item>3424844</item>
+        <item>3417216</item>
+        <item>3578495</item>
+        <item>3570659</item>
+        <item>3553522</item>
+        <item>3543335</item>
+        <item>3556605</item>
+        <item>3563135</item>
+        <item>3555090</item>
+        <item>3553627</item>
+        <item>3589102</item>
+        <item>3597879</item>
+        <item>3541088</item>
+        <item>3435762</item>
+        <item>3524788</item>
+        <item>3524005</item>
+        <item>3556919</item>
+        <item>3559949</item>
+        <item>3568099</item>
+        <item>3577503</item>
+        <item>3533042</item>
+        <item>3570136</item>
+        <item>3525310</item>
+        <item>3522646</item>
+        <item>3512458</item>
+        <item>3529072</item>
+        <item>3566792</item>
+        <item>3568726</item>
+        <item>3561203</item>
+        <item>3553731</item>
+        <item>3528863</item>
+        <item>3541610</item>
+        <item>3545476</item>
+        <item>3532155</item>
+        <item>3608576</item>
+        <item>3625255</item>
+        <item>3563449</item>
+        <item>3552321</item>
+        <item>3589311</item>
+        <item>3595527</item>
+        <item>3568831</item>
+        <item>3575361</item>
+        <item>3541819</item>
+        <item>3556396</item>
+        <item>3575674</item>
+        <item>3595841</item>
+        <item>3579227</item>
+        <item>3568099</item>
+        <item>3551119</item>
+        <item>3550596</item>
+        <item>3537953</item>
+        <item>3525310</item>
+        <item>3569249</item>
+        <item>3592192</item>
+        <item>3587272</item>
+        <item>3588096</item>
+        <item>3571712</item>
+        <item>3583615</item>
+        <item>3539469</item>
+        <item>3512458</item>
+        <item>3564965</item>
+        <item>3567616</item>
+        <item>3573115</item>
+        <item>3571076</item>
+        <item>3538476</item>
+        <item>3543649</item>
+        <item>3528393</item>
+        <item>3510263</item>
+        <item>3569823</item>
+        <item>3556187</item>
+        <item>3515541</item>
+        <item>3510943</item>
+        <item>3584000</item>
+        <item>3556083</item>
+        <item>3559427</item>
+        <item>3535080</item>
+        <item>3540835</item>
+        <item>3518571</item>
+        <item>3556919</item>
+        <item>3603050</item>
+        <item>3577503</item>
+        <item>3572801</item>
+        <item>3560785</item>
+        <item>3555456</item>
+        <item>3566688</item>
+        <item>3559845</item>
+        <item>3619873</item>
+        <item>3619560</item>
+        <item>3580220</item>
+        <item>3584504</item>
+        <item>3553776</item>
+        <item>3537768</item>
+        <item>3542028</item>
+        <item>3538894</item>
+        <item>3558851</item>
+        <item>3558538</item>
+        <item>3583511</item>
+        <item>3576145</item>
+        <item>3605089</item>
+        <item>3605193</item>
+        <item>3591765</item>
+        <item>3571246</item>
+        <item>3608362</item>
+        <item>3603991</item>
+        <item>3603050</item>
+        <item>3595780</item>
+        <item>3545685</item>
+        <item>3543858</item>
+        <item>3562926</item>
+        <item>3558642</item>
+        <item>3510734</item>
+        <item>3508487</item>
+        <item>3579564</item>
+        <item>3570241</item>
+        <item>3502375</item>
+        <item>3501280</item>
+        <item>3518571</item>
+        <item>3514705</item>
+        <item>3545268</item>
+        <item>3541297</item>
+        <item>3591726</item>
+        <item>3586123</item>
+        <item>3596050</item>
+        <item>3592079</item>
+        <item>3558456</item>
+        <item>3547933</item>
+        <item>3549552</item>
+        <item>3547933</item>
+        <item>3484854</item>
+        <item>3462042</item>
+        <item>3430478</item>
+        <item>3420160</item>
+        <item>3623426</item>
+        <item>3623217</item>
+        <item>3574629</item>
+        <item>3563346</item>
+        <item>3623739</item>
+        <item>3619688</item>
+        <item>3584922</item>
+        <item>3583618</item>
+        <item>3538058</item>
+        <item>3537013</item>
+        <item>3616321</item>
+        <item>3591139</item>
+        <item>3354940</item>
+        <item>3345796</item>
+        <item>3587481</item>
+        <item>3579018</item>
+        <item>3590721</item>
+        <item>3579907</item>
+        <item>3616739</item>
+        <item>3613343</item>
+        <item>3562717</item>
+        <item>3563606</item>
+        <item>3567210</item>
+        <item>3565730</item>
+        <item>3580534</item>
+        <item>3578936</item>
+        <item>3582572</item>
+        <item>3578391</item>
+        <item>3601223</item>
+        <item>3600229</item>
+        <item>3566566</item>
+        <item>3550348</item>
+        <item>3559292</item>
+        <item>3583618</item>
+        <item>3579018</item>
+        <item>3604984</item>
+        <item>3571181</item>
+        <item>3579645</item>
+        <item>3579854</item>
+        <item>3569784</item>
+        <item>3502584</item>
+        <item>3500652</item>
+        <item>3598790</item>
+        <item>3578286</item>
+        <item>3472064</item>
+        <item>3453787</item>
+        <item>3502375</item>
+        <item>3502793</item>
+        <item>3598975</item>
+        <item>3610744</item>
+        <item>3558456</item>
+        <item>3545894</item>
+        <item>3508801</item>
+        <item>3512398</item>
+        <item>3565643</item>
+        <item>3571246</item>
+        <item>3578182</item>
+        <item>3574211</item>
+        <item>3613343</item>
+        <item>3607021</item>
+        <item>3607334</item>
+        <item>3596416</item>
+        <item>3542760</item>
+        <item>3525937</item>
+        <item>3600909</item>
+        <item>3575256</item>
+        <item>3529385</item>
+        <item>3524978</item>
+        <item>3522386</item>
+        <item>3514234</item>
+        <item>3517787</item>
+        <item>3497411</item>
+        <item>3549722</item>
+        <item>3543858</item>
+        <item>3579146</item>
+        <item>3576145</item>
+        <item>3567210</item>
+        <item>3563135</item>
+        <item>3558538</item>
+        <item>3551694</item>
+        <item>3569927</item>
+        <item>3566792</item>
+        <item>3554254</item>
+        <item>3547619</item>
+        <item>3546939</item>
+        <item>3549343</item>
+        <item>3582257</item>
+        <item>3567616</item>
+        <item>3578936</item>
+        <item>3558329</item>
+        <item>3576458</item>
+        <item>3571456</item>
+        <item>3557597</item>
+        <item>3566774</item>
+        <item>3545685</item>
+        <item>3519418</item>
+        <item>3538947</item>
+        <item>3529385</item>
+        <item>3506868</item>
+        <item>3502480</item>
+        <item>3550596</item>
+        <item>3537976</item>
+        <item>3584713</item>
+        <item>3563920</item>
+        <item>3545476</item>
+        <item>3537431</item>
+        <item>3546312</item>
+        <item>3530116</item>
+        <item>3569823</item>
+        <item>3555090</item>
+        <item>3571756</item>
+        <item>3570202</item>
+        <item>3588788</item>
+        <item>3577973</item>
+        <item>3567106</item>
+        <item>3567106</item>
+        <item>3537768</item>
+        <item>3527557</item>
+        <item>3534192</item>
+        <item>3510054</item>
+        <item>3567616</item>
+        <item>3559165</item>
+        <item>3562302</item>
+        <item>3554254</item>
+        <item>3553522</item>
+        <item>3547136</item>
+        <item>3566566</item>
+        <item>3538812</item>
+        <item>3564024</item>
+        <item>3554149</item>
+        <item>3562720</item>
+        <item>3556187</item>
+        <item>3569927</item>
+        <item>3554672</item>
+        <item>3415724</item>
+        <item>3406087</item>
+        <item>3592550</item>
+        <item>3582570</item>
+        <item>3558956</item>
+        <item>3550348</item>
+        <item>3604306</item>
+        <item>3579540</item>
+        <item>3659812</item>
+        <item>3655922</item>
+        <item>3578391</item>
+        <item>3566792</item>
+        <item>3590616</item>
+        <item>3600334</item>
+        <item>3604480</item>
+        <item>3625046</item>
+    </integer-array>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="remoteSite">
+        <item>https://sites.google.com/a/eyes-blue.com/lamrimreader/appresources/</item>
+    </string-array>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <attr format="reference|color" name="background"/>
+    <attr format="reference|color" name="backgroundSplit"/>
+    <attr format="reference" name="divider"/>
+    <attr format="dimension" name="height"/>
+    <attr format="reference" name="subtitleTextStyle"/>
+    <attr format="reference" name="titleTextStyle"/>
+    <bool name="abs__action_bar_embed_tabs">false</bool>
+    <bool name="abs__action_bar_expanded_action_views_exclusive">true</bool>
+    <bool name="abs__config_actionMenuItemAllCaps">true</bool>
+    <bool name="abs__config_allowActionMenuItemTextWithIcon">false</bool>
+    <bool name="abs__config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="abs__split_action_bar_is_narrow">true</bool>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/analytics.xml -->
+    <eat-comment/>
+    <bool name="ga_autoActivityTracking">true</bool>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <color name="abs__background_holo_dark">#ff000000</color>
+    <color name="abs__background_holo_light">#fff3f3f3</color>
+    <color name="abs__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="abs__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="abs__bright_foreground_holo_dark">@color/abs__background_holo_light</color>
+    <color name="abs__bright_foreground_holo_light">@color/abs__background_holo_dark</color>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <color name="black">#3b4144</color>
+    <color name="blue">#B3B3F9</color>
+    <color name="currentDayOfMonthColor">#33b5e5</color>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/color.xml -->
+    <eat-comment/>
+    <color name="darkTheoryBoldColor">#00D400</color>
+    <color name="darkTheoryDotTextColor">#F5A658</color>
+    <color name="darkTheoryHighColorLine">#3B003A</color>
+    <color name="darkTheoryHighColorWord">#BF00BC</color>
+    <color name="darkTheoryNumTextColor">#7373FF</color>
+    <color name="darkTheoryTextColor">#EDEDED</color>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <color name="dayOfMonthColor">#808080</color>
+    <color name="dayOfWeekColor">#649800</color>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/color.xml -->
+    <eat-comment/>
+    <color name="defSubtitleBGcolor">#0F395E</color>
+    <color name="defSubtitleFGcolor">#FFFFFF</color>
+    <color name="gray">#ffff0000</color>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <color name="green">#B3F9BD</color>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/color.xml -->
+    <eat-comment/>
+    <color name="lightTheoryBgColor">#FFFFDF</color>
+    <color name="lightTheoryBoldColor">#006600</color>
+    <color name="lightTheoryDotTextColor">#835930</color>
+    <color name="lightTheoryHighColorLine">#96FF91</color>
+    <color name="lightTheoryHighColorWord">#FFC491</color>
+    <color name="lightTheoryNumTextColor">#0000CC</color>
+    <color name="lightTheoryTextColor">#000000</color>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <color name="monthTitleColor">#161d20</color>
+    <color name="red">#F9B3B6</color>
+    <color name="silver">#C0C0C0</color>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/color.xml -->
+    <eat-comment/>
+    <color name="subtitleRedingModeHilightColor">#FFF82A</color>
+    <declare-styleable name="ColorPickerPreference"><attr format="boolean|reference" name="showDialogTitle"/><attr format="boolean|reference" name="showSelectedColorInList"/></declare-styleable>
+    <declare-styleable name="ColorPickerView"><attr format="boolean|reference" name="alphaChannelVisible"/><attr format="string|reference" name="alphaChannelText"/><attr format="color|reference" name="colorPickerSliderColor"/><attr format="color|reference" name="colorPickerBorderColor"/></declare-styleable>
+    <declare-styleable name="RobotoCalendarView"><attr format="color" name="monthTitleColor"/><attr format="string" name="monthTitleFont"/><attr format="color" name="dayOfWeekColor"/><attr format="string" name="dayOfWeekFont"/><attr format="color" name="dayOfMonthColor"/><attr format="string" name="dayOfMonthFont"/></declare-styleable>
+    <declare-styleable name="RobotoFonts"><attr format="enum" name="font"><enum name="roboto_thin" value="0"/><enum name="roboto_thin_italic" value="1"/><enum name="roboto_light" value="2"/><enum name="roboto_light_italic" value="3"/><enum name="roboto_regular" value="4"/><enum name="roboto_italic" value="5"/><enum name="roboto_medium" value="6"/><enum name="roboto_medium_italic" value="7"/><enum name="roboto_bold" value="8"/><enum name="roboto_bold_italic" value="9"/><enum name="roboto_black" value="10"/><enum name="roboto_black_italic" value="11"/><enum name="roboto_condensed_light" value="12"/><enum name="roboto_condensed_light_italic" value="13"/><enum name="roboto_condensed_regular" value="14"/><enum name="roboto_condensed_italic" value="15"/><enum name="roboto_condensed_bold" value="16"/><enum name="roboto_condensed_bold_italic" value="17"/><enum name="roboto_slab_thin" value="18"/><enum name="roboto_slab_light" value="19"/><enum name="roboto_slab_regular" value="20"/><enum name="roboto_slab_bold" value="21"/></attr></declare-styleable>
+    <declare-styleable name="RobotoTextView"><attr name="font"/></declare-styleable>
+    <declare-styleable name="SherlockActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr format="string" name="title"/><attr format="string" name="subtitle"/><attr name="titleTextStyle"/><attr name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr name="divider"/><attr name="background"/><attr format="reference|color" name="backgroundStacked"/><attr name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr format="dimension" name="itemPadding"/></declare-styleable>
+    <declare-styleable name="SherlockActionMenuItemView"><attr name="android:minWidth"/></declare-styleable>
+    <declare-styleable name="SherlockActionMode"><attr name="titleTextStyle"/><attr name="subtitleTextStyle"/><attr name="background"/><attr name="backgroundSplit"/><attr name="height"/></declare-styleable>
+    <declare-styleable name="SherlockActivityChooserView"><attr format="string" name="initialActivityCount"/><attr format="reference" name="expandActivityOverflowButtonDrawable"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="SherlockMenuGroup"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:checkableBehavior"/><attr name="android:visible"/><attr name="android:enabled"/></declare-styleable>
+    <declare-styleable name="SherlockMenuItem"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:title"/><attr name="android:titleCondensed"/><attr name="android:icon"/><attr name="android:alphabeticShortcut"/><attr name="android:numericShortcut"/><attr name="android:checkable"/><attr name="android:checked"/><attr name="android:visible"/><attr name="android:enabled"/><attr name="android:onClick"/><attr name="android:showAsAction"/><attr name="android:actionLayout"/><attr name="android:actionViewClass"/><attr name="android:actionProviderClass"/></declare-styleable>
+    <declare-styleable name="SherlockMenuView"><attr format="reference" name="itemTextAppearance"/><attr format="reference" name="horizontalDivider"/><attr format="reference" name="verticalDivider"/><attr format="color|reference" name="headerBackground"/><attr format="color|reference" name="itemBackground"/><attr format="reference" name="windowAnimationStyle"/><attr format="float" name="itemIconDisabledAlpha"/><attr format="boolean" name="preserveIconSpacing"/></declare-styleable>
+    <declare-styleable name="SherlockSearchView"><attr format="boolean" name="iconifiedByDefault"/><attr name="android:maxWidth"/><attr format="string" name="queryHint"/><attr name="android:imeOptions"/><attr name="android:inputType"/></declare-styleable>
+    <declare-styleable name="SherlockSpinner"><attr name="android:prompt"/><attr name="android:dropDownSelector"/><attr name="android:popupBackground"/><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/><attr name="android:dropDownWidth"/><attr name="android:popupPromptView"/><attr name="android:gravity"/></declare-styleable>
+    <declare-styleable name="SherlockTheme"><attr format="reference" name="actionBarTabStyle"/><attr format="reference" name="actionBarTabBarStyle"/><attr format="reference" name="actionBarTabTextStyle"/><attr format="reference" name="actionOverflowButtonStyle"/><attr format="reference" name="actionBarStyle"/><attr format="reference" name="actionBarSplitStyle"/><attr format="reference" name="actionBarWidgetTheme"/><attr format="dimension" name="actionBarSize"><enum name="wrap_content" value="0"/></attr><attr format="reference" name="actionBarDivider"/><attr format="reference" name="actionBarItemBackground"/><attr format="reference" name="actionMenuTextAppearance"/><attr format="color|reference" name="actionMenuTextColor"/><attr format="reference" name="actionModeStyle"/><attr format="reference" name="actionModeCloseButtonStyle"/><attr format="reference" name="actionModeBackground"/><attr format="reference" name="actionModeSplitBackground"/><attr format="reference" name="actionModeCloseDrawable"/><attr format="reference" name="actionModeShareDrawable"/><attr format="reference" name="actionModePopupWindowStyle"/><attr format="reference" name="buttonStyleSmall"/><attr format="reference" name="selectableItemBackground"/><attr format="reference" name="windowContentOverlay"/><attr format="reference" name="textAppearanceLargePopupMenu"/><attr format="reference" name="textAppearanceSmallPopupMenu"/><attr format="reference" name="textAppearanceSmall"/><attr format="color" name="textColorPrimary"/><attr format="color" name="textColorPrimaryDisableOnly"/><attr format="color" name="textColorPrimaryInverse"/><attr format="reference" name="spinnerItemStyle"/><attr format="reference" name="spinnerDropDownItemStyle"/><attr format="reference" name="searchAutoCompleteTextView"/><attr format="reference" name="searchDropdownBackground"/><attr format="reference" name="searchViewCloseIcon"/><attr format="reference" name="searchViewGoIcon"/><attr format="reference" name="searchViewSearchIcon"/><attr format="reference" name="searchViewVoiceIcon"/><attr format="reference" name="searchViewEditQuery"/><attr format="reference" name="searchViewEditQueryBackground"/><attr format="reference" name="searchViewTextField"/><attr format="reference" name="searchViewTextFieldRight"/><attr format="reference|color" name="textColorSearchUrl"/><attr format="dimension" name="searchResultListItemHeight"/><attr format="reference" name="textAppearanceSearchResultTitle"/><attr format="reference" name="textAppearanceSearchResultSubtitle"/><attr format="dimension" name="listPreferredItemHeightSmall"/><attr format="dimension" name="listPreferredItemPaddingLeft"/><attr format="dimension" name="listPreferredItemPaddingRight"/><attr format="reference" name="textAppearanceListItemSmall"/><attr format="dimension" name="windowMinWidthMajor"/><attr format="dimension" name="windowMinWidthMinor"/><attr format="reference" name="dividerVertical"/><attr format="reference" name="actionDropDownStyle"/><attr format="reference" name="actionButtonStyle"/><attr format="reference" name="homeAsUpIndicator"/><attr format="reference" name="dropDownListViewStyle"/><attr format="reference" name="popupMenuStyle"/><attr format="dimension" name="dropdownListPreferredItemHeight"/><attr format="reference" name="actionSpinnerItemStyle"/><attr format="boolean" name="windowNoTitle"/><attr format="boolean" name="windowActionBar"/><attr format="boolean" name="windowActionBarOverlay"/><attr format="boolean" name="windowActionModeOverlay"/><attr format="boolean" name="windowSplitActionBar"/><attr format="reference" name="listPopupWindowStyle"/><attr format="reference" name="activityChooserViewStyle"/><attr format="reference" name="activatedBackgroundIndicator"/><attr format="reference" name="dropDownHintAppearance"/></declare-styleable>
+    <declare-styleable name="SherlockView"><attr name="android:focusable"/></declare-styleable>
+    <declare-styleable name="TheoryPageView"/>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="abs__action_bar_default_height">48dip</dimen>
+    <dimen name="abs__action_bar_icon_vertical_padding">8dip</dimen>
+    <dimen name="abs__action_bar_subtitle_bottom_margin">5dip</dimen>
+    <dimen name="abs__action_bar_subtitle_text_size">14dp</dimen>
+    <dimen name="abs__action_bar_subtitle_top_margin">-3dp</dimen>
+    <dimen name="abs__action_bar_title_text_size">18dp</dimen>
+    <dimen name="abs__action_button_min_width">56dip</dimen>
+    <dimen name="abs__config_prefDialogWidth">320dp</dimen>
+    <dimen name="abs__dropdownitem_icon_width">32dip</dimen>
+    <dimen name="abs__dropdownitem_text_padding_left">8dip</dimen>
+    <dimen name="abs__dropdownitem_text_padding_right">8dip</dimen>
+    <dimen name="abs__search_view_preferred_width">320dip</dimen>
+    <dimen name="abs__search_view_text_min_width">160dip</dimen>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="dateTitlePaddingBottom">5dp</dimen>
+    <dimen name="dateTitleTextSize">22sp</dimen>
+    <dimen name="dayOfMonthImageMarginTop">32dp</dimen>
+    <dimen name="dayOfMonthImageSize">4dp</dimen>
+    <dimen name="dayOfMonthImageWidth">20dp</dimen>
+    <dimen name="dayOfMonthMinHeight">0dp</dimen>
+    <dimen name="dayOfMonthMinWidth">50dp</dimen>
+    <dimen name="dayOfMonthPaddingBottom">0dp</dimen>
+    <dimen name="dayOfMonthTextSize">20sp</dimen>
+    <dimen name="dayOfWeekTextSize">16sp</dimen>
+    <dimen name="weekDaysPaddingBottom">0dp</dimen>
+    <dimen name="weekRowMinHeight">44dp</dimen>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <item name="abs__action_menu_divider" type="id"/>
+    <item name="abs__action_menu_presenter" type="id"/>
+    <item name="abs__home" type="id"/>
+    <item name="abs__progress_circular" type="id"/>
+    <item name="abs__progress_horizontal" type="id"/>
+    <item name="abs__up" type="id"/>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/colorPickerView/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <item name="color_panel_new" type="id"/>
+    <item name="color_panel_old" type="id"/>
+    <item name="color_picker_view" type="id"/>
+    <item name="dialog_color_picker_extra_layout_landscape" type="id"/>
+    <item name="preference_preview_color_panel" type="id"/>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <integer name="MEDIA_TYPE">0</integer>
+    <integer name="SUBTITLE_TYPE">1</integer>
+    <integer name="THEORY_TYPE">2</integer>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <integer name="abs__max_action_buttons">2</integer>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <integer name="defFontSize">4</integer>
+    <integer name="downloadBufferSize">16384</integer>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/analytics.xml -->
+    <eat-comment/>
+    <integer name="ga_sessionTimeout">30</integer>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <integer name="isInit">0</integer>
+    <integer name="reservSpacePercent">10</integer>
+    <integer name="screenOnTime">300000</integer>
+    <integer name="subtitleMonInterval">100</integer>
+    <integer name="subtitleReservSizeK">102400</integer>
+    <integer name="subtitleScrollTouchBtnHeightPercentDp">3</integer>
+    <integer name="subtitleScrollTouchBtnWidthPercentDp">10</integer>
+    <integer name="textMaxSize">10</integer>
+    <integer name="textMinSize">2</integer>
+    <integer name="theorySmallTextSizePercent">90</integer>
+    <string name="GLModeRecordFile">GLMode</string>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <string name="abs__action_bar_home_description">Navigate home</string>
+    <string name="abs__action_bar_up_description">Navigate up</string>
+    <string name="abs__action_menu_overflow_description">More options</string>
+    <string name="abs__action_mode_done">Done</string>
+    <string name="abs__activity_chooser_view_see_all">See all...</string>
+    <string name="abs__activitychooserview_choose_application">Choose an application</string>
+    <string name="abs__searchview_description_clear">Clear query</string>
+    <string name="abs__searchview_description_query">Search query</string>
+    <string name="abs__searchview_description_search">Search</string>
+    <string name="abs__searchview_description_submit">Submit query</string>
+    <string name="abs__searchview_description_voice">Voice search</string>
+    <string name="abs__shareactionprovider_share_with">Share with</string>
+    <string name="abs__shareactionprovider_share_with_application">Share with <ns1:g example="Bluetooth" id="application_name">%s</ns1:g></string>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">廣論App</string>
+    <string name="audioDirName">Audio</string>
+    <string name="bookFontSize">論文</string>
+    <string name="bookFontSizeKey">BookFontSize</string>
+    <string name="cancel">取消</string>
+    <string name="cant_read_folder">無法讀取目錄</string>
+    <string name="changelog_full_title">修正記錄</string>
+    <string name="changelog_ok_button">確定</string>
+    <string name="changelog_show_full">更多...</string>
+    <string name="changelog_title">What\'s New</string>
+    <string name="checkSubtitleV20141127">checkSubtitleV20141127</string>
+    <string name="create">儲存</string>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <string name="currentDayOfMonthFont">roboto_condensed_bold</string>
+    <string name="dayOfMonthFont">roboto_light</string>
+    <string name="dayOfWeekFont">roboto_regular</string>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="defSubtitleType">SRT</string>
+    <string name="defTheoryType">TXT</string>
+    <string name="digOptSetRegionStart">開始位置</string>
+    <string name="dlgAllow">允許</string>
+    <string name="dlgCancel">取消</string>
+    <string name="dlgDelWarnMsg">%1$s即將被刪除，您確定要刪除%1$s嗎？</string>
+    <string name="dlgDelWarnTitle">刪除%1$s</string>
+    <string name="dlgDescConnecting">取得 %1$s %2$s資訊中 ...</string>
+    <string name="dlgDescDownloadFail">下載資源失敗，請確認磁碟空間充足及您所在區域的網路品質是否正常</string>
+    <string name="dlgDescDownloading">%1$s %2$s下載中，請稍候...</string>
+    <string name="dlgDescPrepareSpeech">音檔準備中，請稍候...</string>
+    <string name="dlgDescPrepareSubtitle">字幕準備中，請稍候...</string>
+    <string name="dlgDisallow">禁止</string>
+    <string name="dlgDontShowThisWarnDesc">不再顯示此警告</string>
+    <string name="dlgEndLineGreaterThenStart">結束行數小於起始行數。</string>
+    <string name="dlgEndPageGreaterThenStart">結束頁小於起始頁。</string>
+    <string name="dlgExitMsg">即將關閉程式，您確定離開嗎？</string>
+    <string name="dlgExitTitle">關閉程式</string>
+    <string name="dlgHintLoadMediaBeforeSwitchToReadingMode">尚未載入音檔，無法切換到閱讀模式！</string>
+    <string name="dlgHintMpControllerNoSubtitle">尚無字幕，請點選此處顯示撥放選單</string>
+    <string name="dlgHintShowMpController">請點選此處顯示撥放選單</string>
+    <string name="dlgInputError">輸入錯誤</string>
+    <string name="dlgInputNotFill">資料輸入不完全。</string>
+    <string name="dlgLineNumOverPageCount">輸入的行數超過該頁的行數。</string>
+    <string name="dlgManageSrcDel">刪除</string>
+    <string name="dlgManageSrcPlay">播放</string>
+    <string name="dlgManageSrcUpdate">更新</string>
+    <string name="dlgMsgDlNotComplete">媒體檔案  %1$s 尚未下載完成，是否再次下載？</string>
+    <string name="dlgMsgMaintaining">維護檔案中，請稍候...</string>
+    <string name="dlgNetAccessMsg">即將存取網路資源，視您目前所在的網路環境，可能造成額外的網路費用，確定下載資源嗎？</string>
+    <string name="dlgNetAccessTitle">網路存取</string>
+    <string name="dlgNumberFormatError">數字欄位錯誤，請檢查輸入內容。</string>
+    <string name="dlgOk">確定</string>
+    <string name="dlgOptSetRegionEnd">結束位置</string>
+    <string name="dlgPageNumOverPageCount">輸入的頁數超過廣論總頁數。</string>
+    <string name="dlgRecordTheoryIndex">廣論 %1$s 頁  %2$s 行 ~ %3$s 頁 %4$s 行</string>
+    <string name="dlgTitleConnecting">連線中</string>
+    <string name="dlgTitleDownloadFail">下載失敗</string>
+    <string name="dlgTitleDownloading">下載資源</string>
+    <string name="dlgTitleMaintaining">維護檔案</string>
+    <string name="downloadSchedule">更新進度</string>
+    <string name="downloadTmpPostfix">.dltmp</string>
+    <string name="err">錯誤</string>
+    <string name="errIAEwhileSetPlayerSrc">開啟語音檔時發生參數錯誤!</string>
+    <string name="errIOEwhilePrepPlayer">準備語音檔時發生輸出入錯誤!</string>
+    <string name="errIOEwhileSetPlayerSrc">無法正常讀取音檔，請檢查音檔是否損毀，請試著重新下載[%1$s]音檔。</string>
+    <string name="errISEwhilePrepPlayer">準備語音檔時發生撥放器狀態錯誤!</string>
+    <string name="errISEwhileSetPlayerSrc">開啟語音檔時發生撥放器狀態錯誤!</string>
+    <string name="errSEwhileSetPlayerSrc">開啟語音檔時發生安全性錯誤!</string>
+    <string name="errWhileReleasePlayer">釋放撥放器時發生狀態錯誤!</string>
+    <string name="exitApp">關閉</string>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/analytics.xml -->
+    <eat-comment/>
+    <string name="eyes.blue.LamrimReaderActivity">Main</string>
+    <string name="eyes.blue.SpeechMenuActivity">SpeechMenu</string>
+    <string name="eyes.blue.StorageManageActivity">StorageManage</string>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="filePathRoot">lamrimreader</string>
+    <string name="file_name">檔名:</string>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/analytics.xml -->
+    <eat-comment/>
+    <string name="ga_trackingId">UA-29343996-2</string>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="globalLamrim">全球廣論</string>
+    <string name="globalLamrimDirName">GlobalLamrim</string>
+    <string name="globalLamrimScheduleFile">GlobalLamrimSchedule</string>
+    <string name="globalLamrimScheduleFileFormat">CSV</string>
+    <string name="globalLamrimShortName">全廣</string>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <string name="hello">Hello World, NewQA!</string>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="hello_world">Hello world!</string>
+    <string name="inputTitleHint">請輸入標題！</string>
+    <string name="isAllowNetAccess">false</string>
+    <string name="isDarkThemeKey">isDarkTheme</string>
+    <string name="isShowModeSwBtnKey">isShowModeSwBtn</string>
+    <string name="isShowNetAccessWarn">true</string>
+    <string name="isUseThirdDir">useThirdDir</string>
+    <string name="lamrimCmdUri">http://lamrimreader-cmd.eyes-blue.com/</string>
+    <string name="lastSearchLamrimKey">lastSearchLamrimWords</string>
+    <string name="localGlobalLamrimScheduleFileDataErr">全廣進度記錄錯誤: </string>
+    <string name="localGlobalLamrimScheduleFileDateFmtErr">全廣進度日期格式錯誤，請重新下載！</string>
+    <string name="localGlobalLamrimScheduleFileDecodeErr">全廣進度讀取時發生封裝錯誤，請重新下載！ </string>
+    <string name="localGlobalLamrimScheduleFileNotFound">開啟全廣進度錯誤，請重新下載！</string>
+    <string name="localGlobalLamrimScheduleFileRangeFmtErr">讀取全廣進度範圍標記錯誤，請重新下載！</string>
+    <string name="localGlobalLamrimScheduleFileReadErr">全廣進度讀取錯誤，請重新下載！</string>
+    <string name="location">位置</string>
+    <string name="mediaCheckSumWhileDownload">true</string>
+    <string name="menuStrGlobalLamrim">全球廣論</string>
+    <string name="menuStrOpenProjectWeb">計劃網頁</string>
+    <string name="menuStrPlayRegionRec">區段播放</string>
+    <string name="menuStrPlayRegionRecShortName">區段</string>
+    <string name="menuStrRenderMode">公播模式</string>
+    <string name="menuStrSavePlayRegion">儲存區段</string>
+    <string name="menuStrSelectSpeech">選擇音檔</string>
+    <string name="menuStrTextSize">設定字體</string>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <string name="monthTitleFont">roboto_light</string>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="musicSign">♬</string>
+    <string name="newMediaPlayPosition">NewMediaPlayPosition</string>
+    <string name="newMediaTarget">NewMediaTarget</string>
+    <string name="nnew">新增</string>
+    <string name="noExtSpace">無外部空間</string>
+    <string name="noSubtitleDesc">無字幕</string>
+    <string name="no_data">無資料</string>
+    <string name="playModeKey">playMode</string>
+    <string name="projectWebUrl">http://lamrimreader.eyes-blue.com/</string>
+    <string name="regionPlayModeRecordFile">regionMode</string>
+    <string name="regionRecordColumeName">records</string>
+    <string name="regionRecordFile">RegionRecord</string>
+    <string name="regionRecordListViewPage">regionListPage</string>
+    <string name="regionRecordListViewPageShift">regionListPageShift</string>
+    <string name="reloadLastState">載回進度</string>
+    <string name="renderImgBgColorKey">renderImgBgColor</string>
+    <string name="renderImgFgPathKey">renderImage</string>
+    <string name="renderImgScaleKey">renderImgScaleType</string>
+    <string name="runtimeStateFile">runtime</string>
+    <string name="select">確定</string>
+    <string name="selectIndexFromMenuDesc">請從選單選擇章節或錄音</string>
+    <string name="setupFontSizeStr">設定字型大小</string>
+    <string name="setupTextSizeSample">廣論</string>
+    <string name="soundInUseError">音效裝置被其他軟體佔用中</string>
+    <string name="speechModeRecordFile">speechMode</string>
+    <string name="subtitleAlphaKey">subtitleAlpha</string>
+    <string name="subtitleBgColorKey">subtitleBgColor</string>
+    <string name="subtitleDirName">Subtitle</string>
+    <string name="subtitleFgColorKey">subtitleFgColor</string>
+    <string name="subtitleFontSize">字幕</string>
+    <string name="subtitleFontSizeKey">SubtitleFontSize</string>
+    <string name="subtitleSign">❏</string>
+    <string name="theoryDirName">Theory</string>
+    <string name="title_activity_calendar">全球廣論進度</string>
+    <string name="title_activity_file_dialog">FileDialogActivity</string>
+    <string name="title_activity_intent">IntentActivity</string>
+    <string name="title_activity_storage_manage">儲存管理</string>
+    <string name="userSpecifySpeechDir">userSpecifySpeechDir</string>
+    <string name="versionCheckUrl">http://lamrimreader.eyes-blue.com/appresources/publish/notifier.json</string>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/style.xml -->
+    <eat-comment/>
+    <style name="AnimationPopup">
+        <item name="android:windowEnterAnimation">@anim/in_bounce</item>
+        <item name="android:windowExitAnimation">@anim/out_bounce</item>
+    </style>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Animations"/>
+    <style name="Animations.PopDownMenu"/>
+    <style name="Animations.PopDownMenu.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+	</style>
+    <style name="Animations.PopDownMenu.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+	</style>
+    <style name="Animations.PopDownMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+	</style>
+    <style name="Animations.PopUpMenu"/>
+    <style name="Animations.PopUpMenu.Center">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+	</style>
+    <style name="Animations.PopUpMenu.Left">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+	</style>
+    <style name="Animations.PopUpMenu.Right">
+		<item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+		<item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+	</style>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/style.xml -->
+    <eat-comment/>
+    <style name="Buttonholo" parent="android:Widget.Button">
+        <item name="android:background">@drawable/btn_default_holo_dark</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="ImageButtonholo" parent="android:Widget.ImageButton">
+        <item name="android:background">@drawable/btn_default_holo_dark</item>
+    </style>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/themes.xml -->
+    <eat-comment/>
+    <style name="MyTheme.TitleTextStyle" parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:minEms">16</item>
+        <item name="android:width">500sp</item>
+    </style>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/style.xml -->
+    <eat-comment/>
+    <style name="SeekBarholo" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:minHeight">13dip</item>
+        <item name="android:maxHeight">13dip</item>
+        <item name="android:thumb">@drawable/scrubber_control_selector_holo_dark</item>
+        <item name="android:thumbOffset">16dip</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Sherlock.__TextAppearance.Small" parent="Widget">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="Sherlock.__Theme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Sherlock.__Theme.DarkActionBar" parent="Theme.Sherlock.Light"/>
+    <style name="Sherlock.__Theme.Light" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Sherlock.__Widget.ActionBar" parent="Widget">
+        <item name="displayOptions">useLogo|showHome|showTitle</item>
+        <item name="height">?attr/actionBarSize</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:paddingBottom">0dip</item>
+        <item name="homeLayout">@layout/abs__action_bar_home</item>
+    </style>
+    <style name="Sherlock.__Widget.ActionMode" parent="Widget">
+        <item name="background">?attr/actionModeBackground</item>
+        <item name="backgroundSplit">?attr/actionModeSplitBackground</item>
+        <item name="height">?attr/actionBarSize</item>
+    </style>
+    <style name="Sherlock.__Widget.ActivityChooserView" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/abs__ab_share_pack_holo_dark</item>
+        <item name="android:divider">?attr/dividerVertical</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">6dip</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+    </style>
+    <style name="Sherlock.__Widget.Holo.DropDownItem" parent="Widget">
+        <item name="android:textAppearance">@style/TextAppearance.Sherlock.Widget.DropDownItem</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="Sherlock.__Widget.Holo.ListView" parent="android:Widget.ListView">
+        <item name="android:divider">@drawable/abs__list_divider_holo_dark</item>
+        <item name="android:listSelector">@drawable/abs__list_selector_holo_dark</item>
+    </style>
+    <style name="Sherlock.__Widget.Holo.Spinner" parent="Widget">
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_dark</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_dark</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="Sherlock.__Widget.SearchAutoCompleteTextView" parent="Widget">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:completionHintView">@layout/abs__simple_dropdown_hint</item>
+        <item name="android:completionThreshold">2</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+    </style>
+    <style name="TextAppearance.Sherlock" parent="@android:style/TextAppearance"/>
+    <style name="TextAppearance.Sherlock.Light.SearchResult" parent="TextAppearance.Sherlock.SearchResult"/>
+    <style name="TextAppearance.Sherlock.Light.SearchResult.Subtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Light.SearchResult.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Light.Small" parent="TextAppearance.Sherlock.Small"/>
+    <style name="TextAppearance.Sherlock.Light.Widget.PopupMenu.Large" parent="TextAppearance.Sherlock.Widget.PopupMenu.Large"/>
+    <style name="TextAppearance.Sherlock.Light.Widget.PopupMenu.Small" parent="TextAppearance.Sherlock.Widget.PopupMenu.Small"/>
+    <style name="TextAppearance.Sherlock.SearchResult">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textColorHint">?android:attr/textColorHint</item>
+    </style>
+    <style name="TextAppearance.Sherlock.SearchResult.Subtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.SearchResult.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Small" parent="Sherlock.__TextAppearance.Small"/>
+    <style name="TextAppearance.Sherlock.Widget.ActionBar.Menu" parent="Widget">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/actionMenuTextColor</item>
+        <item name="android:textAllCaps">@bool/abs__config_actionMenuItemAllCaps</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionBar.Subtitle" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_subtitle_text_size</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionBar.Subtitle.Inverse" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_subtitle_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionBar.Title" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_title_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionBar.Title.Inverse" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_title_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionMode.Subtitle" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_subtitle_text_size</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionMode.Subtitle.Inverse" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_subtitle_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionMode.Title" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_title_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionMode.Title.Inverse" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_title_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.DropDownHint" parent="Widget">
+        <item name="android:textColor">?textColorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.DropDownItem" parent="Widget">
+        <item name="android:textColor">?textColorPrimaryDisableOnly</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.PopupMenu" parent="Widget">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.PopupMenu.Large">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.PopupMenu.Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.TextView.SpinnerItem" parent="Widget">
+        <item name="android:textColor">?textColorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Theme.Sherlock" parent="Sherlock.__Theme">
+
+        <!-- Action bar styles (from Theme.Holo) -->
+        <item name="actionDropDownStyle">@style/Widget.Sherlock.Spinner.DropDown.ActionBar</item>
+        <item name="actionButtonStyle">@style/Widget.Sherlock.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.Sherlock.ActionButton.Overflow</item>
+        <item name="actionModeBackground">@drawable/abs__cab_background_top_holo_dark</item>
+        <item name="actionModeSplitBackground">@drawable/abs__cab_background_bottom_holo_dark</item>
+        <item name="actionModeCloseDrawable">@drawable/abs__ic_cab_done_holo_dark</item>
+        <item name="actionBarTabStyle">@style/Widget.Sherlock.ActionBar.TabView</item>
+        <item name="actionBarTabBarStyle">@style/Widget.Sherlock.ActionBar.TabBar</item>
+        <item name="actionBarTabTextStyle">@style/Widget.Sherlock.ActionBar.TabText</item>
+        <item name="actionModeStyle">@style/Widget.Sherlock.ActionMode</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.Sherlock.ActionButton.CloseMode</item>
+        <item name="actionBarStyle">@style/Widget.Sherlock.ActionBar</item>
+        <item name="actionBarSize">@dimen/abs__action_bar_default_height</item>
+        <!-- Internal -->
+        <item name="actionModePopupWindowStyle">@style/Widget.Sherlock.PopupWindow.ActionMode</item>
+        <item name="actionBarWidgetTheme">@null</item>
+
+        <!-- Action bar styles (defaults from Theme) -->
+        <item name="actionBarSplitStyle">?attr/actionBarStyle</item>
+        <item name="actionMenuTextAppearance">@style/TextAppearance.Sherlock.Widget.ActionBar.Menu</item>
+        <item name="actionMenuTextColor">?attr/textColorPrimary</item>
+        <item name="actionBarDivider">?attr/dividerVertical</item>
+        <item name="actionBarItemBackground">?attr/selectableItemBackground</item>
+        <item name="buttonStyleSmall">@style/Widget.Sherlock.Button.Small</item>
+        <item name="selectableItemBackground">@drawable/abs__item_background_holo_dark</item>
+        <item name="activatedBackgroundIndicator">@drawable/abs__activated_background_holo_dark</item>
+        <item name="actionModeShareDrawable">@drawable/abs__ic_menu_share_holo_dark</item>
+        <item name="activityChooserViewStyle">@style/Widget.Sherlock.ActivityChooserView</item>
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
+        <item name="dividerVertical">@drawable/abs__list_divider_holo_dark</item>
+        <item name="spinnerDropDownItemStyle">@style/Widget.Sherlock.DropDownItem.Spinner</item>
+        <item name="spinnerItemStyle">@style/Widget.Sherlock.TextView.SpinnerItem</item>
+        <item name="textColorPrimary">@color/abs__primary_text_holo_dark</item>
+        <item name="textColorPrimaryDisableOnly">@color/abs__primary_text_disable_only_holo_dark</item>
+        <item name="textColorPrimaryInverse">@color/abs__primary_text_holo_light</item>
+
+        <!-- Internal -->
+        <item name="dropdownListPreferredItemHeight">48dip</item>
+        <item name="dropDownListViewStyle">@style/Widget.Sherlock.ListView.DropDown</item>
+        <item name="textAppearanceSmall">@style/TextAppearance.Sherlock.Small</item>
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.Sherlock.Widget.PopupMenu.Large</item>
+        <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.Sherlock.Widget.PopupMenu.Small</item>
+        <item name="textAppearanceSearchResultTitle">@style/TextAppearance.Sherlock.SearchResult.Title</item>
+        <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.Sherlock.SearchResult.Subtitle</item>
+        <item name="popupMenuStyle">@style/Widget.Sherlock.PopupMenu</item>
+        <!-- Internal -->
+        <item name="listPopupWindowStyle">@style/Widget.Sherlock.ListPopupWindow</item>
+        <item name="searchDropdownBackground">@drawable/abs__search_dropdown_dark</item>
+        <item name="searchViewTextField">@drawable/abs__textfield_searchview_holo_dark</item>
+        <item name="searchViewTextFieldRight">@drawable/abs__textfield_searchview_right_holo_dark</item>
+        <item name="searchViewCloseIcon">@drawable/abs__ic_clear</item>
+        <item name="searchViewSearchIcon">@drawable/abs__ic_search</item>
+        <item name="searchViewGoIcon">@drawable/abs__ic_go</item>
+        <item name="searchViewVoiceIcon">@drawable/abs__ic_voice_search</item>
+        <item name="searchAutoCompleteTextView">@style/Widget.Sherlock.SearchAutoCompleteTextView</item>
+        <item name="dropDownHintAppearance">@style/TextAppearance.Sherlock.Widget.DropDownHint</item>
+        <item name="searchViewEditQuery">@drawable/abs__ic_commit_search_api_holo_dark</item>
+        <item name="searchViewEditQueryBackground">?selectableItemBackground</item>
+        <item name="searchResultListItemHeight">58dp</item>
+        <item name="windowNoTitle">false</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowActionModeOverlay">false</item>
+        <item name="windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.Sherlock.Light" parent="Sherlock.__Theme.Light">
+
+        <!-- Action bar styles (from Theme.Holo) -->
+        <item name="actionDropDownStyle">@style/Widget.Sherlock.Light.Spinner.DropDown.ActionBar</item>
+        <item name="actionButtonStyle">@style/Widget.Sherlock.Light.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.Sherlock.Light.ActionButton.Overflow</item>
+        <item name="actionModeBackground">@drawable/abs__cab_background_top_holo_light</item>
+        <item name="actionModeSplitBackground">@drawable/abs__cab_background_bottom_holo_light</item>
+        <item name="actionModeCloseDrawable">@drawable/abs__ic_cab_done_holo_light</item>
+        <item name="actionBarTabStyle">@style/Widget.Sherlock.Light.ActionBar.TabView</item>
+        <item name="actionBarTabBarStyle">@style/Widget.Sherlock.Light.ActionBar.TabBar</item>
+        <item name="actionBarTabTextStyle">@style/Widget.Sherlock.Light.ActionBar.TabText</item>
+        <item name="actionModeStyle">@style/Widget.Sherlock.Light.ActionMode</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.Sherlock.Light.ActionButton.CloseMode</item>
+        <item name="actionBarStyle">@style/Widget.Sherlock.Light.ActionBar.Solid</item>
+        <item name="actionBarSize">@dimen/abs__action_bar_default_height</item>
+        <!-- Internal -->
+        <item name="actionModePopupWindowStyle">@style/Widget.Sherlock.Light.PopupWindow.ActionMode</item>
+        <item name="actionBarWidgetTheme">@null</item>
+
+        <!-- Action bar styles (defaults from Theme) -->
+        <item name="actionBarSplitStyle">?attr/actionBarStyle</item>
+        <item name="actionMenuTextAppearance">@style/TextAppearance.Sherlock.Widget.ActionBar.Menu</item>
+        <item name="actionMenuTextColor">?attr/textColorPrimary</item>
+        <item name="actionBarDivider">?attr/dividerVertical</item>
+        <item name="actionBarItemBackground">?attr/selectableItemBackground</item>
+        <item name="buttonStyleSmall">@style/Widget.Sherlock.Light.Button.Small</item>
+        <item name="selectableItemBackground">@drawable/abs__item_background_holo_light</item>
+        <item name="activatedBackgroundIndicator">@drawable/abs__activated_background_holo_light</item>
+        <item name="actionModeShareDrawable">@drawable/abs__ic_menu_share_holo_light</item>
+        <item name="activityChooserViewStyle">@style/Widget.Sherlock.Light.ActivityChooserView</item>
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_light</item>
+        <item name="dividerVertical">@drawable/abs__list_divider_holo_light</item>
+        <item name="spinnerDropDownItemStyle">@style/Widget.Sherlock.Light.DropDownItem.Spinner</item>
+        <item name="spinnerItemStyle">@style/Widget.Sherlock.TextView.SpinnerItem</item>
+        <item name="textColorPrimary">@color/abs__primary_text_holo_light</item>
+        <item name="textColorPrimaryDisableOnly">@color/abs__primary_text_disable_only_holo_light</item>
+        <item name="textColorPrimaryInverse">@color/abs__primary_text_holo_dark</item>
+
+        <!-- Internal -->
+        <item name="dropdownListPreferredItemHeight">48dip</item>
+        <item name="dropDownListViewStyle">@style/Widget.Sherlock.Light.ListView.DropDown</item>
+        <item name="textAppearanceSmall">@style/TextAppearance.Sherlock.Light.Small</item>
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.Sherlock.Light.Widget.PopupMenu.Large</item>
+        <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.Sherlock.Light.Widget.PopupMenu.Small</item>
+        <item name="textAppearanceSearchResultTitle">@style/TextAppearance.Sherlock.Light.SearchResult.Title</item>
+        <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.Sherlock.Light.SearchResult.Subtitle</item>
+        <item name="popupMenuStyle">@style/Widget.Sherlock.Light.PopupMenu</item>
+        <!-- Internal -->
+        <item name="listPopupWindowStyle">@style/Widget.Sherlock.Light.ListPopupWindow</item>
+        <item name="searchDropdownBackground">@drawable/abs__search_dropdown_light</item>
+        <item name="searchViewTextField">@drawable/abs__textfield_searchview_holo_light</item>
+        <item name="searchViewTextFieldRight">@drawable/abs__textfield_searchview_right_holo_light</item>
+        <item name="searchViewCloseIcon">@drawable/abs__ic_clear_holo_light</item>
+        <item name="searchViewSearchIcon">@drawable/abs__ic_search_api_holo_light</item>
+        <item name="searchViewGoIcon">@drawable/abs__ic_go_search_api_holo_light</item>
+        <item name="searchViewVoiceIcon">@drawable/abs__ic_voice_search_api_holo_light</item>
+        <item name="searchAutoCompleteTextView">@style/Widget.Sherlock.Light.SearchAutoCompleteTextView</item>
+        <item name="dropDownHintAppearance">@style/TextAppearance.Sherlock.Widget.DropDownHint</item>
+        <item name="searchViewEditQuery">@drawable/abs__ic_commit_search_api_holo_light</item>
+        <item name="searchViewEditQueryBackground">?selectableItemBackground</item>
+        <item name="searchResultListItemHeight">58dp</item>
+        <item name="windowNoTitle">false</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowActionModeOverlay">false</item>
+        <item name="windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.Sherlock.Light.DarkActionBar" parent="Sherlock.__Theme.DarkActionBar">
+        <item name="windowContentOverlay">@drawable/abs__ab_solid_shadow_holo</item>
+        <item name="actionBarStyle">@style/Widget.Sherlock.Light.ActionBar.Solid.Inverse</item>
+        <item name="actionBarWidgetTheme">@style/Theme.Sherlock</item>
+        <item name="actionDropDownStyle">@style/Widget.Sherlock.Spinner.DropDown.ActionBar</item>
+        <item name="actionButtonStyle">@style/Widget.Sherlock.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.Sherlock.ActionButton.Overflow</item>
+        <item name="actionModeBackground">@drawable/abs__cab_background_top_holo_dark</item>
+        <item name="actionModeSplitBackground">@drawable/abs__cab_background_bottom_holo_dark</item>
+        <item name="actionModeCloseDrawable">@drawable/abs__ic_cab_done_holo_dark</item>
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
+        <item name="actionBarTabStyle">@style/Widget.Sherlock.Light.ActionBar.TabView.Inverse</item>
+        <item name="actionBarTabBarStyle">@style/Widget.Sherlock.Light.ActionBar.TabBar.Inverse</item>
+        <item name="actionBarTabTextStyle">@style/Widget.Sherlock.Light.ActionBar.TabText.Inverse</item>
+        <item name="actionBarDivider">@drawable/abs__list_divider_holo_dark</item>
+        <item name="actionBarItemBackground">@drawable/abs__item_background_holo_dark</item>
+        <item name="actionMenuTextColor">?attr/textColorPrimaryInverse</item>
+        <item name="actionModeStyle">@style/Widget.Sherlock.Light.ActionMode.Inverse</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.Sherlock.ActionButton.CloseMode</item>
+        <item name="actionModePopupWindowStyle">@style/Widget.Sherlock.PopupWindow.ActionMode</item>
+        <item name="actionModeShareDrawable">@drawable/abs__ic_menu_share_holo_dark</item>
+
+        <!-- We want the dark action bar SearchView stuff -->
+        <item name="searchDropdownBackground">@drawable/abs__search_dropdown_dark</item>
+        <item name="searchViewTextField">@drawable/abs__textfield_searchview_holo_dark</item>
+        <item name="searchViewTextFieldRight">@drawable/abs__textfield_searchview_right_holo_dark</item>
+        <item name="searchViewCloseIcon">@drawable/abs__ic_clear</item>
+        <item name="searchViewSearchIcon">@drawable/abs__ic_search</item>
+        <item name="searchViewGoIcon">@drawable/abs__ic_go</item>
+        <item name="searchViewVoiceIcon">@drawable/abs__ic_voice_search</item>
+        <item name="searchAutoCompleteTextView">@style/Widget.Sherlock.SearchAutoCompleteTextView</item>
+        <item name="dropDownHintAppearance">@style/TextAppearance.Sherlock.Widget.DropDownHint</item>
+        <item name="searchViewEditQuery">@drawable/abs__ic_commit_search_api_holo_dark</item>
+    </style>
+    <style name="Theme.Sherlock.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Sherlock.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Widget"/>
+    <style name="Widget.Sherlock.ActionBar" parent="Sherlock.__Widget.ActionBar">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Subtitle</item>
+        <item name="background">@drawable/abs__ab_transparent_dark_holo</item>
+        <item name="backgroundStacked">@drawable/abs__ab_stacked_transparent_dark_holo</item>
+        <item name="backgroundSplit">@drawable/abs__ab_bottom_transparent_dark_holo</item>
+        <item name="divider">?attr/dividerVertical</item>
+        <item name="progressBarStyle">@style/Widget.Sherlock.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.Sherlock.ProgressBar</item>
+        <item name="progressBarPadding">32dip</item>
+        <item name="itemPadding">8dip</item>
+    </style>
+    <style name="Widget.Sherlock.ActionBar.Solid" parent="Sherlock.__Widget.ActionBar">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Subtitle</item>
+        <item name="background">@drawable/abs__ab_solid_dark_holo</item>
+        <item name="backgroundStacked">@drawable/abs__ab_stacked_solid_dark_holo</item>
+        <item name="backgroundSplit">@drawable/abs__ab_bottom_solid_dark_holo</item>
+        <item name="divider">?attr/dividerVertical</item>
+        <item name="progressBarStyle">@style/Widget.Sherlock.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.Sherlock.ProgressBar</item>
+        <item name="progressBarPadding">32dip</item>
+        <item name="itemPadding">8dip</item>
+    </style>
+    <style name="Widget.Sherlock.ActionBar.TabBar" parent="Widget">
+        <item name="android:divider">?attr/actionBarDivider</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">12dip</item>
+    </style>
+    <style name="Widget.Sherlock.ActionBar.TabText" parent="Widget">
+        <item name="android:textAppearance">@null</item>
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="Widget.Sherlock.ActionBar.TabView" parent="Widget">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/abs__tab_indicator_ab_holo</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+    <style name="Widget.Sherlock.ActionButton" parent="Widget">
+        <item name="android:background">?attr/actionBarItemBackground</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:minWidth">@dimen/abs__action_button_min_width</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="Widget.Sherlock.ActionButton.CloseMode">
+        <item name="android:background">@drawable/abs__btn_cab_done_holo_dark</item>
+    </style>
+    <style name="Widget.Sherlock.ActionButton.Overflow">
+        <item name="android:src">@drawable/abs__ic_menu_moreoverflow_holo_dark</item>
+        <item name="android:background">?attr/actionBarItemBackground</item>
+        <item name="android:contentDescription">@string/abs__action_menu_overflow_description</item>
+    </style>
+    <style name="Widget.Sherlock.ActionMode" parent="Sherlock.__Widget.ActionMode">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Subtitle</item>
+    </style>
+    <style name="Widget.Sherlock.ActivityChooserView" parent="Sherlock.__Widget.ActivityChooserView"/>
+    <style name="Widget.Sherlock.Button.Small" parent="Widget">
+        <item name="android:textAppearance">?attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/abs__primary_text_holo_dark</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">48dip</item>
+    </style>
+    <style name="Widget.Sherlock.DropDownItem.Spinner" parent="Sherlock.__Widget.Holo.DropDownItem"/>
+    <style name="Widget.Sherlock.Light.ActionBar" parent="Widget.Sherlock.ActionBar">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Subtitle</item>
+        <item name="background">@drawable/abs__ab_transparent_light_holo</item>
+        <item name="backgroundStacked">@drawable/abs__ab_stacked_transparent_light_holo</item>
+        <item name="backgroundSplit">@drawable/abs__ab_bottom_transparent_light_holo</item>
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_light</item>
+        <item name="progressBarStyle">@style/Widget.Sherlock.Light.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.Sherlock.Light.ProgressBar</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Subtitle</item>
+        <item name="background">@drawable/abs__ab_solid_light_holo</item>
+        <item name="backgroundStacked">@drawable/abs__ab_stacked_solid_light_holo</item>
+        <item name="backgroundSplit">@drawable/abs__ab_bottom_solid_light_holo</item>
+        <item name="divider">?attr/dividerVertical</item>
+        <item name="progressBarStyle">@style/Widget.Sherlock.Light.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.Sherlock.Light.ProgressBar</item>
+        <item name="progressBarPadding">32dip</item>
+        <item name="itemPadding">8dip</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Title.Inverse</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Subtitle.Inverse</item>
+        <item name="background">@drawable/abs__ab_solid_dark_holo</item>
+        <item name="backgroundStacked">@drawable/abs__ab_stacked_solid_dark_holo</item>
+        <item name="backgroundSplit">@drawable/abs__ab_bottom_solid_inverse_holo</item>
+        <item name="divider">@drawable/abs__list_divider_holo_dark</item>
+        <item name="progressBarStyle">@style/Widget.Sherlock.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.Sherlock.ProgressBar</item>
+        <item name="progressBarPadding">32dip</item>
+        <item name="itemPadding">8dip</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionBar.TabBar" parent="Widget.Sherlock.ActionBar.TabBar"/>
+    <style name="Widget.Sherlock.Light.ActionBar.TabBar.Inverse"/>
+    <style name="Widget.Sherlock.Light.ActionBar.TabText" parent="Widget.Sherlock.ActionBar.TabText"/>
+    <style name="Widget.Sherlock.Light.ActionBar.TabText.Inverse">
+        <item name="android:textColor">?attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionBar.TabView" parent="Widget.Sherlock.ActionBar.TabView"/>
+    <style name="Widget.Sherlock.Light.ActionBar.TabView.Inverse"/>
+    <style name="Widget.Sherlock.Light.ActionButton" parent="Widget.Sherlock.ActionButton"/>
+    <style name="Widget.Sherlock.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/abs__btn_cab_done_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/abs__ic_menu_moreoverflow_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionMode" parent="Widget.Sherlock.ActionMode">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Subtitle</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionMode.Inverse" parent="Sherlock.__Widget.ActionMode">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Title.Inverse</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Subtitle.Inverse</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActivityChooserView" parent="Widget.Sherlock.ActivityChooserView">
+        <item name="android:background">@drawable/abs__ab_share_pack_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.Button.Small" parent="Widget">
+        <item name="android:textAppearance">?attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/abs__primary_text_holo_light</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">48dip</item>
+    </style>
+    <style name="Widget.Sherlock.Light.DropDownItem.Spinner" parent="Sherlock.__Widget.Holo.DropDownItem"/>
+    <style name="Widget.Sherlock.Light.ListPopupWindow" parent="Widget">
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_light</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_light</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ListView.DropDown" parent="Sherlock.__Widget.Holo.ListView">
+        <item name="android:divider">@drawable/abs__list_divider_holo_light</item>
+        <item name="android:listSelector">@drawable/abs__list_selector_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.PopupMenu" parent="Widget.Sherlock.Light.ListPopupWindow"/>
+    <style name="Widget.Sherlock.Light.PopupWindow.ActionMode" parent="Widget">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ProgressBar" parent="Widget.Sherlock.ProgressBar"/>
+    <style name="Widget.Sherlock.Light.ProgressBar.Horizontal" parent="Widget.Sherlock.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/abs__progress_horizontal_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.SearchAutoCompleteTextView" parent="Sherlock.__Widget.SearchAutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_light</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.Spinner.DropDown.ActionBar" parent="Sherlock.__Widget.Holo.Spinner">
+        <item name="android:background">@drawable/abs__spinner_ab_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_light</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.ListPopupWindow" parent="Widget">
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_dark</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_dark</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+    </style>
+    <style name="Widget.Sherlock.ListView.DropDown" parent="Sherlock.__Widget.Holo.ListView"/>
+    <style name="Widget.Sherlock.PopupMenu" parent="Widget.Sherlock.ListPopupWindow"/>
+    <style name="Widget.Sherlock.PopupWindow.ActionMode" parent="Widget"/>
+    <style name="Widget.Sherlock.ProgressBar" parent="android:Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/abs__progress_medium_holo</item>
+        <item name="android:animationResolution">33</item>
+    </style>
+    <style name="Widget.Sherlock.ProgressBar.Horizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/abs__progress_horizontal_holo_dark</item>
+        <!-- item name="android:indeterminateDrawable">@drawable/abs__progress_indeterminate_horizontal_holo</item -->
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+    <style name="Widget.Sherlock.SearchAutoCompleteTextView" parent="Sherlock.__Widget.SearchAutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_dark</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_dark</item>
+    </style>
+    <style name="Widget.Sherlock.Spinner.DropDown.ActionBar" parent="Sherlock.__Widget.Holo.Spinner">
+        <item name="android:background">@drawable/abs__spinner_ab_holo_dark</item>
+    </style>
+    <style name="Widget.Sherlock.TextView.SpinnerItem" parent="Widget">
+        <item name="android:textAppearance">@style/TextAppearance.Sherlock.Widget.TextView.SpinnerItem</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/colorPickerView/unspecified/res/values/values.xml -->
+    <eat-comment/>
+    <style name="dialog_color_pciker_view_portrait">
+        <item name="android:layout_width">240dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/themes.xml -->
+    <eat-comment/>
+    <style name="holo" parent="@style/Theme.Sherlock">
+        <item name="android:buttonStyle">@style/Buttonholo</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonholo</item>
+        <item name="android:seekBarStyle">@style/SeekBarholo</item>
+    </style>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="styleName" parent="android:Widget.Holo.Button">
+        <item name="android:background">@drawable/mode_sw_button</item>
+    </style>
+    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/values/style.xml -->
+    <eat-comment/>
+    <style name="swButton">
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:background">@drawable/mode_sw_button</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+</resources>

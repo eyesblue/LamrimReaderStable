@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Temp tag -->
+    <string name="checkSubtitleV20141127">checkSubtitleV20141127</string>
+    
+    <!-- Runtime options -->
+    <string name="runtimeStateFile">runtime</string>
+    <string name="speechModeRecordFile">speechMode</string>
+    <string name="regionPlayModeRecordFile">regionMode</string>
+    <string name="GLModeRecordFile">GLMode</string>
+    <string name="filePathRoot">lamrimreader</string>
+
+    <integer name="isInit">0</integer>
+
+    <string name="isAllowNetAccess">false</string>
+    <string name="isShowNetAccessWarn">true</string>
+    <string name="isUseThirdDir">useThirdDir</string>
+    <string name="userSpecifySpeechDir">userSpecifySpeechDir</string>
+	<string name="isDarkThemeKey">isDarkTheme</string>
+	<string name="playModeKey">playMode</string>
+	
+    <!-- Default Value -->
+    <integer name="screenOnTime">300000</integer>
+    <string name="versionCheckUrl">http://lamrimreader.eyes-blue.com/appresources/publish/notifier.json</string>
+    <integer name="textMaxSize">10</integer>
+    <integer name="textMinSize">2</integer>
+    <integer name="defFontSize">4</integer>
+    <integer name="theorySmallTextSizePercent">90</integer>
+    <string name="reloadLastState">載回進度</string>
+
+    <!--  <color name="theoryTextDefColor">#FFFFFF</color>
+    <color name="theoryNumTextColor">#0000CC</color>
+    <color name="theoryDotTextColor">#835930</color>
+    <color name="theoryBoldColor">#006600</color> -->
+
+    <integer name="subtitleMonInterval">100</integer>
+    <integer name="downloadBufferSize">16384</integer>
+
+    <string name="mediaCheckSumWhileDownload">true</string>
+
+    <integer name="MEDIA_TYPE">0</integer>
+    <integer name="SUBTITLE_TYPE">1</integer>
+    <integer name="THEORY_TYPE">2</integer>
+
+    <string name="downloadTmpPostfix">.dltmp</string>
+    <string name="audioDirName">Audio</string>
+    <string name="subtitleDirName">Subtitle</string>
+    <string name="theoryDirName">Theory</string>
+    <string name="globalLamrimDirName">GlobalLamrim</string>
+    <!-- <string name="defMediaType">MP3</string> -->
+    <string name="defSubtitleType">SRT</string>
+    <string name="defTheoryType">TXT</string>
+    <string name="regionRecordFile">RegionRecord</string>
+    <string name="regionRecordColumeName">records</string>
+    <string name="globalLamrimScheduleFile">GlobalLamrimSchedule</string>
+    <string name="globalLamrimScheduleFileFormat">CSV</string>
+
+    
+
+    <!-- For Global Lamrim -->
+    <string name="globalLamrim">全球廣論</string>
+    <string name="globalLamrimShortName">全廣</string>
+    <string name="title_activity_calendar">全球廣論進度</string>
+    <string name="downloadSchedule">更新進度</string>
+    <string name="localGlobalLamrimScheduleFileNotFound">開啟全廣進度錯誤，請重新下載！</string>
+    <string name="localGlobalLamrimScheduleFileReadErr">全廣進度讀取錯誤，請重新下載！</string>
+    <string name="localGlobalLamrimScheduleFileRangeFmtErr">讀取全廣進度範圍標記錯誤，請重新下載！</string>
+    <string name="localGlobalLamrimScheduleFileDateFmtErr">全廣進度日期格式錯誤，請重新下載！</string>
+    <string name="localGlobalLamrimScheduleFileDataErr">全廣進度記錄錯誤: </string>
+    <string name="localGlobalLamrimScheduleFileDecodeErr">全廣進度讀取時發生封裝錯誤，請重新下載！ </string>
+
+    <!-- For render image -->
+    <string name="renderImgFgPathKey">renderImage</string>
+    <string name="renderImgBgColorKey">renderImgBgColor</string>
+    <string name="renderImgScaleKey">renderImgScaleType</string>
+    <string name="isShowModeSwBtnKey">isShowModeSwBtn</string>
+    <string name="subtitleFgColorKey">subtitleFgColor</string>
+    <string name="subtitleBgColorKey">subtitleBgColor</string>
+    <string name="subtitleAlphaKey">subtitleAlpha</string>
+
+    
+
+    <!-- For Option Panel -->
+    <string name="bookFontSize">論文</string>
+    <string name="subtitleFontSize">字幕</string>
+    <string name="bookFontSizeKey">BookFontSize</string>
+    <string name="subtitleFontSizeKey">SubtitleFontSize</string>
+    <string name="setupFontSizeStr">設定字型大小</string>
+    <string name="setupTextSizeSample">廣論</string>
+
+    <!-- For LamrimReaderActivity -->
+    <string name="app_name">廣論App</string>
+    <string name="menuStrSelectSpeech">選擇音檔</string>
+    <string name="menuStrGlobalLamrim">全球廣論</string>
+    <string name="menuStrTextSize">設定字體</string>
+    <string name="menuStrSavePlayRegion">儲存區段</string>
+    <string name="menuStrPlayRegionRec">區段播放</string>
+    <string name="menuStrRenderMode">公播模式</string>
+    <string name="menuStrPlayRegionRecShortName">區段</string>
+    <string name="menuStrOpenProjectWeb">計劃網頁</string>
+    <string name="projectWebUrl">http://lamrimreader.eyes-blue.com/</string>
+    <string name="exitApp">關閉</string>
+    <string name="noSubtitleDesc">無字幕</string>
+    <string name="selectIndexFromMenuDesc">請從選單選擇章節或錄音</string>
+    <string name="soundInUseError">音效裝置被其他軟體佔用中</string>
+    <string name="newMediaTarget">NewMediaTarget</string>
+    <string name="newMediaPlayPosition">NewMediaPlayPosition</string>
+    <string name="dlgHintShowMpController">請點選此處顯示撥放選單</string>
+    <string name="dlgHintLoadMediaBeforeSwitchToReadingMode">尚未載入音檔，無法切換到閱讀模式！</string>
+    <string name="dlgHintMpControllerNoSubtitle">尚無字幕，請點選此處顯示撥放選單</string>
+    <string name="errWhileReleasePlayer">釋放撥放器時發生狀態錯誤!</string>
+    <string name="errIAEwhileSetPlayerSrc">開啟語音檔時發生參數錯誤!</string>
+    <string name="errSEwhileSetPlayerSrc">開啟語音檔時發生安全性錯誤!</string>
+    <string name="errISEwhileSetPlayerSrc">開啟語音檔時發生撥放器狀態錯誤!</string>
+    <string name="errIOEwhileSetPlayerSrc">無法正常讀取音檔，請檢查音檔是否損毀，請試著重新下載[%1$s]音檔。</string>
+    <string name="errISEwhilePrepPlayer">準備語音檔時發生撥放器狀態錯誤!</string>
+    <string name="errIOEwhilePrepPlayer">準備語音檔時發生輸出入錯誤!</string>
+    <string name="inputTitleHint">請輸入標題！</string>
+    <string name="regionRecordListViewPage">regionListPage</string>
+    <string name="regionRecordListViewPageShift">regionListPageShift</string>
+    <string name="lastSearchLamrimKey">lastSearchLamrimWords</string>
+
+    
+
+    <integer name="subtitleScrollTouchBtnHeightPercentDp">3</integer>
+    <integer name="subtitleScrollTouchBtnWidthPercentDp">10</integer>
+
+    <!-- For Speech Menu -->
+    <string name="musicSign">♬</string>
+    <string name="subtitleSign">❏</string>
+    <string name="dlgMsgDlNotComplete">媒體檔案  %1$s 尚未下載完成，是否再次下載？</string>
+
+    <string-array name="remoteSite">
+        <item>https://sites.google.com/a/eyes-blue.com/lamrimreader/appresources/</item>
+    </string-array>
+
+    <!-- FileSysManager -->
+    <integer name="reservSpacePercent">10</integer>
+    <integer name="subtitleReservSizeK">102400</integer>
+	<string name="noExtSpace">無外部空間</string>
+	
+    <!-- Dialogs -->
+    <string name="dlgTitleDownloadFail">下載失敗</string>
+    <string name="dlgDescDownloadFail">下載資源失敗，請確認磁碟空間充足及您所在區域的網路品質是否正常</string>
+    <string name="dlgTitleConnecting">連線中</string>
+    <string name="dlgDescConnecting">取得 %1$s %2$s資訊中 ...</string>
+    <string name="dlgTitleDownloading">下載資源</string>
+    <string name="dlgDescDownloading">%1$s %2$s下載中，請稍候...</string>
+    <string name="dlgDescPrepareSubtitle">字幕準備中，請稍候...</string>
+    <string name="dlgDescPrepareSpeech">音檔準備中，請稍候...</string>
+    <string name="dlgOk">確定</string>
+    <string name="dlgCancel">取消</string>
+    <string name="dlgAllow">允許</string>
+    <string name="dlgDisallow">禁止</string>
+    <string name="dlgDontShowThisWarnDesc">不再顯示此警告</string>
+    <string name="dlgNetAccessTitle">網路存取</string>
+    <string name="dlgNetAccessMsg">即將存取網路資源，視您目前所在的網路環境，可能造成額外的網路費用，確定下載資源嗎？</string>
+    <string name="dlgExitTitle">關閉程式</string>
+    <string name="dlgExitMsg">即將關閉程式，您確定離開嗎？</string>
+    <string name="dlgManageSrcPlay">播放</string>
+    <string name="dlgManageSrcUpdate">更新</string>
+    <string name="dlgManageSrcDel">刪除</string>
+    <string name="dlgDelWarnTitle">刪除%1$s</string>
+    <string name="dlgDelWarnMsg">%1$s即將被刪除，您確定要刪除%1$s嗎？</string>
+    <string name="dlgTitleMaintaining">維護檔案</string>
+    <string name="dlgMsgMaintaining">維護檔案中，請稍候...</string>
+    <string name="title_activity_storage_manage">儲存管理</string>
+    <string name="action_settings">Settings</string>
+    <string name="dlgInputError">輸入錯誤</string>
+    <string name="dlgInputNotFill">資料輸入不完全。</string>
+    <string name="dlgNumberFormatError">數字欄位錯誤，請檢查輸入內容。</string>
+    <string name="dlgEndPageGreaterThenStart">結束頁小於起始頁。</string>
+    <string name="dlgEndLineGreaterThenStart">結束行數小於起始行數。</string>
+    <string name="dlgLineNumOverPageCount">輸入的行數超過該頁的行數。</string>
+    <string name="dlgPageNumOverPageCount">輸入的頁數超過廣論總頁數。</string>
+    <string name="dlgRecordTheoryIndex">廣論 %1$s 頁  %2$s 行 ~ %3$s 頁 %4$s 行</string>
+
+    <!-- For file selector -->
+    <string name="location">位置</string>
+    <string name="cant_read_folder">無法讀取目錄</string>
+    <string name="nnew">新增</string>
+    <string name="select">確定</string>
+    <string name="file_name">檔名:</string>
+    <string name="cancel">取消</string>
+    <string name="create">儲存</string>
+    <string name="no_data">無資料</string>
+
+    
+
+    <string name="err">錯誤</string>
+    <string name="title_activity_file_dialog">FileDialogActivity</string>
+
+    <!-- For ChangeLog -->
+    <string name="changelog_full_title">修正記錄</string>
+    <string name="changelog_title">What\'s New</string>
+    <string name="changelog_ok_button">確定</string>
+    <string name="changelog_show_full">更多...</string>
+    <string name="title_activity_intent">IntentActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="digOptSetRegionStart">開始位置</string>
+    <string name="dlgOptSetRegionEnd">結束位置</string>
+    
+    <string name="lamrimCmdUri">http://lamrimreader-cmd.eyes-blue.com/</string>
+
+</resources>

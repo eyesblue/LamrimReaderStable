@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="holo" parent="@style/Theme.Sherlock">
+        <item name="android:buttonStyle">@style/Buttonholo</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonholo</item>
+        <item name="android:seekBarStyle">@style/SeekBarholo</item>
+    </style>
+    
+    <style name="MyTheme.TitleTextStyle" parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:minEms">16</item>
+        <item name="android:width">500sp</item>
+    </style>
+
+    <!-- For CalendarView -->
+<!--     <style name="CalendarTheme" parent="@android:style/Theme">
+        <item name="calendarViewStyle">@style/Widget.Holo.CalendarView</item>
+    </style>
+ -->    
+</resources>

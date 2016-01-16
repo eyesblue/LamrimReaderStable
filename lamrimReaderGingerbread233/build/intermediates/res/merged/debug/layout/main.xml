@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="bottom"
+    android:gravity="fill"
+    android:orientation="vertical" >
+
+    <!-- android:screenOrientation="landscape" -->
+
+    <eyes.blue.modified.MyHorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:scrollbars="none" >
+
+        <eyes.blue.modified.MyListView
+            android:id="@+id/bookPageGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:stretchMode="columnWidth" >
+
+        </eyes.blue.modified.MyListView>
+    </eyes.blue.modified.MyHorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/renderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:enabled="true"
+        android:longClickable="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/master"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/subtitleView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:scrollbars="vertical"
+        android:background="@drawable/subtitle_background"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <!-- android:background="#0F395E" -->
+
+    <Button
+        android:id="@+id/modeSwBtn"
+        style="@style/swButton"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/subtitleView"
+        android:layout_alignParentRight="true" />
+
+    <LinearLayout
+        android:id="@+id/mediaControllerMountPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>
+<!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/main.xml -->

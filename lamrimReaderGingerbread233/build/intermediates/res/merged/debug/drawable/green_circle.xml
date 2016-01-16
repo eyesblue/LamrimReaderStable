@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+
+    <size
+        android:height="35dp"
+        android:width="35dp" />
+
+    <solid android:color="@color/green" />
+
+</shape><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/robotoCalendarLibrary/src/main/res/drawable/green_circle.xml --><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/drawable/green_circle.xml -->

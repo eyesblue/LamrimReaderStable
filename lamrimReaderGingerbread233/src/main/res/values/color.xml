@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="darkTheoryTextColor">#EDEDED</color>
+    <!-- <color name="darkTheoryBgColor">#000000</color>  -->
+    <color name="darkTheoryNumTextColor">#7373FF</color>
+    <color name="darkTheoryDotTextColor">#F5A658</color>
+    <color name="darkTheoryBoldColor">#00D400</color>
+    <color name="darkTheoryHighColorLine">#3B003A</color>
+    <color name="darkTheoryHighColorWord">#BF00BC</color>
+
+    <color name="lightTheoryTextColor">#000000</color>
+    <color name="lightTheoryBgColor">#FFFFDF</color>
+    <color name="lightTheoryNumTextColor">#0000CC</color>
+    <color name="lightTheoryDotTextColor">#835930</color>
+    <color name="lightTheoryBoldColor">#006600</color>
+    <color name="lightTheoryHighColorLine">#96FF91</color>
+    <color name="lightTheoryHighColorWord">#FFC491</color>
+    
+ <!--    <color name="themeLightColor">#D4FF00</color>  -->
+    
+    <color name="defSubtitleFGcolor">#FFFFFF</color>
+    <!-- defSubtitleBGcolor is used for render mode. -->
+    <color name="defSubtitleBGcolor">#0F395E</color>
+    <color name="subtitleRedingModeHilightColor">#FFF82A</color>
+    <!-- <color name="subtitleScrollPressColor">#E17D37</color> -->
+    
+    <color name="gray">#ffff0000</color>
+</resources>

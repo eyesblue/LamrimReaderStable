@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="NewApi">
+        <ignore path="src/eyes/blue/LamrimReaderActivity.java" />
+        <ignore path="src/eyes/blue/modified/MyViewPager.java" />
+    </issue>
+</lint>

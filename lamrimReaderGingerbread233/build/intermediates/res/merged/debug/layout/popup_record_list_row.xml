@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="430dp"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/regionRowTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="262dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/timeRegion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="000A    00&quot;0&apos; ~ 000A    00&quot;0&apos;"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/theoryIndex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="廣論 ? 頁 ? 行 ~ ? 頁 ? 行"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/shareButton"
+            android:layout_width="56dp"
+            android:layout_height="52dp"
+            android:background="#00000000"
+            android:src="@drawable/share_icon" />
+
+        <ImageButton
+            android:id="@+id/editButton"
+            android:layout_width="56dp"
+            android:layout_height="52dp"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="false"
+            android:src="@drawable/edit"
+            android:background="#00000000" />
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="56dp"
+            android:layout_height="52dp"
+            android:descendantFocusability="blocksDescendants"
+            android:focusable="false"
+            android:src="@drawable/delete"
+            android:background="#00000000" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/popup_record_list_row.xml -->

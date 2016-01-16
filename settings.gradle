@@ -1,0 +1,5 @@
+include ':colorPickerView'
+include ':newQuickAction'
+include ':robotoCalendarLibrary'
+include ':wVersionManager'
+include ':lamrimReaderGingerbread233'

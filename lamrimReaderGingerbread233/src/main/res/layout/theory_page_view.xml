@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:isScrollContainer="true"
+	android:background="@drawable/theory_dark_bg"
+    android:orientation="vertical" >
+<!-- android:background="@drawable/theory_background" -->
+    <!-- android:background="#FFFFDF" #1F1F1A -->
+    
+    <eyes.blue.TheoryPageView
+        android:id="@+id/pageContentView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:ellipsize="none"
+        android:lineSpacingExtra="5dip"
+        android:lineSpacingMultiplier="1.2"
+        android:padding="30dp"
+        android:scrollHorizontally="true"
+        android:text="菩提道次第廣論"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/defSubtitleFGcolor"
+        android:textSize="18sp" />
+<!-- android:textIsSelectable="true" -->
+
+    <TextView
+        android:id="@+id/pageNumView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="30dp"
+        android:text="第 x 頁"
+        android:textColor="@color/defSubtitleFGcolor" />
+
+</LinearLayout>
