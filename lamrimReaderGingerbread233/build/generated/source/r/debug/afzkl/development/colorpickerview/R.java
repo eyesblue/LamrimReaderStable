@@ -16,7 +16,7 @@ public final class R {
 		public static final int showSelectedColorInList = 0x7f010007;
 	}
 	public static final class drawable {
-		public static final int icon = 0x7f0200a0;
+		public static final int icon = 0x7f02009f;
 	}
 	public static final class id {
 		public static final int color_panel_new = 0x7f0c0006;

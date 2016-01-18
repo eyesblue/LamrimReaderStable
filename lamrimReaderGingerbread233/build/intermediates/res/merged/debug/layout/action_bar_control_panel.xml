@@ -39,6 +39,7 @@
         android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
+        android:background="@drawable/btn_bg_ctrl_panel"
         android:layout_weight="1" />
 
     <ImageButton
@@ -46,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:background="#00000000"
+        android:background="@drawable/btn_bg_ctrl_panel"
         android:src="@drawable/font_size" />
 
     <ImageButton
@@ -54,7 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:background="#00000000"
+        android:background="@drawable/btn_bg_ctrl_panel"
         android:src="@drawable/search" />
 
     <ImageButton
@@ -63,6 +64,6 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:src="@drawable/switch_theme"
-        android:background="@drawable/ctrl_panel_btn_shape" />
+        android:background="@drawable/btn_bg_ctrl_panel" />
 
 </LinearLayout><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/action_bar_control_panel.xml -->

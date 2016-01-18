@@ -23,13 +23,19 @@
   	<div class='title'><p><a href="http://www.facebook.com/lamrimreader">執行問題反應區</a></p></div>
   	<div class='title'><p><a href="http://lamrimreader.eyes-blue.com/">計畫首頁</a></p></div>
 
+$184
+  % Version 1.3.45
+  _ 2016-1-15
+    * 修正全廣日期選擇畫面中，欲顯示下載進度對話框前，程式已離開該畫面，而造成強制錯誤關閉的問題。
+    * 調整工具面板背景顯示方式。
+
 $183
   % Version 1.3.44
   _ 2016-1-15
     * 加入Android6.0支援。
     * 補足014B第537個字幕之後的廣論/字幕對應表。
     * 修正016A第1個廣論/字幕對應表。
-    
+
 $182
   % Version 1.3.43
   _ 2015-7-21

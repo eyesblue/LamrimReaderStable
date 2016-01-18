@@ -405,11 +405,10 @@ public class LamrimReaderActivity extends SherlockFragmentActivity{
 		
 		final ImageButton themeSwitcher = (ImageButton) actionBarControlPanel.findViewById(R.id.themeSwitcher);
 		boolean isDarkTheme=runtime.getBoolean(getString(R.string.isDarkThemeKey), true);
-		if(!isDarkTheme){
-			if (Build.VERSION.SDK_INT >= 16) themeSwitcher.setBackground(getResources().getDrawable(R.drawable.speech_menu_item_e));
-			else themeSwitcher.setBackgroundDrawable(getResources().getDrawable(R.drawable.speech_menu_item_e));
-		}
-		else themeSwitcher.setBackgroundColor(Color.BLACK);
+		if(!isDarkTheme)
+			themeSwitcher.setSelected(true);
+		else themeSwitcher.setSelected(false);//;setBackgroundColor(Color.BLACK);
+
 		themeSwitcher.setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
@@ -419,11 +418,8 @@ public class LamrimReaderActivity extends SherlockFragmentActivity{
 				editor.putBoolean(getString(R.string.isDarkThemeKey), isDark_Theme);
 				editor.commit();
 				
-				if(!isDark_Theme){
-					if (Build.VERSION.SDK_INT >= 16) themeSwitcher.setBackground(getResources().getDrawable(R.drawable.speech_menu_item_e));
-					else themeSwitcher.setBackgroundDrawable(getResources().getDrawable(R.drawable.speech_menu_item_e));
-				}
-				else themeSwitcher.setBackgroundColor(Color.BLACK);
+				if(!isDark_Theme)themeSwitcher.setSelected(true);
+				else themeSwitcher.setSelected(false);//setBackgroundColor(Color.BLACK);
 				
 				// Destroy the adapter of BookView and reload parameter.
 				int bookPosition = bookView.getFirstVisiblePosition();
@@ -446,14 +442,15 @@ public class LamrimReaderActivity extends SherlockFragmentActivity{
 		volumeController.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 					@Override
 					public void onStopTrackingTouch(SeekBar arg0) {
-						volumeController.setBackgroundColor(Color.BLACK);
+						volumeController.setSelected(false);//setBackgroundColor(Color.BLACK);
 					}
 
 					@Override
 					public void onStartTrackingTouch(SeekBar arg0) {
 						//volumeController.setBackgroundColor(getResources().getColor(R.color.themeLightColor));
-						if (Build.VERSION.SDK_INT >= 16) volumeController.setBackground(getResources().getDrawable(R.drawable.speech_menu_item_e));
-						else volumeController.setBackgroundDrawable(getResources().getDrawable(R.drawable.speech_menu_item_e));
+						//if (Build.VERSION.SDK_INT >= 16) volumeController.setBackground(getResources().getDrawable(R.drawable.speech_menu_item_e));
+						//else volumeController.setBackgroundDrawable(getResources().getDrawable(R.drawable.speech_menu_item_e));
+						volumeController.setSelected(true);
 					}
 
 					@Override
@@ -468,8 +465,9 @@ public class LamrimReaderActivity extends SherlockFragmentActivity{
 			@Override
 			public void onClick(View v) {
 				//textSize.setBackgroundColor(getResources().getColor(R.color.themeLightColor));
-				if (Build.VERSION.SDK_INT >= 16) textSize.setBackground(getResources().getDrawable(R.drawable.speech_menu_item_e));
-				else textSize.setBackgroundDrawable(getResources().getDrawable(R.drawable.speech_menu_item_e));
+				//if (Build.VERSION.SDK_INT >= 16) textSize.setBackground(getResources().getDrawable(R.drawable.speech_menu_item_e));
+				//else textSize.setBackgroundDrawable(getResources().getDrawable(R.drawable.speech_menu_item_e));
+				textSize.setSelected(true);
 				showSetTextSizeDialog();
 			}});
 		
@@ -479,8 +477,9 @@ public class LamrimReaderActivity extends SherlockFragmentActivity{
 			public void onClick(View v) {
 				search.setEnabled(false);
 				//search.setBackgroundColor(getResources().getColor(R.color.themeLightColor));
-				if (Build.VERSION.SDK_INT >= 16) search.setBackground(getResources().getDrawable(R.drawable.speech_menu_item_e));
-				else search.setBackgroundDrawable(getResources().getDrawable(R.drawable.speech_menu_item_e));
+				//if (Build.VERSION.SDK_INT >= 16) search.setBackground(getResources().getDrawable(R.drawable.speech_menu_item_e));
+				//else search.setBackgroundDrawable(getResources().getDrawable(R.drawable.speech_menu_item_e));
+				search.setSelected(true);
 				showSearchDialog();
 				search.setEnabled(true);
 			}});
@@ -2315,14 +2314,15 @@ public class LamrimReaderActivity extends SherlockFragmentActivity{
 				Log.d(logTag, "Write theory size: "	+ (int) theorySb.getProgress()
 								+ ", subtitle size: " + subtitleSb.getProgress() + " to runtime.");
 				editor.putInt(getString(R.string.bookFontSizeKey), theorySb.getProgress()
-								//+ getResources().getInteger(R.integer.textMinSize));
-								+ textMinSize);
+						//+ getResources().getInteger(R.integer.textMinSize));
+						+ textMinSize);
 				editor.putInt(getString(R.string.subtitleFontSizeKey), subtitleSb.getProgress()
 								//+ getResources().getInteger(R.integer.textMinSize));
 								+ textMinSize);
 				editor.commit();
 
-				textSize.setBackgroundColor(Color.BLACK);
+				//textSize.setBackgroundColor(Color.BLACK);
+				textSize.setSelected(false);
 				Log.d(logTag,"Check size after write to db: theory size: "
 								+ runtime.getInt(getString(R.string.bookFontSizeKey), 0) + ", subtitle size: "
 								+ runtime.getInt(getString(R.string.subtitleFontSizeKey), 0));
@@ -2372,7 +2372,8 @@ public class LamrimReaderActivity extends SherlockFragmentActivity{
 				editor.commit();
 				searchLastBtn.setEnabled(true);
 				searchNextBtn.setEnabled(true);
-				search.setBackgroundColor(Color.BLACK);
+				//search.setBackgroundColor(Color.BLACK);
+				search.setSelected(false);
 			}});
 	}
 	AlertDialog searchDialog;

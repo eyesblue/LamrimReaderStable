@@ -149,7 +149,7 @@ public class CalendarActivity extends SherlockActivity {
 		SharedPreferences playRecord = getSharedPreferences(getString(R.string.GLModeRecordFile), 0);
 		String title=playRecord.getString("title", null);
 		int mediaIndex=playRecord.getInt("mediaIndex",-1);
-		int position=playRecord.getInt("playPosition",-1);
+		int position=playRecord.getInt("playPosition", -1);
 		if(title != null && mediaIndex != -1 && position != -1){
 			menu.add(getString(R.string.reloadLastState)+": "+title+": "+SpeechData.getSubtitleName(mediaIndex)+": "+Util.getMsToHMS(position, "\"", "\'", false))
 			.setIcon(R.drawable.reload_last_state)
@@ -256,30 +256,34 @@ public class CalendarActivity extends SherlockActivity {
 						builder.setMessage(msg);
 						builder.setPositiveButton(getString(R.string.dlgOk),
 								new DialogInterface.OnClickListener() {
-									public void onClick(DialogInterface dialog,	int id) {
+									public void onClick(DialogInterface dialog, int id) {
 										if (isFileExist(glr)) {
-											Intent intent=getResultIntent(glr);
+											Intent intent = getResultIntent(glr);
 											setResult(Activity.RESULT_OK, intent);
-											try{
+											try {
 												dialog.dismiss();
-											}catch(Exception e){e.printStackTrace();}	// Don't force close if problem here.
+											} catch (Exception e) {
+												e.printStackTrace();
+											}    // Don't force close if problem here.
 											dialogShowing = false;
-											GaLogger.sendEvent("ui_action", "CalendarActivity", "ShowInfoDialog_"+intent.getStringExtra("selectedDay"), null);
+											GaLogger.sendEvent("ui_action", "CalendarActivity", "ShowInfoDialog_" + intent.getStringExtra("selectedDay"), null);
 											finish();
 										} else {
 											final Intent speechMenu = new Intent(CalendarActivity.this, SpeechMenuActivity.class);
 											int[] speechStart = GlRecord.getSpeechStrToInt(glr.speechPositionStart);// {speechIndex,min,sec}
 											int[] speechEnd = GlRecord.getSpeechStrToInt(glr.speechPositionEnd);// {speechIndex,min,sec}
-											try{
+											try {
 												dialog.dismiss();
-											}catch(Exception e){e.printStackTrace();}	// Don't force close if problem here.
+											} catch (Exception e) {
+												e.printStackTrace();
+											}    // Don't force close if problem here.
 											dialogShowing = false;
 											int[] intentCmd = null;
-											if(speechStart[0] == speechEnd[0])
+											if (speechStart[0] == speechEnd[0])
 												intentCmd = new int[]{speechStart[0]};
 											else
 												intentCmd = fsm.getUnreadyList(speechStart[0], speechEnd[0]);
-											
+
 											speechMenu.putExtra("index", intentCmd);
 											startActivityForResult(speechMenu, 0);
 										}
@@ -289,16 +293,17 @@ public class CalendarActivity extends SherlockActivity {
 								getString(R.string.dlgCancel),
 								new DialogInterface.OnClickListener() {
 									public void onClick(DialogInterface dialog,
-											int id) {
+														int id) {
 										dialog.cancel();
 										dialogShowing = false;
 									}
 								});
-						builder.setOnCancelListener(new DialogInterface.OnCancelListener(){
+						builder.setOnCancelListener(new DialogInterface.OnCancelListener() {
 							@Override
 							public void onCancel(DialogInterface dialog) {
 								dialogShowing = false;
-							}});
+							}
+						});
 						builder.create().show();
 					}
 
@@ -591,7 +596,12 @@ public class CalendarActivity extends SherlockActivity {
 		runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
-				downloadPDialog.show();
+				try {
+					downloadPDialog.show();
+				}catch(Exception e){
+					e.printStackTrace();
+					GaLogger.sendException(e.toString(), e, true);
+				}
 			}
 		});
 

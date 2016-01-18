@@ -42,20 +42,20 @@ public final class R {
 		public static final int weekRowMinHeight = 0x7f06001c;
 	}
 	public static final class drawable {
-		public static final int blue_circle = 0x7f020071;
-		public static final int blue_line = 0x7f020072;
-		public static final int blue_ring = 0x7f020073;
-		public static final int green_circle = 0x7f020087;
-		public static final int green_line = 0x7f020088;
-		public static final int horizontal_line_with_gradient = 0x7f020089;
-		public static final int ic_left = 0x7f02008d;
-		public static final int ic_left_blue = 0x7f02008e;
-		public static final int ic_left_selector = 0x7f02008f;
-		public static final int ic_right = 0x7f02009c;
-		public static final int ic_right_blue = 0x7f02009d;
-		public static final int ic_right_selector = 0x7f02009e;
-		public static final int red_circle = 0x7f0200be;
-		public static final int red_line = 0x7f0200bf;
+		public static final int blue_circle = 0x7f020070;
+		public static final int blue_line = 0x7f020071;
+		public static final int blue_ring = 0x7f020072;
+		public static final int green_circle = 0x7f020086;
+		public static final int green_line = 0x7f020087;
+		public static final int horizontal_line_with_gradient = 0x7f020088;
+		public static final int ic_left = 0x7f02008c;
+		public static final int ic_left_blue = 0x7f02008d;
+		public static final int ic_left_selector = 0x7f02008e;
+		public static final int ic_right = 0x7f02009b;
+		public static final int ic_right_blue = 0x7f02009c;
+		public static final int ic_right_selector = 0x7f02009d;
+		public static final int red_circle = 0x7f0200bd;
+		public static final int red_line = 0x7f0200be;
 	}
 	public static final class id {
 		public static final int dateTitle = 0x7f0c00a6;
