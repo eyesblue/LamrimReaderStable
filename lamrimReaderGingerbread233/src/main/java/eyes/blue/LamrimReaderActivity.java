@@ -115,8 +115,8 @@ import android.widget.Toast;
 
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
-import com.google.analytics.tracking.android.EasyTracker;
-import com.google.analytics.tracking.android.MapBuilder;
+//import com.google.analytics.tracking.android.EasyTracker;
+//import com.google.analytics.tracking.android.MapBuilder;
 import com.winsontan520.wversionmanager.library.WVersionManager;
 
 import eyes.blue.SpeechMenuActivity.SpeechListAdapter;

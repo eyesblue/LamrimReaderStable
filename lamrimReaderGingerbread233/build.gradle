@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "eyes.blue"
-        minSdkVersion 8
+        minSdkVersion 9
         targetSdkVersion 23
     }
 
@@ -24,8 +24,8 @@ dependencies {
     compile project(':colorPickerView')
     compile project(':wVersionManager')
     compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
-    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.android.support:support-v4:22.0.0'
     compile files('libs/commons-lang3-3.1.jar')
     compile files('libs/javacsv.jar')
-    compile files('libs/libGoogleAnalyticsServices.jar')
+    compile 'com.google.android.gms:play-services-analytics:8.1.0'
 }

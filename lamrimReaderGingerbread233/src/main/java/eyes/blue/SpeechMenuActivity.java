@@ -28,7 +28,7 @@ import org.json.JSONObject;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
-import com.google.analytics.tracking.android.MapBuilder;
+//import com.google.analytics.tracking.android.MapBuilder;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -124,6 +124,7 @@ public class SpeechMenuActivity extends SherlockActivity {
 	pd= getDlprgsDialog();
 	
 	final QuickAction mQuickAction 	= new QuickAction(this);
+		mQuickAction.addActionItem(new ActionItem());
 	mQuickAction.addActionItem(new ActionItem(PLAY, getString(R.string.dlgManageSrcPlay), getResources().getDrawable(R.drawable.play)));
 	mQuickAction.addActionItem(new ActionItem(UPDATE, getString(R.string.dlgManageSrcUpdate), getResources().getDrawable(R.drawable.update)));
 	mQuickAction.addActionItem(new ActionItem(DELETE, getString(R.string.dlgManageSrcDel), getResources().getDrawable(R.drawable.delete)));
@@ -873,19 +874,14 @@ public class SpeechMenuActivity extends SherlockActivity {
 			TextView subject = (TextView) row.findViewById(R.id.subject);
 			TextView speechDesc = (TextView) row.findViewById(R.id.speechDesc);
 			TextView rangeDesc = (TextView) row.findViewById(R.id.rangeDesc);
-			ImageView mediaSign = (ImageView) row.findViewById(R.id.mediaSign);
+	/*		ImageView mediaSign = (ImageView) row.findViewById(R.id.mediaSign);
 			ImageView subtitleSign = (ImageView) row.findViewById(R.id.subtitleSign);
 			
-			if(speechFlags[position])
-				mediaSign.setImageResource(R.drawable.speech);
-//				mediaSign.setBackgroundColor(0xFFFFFFDF);
-//			mediaSign.setBackgroundColor(Color.BLACK);				
-			else mediaSign.setImageResource(R.drawable.speech_d);
-			if(subtitleFlags[position])
-				//subtitleSign.setBackgroundColor(0xFFFFFFDF);
-				subtitleSign.setImageResource(R.drawable.subtitle);
-			//subtitleSign.setBackgroundColor(Color.BLACK);
-			else subtitleSign.setImageResource(R.drawable.subtitle_d); 
+			if(speechFlags[position])	mediaSign.setEnabled(true);
+			else mediaSign.setEnabled(false);
+			if(subtitleFlags[position])	subtitleSign.setEnabled(true);
+			else subtitleSign.setEnabled(false);
+*/
 			if(speechFlags[position]&&subtitleFlags[position]){
 //				title.setTextColor(Color.BLACK);
 //				subject.setTextColor(Color.BLACK);
@@ -1052,7 +1048,7 @@ public class SpeechMenuActivity extends SherlockActivity {
 						"User canceled, download procedure skip!");
 				return false;
 			}
-			GaLogger.send(MapBuilder.createTiming("download", // Timing category
+			GaLogger.sendTimming("download", // Timing category
 																// (required)
 					System.currentTimeMillis() - respWaitStartTime, // Timing
 																	// interval
@@ -1060,8 +1056,8 @@ public class SpeechMenuActivity extends SherlockActivity {
 																	// milliseconds
 																	// (required)
 					"wait resp time", // Timing name
-					null) // Timing label
-					.build());
+					null); // Timing label
+
 
 			HttpEntity httpEntity = response.getEntity();
 			InputStream is = null;

@@ -11,29 +11,29 @@
         android:id="@+id/speechDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/subject"
         android:text="Speech Desc"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#269AFF" />
+        android:textColor="#269AFF"
+        android:layout_below="@+id/rangeDesc"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/rangeDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/subject"
-        android:layout_centerHorizontal="true"
         android:text="Range Desc"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#269AFF" />
-
+        android:layout_alignBottom="@+id/subject"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+<!--
     <ImageView
         android:id="@+id/subtitleSign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/subject"
-        android:src="@drawable/subtitle" />
+        android:src="@drawable/ic_subtitle_file" />
 
     <ImageView
         android:id="@+id/mediaSign"
@@ -41,8 +41,8 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/subtitleSign"
         android:layout_toLeftOf="@+id/subtitleSign"
-        android:src="@drawable/speech" />
-
+        android:src="@drawable/ic_speech_file" />
+-->
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
