@@ -25,11 +25,6 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
-//import com.google.analytics.tracking.android.MapBuilder;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -52,11 +47,16 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.PowerManager;
+import android.support.v4.app.NavUtils;
+import android.support.v4.view.MenuItemCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -72,7 +72,7 @@ import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class SpeechMenuActivity extends SherlockActivity {
+public class SpeechMenuActivity extends AppCompatActivity {
 	FileSysManager fsm=null;
 	ImageButton btnDownloadAll, btnMaintain,  btnManageStorage;
 	TextView downloadAllTextView;
@@ -102,7 +102,6 @@ public class SpeechMenuActivity extends SherlockActivity {
 		
 	super.onCreate(savedInstanceState);
 	setContentView(R.layout.speech_menu);
-	getSupportActionBar();
 	rootView = findViewById(R.id.speechMenuRootView);
 	speechList=(ListView) findViewById(R.id.list);
 	btnDownloadAll=(ImageButton) findViewById(R.id.btnDownloadAll);
@@ -112,7 +111,6 @@ public class SpeechMenuActivity extends SherlockActivity {
 	
 	downloadAllServiceReceiver = new DownloadAllServiceReceiver();
 	downloadAllServiceIntentFilter = new IntentFilter("eyes.blue.action.DownloadAllService");
-	
 //	PowerManager powerManager=(PowerManager) getSystemService(Context.POWER_SERVICE);
 //	wakeLock = powerManager.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, getClass().getName());
 	//wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, getClass().getName());
@@ -124,7 +122,6 @@ public class SpeechMenuActivity extends SherlockActivity {
 	pd= getDlprgsDialog();
 	
 	final QuickAction mQuickAction 	= new QuickAction(this);
-		mQuickAction.addActionItem(new ActionItem());
 	mQuickAction.addActionItem(new ActionItem(PLAY, getString(R.string.dlgManageSrcPlay), getResources().getDrawable(R.drawable.play)));
 	mQuickAction.addActionItem(new ActionItem(UPDATE, getString(R.string.dlgManageSrcUpdate), getResources().getDrawable(R.drawable.update)));
 	mQuickAction.addActionItem(new ActionItem(DELETE, getString(R.string.dlgManageSrcDel), getResources().getDrawable(R.drawable.delete)));
@@ -353,17 +350,21 @@ public class SpeechMenuActivity extends SherlockActivity {
 		int mediaIndex=playRecord.getInt("mediaIndex",-1);
 		int position=playRecord.getInt("playPosition",-1);
 		if(mediaIndex != -1){
-			menu.add(getString(R.string.reloadLastState)+": "+SpeechData.getSubtitleName(mediaIndex)+": "+Util.getMsToHMS(position, "\"", "\'", false))
-			.setIcon(R.drawable.reload_last_state)
-			.setShowAsAction(
-					MenuItem.SHOW_AS_ACTION_IF_ROOM
-					| MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+			MenuItem item=menu.add(getString(R.string.reloadLastState)+": "+SpeechData.getSubtitleName(mediaIndex)+": "+Util.getMsToHMS(position, "\"", "\'", false));
+			item.setIcon(R.drawable.reload_last_state);
+			MenuItemCompat.setShowAsAction(item, MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+			return super.onCreateOptionsMenu(menu);
 		}
 		return true;
 	}
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
+		if(item.getItemId()==android.R.id.home) {
+			NavUtils.navigateUpFromSameTask(this);
+			return true;
+		}
+
 		String menuStr=item.getTitle().toString();
 		if(menuStr.startsWith(getString(R.string.reloadLastState))){
 			Log.d(getClass().getName(),"User click reload last state button.");
@@ -874,14 +875,27 @@ public class SpeechMenuActivity extends SherlockActivity {
 			TextView subject = (TextView) row.findViewById(R.id.subject);
 			TextView speechDesc = (TextView) row.findViewById(R.id.speechDesc);
 			TextView rangeDesc = (TextView) row.findViewById(R.id.rangeDesc);
-	/*		ImageView mediaSign = (ImageView) row.findViewById(R.id.mediaSign);
-			ImageView subtitleSign = (ImageView) row.findViewById(R.id.subtitleSign);
-			
-			if(speechFlags[position])	mediaSign.setEnabled(true);
-			else mediaSign.setEnabled(false);
-			if(subtitleFlags[position])	subtitleSign.setEnabled(true);
-			else subtitleSign.setEnabled(false);
-*/
+		//	ImageView mediaSign = (ImageView) row.findViewById(R.id.mediaSign);
+		//	ImageView subtitleSign = (ImageView) row.findViewById(R.id.subtitleSign);
+
+	/*		if(speechFlags[position]){
+				Log.d(getClass().getName(), "Set media sign to enable");
+				mediaSign.setEnabled(true);
+			}
+			else {
+				Log.d(getClass().getName(), "Set media sign to disable");
+				mediaSign.setEnabled(false);
+			}
+
+			if(subtitleFlags[position]){
+				Log.d(getClass().getName(), "Set subtitle sign to enable");
+				subtitleSign.setEnabled(true);
+			}
+			else {
+				Log.d(getClass().getName(), "Set subtitle sign to enable");
+				subtitleSign.setEnabled(false);
+			}
+			*/
 			if(speechFlags[position]&&subtitleFlags[position]){
 //				title.setTextColor(Color.BLACK);
 //				subject.setTextColor(Color.BLACK);
@@ -1049,15 +1063,9 @@ public class SpeechMenuActivity extends SherlockActivity {
 				return false;
 			}
 			GaLogger.sendTimming("download", // Timing category
-																// (required)
 					System.currentTimeMillis() - respWaitStartTime, // Timing
-																	// interval
-																	// in
-																	// milliseconds
-																	// (required)
 					"wait resp time", // Timing name
 					null); // Timing label
-
 
 			HttpEntity httpEntity = response.getEntity();
 			InputStream is = null;

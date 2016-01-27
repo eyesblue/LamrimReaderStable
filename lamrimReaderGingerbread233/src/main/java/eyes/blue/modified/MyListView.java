@@ -151,7 +151,7 @@ public class MyListView extends ListView {
 //	public void setOnTouchListener(View.OnTouchListener onTouchListener){this.onTouchListener=onTouchListener;}
 	public void setScaleGestureDetector(ScaleGestureDetector scaleGestureDetector){this.scaleGestureDetector=scaleGestureDetector;}
 	
-	GestureDetector gestureListener=new GestureDetector(context ,new android.view.GestureDetector.SimpleOnGestureListener(){
+	GestureDetector gestureListener=new GestureDetector(context ,new GestureDetector.SimpleOnGestureListener(){
 		@Override
 		public boolean 	onDown(MotionEvent e){
 			if(e.getPointerCount()> 1)return false;

@@ -403,11 +403,11 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 		Log.d(getClass().getName(),"toggleFullScreen been called.");
 	}
 	
-	public void	setOnRegionClick(View.OnClickListener listener){
+	public void	setOnRegionClick(OnClickListener listener){
 		mediaController.setOnRegionListener(listener);
 	}
 	
-	public void setOnReportClick(View.OnClickListener listener){
+	public void setOnReportClick(OnClickListener listener){
 		mediaController.setOnReportListener(listener);
     }
 	

@@ -89,7 +89,7 @@ public class MediaControllerView extends FrameLayout {
     private boolean             mUseFastForward;
     private boolean             mFromXml;
     private boolean             mListenersSet;
-    private View.OnClickListener mNextListener, mPrevListener;
+    private OnClickListener mNextListener, mPrevListener;
     StringBuilder               mFormatBuilder;
     Formatter                   mFormatter;
     private ImageButton         mPauseButton;
@@ -154,7 +154,7 @@ public class MediaControllerView extends FrameLayout {
     public void setAnchorView(ViewGroup view) {
         mAnchor = view;
 
-        FrameLayout.LayoutParams frameParams = new FrameLayout.LayoutParams(
+        LayoutParams frameParams = new LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT
         );
@@ -288,7 +288,7 @@ public class MediaControllerView extends FrameLayout {
             	}
             	disableUnsupportedButtons();
 
-            	FrameLayout.LayoutParams tlp = new FrameLayout.LayoutParams(
+            	LayoutParams tlp = new LayoutParams(
             		ViewGroup.LayoutParams.MATCH_PARENT,
                 	ViewGroup.LayoutParams.WRAP_CONTENT,
                 	Gravity.BOTTOM
@@ -455,14 +455,14 @@ public class MediaControllerView extends FrameLayout {
         return super.dispatchKeyEvent(event);
     }
 
-    private View.OnClickListener mPauseListener = new View.OnClickListener() {
+    private OnClickListener mPauseListener = new OnClickListener() {
         public void onClick(View v) {
             doPauseResume();
             show(sDefaultTimeout);
         }
     };
 
-    private View.OnClickListener mFullscreenListener = new View.OnClickListener() {
+    private OnClickListener mFullscreenListener = new OnClickListener() {
         public void onClick(View v) {
             doToggleFullscreen();
             show(sDefaultTimeout);
@@ -521,12 +521,12 @@ public class MediaControllerView extends FrameLayout {
         shareButton.setOnClickListener(listener);
     }
 */
-    public void setOnRegionListener(View.OnClickListener listener){
+    public void setOnRegionListener(OnClickListener listener){
     	ImageButton regionButton=(ImageButton)findViewById(R.id.regionBtn);
         regionButton.setOnClickListener(listener);
     }
     
-    public void setOnReportListener(View.OnClickListener listener){
+    public void setOnReportListener(OnClickListener listener){
     	ImageButton reportBtn=(ImageButton)findViewById(R.id.reportBtn);
     	reportBtn.setOnClickListener(listener);
     }
@@ -628,7 +628,7 @@ public class MediaControllerView extends FrameLayout {
         info.setClassName(VideoControllerView.class.getName());
     }
 */
-    private View.OnClickListener mRewListener = new View.OnClickListener() {
+    private OnClickListener mRewListener = new OnClickListener() {
         public void onClick(View v) {
             if (mPlayer == null) {
                 return;
@@ -648,7 +648,7 @@ public class MediaControllerView extends FrameLayout {
         }
     };
 
-    private View.OnClickListener mFfwdListener = new View.OnClickListener() {
+    private OnClickListener mFfwdListener = new OnClickListener() {
         public void onClick(View v) {
             if (mPlayer == null) {
                 return;
@@ -683,7 +683,7 @@ public class MediaControllerView extends FrameLayout {
         }
     }
 
-    public void setPrevNextListeners(View.OnClickListener prev, View.OnClickListener next) {
+    public void setPrevNextListeners(OnClickListener prev, OnClickListener next) {
         mNextListener = next;
         mPrevListener = prev;
         mListenersSet = true;

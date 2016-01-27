@@ -49,10 +49,6 @@ import org.apache.http.params.HttpProtocolParams;
 import org.apache.http.protocol.HTTP;
 
 //import net.simonvt.calendarview.CalendarView;
-
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
 import com.csvreader.CsvReader;
 import com.disegnator.robotocalendar.RobotoCalendarView;
 import com.disegnator.robotocalendar.RobotoCalendarView.RobotoCalendarListener;
@@ -64,9 +60,14 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Handler;
+import android.support.v4.view.MenuItemCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 
-public class CalendarActivity extends SherlockActivity {
+public class CalendarActivity extends AppCompatActivity {
 	Hashtable<String, GlRecord> glSchedule = new Hashtable<String, GlRecord>();
 	ProgressDialog downloadPDialog = null;
 	SimpleDateFormat dateFormater = new SimpleDateFormat("yyyy/MM/dd", Locale.getDefault());
@@ -86,7 +87,7 @@ public class CalendarActivity extends SherlockActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_calendar);
-		getSupportActionBar();
+	//	getSupportActionBar();
 
 		initialCalendarView();
 		downloadPDialog = new ProgressDialog(CalendarActivity.this);
@@ -100,7 +101,6 @@ public class CalendarActivity extends SherlockActivity {
 	@Override
 	protected void onStart() {
 		super.onStart();
-		GaLogger.activityStart(this);
 
 		new Thread(new Runnable() {
 			@Override
@@ -141,7 +141,6 @@ public class CalendarActivity extends SherlockActivity {
 	@Override
 	protected void onStop() {
 		super.onStop();
-		GaLogger.activityStop(this);
 	}
 
 	@Override
@@ -151,17 +150,12 @@ public class CalendarActivity extends SherlockActivity {
 		int mediaIndex=playRecord.getInt("mediaIndex",-1);
 		int position=playRecord.getInt("playPosition", -1);
 		if(title != null && mediaIndex != -1 && position != -1){
-			menu.add(getString(R.string.reloadLastState)+": "+title+": "+SpeechData.getSubtitleName(mediaIndex)+": "+Util.getMsToHMS(position, "\"", "\'", false))
-			.setIcon(R.drawable.reload_last_state)
-			.setShowAsAction(
-					MenuItem.SHOW_AS_ACTION_IF_ROOM
-					| MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+			MenuItem item=menu.add(getString(R.string.reloadLastState) + ": " + title + ": " + SpeechData.getSubtitleName(mediaIndex) + ": " + Util.getMsToHMS(position, "\"", "\'", false));
+			item.setIcon(R.drawable.reload_last_state);
+			MenuItemCompat.setShowAsAction(item, MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+			return super.onCreateOptionsMenu(menu);
 		}
-		menu.add(getString(R.string.downloadSchedule))
-				.setIcon(R.drawable.update)
-				.setShowAsAction(
-						MenuItem.SHOW_AS_ACTION_IF_ROOM
-								| MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+
 		return true;
 	}
 
@@ -578,157 +572,171 @@ public class CalendarActivity extends SherlockActivity {
 		}
 		
 		Calendar c=Calendar.getInstance(Locale.getDefault());
-		c.set(dateNum[0],dateNum[1],dateNum[2]);
+		c.set(dateNum[0], dateNum[1], dateNum[2]);
 		return c.getTime();
 	}
 
-	private boolean downloadSchedule() {
-		GoogleRemoteSource grs = new GoogleRemoteSource(getApplicationContext());
-		String url = grs.getGlobalLamrimSchedule();
-		String scheFileName = getString(R.string.globalLamrimScheduleFile);
-		String tmpFileSub = getString(R.string.downloadTmpPostfix);
-		String format = getString(R.string.globalLamrimScheduleFileFormat);
-		File tmpFile = new File(getFilesDir() + File.separator + scheFileName
-				+ tmpFileSub);
-		File scheFile = new File(getFilesDir() + File.separator + scheFileName
-				+ "." + format);
+	private void showDownloadProgressDialog(){
+		runOnUiThread(new Runnable() {
+			@Override
+			public void run() {
+				new Handler().postDelayed(new Runnable() {
+					@Override
+					public void run() {
+						try {
+							downloadPDialog.show();
+							dialogShowing = true;
+						} catch (Exception e) {
+							GaLogger.sendException("Error happen while show download progress dialog.", e, false);
+						}
+					}
+				}, 200);
+			}
+		});
+	}
 
+	private void dismissDownloadProgressDialog() {
 		runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
 				try {
-					downloadPDialog.show();
-				}catch(Exception e){
-					e.printStackTrace();
-					GaLogger.sendException(e.toString(), e, true);
+					downloadPDialog.dismiss();
+					dialogShowing = false;
+				} catch (Exception e) {
+					GaLogger.sendException("Error happen while dismiss download progress dialog.", e, false);
 				}
 			}
 		});
+	}
 
-		Log.d(getClass().getName(), "Download " + url);
-		HttpClient httpclient = getNewHttpClient();
-		HttpGet httpget = new HttpGet(url);
-		HttpResponse response = null;
-		int respCode = -1;
+			private boolean downloadSchedule() {
+				GoogleRemoteSource grs = new GoogleRemoteSource(getApplicationContext());
+				String url = grs.getGlobalLamrimSchedule();
+				String scheFileName = getString(R.string.globalLamrimScheduleFile);
+				String tmpFileSub = getString(R.string.downloadTmpPostfix);
+				String format = getString(R.string.globalLamrimScheduleFileFormat);
+				File tmpFile = new File(getFilesDir() + File.separator + scheFileName
+						+ tmpFileSub);
+				File scheFile = new File(getFilesDir() + File.separator + scheFileName
+						+ "." + format);
 
-		try {
-			response = httpclient.execute(httpget);
-			respCode = response.getStatusLine().getStatusCode();
-			if (respCode != HttpStatus.SC_OK) {
-				httpclient.getConnectionManager().shutdown();
-				Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView), getString(R.string.dlgDescDownloadFail));
-				try{
-					downloadPDialog.dismiss();
-					dialogShowing = false;
-				}catch(Exception e){e.printStackTrace();}	// Don't force close if problem here.
-					dialogShowing = false;
+				showDownloadProgressDialog();
+
+				Log.d(getClass().getName(), "Download " + url);
+				HttpClient httpclient = getNewHttpClient();
+				HttpGet httpget = new HttpGet(url);
+				HttpResponse response = null;
+				int respCode = -1;
+
+				try {
+					response = httpclient.execute(httpget);
+					respCode = response.getStatusLine().getStatusCode();
+					if (respCode != HttpStatus.SC_OK) {
+						httpclient.getConnectionManager().shutdown();
+						dismissDownloadProgressDialog();
+						Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView), getString(R.string.dlgDescDownloadFail));
+						return false;
+					}
+				} catch (ClientProtocolException e) {
+					e.printStackTrace();
+				} catch (IOException e) {
+					e.printStackTrace();
+					Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView),
+							getString(R.string.dlgDescDownloadFail));
+					if (downloadPDialog.isShowing()) {
+						dismissDownloadProgressDialog();
+					}
 					return false;
-			}
-		} catch (ClientProtocolException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-			Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView),
-					getString(R.string.dlgDescDownloadFail));
-			if(downloadPDialog.isShowing()){
-				downloadPDialog.dismiss();
-				dialogShowing = false;
-			}
-			return false;
-		}
+				}
 
-		Log.d(getClass().getName(), "Connect success, Downloading file.");
-		HttpEntity httpEntity = response.getEntity();
-		InputStream is = null;
-		try {
-			is = httpEntity.getContent();
-		} catch (IllegalStateException e2) {
-			try {
-				is.close();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			httpclient.getConnectionManager().shutdown();
-			e2.printStackTrace();
-			Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView),
-					getString(R.string.dlgDescDownloadFail));
-			if(downloadPDialog.isShowing()){
-				downloadPDialog.dismiss();
-				dialogShowing = false;
-			}
-			return false;
-		} catch (IOException e2) {
-			httpclient.getConnectionManager().shutdown();
-			e2.printStackTrace();
-			Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView),
-					getString(R.string.dlgDescDownloadFail));
-			if(downloadPDialog.isShowing()){
-				downloadPDialog.dismiss();
-				dialogShowing = false;
-			}
-			return false;
-		}
+				Log.d(getClass().getName(), "Connect success, Downloading file.");
+				HttpEntity httpEntity = response.getEntity();
+				InputStream is = null;
+				try {
+					is = httpEntity.getContent();
+				} catch (IllegalStateException e2) {
+					try {
+						is.close();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+					httpclient.getConnectionManager().shutdown();
+					e2.printStackTrace();
+					Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView),
+							getString(R.string.dlgDescDownloadFail));
+					if (downloadPDialog.isShowing()) {
+						dismissDownloadProgressDialog();
+					}
+					return false;
+				} catch (IOException e2) {
+					httpclient.getConnectionManager().shutdown();
+					e2.printStackTrace();
+					Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView),
+							getString(R.string.dlgDescDownloadFail));
+					if (downloadPDialog.isShowing()) {
+						dismissDownloadProgressDialog();
+					}
+					return false;
+				}
 
-		final long contentLength = httpEntity.getContentLength();
-		Log.d(getClass().getName(), "Content length: " + contentLength);
-		FileOutputStream fos = null;
-		int counter = 0;
-		try {
-			Log.d(getClass().getName(), "Create download temp file: " + tmpFile);
-			fos = new FileOutputStream(tmpFile);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-			GaLogger.sendException("Can't create temp file.", e, true);
-			Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView),"無法建立暫存檔，請檢查磁碟空間是否足夠。");
-			if(downloadPDialog.isShowing()){
-				downloadPDialog.dismiss();
-				dialogShowing = false;
-			}
-			return false;
-		}
+				final long contentLength = httpEntity.getContentLength();
+				Log.d(getClass().getName(), "Content length: " + contentLength);
+				FileOutputStream fos = null;
+				int counter = 0;
+				try {
+					Log.d(getClass().getName(), "Create download temp file: " + tmpFile);
+					fos = new FileOutputStream(tmpFile);
+				} catch (FileNotFoundException e) {
+					e.printStackTrace();
+					GaLogger.sendException("Can't create temp file.", e, true);
+					Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView), "無法建立暫存檔，請檢查磁碟空間是否足夠。");
+					if (downloadPDialog.isShowing()) {
+						dismissDownloadProgressDialog();
+					}
+					return false;
+				}
 
-		try {
-			byte[] buf = new byte[getResources().getInteger(
-					R.integer.downloadBufferSize)];
-			int readLen = 0;
-			Log.d(getClass().getName(), Thread.currentThread().getName()
-					+ ": Start read stream from remote site, is="
-					+ ((is == null) ? "NULL" : "exist") + ", buf="
-					+ ((buf == null) ? "NULL" : "exist"));
-			while ((readLen = is.read(buf)) != -1) {
-				counter += readLen;
-				fos.write(buf, 0, readLen);
-			}
-			is.close();
-			fos.flush();
-			fos.close();
-		} catch (IOException e) {
-			httpclient.getConnectionManager().shutdown();
-			try {
-				is.close();
-			} catch (IOException e2) {
-				e2.printStackTrace();
+				try {
+					byte[] buf = new byte[getResources().getInteger(
+							R.integer.downloadBufferSize)];
+					int readLen = 0;
+					Log.d(getClass().getName(), Thread.currentThread().getName()
+							+ ": Start read stream from remote site, is="
+							+ ((is == null) ? "NULL" : "exist") + ", buf="
+							+ ((buf == null) ? "NULL" : "exist"));
+					while ((readLen = is.read(buf)) != -1) {
+						counter += readLen;
+						fos.write(buf, 0, readLen);
+					}
+					is.close();
+					fos.flush();
+					fos.close();
+				} catch (IOException e) {
+					httpclient.getConnectionManager().shutdown();
+					try {
+						is.close();
+					} catch (IOException e2) {
+						e2.printStackTrace();
 //				return false;
-			}
-			try {
-				fos.close();
-			} catch (IOException e2) {
-				e2.printStackTrace();
+					}
+					try {
+						fos.close();
+					} catch (IOException e2) {
+						e2.printStackTrace();
 //				return false;
-			}
-			tmpFile.delete();
-			e.printStackTrace();
-			Log.d(getClass().getName(), Thread.currentThread().getName()
-					+ ": IOException happen while download media.");
-			Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView),
-					getString(R.string.dlgDescDownloadFail));
-			if(downloadPDialog.isShowing()){
-				downloadPDialog.dismiss();
-				dialogShowing = false;
-			}
-			
-			return false;
-		}
+					}
+					tmpFile.delete();
+					e.printStackTrace();
+					Log.d(getClass().getName(), Thread.currentThread().getName()
+							+ ": IOException happen while download media.");
+					Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView),
+							getString(R.string.dlgDescDownloadFail));
+					if (downloadPDialog.isShowing()) {
+						dismissDownloadProgressDialog();
+					}
+
+					return false;
+				}
 
 		/*
 		 * if(counter!=contentLength){
@@ -736,105 +744,105 @@ public class CalendarActivity extends SherlockActivity {
 		 * showNarmalToastMsg(getString(R.string.dlgDescDownloadFail));
 		 * downloadPDialog.dismiss(); return; }
 		 */
-		// rename the protected file name to correct file name
-		if (scheFile.exists())
-			scheFile.delete();
-		tmpFile.renameTo(scheFile);
-		httpclient.getConnectionManager().shutdown();
-		Log.d(getClass().getName(), Thread.currentThread().getName()
-				+ ": Download finish.");
-		if(downloadPDialog.isShowing())downloadPDialog.dismiss();
-		dialogShowing = false;
-		return true;
-	}
+				// rename the protected file name to correct file name
+				if (scheFile.exists())
+					scheFile.delete();
+				tmpFile.renameTo(scheFile);
+				httpclient.getConnectionManager().shutdown();
+				Log.d(getClass().getName(), Thread.currentThread().getName()
+						+ ": Download finish.");
+				if (downloadPDialog.isShowing())
+					dismissDownloadProgressDialog();
+				return true;
+			}
 
-	/*
-	 * private void showDownloadProgDialog(){ runOnUiThread(new Runnable(){
-	 * 
-	 * @Override public void run() { downloadPDialog =
-	 * ProgressDialog.show(CalendarActivity.this,
-	 * getString(R.string.dlgTitleDownloading),
-	 * String.format(getString(R.string.dlgDescDownloading),"",
-	 * getString(R.string.title_activity_calendar)), true); }}); }
-	 */
-	private Intent getResultIntent(GlRecord glr) {
-		Intent data = new Intent();
-		data.putExtra("selectedDay", selectedDay);
-		data.putExtra("dateStart", glr.dateStart);
-		data.putExtra("dateEnd", glr.dateEnd);
-		data.putExtra("speechPositionStart", glr.speechPositionStart);
-		data.putExtra("speechPositionEnd", glr.speechPositionEnd);
-		data.putExtra("totalTime", glr.totalTime);
-		data.putExtra("theoryLineStart", glr.theoryLineStart);
-		data.putExtra("theoryLineEnd", glr.theoryLineEnd);
-		data.putExtra("subtitleLineStart", glr.subtitleLineStart);
-		data.putExtra("subtitleLineEnd", glr.subtitleLineEnd);
-		data.putExtra("desc", glr.desc);
-		return data;
-	}
+			/*
+             * private void showDownloadProgDialog(){ runOnUiThread(new Runnable(){
+             *
+             * @Override public void run() { downloadPDialog =
+             * ProgressDialog.show(CalendarActivity.this,
+             * getString(R.string.dlgTitleDownloading),
+             * String.format(getString(R.string.dlgDescDownloading),"",
+             * getString(R.string.title_activity_calendar)), true); }}); }
+             */
+			private Intent getResultIntent(GlRecord glr) {
+				Intent data = new Intent();
+				data.putExtra("selectedDay", selectedDay);
+				data.putExtra("dateStart", glr.dateStart);
+				data.putExtra("dateEnd", glr.dateEnd);
+				data.putExtra("speechPositionStart", glr.speechPositionStart);
+				data.putExtra("speechPositionEnd", glr.speechPositionEnd);
+				data.putExtra("totalTime", glr.totalTime);
+				data.putExtra("theoryLineStart", glr.theoryLineStart);
+				data.putExtra("theoryLineEnd", glr.theoryLineEnd);
+				data.putExtra("subtitleLineStart", glr.subtitleLineStart);
+				data.putExtra("subtitleLineEnd", glr.subtitleLineEnd);
+				data.putExtra("desc", glr.desc);
+				return data;
+			}
 
-	private HttpClient getNewHttpClient() {
-		try {
-			KeyStore trustStore = KeyStore.getInstance(KeyStore
-					.getDefaultType());
-			trustStore.load(null, null);
+			private HttpClient getNewHttpClient() {
+				try {
+					KeyStore trustStore = KeyStore.getInstance(KeyStore
+							.getDefaultType());
+					trustStore.load(null, null);
 
-			SSLSocketFactory sf = new MySSLSocketFactory(trustStore);
-			sf.setHostnameVerifier(SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
+					SSLSocketFactory sf = new MySSLSocketFactory(trustStore);
+					sf.setHostnameVerifier(SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
 
-			HttpParams params = new BasicHttpParams();
-			HttpProtocolParams.setVersion(params, HttpVersion.HTTP_1_1);
-			HttpProtocolParams.setContentCharset(params, HTTP.UTF_8);
+					HttpParams params = new BasicHttpParams();
+					HttpProtocolParams.setVersion(params, HttpVersion.HTTP_1_1);
+					HttpProtocolParams.setContentCharset(params, HTTP.UTF_8);
 
-			SchemeRegistry registry = new SchemeRegistry();
-			registry.register(new Scheme("http", PlainSocketFactory
-					.getSocketFactory(), 80));
-			registry.register(new Scheme("https", sf, 443));
+					SchemeRegistry registry = new SchemeRegistry();
+					registry.register(new Scheme("http", PlainSocketFactory
+							.getSocketFactory(), 80));
+					registry.register(new Scheme("https", sf, 443));
 
-			ClientConnectionManager ccm = new ThreadSafeClientConnManager(
-					params, registry);
+					ClientConnectionManager ccm = new ThreadSafeClientConnManager(
+							params, registry);
 
-			return new DefaultHttpClient(ccm, params);
-		} catch (Exception e) {
-			return new DefaultHttpClient();
-		}
-	}
+					return new DefaultHttpClient(ccm, params);
+				} catch (Exception e) {
+					return new DefaultHttpClient();
+				}
+			}
 
-	public class MySSLSocketFactory extends SSLSocketFactory {
-		SSLContext sslContext = SSLContext.getInstance("TLS");
+			public class MySSLSocketFactory extends SSLSocketFactory {
+				SSLContext sslContext = SSLContext.getInstance("TLS");
 
-		public MySSLSocketFactory(KeyStore truststore)
-				throws NoSuchAlgorithmException, KeyManagementException,
-				KeyStoreException, UnrecoverableKeyException {
-			super(truststore);
+				public MySSLSocketFactory(KeyStore truststore)
+						throws NoSuchAlgorithmException, KeyManagementException,
+						KeyStoreException, UnrecoverableKeyException {
+					super(truststore);
 
-			TrustManager tm = new X509TrustManager() {
-				public void checkClientTrusted(X509Certificate[] chain,
-						String authType) throws CertificateException {
+					TrustManager tm = new X509TrustManager() {
+						public void checkClientTrusted(X509Certificate[] chain,
+													   String authType) throws CertificateException {
+						}
+
+						public void checkServerTrusted(X509Certificate[] chain,
+													   String authType) throws CertificateException {
+						}
+
+						public X509Certificate[] getAcceptedIssuers() {
+							return null;
+						}
+					};
+
+					sslContext.init(null, new TrustManager[]{tm}, null);
 				}
 
-				public void checkServerTrusted(X509Certificate[] chain,
-						String authType) throws CertificateException {
+				@Override
+				public Socket createSocket(Socket socket, String host, int port,
+										   boolean autoClose) throws IOException, UnknownHostException {
+					return sslContext.getSocketFactory().createSocket(socket, host,
+							port, autoClose);
 				}
 
-				public X509Certificate[] getAcceptedIssuers() {
-					return null;
+				@Override
+				public Socket createSocket() throws IOException {
+					return sslContext.getSocketFactory().createSocket();
 				}
-			};
-
-			sslContext.init(null, new TrustManager[] { tm }, null);
+			}
 		}
-
-		@Override
-		public Socket createSocket(Socket socket, String host, int port,
-				boolean autoClose) throws IOException, UnknownHostException {
-			return sslContext.getSocketFactory().createSocket(socket, host,
-					port, autoClose);
-		}
-
-		@Override
-		public Socket createSocket() throws IOException {
-			return sslContext.getSocketFactory().createSocket();
-		}
-	}
-}

@@ -23,6 +23,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 //import android.support.v4.provider.DocumentFile;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -37,7 +38,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-public class StorageManageActivity extends Activity {
+public class StorageManageActivity extends AppCompatActivity {
 	FileSysManager fsm=null;
 	TextView extSpeechPathInfo, extSubtitlePathInfo, intSpeechPathInfo, intSubtitlePathInfo, extFreePercent, intFreePercent, extAppUsagePercent, intAppUsagePercent, intFree, extFree, extAppUseage, intAppUseage, labelChoicePath;
 	Button btnMoveAllToExt, btnMoveAllToInt, btnMoveToUserSpy, btnDelExtFiles, btnDelIntFiles, btnOk;
@@ -106,7 +107,7 @@ public class StorageManageActivity extends Activity {
 		if(thirdDir==null || thirdDir.length()==0)thirdDir=fsm.getSysDefMediaDir();
 		filePathInput.setText(thirdDir,null);
 		
-		btnMoveAllToExt.setOnClickListener(new View.OnClickListener (){
+		btnMoveAllToExt.setOnClickListener(new OnClickListener (){
 			@Override
 			public void onClick(View v) {
 				AlertDialog.Builder builder=getConfirmDialog();
@@ -125,7 +126,7 @@ public class StorageManageActivity extends Activity {
 					}});
 				builder.create().show();
 			}});
-		btnMoveAllToInt.setOnClickListener(new View.OnClickListener (){
+		btnMoveAllToInt.setOnClickListener(new OnClickListener (){
 			@Override
 			public void onClick(View v) {
 				AlertDialog.Builder builder=getConfirmDialog();
@@ -153,7 +154,7 @@ public class StorageManageActivity extends Activity {
 				builder.create().show();
 			}});
 		
-		btnMoveToUserSpy.setOnClickListener(new View.OnClickListener (){
+		btnMoveToUserSpy.setOnClickListener(new OnClickListener (){
 			@Override
 			public void onClick(View arg0) {
 				btnMoveToUserSpy.setEnabled(false);
@@ -208,7 +209,7 @@ public class StorageManageActivity extends Activity {
 				btnMoveToUserSpy.setEnabled(true);
 		}});
 		
-		btnDelExtFiles.setOnClickListener(new View.OnClickListener (){
+		btnDelExtFiles.setOnClickListener(new OnClickListener (){
 			@Override
 			public void onClick(View v) {
 				AlertDialog.Builder builder=getConfirmDialog();
@@ -239,7 +240,7 @@ public class StorageManageActivity extends Activity {
 					}});
 				builder.create().show();
 			}});
-		btnDelIntFiles.setOnClickListener(new View.OnClickListener (){
+		btnDelIntFiles.setOnClickListener(new OnClickListener (){
 			@Override
 			public void onClick(View v) {
 				AlertDialog.Builder builder=getConfirmDialog();
@@ -271,7 +272,7 @@ public class StorageManageActivity extends Activity {
 					}});
 				builder.create().show();
 			}});
-		btnChoicePath.setOnClickListener(new View.OnClickListener (){
+		btnChoicePath.setOnClickListener(new OnClickListener (){
 			@Override
 			public void onClick(View v) {
 /*				if(Build.VERSION.SDK_INT >= 21){
@@ -294,7 +295,7 @@ public class StorageManageActivity extends Activity {
 //				}
 			}});
 		
-		btnOk.setOnClickListener(new View.OnClickListener (){
+		btnOk.setOnClickListener(new OnClickListener (){
 			@Override
 			public void onClick(View v) {
 				SharedPreferences.Editor editor = runtime.edit();

@@ -52,7 +52,6 @@ public class TheoryPageView extends TextView {
 	public TheoryPageView(Context context) {
 		super(context);
 		this.context=context;
-//		this.setOnTouchListener(touchListener);
 		loadColor();
 	}
 
@@ -77,7 +76,7 @@ public class TheoryPageView extends TextView {
 		runtime = context.getSharedPreferences(context.getString(R.string.runtimeStateFile), 0);
 		boolean isDarkTheme=runtime.getBoolean(context.getString(R.string.isDarkThemeKey), true);
 		
-		textColor = ((isDarkTheme)?context.getResources().getInteger(R.color.darkTheoryTextColor):context.getResources().getColor(R.color.lightTheoryTextColor));
+		textColor = ((isDarkTheme)?context.getResources().getColor(R.color.darkTheoryTextColor):context.getResources().getColor(R.color.lightTheoryTextColor));
 		// There is no background color for light theme.
 		//bgColor = ((isDarkTheme)?-1:context.getResources().getColor(R.color.lightTheoryBgColor));
 		numTextColor = ((isDarkTheme)?context.getResources().getColor(R.color.darkTheoryNumTextColor):context.getResources().getColor(R.color.lightTheoryNumTextColor));

@@ -35,7 +35,7 @@ public class MyViewPager extends ViewPager {
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
 		final View v=this.getChildAt(this.getCurrentItem());
-		GestureDetector gestureListener=new GestureDetector(context ,new android.view.GestureDetector.SimpleOnGestureListener(){
+		GestureDetector gestureListener=new GestureDetector(context ,new GestureDetector.SimpleOnGestureListener(){
 			@Override
 			public boolean 	onDown(MotionEvent e){
 				boolean res=e.getPointerCount()> 1;

@@ -20,8 +20,6 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-//import com.google.analytics.tracking.android.MapBuilder;
-
 import android.app.Activity;
 import android.app.IntentService;
 import android.app.NotificationManager;
@@ -390,9 +388,10 @@ public class DownloadAllService extends IntentService {
 	        	return false;
 	        }
 	        GaLogger.sendTimming("download",    // Timing category (required)
-					System.currentTimeMillis() - respWaitStartTime,       // Timing interval in milliseconds (required)
-					"wait resp time",  // Timing name
-					null);           // Timing label
+	                          System.currentTimeMillis()-respWaitStartTime,       // Timing interval in milliseconds (required)
+	                    "wait resp time",  // Timing name
+	                    null);           // Timing label
+
 
 	        HttpEntity httpEntity=response.getEntity();
 	        InputStream is=null;
@@ -478,10 +477,11 @@ public class DownloadAllService extends IntentService {
 	        }
 
 	        int spend=(int) (System.currentTimeMillis()-startTime);
-			GaLogger.sendTimming("download",    // Timing category (required)
-	                          (long)spend,       // Timing interval in milliseconds (required)
-	                          "download time",  // Timing name
-	                          null);           // Timing label
+	        GaLogger.sendTimming("download",    // Timing category (required)
+					(long) spend,       // Timing interval in milliseconds (required)
+					"download time",  // Timing name
+					null);           // Timing label
+
 
 	        // rename the protected file name to correct file name
 	        tmpFile.renameTo(new File(outputPath));
