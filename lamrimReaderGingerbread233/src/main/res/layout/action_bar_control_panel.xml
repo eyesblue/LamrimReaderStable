@@ -4,7 +4,8 @@
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:layout_gravity="left|center_vertical"
-    android:gravity="center|left" >
+    android:gravity="center|left"
+    style="AppTheme" >
 
     <EditText
         android:id="@+id/jumpPage"
@@ -39,15 +40,16 @@
         android:layout_width="140dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:background="@drawable/btn_bg_ctrl_panel"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:background="@drawable/btn_bg_press"/>
 
     <ImageButton
         android:id="@+id/textSize"
+        style="ButtonAppTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:background="@drawable/btn_bg_ctrl_panel"
+        android:background="@drawable/btn_bg_press"
         android:src="@drawable/font_size" />
 
     <ImageButton
@@ -55,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:background="@drawable/btn_bg_ctrl_panel"
+        android:background="@drawable/btn_bg_press"
         android:src="@drawable/search" />
 
     <ImageButton
@@ -64,6 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:src="@drawable/switch_theme"
-        android:background="@drawable/btn_bg_ctrl_panel" />
+        android:background="@drawable/btn_bg_press"
+         />
 
 </LinearLayout>
