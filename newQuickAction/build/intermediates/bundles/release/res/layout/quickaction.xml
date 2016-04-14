@@ -73,4 +73,4 @@
         android:layout_below="@id/footer"
         android:src="@drawable/quickaction_arrow_down" />
 
-</RelativeLayout><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/newQuickAction/src/main/res/layout/quickaction.xml -->
+</RelativeLayout>

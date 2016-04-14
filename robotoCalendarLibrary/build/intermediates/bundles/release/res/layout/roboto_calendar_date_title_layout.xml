@@ -32,4 +32,4 @@
         android:layout_centerVertical="true"
         android:src="@drawable/ic_right_selector" />
 
-</RelativeLayout><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/robotoCalendarLibrary/src/main/res/layout/roboto_calendar_date_title_layout.xml -->
+</RelativeLayout>

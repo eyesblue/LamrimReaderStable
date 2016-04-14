@@ -2,8 +2,6 @@
 <resources>
     <declare-styleable name="ColorPickerPreference"><attr format="boolean|reference" name="showDialogTitle"/><attr format="boolean|reference" name="showSelectedColorInList"/></declare-styleable>
     <declare-styleable name="ColorPickerView"><attr format="boolean|reference" name="alphaChannelVisible"/><attr format="string|reference" name="alphaChannelText"/><attr format="color|reference" name="colorPickerSliderColor"/><attr format="color|reference" name="colorPickerBorderColor"/></declare-styleable>
-    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/colorPickerView/build/intermediates/bundles/debug/res/values/values.xml -->
-    <eat-comment/>
     <item name="color_panel_new" type="id"/>
     <item name="color_panel_old" type="id"/>
     <item name="color_picker_view" type="id"/>

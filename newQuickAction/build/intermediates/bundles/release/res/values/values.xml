@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/newQuickAction/src/main/res/values/strings.xml -->
-    <eat-comment/>
     <string name="app_name">NewQuickAction</string>
     <string name="hello">Hello World, NewQA!</string>
-    <!-- From: file:/Users/father/Dropbox/LamrimReaderStable/newQuickAction/src/main/res/values/styles.xml -->
-    <eat-comment/>
     <style name="Animations"/>
     <style name="Animations.PopDownMenu"/>
     <style name="Animations.PopDownMenu.Center">

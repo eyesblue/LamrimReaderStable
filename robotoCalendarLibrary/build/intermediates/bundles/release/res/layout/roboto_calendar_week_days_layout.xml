@@ -79,4 +79,4 @@
         android:textColor="@color/dayOfWeekColor"
         android:textSize="@dimen/dayOfWeekTextSize" />
 
-</LinearLayout><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/robotoCalendarLibrary/src/main/res/layout/roboto_calendar_week_days_layout.xml -->
+</LinearLayout>

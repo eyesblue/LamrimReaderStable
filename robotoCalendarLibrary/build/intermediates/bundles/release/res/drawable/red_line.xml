@@ -8,4 +8,4 @@
 	<corners android:radius="3dp" />
     <solid android:color="@color/red" />
 
-</shape><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/robotoCalendarLibrary/src/main/res/drawable/red_line.xml -->
+</shape>

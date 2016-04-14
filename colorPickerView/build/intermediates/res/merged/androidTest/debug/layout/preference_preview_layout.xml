@@ -2,4 +2,4 @@
     android:id="@id/preference_preview_color_panel"
 	android:layout_width="25dp"    
 	android:layout_height="25dp"
-/><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/colorPickerView/src/main/res/layout/preference_preview_layout.xml --><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/colorPickerView/build/intermediates/bundles/debug/res/layout/preference_preview_layout.xml -->
+/>

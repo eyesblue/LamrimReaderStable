@@ -34,4 +34,4 @@
   		android:layout_height="wrap_content"
   		android:text="Text"/>
   		
-</RelativeLayout><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/newQuickAction/src/main/res/layout/list.xml -->
+</RelativeLayout>
