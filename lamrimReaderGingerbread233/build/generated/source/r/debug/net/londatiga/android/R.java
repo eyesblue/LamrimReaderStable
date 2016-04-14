@@ -8,78 +8,78 @@ package net.londatiga.android;
 
 public final class R {
 	public static final class anim {
-		public static final int grow_from_bottom = 0x7f040001;
-		public static final int grow_from_bottomleft_to_topright = 0x7f040002;
-		public static final int grow_from_bottomright_to_topleft = 0x7f040003;
-		public static final int grow_from_top = 0x7f040004;
-		public static final int grow_from_topleft_to_bottomright = 0x7f040005;
-		public static final int grow_from_topright_to_bottomleft = 0x7f040006;
-		public static final int rail = 0x7f04000a;
-		public static final int shrink_from_bottom = 0x7f04000c;
-		public static final int shrink_from_bottomleft_to_topright = 0x7f04000d;
-		public static final int shrink_from_bottomright_to_topleft = 0x7f04000e;
-		public static final int shrink_from_top = 0x7f04000f;
-		public static final int shrink_from_topleft_to_bottomright = 0x7f040010;
-		public static final int shrink_from_topright_to_bottomleft = 0x7f040011;
+		public static final int grow_from_bottom = 0x7f04000b;
+		public static final int grow_from_bottomleft_to_topright = 0x7f04000c;
+		public static final int grow_from_bottomright_to_topleft = 0x7f04000d;
+		public static final int grow_from_top = 0x7f04000e;
+		public static final int grow_from_topleft_to_bottomright = 0x7f04000f;
+		public static final int grow_from_topright_to_bottomleft = 0x7f040010;
+		public static final int rail = 0x7f040014;
+		public static final int shrink_from_bottom = 0x7f040016;
+		public static final int shrink_from_bottomleft_to_topright = 0x7f040017;
+		public static final int shrink_from_bottomright_to_topleft = 0x7f040018;
+		public static final int shrink_from_top = 0x7f040019;
+		public static final int shrink_from_topleft_to_bottomright = 0x7f04001a;
+		public static final int shrink_from_topright_to_bottomleft = 0x7f04001b;
 	}
 	public static final class drawable {
-		public static final int ic_accept = 0x7f02008b;
-		public static final int ic_add = 0x7f02008c;
-		public static final int ic_list_more = 0x7f020091;
-		public static final int ic_list_more_selected = 0x7f020092;
-		public static final int ic_up = 0x7f0200a0;
-		public static final int icon = 0x7f0200a1;
-		public static final int quickaction_arrow_down = 0x7f0200b2;
-		public static final int quickaction_arrow_up = 0x7f0200b3;
-		public static final int quickaction_bottom_frame = 0x7f0200b4;
-		public static final int quickaction_slider_background = 0x7f0200b5;
-		public static final int quickaction_slider_btn = 0x7f0200b6;
-		public static final int quickaction_slider_btn_normal = 0x7f0200b7;
-		public static final int quickaction_slider_btn_on = 0x7f0200b8;
-		public static final int quickaction_slider_btn_pressed = 0x7f0200b9;
-		public static final int quickaction_slider_btn_selected = 0x7f0200ba;
-		public static final int quickaction_slider_grip_left = 0x7f0200bb;
-		public static final int quickaction_slider_grip_right = 0x7f0200bc;
-		public static final int quickaction_top_frame = 0x7f0200bd;
-		public static final int quickcontact_drop_shadow = 0x7f0200be;
-		public static final int textfield_default = 0x7f0200e8;
+		public static final int ic_accept = 0x7f0200dc;
+		public static final int ic_add = 0x7f0200dd;
+		public static final int ic_list_more = 0x7f0200e2;
+		public static final int ic_list_more_selected = 0x7f0200e3;
+		public static final int ic_up = 0x7f0200f3;
+		public static final int icon = 0x7f0200f4;
+		public static final int quickaction_arrow_down = 0x7f020105;
+		public static final int quickaction_arrow_up = 0x7f020106;
+		public static final int quickaction_bottom_frame = 0x7f020107;
+		public static final int quickaction_slider_background = 0x7f020108;
+		public static final int quickaction_slider_btn = 0x7f020109;
+		public static final int quickaction_slider_btn_normal = 0x7f02010a;
+		public static final int quickaction_slider_btn_on = 0x7f02010b;
+		public static final int quickaction_slider_btn_pressed = 0x7f02010c;
+		public static final int quickaction_slider_btn_selected = 0x7f02010d;
+		public static final int quickaction_slider_grip_left = 0x7f02010e;
+		public static final int quickaction_slider_grip_right = 0x7f02010f;
+		public static final int quickaction_top_frame = 0x7f020110;
+		public static final int quickcontact_drop_shadow = 0x7f020111;
+		public static final int textfield_default = 0x7f02013e;
 	}
 	public static final class id {
-		public static final int arrow_down = 0x7f0d009a;
-		public static final int arrow_up = 0x7f0d0096;
-		public static final int btn1 = 0x7f0d006f;
-		public static final int btn2 = 0x7f0d0070;
-		public static final int footer = 0x7f0d0099;
-		public static final int header2 = 0x7f0d0095;
-		public static final int i_more = 0x7f0d0072;
-		public static final int iv_icon = 0x7f0d0059;
-		public static final int l_list = 0x7f0d0071;
-		public static final int scroll = 0x7f0d0097;
-		public static final int t_name = 0x7f0d0073;
-		public static final int tracks = 0x7f0d0098;
-		public static final int tv_title = 0x7f0d005a;
+		public static final int arrow_down = 0x7f0d00c8;
+		public static final int arrow_up = 0x7f0d00c4;
+		public static final int btn1 = 0x7f0d008c;
+		public static final int btn2 = 0x7f0d008d;
+		public static final int footer = 0x7f0d00c7;
+		public static final int header2 = 0x7f0d00c3;
+		public static final int i_more = 0x7f0d0095;
+		public static final int iv_icon = 0x7f0d006f;
+		public static final int l_list = 0x7f0d008e;
+		public static final int scroll = 0x7f0d00c5;
+		public static final int t_name = 0x7f0d0096;
+		public static final int tracks = 0x7f0d00c6;
+		public static final int tv_title = 0x7f0d0070;
 	}
 	public static final class layout {
-		public static final int action_item = 0x7f030017;
-		public static final int example1 = 0x7f03001d;
-		public static final int example2 = 0x7f03001e;
-		public static final int list = 0x7f03001f;
-		public static final int main = 0x7f030020;
-		public static final int quickaction = 0x7f030027;
+		public static final int action_item = 0x7f03001a;
+		public static final int example1 = 0x7f030022;
+		public static final int example2 = 0x7f030023;
+		public static final int list = 0x7f030025;
+		public static final int main = 0x7f030026;
+		public static final int quickaction = 0x7f030035;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f06002e;
-		public static final int hello = 0x7f060080;
+		public static final int app_name = 0x7f060035;
+		public static final int hello = 0x7f060087;
 	}
 	public static final class style {
-		public static final int Animations = 0x7f08003b;
-		public static final int Animations_PopDownMenu = 0x7f08003c;
-		public static final int Animations_PopDownMenu_Center = 0x7f08003d;
-		public static final int Animations_PopDownMenu_Left = 0x7f08003e;
-		public static final int Animations_PopDownMenu_Right = 0x7f08003f;
-		public static final int Animations_PopUpMenu = 0x7f080040;
-		public static final int Animations_PopUpMenu_Center = 0x7f080041;
-		public static final int Animations_PopUpMenu_Left = 0x7f080042;
-		public static final int Animations_PopUpMenu_Right = 0x7f080043;
+		public static final int Animations = 0x7f09008f;
+		public static final int Animations_PopDownMenu = 0x7f090090;
+		public static final int Animations_PopDownMenu_Center = 0x7f090091;
+		public static final int Animations_PopDownMenu_Left = 0x7f090092;
+		public static final int Animations_PopDownMenu_Right = 0x7f090093;
+		public static final int Animations_PopUpMenu = 0x7f090094;
+		public static final int Animations_PopUpMenu_Center = 0x7f090095;
+		public static final int Animations_PopUpMenu_Left = 0x7f090096;
+		public static final int Animations_PopUpMenu_Right = 0x7f090097;
 	}
 }

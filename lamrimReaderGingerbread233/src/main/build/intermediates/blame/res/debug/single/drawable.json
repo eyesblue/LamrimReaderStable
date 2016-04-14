@@ -1,0 +1,326 @@
+[
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/mode_sw_button.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/mode_sw_button.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/subtitle_background.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/subtitle_background.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_progress_indeterminate_horizontal_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_progress_indeterminate_horizontal_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_list_selector_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/btn_bg_press.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/btn_bg_press.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_switch_inner_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_switch_inner_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_ratingbar_full_empty_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_ratingbar_full_empty_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/theory_dark_bg.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/theory_dark_bg.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/search_last_icon.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/search_last_icon.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/btn_default_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/btn_default_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_tab_indicator_holo.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_tab_indicator_holo.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/ic_subtitle_file.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/ic_subtitle_file.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_fastscroll_thumb_holo.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_fastscroll_thumb_holo.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_light.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/blue_circle.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/robotoCalendarLibrary/unspecified/res/drawable/blue_circle.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_switch_track_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_switch_track_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/ic_media_fullscreen_shrink.png",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/ic_media_fullscreen_shrink.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/ic_speech_file.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/ic_speech_file.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/green_line.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/robotoCalendarLibrary/unspecified/res/drawable/green_line.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/left_bound_icon.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/left_bound_icon.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/green_circle.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/robotoCalendarLibrary/unspecified/res/drawable/green_circle.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/scrubber_progress_horizontal_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/scrubber_progress_horizontal_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_progress_horizontal_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_progress_horizontal_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/blue_line.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/robotoCalendarLibrary/unspecified/res/drawable/blue_line.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_ratingbar_full_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_ratingbar_full_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/scrubber_control_selector_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/scrubber_control_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_ratingbar_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_ratingbar_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/speech_menu_item_e.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/speech_menu_item_e.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_btn_radio_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_btn_radio_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_ratingbar_full_filled_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_ratingbar_full_filled_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_scrubber_control_selector_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_scrubber_control_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/save_icon.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/save_icon.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/red_circle.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/robotoCalendarLibrary/unspecified/res/drawable/red_circle.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/red_line.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/robotoCalendarLibrary/unspecified/res/drawable/red_line.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/theory_light_bg.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/theory_light_bg.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_btn_check_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_btn_check_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_btn_toggle_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_btn_toggle_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/ic_right_selector.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/robotoCalendarLibrary/unspecified/res/drawable/ic_right_selector.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_ratingbar_small_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_ratingbar_small_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/ic_left_selector.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/robotoCalendarLibrary/unspecified/res/drawable/ic_left_selector.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/speech_menu_item_d.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/speech_menu_item_d.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_edit_text_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_edit_text_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/background.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/background.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_activated_background_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_activated_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/right_bound_icon.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/right_bound_icon.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_btn_default_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_btn_default_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_scrubber_progress_horizontal_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_scrubber_progress_horizontal_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/horizontal_line_with_gradient.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/robotoCalendarLibrary/unspecified/res/drawable/horizontal_line_with_gradient.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/master.jpg",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/master.jpg"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/ctrl_panel_btn_shape.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/ctrl_panel_btn_shape.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/share_icon.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/share_icon.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/blue_ring.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/robotoCalendarLibrary/unspecified/res/drawable/blue_ring.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/search_next_icon.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/search_next_icon.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/quickaction_slider_btn.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/newQuickAction/unspecified/res/drawable/quickaction_slider_btn.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/ic_media_fullscreen_stretch.png",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/ic_media_fullscreen_stretch.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_spinner_background_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_spinner_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable/apptheme_item_background_holo_dark.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable/apptheme_item_background_holo_dark.xml"
+    }
+]

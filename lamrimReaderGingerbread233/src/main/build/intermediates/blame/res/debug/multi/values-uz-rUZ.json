@@ -1,0 +1,387 @@
+[
+    {
+        "outputFile": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/values-uz-rUZ/values-uz-rUZ.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 104,
+                    "endOffset": 205
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 233,
+                        "endColumn": 104,
+                        "endOffset": 333
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 210,
+                    "endColumn": 107,
+                    "endOffset": 313
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 338,
+                        "endColumn": 107,
+                        "endOffset": 441
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 318,
+                    "endColumn": 122,
+                    "endOffset": 436
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 446,
+                        "endColumn": 122,
+                        "endOffset": 564
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 441,
+                    "endColumn": 103,
+                    "endOffset": 540
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 569,
+                        "endColumn": 103,
+                        "endOffset": 668
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 545,
+                    "endColumn": 116,
+                    "endOffset": 657
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 673,
+                        "endColumn": 116,
+                        "endOffset": 785
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 662,
+                    "endColumn": 85,
+                    "endOffset": 743
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 790,
+                        "endColumn": 85,
+                        "endOffset": 871
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 748,
+                    "endColumn": 110,
+                    "endOffset": 854
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 876,
+                        "endColumn": 110,
+                        "endOffset": 982
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 859,
+                    "endColumn": 115,
+                    "endOffset": 970
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 987,
+                        "endColumn": 115,
+                        "endOffset": 1098
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 975,
+                    "endColumn": 79,
+                    "endOffset": 1050
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1103,
+                        "endColumn": 79,
+                        "endOffset": 1178
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1055,
+                    "endColumn": 78,
+                    "endOffset": 1129
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1183,
+                        "endColumn": 78,
+                        "endOffset": 1257
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1134,
+                    "endColumn": 83,
+                    "endOffset": 1213
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1262,
+                        "endColumn": 83,
+                        "endOffset": 1341
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1218,
+                    "endColumn": 108,
+                    "endOffset": 1322
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1346,
+                        "endColumn": 108,
+                        "endOffset": 1450
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1327,
+                    "endColumn": 106,
+                    "endOffset": 1429
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1455,
+                        "endColumn": 106,
+                        "endOffset": 1557
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1434,
+                    "endColumn": 100,
+                    "endOffset": 1530
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1562,
+                        "endColumn": 100,
+                        "endOffset": 1658
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1535,
+                    "endColumn": 107,
+                    "endOffset": 1638
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1663,
+                        "endColumn": 107,
+                        "endOffset": 1766
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1643,
+                    "endColumn": 104,
+                    "endOffset": 1743
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1771,
+                        "endColumn": 104,
+                        "endOffset": 1871
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1748,
+                    "endColumn": 104,
+                    "endOffset": 1848
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1876,
+                        "endColumn": 104,
+                        "endOffset": 1976
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1853,
+                    "endColumn": 98,
+                    "endOffset": 1947
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1981,
+                        "endColumn": 98,
+                        "endOffset": 2075
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1952,
+                    "endColumn": 280,
+                    "endOffset": 2228
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values-uz-rUZ/common_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 170,
+                        "endColumn": 284,
+                        "endOffset": 450
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 2233,
+                    "endColumn": 100,
+                    "endOffset": 2329
+                },
+                "from": {
+                    "file": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 2080,
+                        "endColumn": 100,
+                        "endOffset": 2176
+                    }
+                }
+            }
+        ]
+    }
+]

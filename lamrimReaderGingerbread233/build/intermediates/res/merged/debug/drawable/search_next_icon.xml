@@ -2,4 +2,4 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android" >
 	<item android:state_pressed="true" android:drawable="@drawable/search_next_p" />
 	<item android:drawable="@drawable/search_next" />
-</selector><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable/search_next_icon.xml -->
+</selector>

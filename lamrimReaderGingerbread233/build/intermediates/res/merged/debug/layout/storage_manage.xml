@@ -471,4 +471,4 @@
             android:text="@string/dlgOk" />
     </LinearLayout>
 
-</ScrollView><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/storage_manage.xml -->
+</ScrollView>

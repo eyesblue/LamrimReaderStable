@@ -12,4 +12,3 @@
 		android:duration="@android:integer/config_shortAnimTime"
 	/>
 </set>
-<!-- From: file:/Users/father/Dropbox/LamrimReaderStable/newQuickAction/src/main/res/anim/shrink_from_bottomright_to_topleft.xml -->

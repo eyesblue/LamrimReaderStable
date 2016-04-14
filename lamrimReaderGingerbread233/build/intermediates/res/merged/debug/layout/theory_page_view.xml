@@ -35,4 +35,4 @@
         android:text="第 x 頁"
         android:textColor="@color/defSubtitleFGcolor" />
 
-</LinearLayout><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/theory_page_view.xml -->
+</LinearLayout>

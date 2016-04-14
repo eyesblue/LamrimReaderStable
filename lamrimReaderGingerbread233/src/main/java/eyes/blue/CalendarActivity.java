@@ -64,8 +64,13 @@ import android.os.Handler;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 public class CalendarActivity extends AppCompatActivity {
 	Hashtable<String, GlRecord> glSchedule = new Hashtable<String, GlRecord>();
@@ -73,6 +78,7 @@ public class CalendarActivity extends AppCompatActivity {
 	SimpleDateFormat dateFormater = new SimpleDateFormat("yyyy/MM/dd", Locale.getDefault());
 	Date glRangeStart = null, glRangeEnd = null;
 	FileSysManager fsm=null;
+	View actionBarControlPanel = null;
 	
 	// For Calendar view.
 	private RobotoCalendarView robotoCalendarView;
@@ -87,7 +93,13 @@ public class CalendarActivity extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_calendar);
-	//	getSupportActionBar();
+
+		LayoutInflater factory = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
+		actionBarControlPanel = factory.inflate(R.layout.calendar_actionbar_control_panel, null);
+		getSupportActionBar();
+		getSupportActionBar().setCustomView(actionBarControlPanel);
+		getSupportActionBar().setDisplayShowCustomEnabled(true);
+		initActionBarItem();
 
 		initialCalendarView();
 		downloadPDialog = new ProgressDialog(CalendarActivity.this);
@@ -96,6 +108,55 @@ public class CalendarActivity extends AppCompatActivity {
 				getString(R.string.dlgDescDownloading), "",
 				getString(R.string.title_activity_calendar)));
 		fsm=new FileSysManager(CalendarActivity.this);
+	}
+
+	private void initActionBarItem(){
+		LinearLayout reloadStateOpt=(LinearLayout) actionBarControlPanel.findViewById(R.id.reloadStateOpt);
+		LinearLayout downloadSchOpt=(LinearLayout) actionBarControlPanel.findViewById(R.id.downloadSchOpt);
+
+		// Check is there not exist last state
+		SharedPreferences playRecord = getSharedPreferences(getString(R.string.GLModeRecordFile), 0);
+		String title=playRecord.getString("title", null);
+		int mediaIndex=playRecord.getInt("mediaIndex",-1);
+		int position=playRecord.getInt("playPosition", -1);
+		if(title == null || mediaIndex == -1 || position == -1){
+			reloadStateOpt.setVisibility(View.GONE);;
+			//reloadStateOpt.findViewById(R.id.image).setVisibility(View.GONE);
+			//reloadStateOpt.findViewById(R.id.desc).setVisibility(View.GONE);
+		}
+
+		reloadStateOpt.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent();
+				intent.putExtra("reloadLastState", true);
+				setResult(Activity.RESULT_OK, intent);
+				GaLogger.sendEvent("ui_action", "CalendarActivity", "ReloadLastState", null);
+				finish();
+			}
+		});
+
+		downloadSchOpt.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Log.d(getClass().getName(),"dialogShowing = "+dialogShowing);
+				if (dialogShowing)return;
+
+				dialogShowing = true;
+				new Thread(new Runnable() {
+					@Override
+					public void run() {
+						if (!downloadSchedule())
+							return;
+
+						File schedule = getLocalScheduleFile();
+						if (schedule == null)
+							return;
+						reloadSchedule(schedule);
+					}
+				}).start();
+			}
+		});
 	}
 
 	@Override
@@ -142,20 +203,24 @@ public class CalendarActivity extends AppCompatActivity {
 	protected void onStop() {
 		super.onStop();
 	}
-
+/*
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
+		menu.clear();// clear items
 		SharedPreferences playRecord = getSharedPreferences(getString(R.string.GLModeRecordFile), 0);
 		String title=playRecord.getString("title", null);
 		int mediaIndex=playRecord.getInt("mediaIndex",-1);
 		int position=playRecord.getInt("playPosition", -1);
 		if(title != null && mediaIndex != -1 && position != -1){
-			MenuItem item=menu.add(getString(R.string.reloadLastState) + ": " + title + ": " + SpeechData.getSubtitleName(mediaIndex) + ": " + Util.getMsToHMS(position, "\"", "\'", false));
+			MenuItem item=menu.add(0,0,0,getString(R.string.reloadLastState) + ": " + title );
 			item.setIcon(R.drawable.reload_last_state);
 			MenuItemCompat.setShowAsAction(item, MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
 			return super.onCreateOptionsMenu(menu);
 		}
 
+		MenuItem item1=menu.add(1,0,0,getString(R.string.downloadSchedule));
+			item1.setIcon(R.drawable.update);
+			MenuItemCompat.setShowAsAction(item1, MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
 		return true;
 	}
 
@@ -190,7 +255,7 @@ public class CalendarActivity extends AppCompatActivity {
 		}
 		return false;
 	}
-
+*/
 	protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
 		super.onActivityResult(requestCode, resultCode, intent);
 		//Log.d("CalendarActivity","Get result from SpeechMenuActivity,

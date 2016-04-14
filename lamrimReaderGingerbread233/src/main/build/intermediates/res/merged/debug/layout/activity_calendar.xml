@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+<!--     <net.simonvt.calendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:textSize="36sp"
+        app:cv_focusedMonthDateColor="#007E00"
+        app:cv_maxDate="4"
+        app:cv_selectedWeekBackgroundColor="#133757"
+        app:cv_showWeekNumber="false"
+        app:cv_unfocusedMonthDateColor="#E4E2ED"
+        app:cv_weekNumberColor="#FDFDFD"
+        app:cv_weekSeparatorLineColor="#944A03" />
+ -->
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.disegnator.robotocalendar.RobotoCalendarView
+                android:id="@+id/robotoCalendarPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </com.disegnator.robotocalendar.RobotoCalendarView>
+
+        </ScrollView>
+
+</LinearLayout>

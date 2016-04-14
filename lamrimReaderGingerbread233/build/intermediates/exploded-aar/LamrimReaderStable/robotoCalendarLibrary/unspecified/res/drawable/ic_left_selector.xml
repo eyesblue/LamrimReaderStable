@@ -4,4 +4,4 @@
     <item android:drawable="@drawable/ic_left_blue" android:state_pressed="true"/>
     <item android:drawable="@drawable/ic_left"/>
 
-</selector><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/robotoCalendarLibrary/src/main/res/drawable/ic_left_selector.xml -->
+</selector>

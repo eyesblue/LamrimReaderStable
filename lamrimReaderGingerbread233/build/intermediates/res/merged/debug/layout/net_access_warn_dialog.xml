@@ -13,4 +13,4 @@
         android:text="@string/dlgDontShowThisWarnDesc" >
     </CheckBox>
 
-</LinearLayout><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/net_access_warn_dialog.xml -->
+</LinearLayout>

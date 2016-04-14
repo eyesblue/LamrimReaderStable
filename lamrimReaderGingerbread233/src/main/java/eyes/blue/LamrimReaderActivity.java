@@ -2,37 +2,21 @@ package eyes.blue;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
-import java.net.MalformedURLException;
-import java.net.URISyntaxException;
 import java.net.URLEncoder;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Timer;
 
-import net.londatiga.android.ActionItem;
-import net.londatiga.android.QuickAction;
-
-import org.apache.http.HttpEntity;
-import org.apache.http.client.ClientProtocolException;
-import org.json.JSONException;
-import org.json.JSONObject;
 import afzkl.development.colorpickerview.dialog.ColorPickerDialog;
 import afzkl.development.colorpickerview.view.ColorPickerView;
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.ActivityInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
@@ -42,43 +26,28 @@ import android.graphics.Point;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.TransitionDrawable;
 import android.media.AudioManager;
-import android.media.AudioManager.OnAudioFocusChangeListener;
-import android.media.MediaPlayer;
-import android.media.MediaPlayer.OnPreparedListener;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.PowerManager;
-import android.os.SystemClock;
 import android.support.v4.view.GestureDetectorCompat;
 
 import android.support.v7.app.AppCompatActivity;
-import android.text.InputType;
 import android.text.Layout;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.method.ScrollingMovementMethod;
-import android.text.style.BackgroundColorSpan;
 import android.text.style.ForegroundColorSpan;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.support.v4.app.FragmentActivity;
 
 
 import android.view.Menu;
 import android.support.v4.view.MenuItemCompat;
-import android.view.MenuInflater;
-import android.view.Display;
-import android.view.DragEvent;
-import android.view.GestureDetector;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -97,7 +66,6 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -116,12 +84,9 @@ import android.widget.TextView.OnEditorActionListener;
 import android.widget.Toast;
 import com.winsontan520.wversionmanager.library.WVersionManager;
 
-import eyes.blue.SpeechMenuActivity.SpeechListAdapter;
 import eyes.blue.modified.MyListView;
-import eyes.blue.modified.MyHorizontalScrollView;
 import eyes.blue.modified.OnDoubleTapEventListener;
 import android.view.ScaleGestureDetector.SimpleOnScaleGestureListener;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 /**
  * 更新: $$Date: 2013-12-29 12:01:44 +0800 (Sun, 29 Dec 2013) $$ 作者: $$Author:
@@ -291,7 +256,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 		Log.d(logTag,"Get font size: max="+textMaxSize+", def="+textDefSize+", min="+textMinSize);
 		
 		LayoutInflater factory = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
-		actionBarControlPanel = factory.inflate(R.layout.action_bar_control_panel, null);
+		actionBarControlPanel = factory.inflate(R.layout.lamrimreader_actionbar_control_panel, null);
 		modeSwBtn = (Button) findViewById(R.id.modeSwBtn);
 		modeSwBtn.setOnTouchListener(new View.OnTouchListener() {
 			@Override
@@ -1665,7 +1630,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 					playRecord.getInt("theoryStartPage", -1),
 					playRecord.getInt("theoryStartLine", -1),
 					playRecord.getInt("theoryEndPage", -1),
-					playRecord.getInt("thtoryEndLine", -1),
+					playRecord.getInt("theoryEndLine", -1),
 					regionIndex,
 					playRecord.getString("title", "---")
 					);
@@ -1997,34 +1962,36 @@ public class LamrimReaderActivity extends AppCompatActivity {
 			int theoryStartPage = playRecord.getInt("theoryStartPage", -1);
 			int theoryStartLine = playRecord.getInt("theoryStartLine", -1);
 			int theoryEndPage = playRecord.getInt("theoryEndPage", -1);
-			int thtoryEndLine = playRecord.getInt("thtoryEndLine", -1);
+			int theoryEndLine = playRecord.getInt("theoryEndLine", -1);
 			// int = playRecord.getInt("regionIndex", -1);
 			actionBarTitle = playRecord.getString("title", "---");
 			playPosition=playRecord.getInt("playPosition", -1);
-			setRegionSec(speechStartIndex, speechStartMs, speechEndIndex, speechEndMs, theoryStartPage, theoryStartLine, theoryEndPage, thtoryEndLine, actionBarTitle);
+			setRegionSec(speechStartIndex, speechStartMs, speechEndIndex, speechEndMs, theoryStartPage, theoryStartLine, theoryEndPage, theoryEndLine, actionBarTitle);
 			}
 			else{
-			glRecord.dateStart=intent.getStringExtra("dateStart");
-			glRecord.dateEnd=intent.getStringExtra("dateEnd");
-			glRecord.speechPositionStart=intent.getStringExtra("speechPositionStart");
-			glRecord.speechPositionEnd=intent.getStringExtra("speechPositionEnd");
-			glRecord.totalTime=intent.getStringExtra("totalTime");
-			glRecord.theoryLineStart=intent.getStringExtra("theoryLineStart");
-			glRecord.theoryLineEnd=intent.getStringExtra("theoryLineEnd");
-			glRecord.subtitleLineStart=intent.getStringExtra("subtitleLineStart");
-			glRecord.subtitleLineEnd=intent.getStringExtra("subtitleLineEnd");
-			glRecord.desc=intent.getStringExtra("desc");
-			actionBarTitle=intent.getStringExtra("selectedDay");
 
-			String sec[]=actionBarTitle.split("/");
-			actionBarTitle=getString(R.string.globalLamrimShortName)+": "+sec[1]+"/"+sec[2];
-			String regionInfo[]=glRecord.desc.split("……");
-			regionStartInfo=regionInfo[0].trim();
-			regionEndInfo=regionInfo[1].trim();
-			Log.d(getClass().getName(),"Get data: "+glRecord);
-			setRegionSec(glRecord.speechPositionStart, glRecord.speechPositionEnd, glRecord.theoryLineStart, glRecord.theoryLineEnd, 0, actionBarTitle);
+				glRecord.dateStart=intent.getStringExtra("dateStart");
+				glRecord.dateEnd=intent.getStringExtra("dateEnd");
+				glRecord.speechPositionStart=intent.getStringExtra("speechPositionStart");
+				glRecord.speechPositionEnd=intent.getStringExtra("speechPositionEnd");
+				glRecord.totalTime=intent.getStringExtra("totalTime");
+				glRecord.theoryLineStart=intent.getStringExtra("theoryLineStart");
+				glRecord.theoryLineEnd=intent.getStringExtra("theoryLineEnd");
+				glRecord.subtitleLineStart=intent.getStringExtra("subtitleLineStart");
+				glRecord.subtitleLineEnd=intent.getStringExtra("subtitleLineEnd");
+				glRecord.desc=intent.getStringExtra("desc");
+				String title=intent.getStringExtra("selectedDay");
 
-			playPosition=GLamrimSect[0][1];
+				String sec[]=title.split("/");
+				Log.d(getClass().getName(),"playPosition="+playPosition);
+				actionBarTitle=getString(R.string.globalLamrimShortName)+": "+sec[1]+"/"+sec[2]+" - "+ SpeechData.getSubtitleName(GLamrimSect[0][0]);//音檔部分顯示功能不正常
+				String regionInfo[]=glRecord.desc.split("……");
+				regionStartInfo=regionInfo[0].trim();
+				regionEndInfo = regionInfo[1].trim();
+				Log.d(getClass().getName(),"Get data: "+glRecord);
+				setRegionSec(glRecord.speechPositionStart, glRecord.speechPositionEnd, glRecord.theoryLineStart, glRecord.theoryLineEnd, 0, actionBarTitle);
+
+				playPosition=GLamrimSect[0][1];
 			}
 
 			GLamrimSectIndex=0;
@@ -2742,7 +2709,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 		record.putInt("theoryStartPage", theoryStartPage);
 		record.putInt("theoryStartLine", theoryStartLine);
 		record.putInt("theoryEndPage", theoryEndPage);
-		record.putInt("thtoryEndLine", theoryEndLine);
+		record.putInt("theoryEndLine", theoryEndLine);
 		record.putString("title", title);
 		record.commit();
 	}
@@ -3242,7 +3209,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 		private void startLamrimSection(){
 			if(GLamrimSect[GLamrimSectIndex][0] == -1) return;
 			mpController.hideMediaPlayerController();
-			Log.d(getClass().getName(),"Switch to first section of Global Lamrim.");
+			Log.d(getClass().getName(), "Switch to first section of Global Lamrim.");
 			mpController.reset();
 			
 			SharedPreferences.Editor record = playRecord.edit();
@@ -3250,9 +3217,20 @@ public class LamrimReaderActivity extends AppCompatActivity {
 			record.putInt("playPosition", GLamrimSect[GLamrimSectIndex][1]);
 			record.commit();
 			
-			Log.d(logTag,"Call startPlay from glModePrevNextListener");
+			Log.d(logTag, "Call startPlay from glModePrevNextListener");
+
+			// Rebuild the title text [MediaName]-[month]/[date](117B-01/30)
 			mediaIndex=GLamrimSect[GLamrimSectIndex][0];
-			startPlay(GLamrimSect[GLamrimSectIndex][0]);
+			if(actionBarTitle!=null && !actionBarTitle.isEmpty()) {
+				String[] titleDate = actionBarTitle.split(":");// [全廣: 03/01 - 001A]
+				if(titleDate.length>=2) {
+					titleDate=titleDate[1].split("-");
+					if(titleDate.length>=2)
+						actionBarTitle = getString(R.string.globalLamrimShortName) + ": " + titleDate[0].trim() + " - " + SpeechData.getSubtitleName(mediaIndex);
+				}
+			}
+
+			startPlay(mediaIndex);
 		}
 		
 		@Override

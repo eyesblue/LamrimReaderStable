@@ -28,4 +28,4 @@
     <item
         android:drawable="@drawable/quickaction_slider_btn_normal" />
 
-</selector><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/newQuickAction/src/main/res/drawable/quickaction_slider_btn.xml -->
+</selector>

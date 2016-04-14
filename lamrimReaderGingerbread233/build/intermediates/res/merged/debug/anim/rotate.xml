@@ -10,4 +10,4 @@
        android:startOffset="0"
        android:repeatCount="3"
        android:repeatMode="reverse" />
-</set><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/anim/rotate.xml -->
+</set>

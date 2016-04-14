@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-ldpi-v4/icon.png",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/newQuickAction/unspecified/res/drawable-ldpi-v4/icon.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-ldpi-v4/ic_launcher.png",
+        "source": "/Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/res/drawable-ldpi/ic_launcher.png"
+    }
+]

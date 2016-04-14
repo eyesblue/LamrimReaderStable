@@ -78,4 +78,4 @@
         android:text="Small Text"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
-</LinearLayout><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/popup_record_list_row.xml -->
+</LinearLayout>

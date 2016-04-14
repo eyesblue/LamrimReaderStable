@@ -4,4 +4,4 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:fromXDelta="100%p"
     android:toXDelta="0"
-    android:duration="325" /><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/newQuickAction/src/main/res/anim/rail.xml -->
+    android:duration="325" />

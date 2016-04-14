@@ -1,0 +1,958 @@
+[
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_media_play.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/ic_media_play.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_radio_on_disabled_focused_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_radio_on_disabled_focused_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_check_off_focused_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_check_off_focused_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_rating_star_off_focused_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_rating_star_off_focused_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_toggle_off_normal_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_toggle_off_normal_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_check_on_focused_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_check_on_focused_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_spinner_disabled_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_spinner_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_up.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/ic_up.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_progressbar_indeterminate_holo4.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_progressbar_indeterminate_holo4.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_radio_on_disabled_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_radio_on_disabled_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_media_ff.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/ic_media_ff.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/download.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/download.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_spinner_pressed_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_spinner_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/forbid_icon.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/forbid_icon.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/save.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/save.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/right_bound_d.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/right_bound_d.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/update.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/update.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_toggle_off_pressed_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_toggle_off_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_toggle_off_disabled_focused_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_toggle_off_disabled_focused_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/list_divider_holo_light.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/list_divider_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_longpressed_holo.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_tab_unselected_focused_holo.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_tab_unselected_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_fastscroll_thumb_pressed_holo.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_fastscroll_thumb_pressed_holo.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_textfield_focused_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_textfield_focused_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_switch_track_mtrl_alpha.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_media_previous_d.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/ic_media_previous_d.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_left.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/drawable-hdpi-v4/ic_left.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_switch_thumb_activated_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_switch_thumb_activated_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/btn_default_pressed_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/btn_default_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/project_web.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/project_web.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/info_icon.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/info_icon.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_radio_off_focused_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_radio_off_focused_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/search_last_p.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/search_last_p.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/region.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/region.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_textfield_disabled_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_textfield_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_toggle_on_pressed_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_toggle_on_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_spinner_focused_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_spinner_focused_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_text_select_handle_middle.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_text_select_handle_middle.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_scrubber_track_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_scrubber_track_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/speech.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/speech.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/quickaction_arrow_down.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/quickaction_arrow_down.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_progressbar_indeterminate_holo6.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_progressbar_indeterminate_holo6.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/storage_internal.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/storage_internal.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_scrubber_primary_holo.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_scrubber_primary_holo.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_tab_unselected_holo.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_tab_unselected_holo.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/btn_default_focused_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/btn_default_focused_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/book_.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/book_.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/volume.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/volume.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_rate_star_big_half_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_rate_star_big_half_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/btn_default_disabled_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/btn_default_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_list_focused_holo.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/edit.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/edit.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/common_ic_googleplayservices.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/drawable-hdpi/common_ic_googleplayservices.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_rating_star_off_normal_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_rating_star_off_normal_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_toggle_on_focused_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_toggle_on_focused_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_radio_on_pressed_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_radio_on_pressed_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/storage_external.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/storage_external.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_scrubber_control_disabled_holo.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_scrubber_control_disabled_holo.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/last_page.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/last_page.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_progress_secondary_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_progress_secondary_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/play.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/play.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/options.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/options.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_spinner_default_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_spinner_default_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/scrubber_control_disabled_holo.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/scrubber_control_disabled_holo.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_switch_bg_focused_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_switch_bg_focused_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/textfield_default.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/textfield_default.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/subtitle.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/subtitle.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/region_d.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/region_d.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/maintain.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/maintain.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_tab_selected_pressed_holo.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_tab_selected_pressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_right.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/drawable-hdpi-v4/ic_right.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_progressbar_indeterminate_holo2.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_progressbar_indeterminate_holo2.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/left_bound_d.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/left_bound_d.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_textfield_disabled_focused_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_textfield_disabled_focused_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_rate_star_small_off_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_rate_star_small_off_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_default_normal_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_default_normal_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_switch_thumb_pressed_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_switch_thumb_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_progress_primary_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_progress_primary_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_list_activated_holo.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_list_activated_holo.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/exit_app.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/exit_app.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_rating_star_on_pressed_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_rating_star_on_pressed_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_progressbar_indeterminate_holo8.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_progressbar_indeterminate_holo8.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/list_divider_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/list_divider_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_progressbar_indeterminate_holo7.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_progressbar_indeterminate_holo7.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/quickaction_slider_grip_left.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/quickaction_slider_grip_left.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/left_bound.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/left_bound.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_progressbar_indeterminate_holo1.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_progressbar_indeterminate_holo1.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/btn_default_disabled_focused_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/btn_default_disabled_focused_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_radio_off_disabled_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_radio_off_disabled_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/speech_d.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/speech_d.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_scrubber_secondary_holo.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_scrubber_secondary_holo.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_fastscroll_thumb_default_holo.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_fastscroll_thumb_default_holo.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/btn_default_normal_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/btn_default_normal_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_rate_star_big_off_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_rate_star_big_off_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_list_pressed_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/file.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/file.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/report.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/report.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/save_d.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/save_d.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_check_off_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_check_off_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/quickaction_slider_btn_selected.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/quickaction_slider_btn_selected.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/scrubber_primary_holo.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/scrubber_primary_holo.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_default_disabled_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_default_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_toggle_off_disabled_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_toggle_off_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_list_longpressed_holo.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_progressbar_indeterminate_holo5.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_progressbar_indeterminate_holo5.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_list_more.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/ic_list_more.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_clear_mtrl_alpha.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_check_on_pressed_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_check_on_pressed_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/delete.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/delete.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_rating_star_off_pressed_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_rating_star_off_pressed_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_search_api_mtrl_alpha.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_switch_thumb_disabled_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_switch_thumb_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_accept.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/ic_accept.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_switch_thumb_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_switch_thumb_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_media_next_d.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/ic_media_next_d.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_scrubber_control_normal_holo.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_scrubber_control_normal_holo.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_rate_star_small_half_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_rate_star_small_half_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_media_next.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/ic_media_next.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/quickaction_arrow_up.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/quickaction_arrow_up.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_check_off_disabled_focused_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_check_off_disabled_focused_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_go_search_api_mtrl_alpha.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/share_d.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/share_d.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/scrubber_secondary_holo.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/scrubber_secondary_holo.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_check_off_disabled_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_check_off_disabled_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/switch_theme.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/switch_theme.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/day_picker_week_view_dayline_holo.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/day_picker_week_view_dayline_holo.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/render_mode.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/render_mode.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_radio_off_pressed_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_radio_off_pressed_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_text_select_handle_left.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_text_select_handle_left.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_left_blue.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/drawable-hdpi-v4/ic_left_blue.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_tab_selected_holo.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_tab_selected_holo.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_media_previous.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/ic_media_previous.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_rating_star_on_normal_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_rating_star_on_normal_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/scrubber_control_pressed_holo.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/scrubber_control_pressed_holo.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/subtitle_d.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/subtitle_d.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_check_on_disabled_focused_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_check_on_disabled_focused_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_progress_bg_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_progress_bg_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/scrubber_control_focused_holo.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/scrubber_control_focused_holo.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_default_disabled_focused_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_default_disabled_focused_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/return_sign.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/return_sign.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_textfield_activated_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_textfield_activated_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/common_full_open_on_phone.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/drawable-hdpi/common_full_open_on_phone.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_default_pressed_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_default_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_right_blue.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/drawable-hdpi-v4/ic_right_blue.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/folder.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/folder.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_progressbar_indeterminate_holo3.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_progressbar_indeterminate_holo3.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/search_last.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/search_last.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_radio_on_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_radio_on_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/quickaction_top_frame.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/quickaction_top_frame.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/quickcontact_drop_shadow.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/quickcontact_drop_shadow.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_list_more_selected.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/ic_list_more_selected.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_radio_off_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_radio_off_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_list_selector_disabled_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_focused_holo.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_check_off_pressed_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_check_off_pressed_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_check_on_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_check_on_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_add.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/ic_add.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/scrubber_control_normal_holo.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/scrubber_control_normal_holo.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/scrubber_track_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/scrubber_track_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_switch_bg_disabled_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_switch_bg_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/colorPickerView/unspecified/res/drawable-hdpi-v4/icon.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/right_bound.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/right_bound.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/search.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/search.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/quickaction_slider_background.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/quickaction_slider_background.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/menu_down.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/menu_down.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_media_rew.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/ic_media_rew.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_default_focused_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_default_focused_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/next_page.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/next_page.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_media_pause.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/ic_media_pause.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_check_on_disabled_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_check_on_disabled_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/quickaction_slider_btn_normal.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/quickaction_slider_btn_normal.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/scrubber_primary_segment_mode.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/scrubber_primary_segment_mode.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_radio_on_focused_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_radio_on_focused_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/reload_last_state.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/reload_last_state.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_rating_star_on_focused_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_rating_star_on_focused_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_toggle_on_disabled_focused_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_toggle_on_disabled_focused_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_scrubber_control_pressed_holo.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_scrubber_control_pressed_holo.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_tab_unselected_pressed_holo.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_tab_unselected_pressed_holo.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_radio_off_disabled_focused_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_radio_off_disabled_focused_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_rate_star_small_on_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_rate_star_small_on_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_switch_bg_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_switch_bg_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/error_icon.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/error_icon.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/quickaction_slider_btn_pressed.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/quickaction_slider_btn_pressed.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable-hdpi/abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_toggle_on_normal_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_toggle_on_normal_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_textfield_default_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_textfield_default_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/search_next.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/search_next.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_toggle_on_disabled_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_toggle_on_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/quickaction_bottom_frame.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/quickaction_bottom_frame.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/quickaction_slider_btn_on.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/quickaction_slider_btn_on.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_tab_selected_focused_holo.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_tab_selected_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_scrubber_control_focused_holo.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_scrubber_control_focused_holo.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/share.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/share.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_btn_toggle_off_focused_holo_dark.9.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_btn_toggle_off_focused_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/global_lamrim.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/global_lamrim.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/move_here.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/move_here.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/search_next_p.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/search_next_p.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/font_size.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/font_size.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_rate_star_big_on_holo_dark.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_rate_star_big_on_holo_dark.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_ic_navigation_drawer.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_ic_navigation_drawer.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/quickaction_slider_grip_right.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/drawable-hdpi-v4/quickaction_slider_grip_right.png"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/drawable-hdpi-v4/apptheme_text_select_handle_right.png",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable-hdpi/apptheme_text_select_handle_right.png"
+    }
+]

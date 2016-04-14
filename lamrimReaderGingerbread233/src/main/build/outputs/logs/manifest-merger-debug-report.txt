@@ -1,0 +1,221 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:2:1-124:12
+	package
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:4:5-24
+		INJECTED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml
+		INJECTED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:6:5-33
+		INJECTED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml
+		INJECTED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml
+		INJECTED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:8:5-12:7
+MERGED from [LamrimReaderDev:newQuickAction:unspecified] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/newQuickAction/unspecified/AndroidManifest.xml:16:5-18:41
+MERGED from [LamrimReaderDev:robotoCalendarLibrary:unspecified] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/robotoCalendarLibrary/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [LamrimReaderDev:colorPickerView:unspecified] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/colorPickerView/unspecified/AndroidManifest.xml:37:5-39:41
+MERGED from [LamrimReaderDev:wVersionManager:unspecified] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/wVersionManager/unspecified/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+	tools:overrideLibrary
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:11:9-89
+	android:targetSdkVersion
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:9:9-38
+		INJECTED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml
+		INJECTED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:10:9-34
+		INJECTED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml
+		INJECTED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:14:5-67
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/AndroidManifest.xml:21:5-67
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:14:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:15:5-79
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:15:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:16:5-68
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:16:22-65
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:17:5-80
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:17:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:18:22-78
+uses-permission#android.permission.GET_TASKS
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:19:5-68
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:19:22-65
+supports-screens
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:21:5-51
+	android:anyDensity
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:21:23-48
+application
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:24:5-122:19
+MERGED from [LamrimReaderDev:wVersionManager:unspecified] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/wVersionManager/unspecified/AndroidManifest.xml:11:5-16:19
+MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:27:9-41
+	android:launchMode
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:28:9-38
+	android:icon
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:26:9-45
+	android:allowBackup
+		ADDED from [LamrimReaderDev:wVersionManager:unspecified] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/wVersionManager/unspecified/AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:29:9-40
+		REJECTED from [LamrimReaderDev:wVersionManager:unspecified] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderDev/wVersionManager/unspecified/AndroidManifest.xml:15:9-40
+	tools:replace
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:25:9-38
+activity#eyes.blue.SpeechMenuActivity
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:30:9-38:20
+	android:screenOrientation
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:34:13-50
+	android:label
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:33:13-45
+	android:configChanges
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:32:13-63
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:31:13-56
+activity#eyes.blue.LamrimReaderActivity
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:40:9-59:20
+	android:screenOrientation
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:44:13-50
+	android:label
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:43:13-45
+	android:windowSoftInputMode
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:45:13-54
+	android:configChanges
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:42:13-63
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:41:13-58
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:46:13-49:29
+action#android.intent.action.MAIN
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:47:17-69
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:47:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:48:17-77
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:48:27-74
+activity#eyes.blue.StorageManageActivity
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:60:9-65:20
+	android:screenOrientation
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:64:13-50
+	android:label
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:63:13-66
+	android:configChanges
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:62:13-63
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:61:13-59
+activity#eyes.blue.FileDialogActivity
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:66:9-71:20
+	android:screenOrientation
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:70:13-50
+	android:label
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:69:13-63
+	android:configChanges
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:68:13-63
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:67:13-56
+receiver#eyes.blue.MediaPlayerController$RemoteControlReceiver
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:73:9-77:20
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:73:19-87
+intent-filter#android.intent.action.MEDIA_BUTTON
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:74:13-76:29
+action#android.intent.action.MEDIA_BUTTON
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:75:17-77
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:75:25-74
+activity#eyes.blue.CalendarActivity
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:79:9-85:20
+	android:screenOrientation
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:84:13-50
+	android:label
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:83:13-60
+	android:configChanges
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:82:13-63
+	android:theme
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:81:13-40
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:80:13-54
+activity#eyes.blue.IntentActivity
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:86:9-108:14
+	android:screenOrientation
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:89:13-50
+	android:configChanges
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:88:13-63
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:87:13-52
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:90:13-101:20
+action#android.intent.action.VIEW
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:91:11-63
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:91:19-60
+category#android.intent.category.DEFAULT
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:92:11-70
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:92:21-67
+category#android.intent.category.BROWSABLE
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:93:11-72
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:93:21-69
+data
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:94:11-41
+	android:scheme
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:94:17-38
+service#eyes.blue.DownloadAllService
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:109:3-111:39
+	android:exported
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:111:13-37
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:110:13-47
+service#eyes.blue.MoveFileService
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:112:3-114:39
+	android:exported
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:114:13-37
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:113:13-44
+activity#eyes.blue.DownloadAllServiceHandler
+ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:115:3-120:14
+	android:excludeFromRecents
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:119:4-37
+	android:launchMode
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:117:4-35
+	android:taskAffinity
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:118:4-27
+	android:name
+		ADDED from /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:116:4-45
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/father/Dropbox/LamrimReaderDev/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:22:13-58

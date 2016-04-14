@@ -12,4 +12,4 @@
         android:focusable="true" >
     </ListView>
 
-</LinearLayout><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/popup_record_list.xml -->
+</LinearLayout>

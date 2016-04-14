@@ -1,0 +1,314 @@
+[
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/dialog_color_picker.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/colorPickerView/unspecified/res/layout/dialog_color_picker.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/preference_preview_layout.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/colorPickerView/unspecified/res/layout/preference_preview_layout.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/roboto_calendar_week_3.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/layout/roboto_calendar_week_3.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/popup_record_list.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/popup_record_list.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/activity_calendar.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/activity_calendar.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/save_region_dialog.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/save_region_dialog.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/media_controller.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/media_controller.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/roboto_calendar_week_5.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/layout/roboto_calendar_week_5.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/activity_file_dialog_row.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/activity_file_dialog_row.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/action_item.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/layout/action_item.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_lines.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/roboto_calendar_week_2.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/layout/roboto_calendar_week_2.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/roboto_calendar_date_title_layout.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/layout/roboto_calendar_date_title_layout.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/example2.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/layout/example2.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/search_view.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/search_view.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/report_view.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/report_view.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/download_all_service_handler.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/download_all_service_handler.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/apptheme_tab_indicator_holo.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/apptheme_tab_indicator_holo.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/roboto_calendar_week_6.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/layout/roboto_calendar_week_6.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/region_option_dialog.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/region_option_dialog.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/example1.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/layout/example1.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/popup_record_list_row.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/popup_record_list_row.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/activity_file_dialog.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/activity_file_dialog.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/roboto_calendar_week_days_layout.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/layout/roboto_calendar_week_days_layout.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/roboto_calendar_picker_layout.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/layout/roboto_calendar_picker_layout.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/list.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/layout/list.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/theory_page_view.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/theory_page_view.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/lamrimreader_actionbar_control_panel.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/lamrimreader_actionbar_control_panel.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/quickaction.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/res/layout/quickaction.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/storage_manage.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/storage_manage.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/toast_text_view.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/toast_text_view.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/save_region_dialog_for_share.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/save_region_dialog_for_share.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/calendar_actionbar_control_panel.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/calendar_actionbar_control_panel.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/roboto_calendar_week_4.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/layout/roboto_calendar_week_4.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/speech_menu.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/speech_menu.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/set_text_size_dialog_view.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/set_text_size_dialog_view.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/about.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/about.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/net_access_warn_dialog.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/net_access_warn_dialog.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/speech_row.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/speech_row.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_view.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/notification_view.xml"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/roboto_calendar_week_1.xml",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/res/layout/roboto_calendar_week_1.xml"
+    }
+]

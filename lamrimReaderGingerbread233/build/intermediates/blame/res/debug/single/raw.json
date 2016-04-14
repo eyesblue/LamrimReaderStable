@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/raw/gtm_analytics",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.1.0/res/raw/gtm_analytics"
+    },
+    {
+        "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/raw/changelog",
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/raw/changelog"
+    }
+]

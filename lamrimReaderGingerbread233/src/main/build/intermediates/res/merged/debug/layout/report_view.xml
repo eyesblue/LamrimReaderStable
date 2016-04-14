@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/reportGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <RadioButton
+            android:id="@+id/subtitleTimeErr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="字幕出現時間太早/晚: %1$s" />
+
+        <RadioButton
+            android:id="@+id/subtitleTextErr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="字幕文字內容有誤: %1$s" />
+
+        <RadioButton
+            android:id="@+id/finishCheckSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%1$s字幕已完整確認無誤" />
+
+        <RadioButton
+            android:id="@+id/theoryTextErr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="廣論文字內容有誤" />
+
+    </RadioGroup>
+
+</LinearLayout>

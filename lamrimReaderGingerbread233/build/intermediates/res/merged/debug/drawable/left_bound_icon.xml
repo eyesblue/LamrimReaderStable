@@ -2,4 +2,4 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android" >
 	<item android:state_pressed="false" android:drawable="@drawable/left_bound" />
 	<item android:drawable="@drawable/left_bound_d" />
-</selector><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/drawable/left_bound_icon.xml -->
+</selector>

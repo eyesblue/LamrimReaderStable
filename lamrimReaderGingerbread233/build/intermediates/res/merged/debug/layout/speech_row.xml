@@ -3,29 +3,29 @@
     android:id="@+id/calendarRootView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/speech_menu_item_d"
-    android:gravity="center"
+    android:background="@drawable/btn_bg_press"
+    android:gravity="center|left"
     android:orientation="vertical" >
 
     <TextView
         android:id="@+id/speechDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/subject"
         android:text="Speech Desc"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#269AFF"
-        android:layout_below="@+id/rangeDesc"
-        android:layout_centerHorizontal="true" />
+        android:textColor="#269AFF" />
 
     <TextView
         android:id="@+id/rangeDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/subject"
+        android:layout_centerHorizontal="true"
         android:text="Range Desc"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_alignBottom="@+id/subject"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:textColor="#269AFF" />
 <!--
     <ImageView
         android:id="@+id/subtitleSign"
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/subject"
-        android:src="@drawable/ic_subtitle_file" />
+        android:src="@drawable/subtitle" />
 
     <ImageView
         android:id="@+id/mediaSign"
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/subtitleSign"
         android:layout_toLeftOf="@+id/subtitleSign"
-        android:src="@drawable/ic_speech_file" />
+        android:src="@drawable/speech" />
 -->
     <TextView
         android:id="@+id/title"
@@ -66,4 +66,4 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="20sp" />
 
-</RelativeLayout><!-- From: file:/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/res/layout/speech_row.xml -->
+</RelativeLayout>
