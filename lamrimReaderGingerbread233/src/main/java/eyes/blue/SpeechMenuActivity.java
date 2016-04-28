@@ -1045,6 +1045,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 				if (respCode != HttpStatus.SC_OK) {
 					httpclient.getConnectionManager().shutdown();
 					System.out.println("CheckRemoteThread: Return code not equal 200! check return "+ respCode);
+					return false;
 				}
 			} catch (ClientProtocolException e) {
 				httpclient.getConnectionManager().shutdown();

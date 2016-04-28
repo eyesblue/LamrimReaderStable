@@ -23,6 +23,12 @@
   	<div class='title'><p><a href="http://www.facebook.com/lamrimreader">執行問題反應區</a></p></div>
   	<div class='title'><p><a href="http://lamrimreader.eyes-blue.com/">計畫首頁</a></p></div>
 
+$186
+% Version 1.4.2
+  _ 2016-4-26
+    * 修正全球廣論模式中，標題中音檔名稱顯示不正確問題。
+    * 修正下載程式部分若網站回應非SC_OK則判定下載失敗。
+
 $185
 % Version 1.4.1
   _ 2016-4-14

@@ -17,16 +17,6 @@
             <option value="$PROJECT_DIR$/wVersionManager" />
           </set>
         </option>
-        <option name="myModules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/colorPickerView" />
-            <option value="$PROJECT_DIR$/lamrimReaderGingerbread233" />
-            <option value="$PROJECT_DIR$/newQuickAction" />
-            <option value="$PROJECT_DIR$/robotoCalendarLibrary" />
-            <option value="$PROJECT_DIR$/wVersionManager" />
-          </set>
-        </option>
       </GradleProjectSettings>
     </option>
   </component>

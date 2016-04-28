@@ -1955,18 +1955,18 @@ public class LamrimReaderActivity extends AppCompatActivity {
 			int playPosition=-1;
 
 			if(intent.getBooleanExtra("reloadLastState", false)){
-			int speechStartIndex = playRecord.getInt("startMediaIndex", -1);
-			int speechStartMs = playRecord.getInt("startMediaTime", -1);
-			int speechEndIndex = playRecord.getInt("endMediaIndex", -1);
-			int speechEndMs = playRecord.getInt("endMediaTime", -1);
-			int theoryStartPage = playRecord.getInt("theoryStartPage", -1);
-			int theoryStartLine = playRecord.getInt("theoryStartLine", -1);
-			int theoryEndPage = playRecord.getInt("theoryEndPage", -1);
-			int theoryEndLine = playRecord.getInt("theoryEndLine", -1);
-			// int = playRecord.getInt("regionIndex", -1);
-			actionBarTitle = playRecord.getString("title", "---");
-			playPosition=playRecord.getInt("playPosition", -1);
-			setRegionSec(speechStartIndex, speechStartMs, speechEndIndex, speechEndMs, theoryStartPage, theoryStartLine, theoryEndPage, theoryEndLine, actionBarTitle);
+				int speechStartIndex = playRecord.getInt("startMediaIndex", -1);
+				int speechStartMs = playRecord.getInt("startMediaTime", -1);
+				int speechEndIndex = playRecord.getInt("endMediaIndex", -1);
+				int speechEndMs = playRecord.getInt("endMediaTime", -1);
+				int theoryStartPage = playRecord.getInt("theoryStartPage", -1);
+				int theoryStartLine = playRecord.getInt("theoryStartLine", -1);
+				int theoryEndPage = playRecord.getInt("theoryEndPage", -1);
+				int theoryEndLine = playRecord.getInt("theoryEndLine", -1);
+				// int = playRecord.getInt("regionIndex", -1);
+				actionBarTitle = playRecord.getString("title", "---");
+				playPosition=playRecord.getInt("playPosition", -1);
+				setRegionSec(speechStartIndex, speechStartMs, speechEndIndex, speechEndMs, theoryStartPage, theoryStartLine, theoryEndPage, theoryEndLine, actionBarTitle);
 			}
 			else{
 
@@ -1983,13 +1983,15 @@ public class LamrimReaderActivity extends AppCompatActivity {
 				String title=intent.getStringExtra("selectedDay");
 
 				String sec[]=title.split("/");
-				Log.d(getClass().getName(),"playPosition="+playPosition);
-				actionBarTitle=getString(R.string.globalLamrimShortName)+": "+sec[1]+"/"+sec[2]+" - "+ SpeechData.getSubtitleName(GLamrimSect[0][0]);//音檔部分顯示功能不正常
+				int[] speechStart=GlRecord.getSpeechStrToInt(glRecord.speechPositionStart);
+				Log.d(getClass().getName(),"mediaIndex="+GLamrimSect[0][0]+", name="+SpeechData.getSubtitleName(speechStart[0]));
+				actionBarTitle=getString(R.string.globalLamrimShortName)+": "+sec[1]+"/"+sec[2]+" - "+ SpeechData.getSubtitleName(speechStart[0]);//音檔部分顯示功能不正常
 				String regionInfo[]=glRecord.desc.split("……");
 				regionStartInfo=regionInfo[0].trim();
 				regionEndInfo = regionInfo[1].trim();
 				Log.d(getClass().getName(),"Get data: "+glRecord);
 				setRegionSec(glRecord.speechPositionStart, glRecord.speechPositionEnd, glRecord.theoryLineStart, glRecord.theoryLineEnd, 0, actionBarTitle);
+
 
 				playPosition=GLamrimSect[0][1];
 			}

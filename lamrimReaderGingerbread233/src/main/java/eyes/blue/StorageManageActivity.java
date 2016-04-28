@@ -23,6 +23,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 //import android.support.v4.provider.DocumentFile;
+import android.support.v4.provider.DocumentFile;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
@@ -39,6 +40,8 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class StorageManageActivity extends AppCompatActivity {
+	private static final int OPEN_DOCUMENT_TREE_ABV_21 = 1;
+	private static final int OPEN_DOCUMENT_TREE_UND_19 = 0;
 	FileSysManager fsm=null;
 	TextView extSpeechPathInfo, extSubtitlePathInfo, intSpeechPathInfo, intSubtitlePathInfo, extFreePercent, intFreePercent, extAppUsagePercent, intAppUsagePercent, intFree, extFree, extAppUseage, intAppUseage, labelChoicePath;
 	Button btnMoveAllToExt, btnMoveAllToInt, btnMoveToUserSpy, btnDelExtFiles, btnDelIntFiles, btnOk;
@@ -275,12 +278,12 @@ public class StorageManageActivity extends AppCompatActivity {
 		btnChoicePath.setOnClickListener(new OnClickListener (){
 			@Override
 			public void onClick(View v) {
-/*				if(Build.VERSION.SDK_INT >= 21){
+/*				if(Build.VERSION.SDK_INT >= 19){
 					Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);
-				    startActivityForResult(intent, 1);
+				    startActivityForResult(intent, OPEN_DOCUMENT_TREE_ABV_19);
 				}
 				else{
-*/					
+*/
 					Intent intent = new Intent(getBaseContext(), FileDialogActivity.class);
 					intent.putExtra(FileDialogActivity.TITLE, "請選擇存放目錄");
                 	intent.putExtra(FileDialogActivity.START_PATH, "/sdcard");
@@ -291,7 +294,7 @@ public class StorageManageActivity extends AppCompatActivity {
                 	//alternatively you can set file filter
                 	//intent.putExtra(FileDialog.FORMAT_FILTER, new String[] { "png" });
                 
-                	startActivityForResult(intent, 0);
+                	startActivityForResult(intent, OPEN_DOCUMENT_TREE_UND_19);
 //				}
 			}});
 		
@@ -539,7 +542,7 @@ public class StorageManageActivity extends AppCompatActivity {
 		if (resultCode != Activity.RESULT_OK || data == null) return;
 
 		switch(requestCode){
-		case 0:
+		case OPEN_DOCUMENT_TREE_UND_19:
 			final String filePath = data.getStringExtra(FileDialogActivity.RESULT_PATH);
 			filePathInput.postDelayed(new Runnable(){
 				@Override
@@ -547,7 +550,7 @@ public class StorageManageActivity extends AppCompatActivity {
 					filePathInput.setText(filePath);
 				}},500);
 			break;
-/*		case 1:
+/*			case OPEN_DOCUMENT_TREE_ABV_21:
 			final Uri treeUri = data.getData();
 	        final DocumentFile pickedDir = DocumentFile.fromTreeUri(this, treeUri);
 	        
@@ -557,9 +560,9 @@ public class StorageManageActivity extends AppCompatActivity {
 					filePathInput.setText(pickedDir.getUri().getPath());
 				}},500);
 	        break;
-	        */
+*/
 		}
-/*		
+/*
 		// Avoid EditText bug,  the EditText will not change to the new value without the thread.
 		new Thread(new Runnable(){
 			@Override
