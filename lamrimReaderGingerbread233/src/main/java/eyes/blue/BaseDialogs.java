@@ -1,6 +1,7 @@
 package eyes.blue;
 
 import java.io.File;
+import java.util.Calendar;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -78,6 +79,12 @@ public class BaseDialogs {
 				else {
 					Log.d(getClass().getName(),"theoryStartPage="+theoryStartPage+", theoryStartLine="+theoryStartLine+", theoryEndPage="+theoryEndPage+", theoryEndLine="+theoryEndLine);
 					if(theoryStartPage != -1 && theoryStartLine != -1 && theoryEndPage != -1 && theoryEndLine != -1){
+						Calendar c = Calendar.getInstance();
+						int month = c.get(Calendar.MONTH) + 1;
+						int week = c.get(Calendar.WEEK_OF_MONTH);
+						String autoTitle = month + "月第" + week + "週";
+						regionTitle.setText(autoTitle);
+						regionTitle.setSelection(0, autoTitle.length());
 						regionTheoryPageStart.setText(""+(theoryStartPage+1));
 						regionTheoryPageEnd.setText(""+(theoryEndPage+1));
 						regionTheoryStartLine.setText(""+(theoryStartLine+1));
@@ -189,5 +196,15 @@ public class BaseDialogs {
 	
 	public static void showToast(Context context,String msg){
 		Toast.makeText(context, msg, Toast.LENGTH_LONG).show();
+	}
+
+	public static void showMsgDialog(Context context, String title, String msg) {
+		AlertDialog.Builder builderSingle = new AlertDialog.Builder(context)
+				.setTitle(title)
+				.setIcon(android.R.drawable.ic_dialog_info)
+				.setMessage(msg);
+		builderSingle.setPositiveButton("確定", null);
+		builderSingle.setCancelable(false);
+		builderSingle.show();
 	}
 }

@@ -8,15 +8,15 @@ package afzkl.development.colorpickerview;
 
 public final class R {
 	public static final class attr {
-		public static final int alphaChannelText = 0x7f01002c;
-		public static final int alphaChannelVisible = 0x7f01002b;
-		public static final int colorPickerBorderColor = 0x7f01002e;
-		public static final int colorPickerSliderColor = 0x7f01002d;
-		public static final int showDialogTitle = 0x7f010029;
-		public static final int showSelectedColorInList = 0x7f01002a;
+		public static final int alphaChannelText = 0x7f010098;
+		public static final int alphaChannelVisible = 0x7f010097;
+		public static final int colorPickerBorderColor = 0x7f01009a;
+		public static final int colorPickerSliderColor = 0x7f010099;
+		public static final int showDialogTitle = 0x7f010095;
+		public static final int showSelectedColorInList = 0x7f010096;
 	}
 	public static final class drawable {
-		public static final int icon = 0x7f0200f4;
+		public static final int icon = 0x7f0200f9;
 	}
 	public static final class id {
 		public static final int color_panel_new = 0x7f0d0004;
@@ -31,16 +31,16 @@ public final class R {
 		public static final int preference_preview_layout = 0x7f030034;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f060035;
+		public static final int app_name = 0x7f060017;
 	}
 	public static final class style {
 		public static final int dialog_color_pciker_view_portrait = 0x7f090001;
 	}
 	public static final class styleable {
-		public static final int[] ColorPickerPreference = { 0x7f010029, 0x7f01002a };
+		public static final int[] ColorPickerPreference = { 0x7f010095, 0x7f010096 };
 		public static final int ColorPickerPreference_showDialogTitle = 0;
 		public static final int ColorPickerPreference_showSelectedColorInList = 1;
-		public static final int[] ColorPickerView = { 0x7f01002b, 0x7f01002c, 0x7f01002d, 0x7f01002e };
+		public static final int[] ColorPickerView = { 0x7f010097, 0x7f010098, 0x7f010099, 0x7f01009a };
 		public static final int ColorPickerView_alphaChannelText = 1;
 		public static final int ColorPickerView_alphaChannelVisible = 0;
 		public static final int ColorPickerView_colorPickerBorderColor = 3;

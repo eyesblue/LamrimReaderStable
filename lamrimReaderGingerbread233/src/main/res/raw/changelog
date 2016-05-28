@@ -23,6 +23,16 @@
   	<div class='title'><p><a href="http://www.facebook.com/lamrimreader">執行問題反應區</a></p></div>
   	<div class='title'><p><a href="http://lamrimreader.eyes-blue.com/">計畫首頁</a></p></div>
 
+$188
+% Version 1.4.4
+  _ 2016-5-28
+  * 於選單中加入「記錄區段」的選項。
+  * 儲存區段時會自動填入正確的區段頁數與行數。
+  * 修正儲存區段最後一筆記錄會遺失問題。
+  * 修正區段播放對話框資訊顯示不正確問題。
+  * 修改選擇音檔頁面資訊呈現方式。
+  * 修正003A、003B、005B、152A與152B的廣論字幕對應表。
+
 $187
 % Version 1.4.3
   _ 2016-4-29

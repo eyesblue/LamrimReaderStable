@@ -113,7 +113,7 @@ public class RegionRecord {
 				String str="";
 				
 				if(records.size()!=0)
-				for(int  i=records.size()-1;i>0;i--)
+					for (int i = records.size() - 1; i >= 0; i--)
 					str+=objToString(records.get(i))+"\n";
 
 				try {

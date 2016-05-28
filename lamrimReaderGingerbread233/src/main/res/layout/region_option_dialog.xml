@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:gravity="center_horizontal"
     android:orientation="vertical" >
-
-    <TextView
-        android:id="@+id/time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="將%1$s設定為"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="24sp" />
 
     <View
         android:id="@+id/View02"
@@ -44,15 +36,15 @@
             android:layout_alignParentTop="true"
             android:layout_toRightOf="@+id/textView5"
             android:gravity="center"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:background="@drawable/apptheme_btn_default_holo_dark">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableRight="@drawable/right_bound_icon"
                 android:text="@string/dlgOptSetRegionEnd"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textSize="24sp" />
+                android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <TextView
                 android:id="@+id/rightBoundDesc"
@@ -68,15 +60,15 @@
             android:layout_alignParentTop="true"
             android:layout_toLeftOf="@+id/textView5"
             android:gravity="center"
-            android:orientation="vertical" >
+            android:orientation="vertical"
+            android:background="@drawable/apptheme_btn_default_holo_dark">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/left_bound_icon"
                 android:text="@string/digOptSetRegionStart"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textSize="24sp" />
+                android:textAppearance="?android:attr/textAppearanceMedium" />
 
             <TextView
                 android:id="@+id/leftBoundDesc"
@@ -94,10 +86,11 @@
 
     <LinearLayout
         android:id="@+id/saveOpt"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:gravity="center" >
+        android:gravity="center"
+        android:background="@drawable/apptheme_btn_default_holo_dark">
 
         <ImageView
             android:id="@+id/save"
@@ -107,14 +100,13 @@
             android:src="@drawable/save_icon" />
 
         <TextView
-            
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
             android:text="@string/menuStrSavePlayRegion"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textSize="24sp" />
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
     </LinearLayout>
 

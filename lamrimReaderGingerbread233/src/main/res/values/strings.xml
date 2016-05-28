@@ -93,6 +93,7 @@
     <string name="app_name">廣論App</string>
     <string name="menuStrSelectSpeech">選擇音檔</string>
     <string name="menuStrGlobalLamrim">全球廣論</string>
+    <string name="menuStrSetRecord">記錄區段</string>
     <string name="menuStrTextSize">設定字體</string>
     <string name="menuStrSavePlayRegion">儲存區段</string>
     <string name="menuStrPlayRegionRec">區段播放</string>

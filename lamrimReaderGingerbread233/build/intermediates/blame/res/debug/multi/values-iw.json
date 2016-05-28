@@ -11,13 +11,13 @@
                     "endOffset": 204
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 229,
+                        "startOffset": 55,
                         "endColumn": 103,
-                        "endOffset": 328
+                        "endOffset": 154
                     }
                 }
             },
@@ -30,13 +30,13 @@
                     "endOffset": 314
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 333,
+                        "startOffset": 159,
                         "endColumn": 109,
-                        "endOffset": 438
+                        "endOffset": 264
                     }
                 }
             },
@@ -49,13 +49,13 @@
                     "endOffset": 440
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 443,
+                        "startOffset": 269,
                         "endColumn": 125,
-                        "endOffset": 564
+                        "endOffset": 390
                     }
                 }
             },
@@ -68,13 +68,13 @@
                     "endOffset": 539
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 569,
+                        "startOffset": 395,
                         "endColumn": 98,
-                        "endOffset": 663
+                        "endOffset": 489
                     }
                 }
             },
@@ -87,13 +87,13 @@
                     "endOffset": 647
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 668,
+                        "startOffset": 494,
                         "endColumn": 107,
-                        "endOffset": 771
+                        "endOffset": 597
                     }
                 }
             },
@@ -106,13 +106,13 @@
                     "endOffset": 731
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 776,
+                        "startOffset": 602,
                         "endColumn": 83,
-                        "endOffset": 855
+                        "endOffset": 681
                     }
                 }
             },
@@ -125,13 +125,13 @@
                     "endOffset": 831
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 860,
+                        "startOffset": 686,
                         "endColumn": 99,
-                        "endOffset": 955
+                        "endOffset": 781
                     }
                 }
             },
@@ -144,13 +144,13 @@
                     "endOffset": 945
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 960,
+                        "startOffset": 786,
                         "endColumn": 113,
-                        "endOffset": 1069
+                        "endOffset": 895
                     }
                 }
             },
@@ -163,13 +163,13 @@
                     "endOffset": 1023
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 12,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 1074,
+                        "startOffset": 900,
                         "endColumn": 77,
-                        "endOffset": 1147
+                        "endOffset": 973
                     }
                 }
             },
@@ -182,13 +182,13 @@
                     "endOffset": 1101
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1152,
+                        "startOffset": 978,
                         "endColumn": 77,
-                        "endOffset": 1225
+                        "endOffset": 1051
                     }
                 }
             },
@@ -201,13 +201,13 @@
                     "endOffset": 1180
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 14,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1230,
+                        "startOffset": 1056,
                         "endColumn": 78,
-                        "endOffset": 1304
+                        "endOffset": 1130
                     }
                 }
             },
@@ -220,13 +220,13 @@
                     "endOffset": 1282
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1309,
+                        "startOffset": 1135,
                         "endColumn": 101,
-                        "endOffset": 1406
+                        "endOffset": 1232
                     }
                 }
             },
@@ -239,13 +239,13 @@
                     "endOffset": 1386
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1411,
+                        "startOffset": 1237,
                         "endColumn": 103,
-                        "endOffset": 1510
+                        "endOffset": 1336
                     }
                 }
             },
@@ -258,13 +258,13 @@
                     "endOffset": 1482
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 17,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1515,
+                        "startOffset": 1341,
                         "endColumn": 95,
-                        "endOffset": 1606
+                        "endOffset": 1432
                     }
                 }
             },
@@ -277,13 +277,13 @@
                     "endOffset": 1585
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 18,
+                        "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1611,
+                        "startOffset": 1437,
                         "endColumn": 102,
-                        "endOffset": 1709
+                        "endOffset": 1535
                     }
                 }
             },
@@ -296,13 +296,13 @@
                     "endOffset": 1686
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 19,
+                        "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1714,
+                        "startOffset": 1540,
                         "endColumn": 100,
-                        "endOffset": 1810
+                        "endOffset": 1636
                     }
                 }
             },
@@ -315,13 +315,13 @@
                     "endOffset": 1786
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 20,
+                        "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 1815,
+                        "startOffset": 1641,
                         "endColumn": 99,
-                        "endOffset": 1910
+                        "endOffset": 1736
                     }
                 }
             },
@@ -334,13 +334,13 @@
                     "endOffset": 1902
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1915,
+                        "startOffset": 1741,
                         "endColumn": 115,
-                        "endOffset": 2026
+                        "endOffset": 1852
                     }
                 }
             },
@@ -353,13 +353,13 @@
                     "endOffset": 1998
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
-                        "startLine": 22,
+                        "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 2031,
+                        "startOffset": 1857,
                         "endColumn": 95,
-                        "endOffset": 2122
+                        "endOffset": 1948
                     }
                 }
             },
@@ -368,17 +368,17 @@
                     "startLine": 21,
                     "startColumn": 4,
                     "startOffset": 2003,
-                    "endColumn": 178,
-                    "endOffset": 2177
+                    "endColumn": 216,
+                    "endOffset": 2215
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values-iw/common_strings.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 476,
-                        "endColumn": 182,
-                        "endOffset": 654
+                        "startOffset": 170,
+                        "endColumn": 220,
+                        "endOffset": 386
                     }
                 }
             },
@@ -386,569 +386,18 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 2182,
-                    "endColumn": 169,
-                    "endOffset": 2347
+                    "startOffset": 2220,
+                    "endColumn": 102,
+                    "endOffset": 2318
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 2484,
-                        "endColumn": 173,
-                        "endOffset": 2653
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 23,
-                    "startColumn": 4,
-                    "startOffset": 2352,
-                    "endColumn": 110,
-                    "endOffset": 2458
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 2193,
-                        "endColumn": 110,
-                        "endOffset": 2299
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 24,
-                    "startColumn": 4,
-                    "startOffset": 2463,
-                    "endColumn": 226,
-                    "endOffset": 2685
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 30,
-                        "startColumn": 4,
-                        "startOffset": 4202,
-                        "endColumn": 230,
-                        "endOffset": 4428
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 25,
-                    "startColumn": 4,
-                    "startOffset": 2690,
-                    "endColumn": 127,
-                    "endOffset": 2813
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1940,
-                        "endColumn": 127,
-                        "endOffset": 2063
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 26,
-                    "startColumn": 4,
-                    "startOffset": 2818,
-                    "endColumn": 175,
-                    "endOffset": 2989
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 13,
-                        "startColumn": 4,
-                        "startOffset": 1760,
-                        "endColumn": 179,
-                        "endOffset": 1935
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 27,
-                    "startColumn": 4,
-                    "startOffset": 2994,
-                    "endColumn": 123,
-                    "endOffset": 3113
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1636,
-                        "endColumn": 123,
-                        "endOffset": 1755
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 28,
-                    "startColumn": 4,
-                    "startOffset": 3118,
-                    "endColumn": 169,
-                    "endOffset": 3283
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 819,
-                        "endColumn": 173,
-                        "endOffset": 988
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 29,
-                    "startColumn": 4,
-                    "startOffset": 3288,
-                    "endColumn": 127,
-                    "endOffset": 3411
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 1508,
-                        "endColumn": 127,
-                        "endOffset": 1631
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 30,
-                    "startColumn": 4,
-                    "startOffset": 3416,
-                    "endColumn": 190,
-                    "endOffset": 3602
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 1118,
-                        "endColumn": 194,
-                        "endOffset": 1308
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 31,
-                    "startColumn": 4,
-                    "startOffset": 3607,
-                    "endColumn": 190,
-                    "endOffset": 3793
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 1313,
-                        "endColumn": 194,
-                        "endOffset": 1503
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 32,
-                    "startColumn": 4,
-                    "startOffset": 3798,
-                    "endColumn": 124,
-                    "endOffset": 3918
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 993,
-                        "endColumn": 124,
-                        "endOffset": 1113
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 33,
-                    "startColumn": 4,
-                    "startOffset": 3923,
-                    "endColumn": 153,
-                    "endOffset": 4072
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 24,
-                        "startColumn": 4,
-                        "startOffset": 3369,
-                        "endColumn": 153,
-                        "endOffset": 3518
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 34,
-                    "startColumn": 4,
-                    "startOffset": 4077,
-                    "endColumn": 121,
-                    "endOffset": 4194
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 4,
-                        "startOffset": 3247,
-                        "endColumn": 121,
-                        "endOffset": 3364
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 35,
-                    "startColumn": 4,
-                    "startOffset": 4199,
-                    "endColumn": 159,
-                    "endOffset": 4354
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 659,
-                        "endColumn": 159,
-                        "endOffset": 814
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 36,
-                    "startColumn": 4,
-                    "startOffset": 4359,
-                    "endColumn": 155,
-                    "endOffset": 4510
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 22,
-                        "startColumn": 4,
-                        "startOffset": 3091,
-                        "endColumn": 155,
-                        "endOffset": 3242
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 37,
-                    "startColumn": 4,
-                    "startOffset": 4515,
-                    "endColumn": 116,
-                    "endOffset": 4627
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
+                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-iw/values-iw.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 2974,
-                        "endColumn": 116,
-                        "endOffset": 3086
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 38,
-                    "startColumn": 4,
-                    "startOffset": 4632,
-                    "endColumn": 172,
-                    "endOffset": 4800
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 303,
-                        "endColumn": 172,
-                        "endOffset": 471
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 39,
-                    "startColumn": 4,
-                    "startOffset": 4805,
-                    "endColumn": 132,
-                    "endOffset": 4933
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 170,
-                        "endColumn": 132,
-                        "endOffset": 298
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 40,
-                    "startColumn": 4,
-                    "startOffset": 4938,
-                    "endColumn": 161,
-                    "endOffset": 5095
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 32,
-                        "startColumn": 4,
-                        "startOffset": 4553,
-                        "endColumn": 161,
-                        "endOffset": 4710
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 41,
-                    "startColumn": 4,
-                    "startOffset": 5100,
-                    "endColumn": 119,
-                    "endOffset": 5215
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 31,
-                        "startColumn": 4,
-                        "startOffset": 4433,
-                        "endColumn": 119,
-                        "endOffset": 4548
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 42,
-                    "startColumn": 4,
-                    "startOffset": 5220,
-                    "endColumn": 135,
-                    "endOffset": 5351
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 25,
-                        "startColumn": 4,
-                        "startOffset": 3523,
-                        "endColumn": 135,
-                        "endOffset": 3654
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 43,
-                    "startColumn": 4,
-                    "startOffset": 5356,
-                    "endColumn": 220,
-                    "endOffset": 5572
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 27,
-                        "startColumn": 4,
-                        "startOffset": 3783,
-                        "endColumn": 224,
-                        "endOffset": 4003
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 44,
-                    "startColumn": 4,
-                    "startOffset": 5577,
-                    "endColumn": 123,
-                    "endOffset": 5696
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 26,
-                        "startColumn": 4,
-                        "startOffset": 3659,
-                        "endColumn": 123,
-                        "endOffset": 3778
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 45,
-                    "startColumn": 4,
-                    "startOffset": 5701,
-                    "endColumn": 104,
-                    "endOffset": 5801
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 28,
-                        "startColumn": 4,
-                        "startOffset": 4008,
-                        "endColumn": 104,
-                        "endOffset": 4108
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 46,
-                    "startColumn": 4,
-                    "startOffset": 5806,
-                    "endColumn": 175,
-                    "endOffset": 5977
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 2304,
-                        "endColumn": 179,
-                        "endOffset": 2479
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 47,
-                    "startColumn": 4,
-                    "startOffset": 5982,
-                    "endColumn": 124,
-                    "endOffset": 6102
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 2068,
-                        "endColumn": 124,
-                        "endOffset": 2188
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 48,
-                    "startColumn": 4,
-                    "startOffset": 6107,
-                    "endColumn": 182,
-                    "endOffset": 6285
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 20,
-                        "startColumn": 4,
-                        "startOffset": 2787,
-                        "endColumn": 186,
-                        "endOffset": 2969
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 49,
-                    "startColumn": 4,
-                    "startOffset": 6290,
-                    "endColumn": 128,
-                    "endOffset": 6414
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 2658,
-                        "endColumn": 128,
-                        "endOffset": 2782
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 50,
-                    "startColumn": 4,
-                    "startOffset": 6419,
-                    "endColumn": 88,
-                    "endOffset": 6503
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/res/values-iw/common_strings.xml",
-                    "position": {
-                        "startLine": 29,
-                        "startColumn": 4,
-                        "startOffset": 4113,
-                        "endColumn": 88,
-                        "endOffset": 4197
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 51,
-                    "startColumn": 4,
-                    "startOffset": 6508,
-                    "endColumn": 102,
-                    "endOffset": 6606
-                },
-                "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-iw/values-iw.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 4,
-                        "startOffset": 2127,
+                        "startOffset": 1953,
                         "endColumn": 102,
-                        "endOffset": 2225
+                        "endOffset": 2051
                     }
                 }
             }

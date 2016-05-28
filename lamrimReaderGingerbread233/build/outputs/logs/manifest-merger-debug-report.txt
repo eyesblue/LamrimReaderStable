@@ -23,18 +23,17 @@ MERGED from [LamrimReaderStable:newQuickAction:unspecified] /Users/father/Dropbo
 MERGED from [LamrimReaderStable:robotoCalendarLibrary:unspecified] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/AndroidManifest.xml:7:5-9:41
 MERGED from [LamrimReaderStable:colorPickerView:unspecified] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/colorPickerView/unspecified/AndroidManifest.xml:37:5-39:41
 MERGED from [LamrimReaderStable:wVersionManager:unspecified] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/wVersionManager/unspecified/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-analytics:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.1.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:23:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 	tools:overrideLibrary
 		ADDED from /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:11:9-89
 	android:targetSdkVersion
@@ -47,14 +46,12 @@ MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/Lamrim
 		INJECTED from /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:14:5-67
-MERGED from [com.google.android.gms:play-services-analytics:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.1.0/AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/AndroidManifest.xml:21:5-67
 	android:name
 		ADDED from /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:14:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:15:5-79
-MERGED from [com.google.android.gms:play-services-analytics:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.1.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/AndroidManifest.xml:22:5-79
 	android:name
 		ADDED from /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:15:22-76
 uses-permission#android.permission.WAKE_LOCK
@@ -79,18 +76,17 @@ ADDED from /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/s
 		ADDED from /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:21:23-48
 application
 ADDED from /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:24:5-122:19
-MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-analytics:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.1.0/AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-ads:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-analytics:8.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:27:9-41
 	android:launchMode
@@ -224,24 +220,8 @@ ADDED from /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/s
 	android:name
 		ADDED from /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/src/main/AndroidManifest.xml:116:4-45
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:21:9-23:69
+ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:23:13-66
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:23:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/AndroidManifest.xml:22:13-58
-activity#com.google.android.gms.ads.AdActivity
-ADDED from [com.google.android.gms:play-services-ads:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:26:9-29:64
-	android:configChanges
-		ADDED from [com.google.android.gms:play-services-ads:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:28:13-122
-	android:theme
-		ADDED from [com.google.android.gms:play-services-ads:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:29:13-61
-	android:name
-		ADDED from [com.google.android.gms:play-services-ads:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:27:13-65
-activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
-ADDED from [com.google.android.gms:play-services-ads:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:30:9-31:52
-	android:theme
-		ADDED from [com.google.android.gms:play-services-ads:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:31:13-50
-	android:name
-		ADDED from [com.google.android.gms:play-services-ads:8.1.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/8.1.0/AndroidManifest.xml:30:19-91
+		ADDED from [com.google.android.gms:play-services-basement:8.4.0] /Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:22:13-58

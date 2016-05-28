@@ -63,8 +63,37 @@ public class Util {
 	static ImageView subtitleIcon=null;
 	static ImageView infoIcon=null;
 	static ImageView errorIcon=null;
-	
-	
+
+
+	public static String[] getRegionInfo(FileSysManager fsm, int[] speechData) {
+		// startMediaIndex, startTimeMs, endMediaIndex, endTimeMs, theoryStartPage, theoryStartLine, theoryEndPage, theoryEndLine, startSubtitle, endSubtitle
+		int startMediaIndex = speechData[0];
+		int startTimeMs = speechData[1];
+		int endMediaIndex = speechData[2];
+		int endTimeMs = speechData[3];
+
+		// ==================== Get text of subtitle ==============
+		// Check all subtitles are ready.
+		File startSubFile = fsm.getLocalSubtitleFile(startMediaIndex);
+		if (startSubFile == null) return null;
+		File endSubFile = null;
+		if (startMediaIndex == endMediaIndex) endSubFile = startSubFile;
+		else endSubFile = fsm.getLocalSubtitleFile(endMediaIndex);
+		if (endSubFile == null) return null;
+
+
+		SubtitleElement[] seArray = Util.loadSubtitle(startSubFile);
+		int index = subtitleBSearch(seArray, startTimeMs);
+		String startSubtitle = seArray[index].text;
+
+		if (startMediaIndex != endMediaIndex)
+			seArray = Util.loadSubtitle(endSubFile);
+		index = subtitleBSearch(seArray, endTimeMs);
+		String endSubtitle = seArray[index].text;
+
+		return new String[]{startSubtitle, endSubtitle};
+	}
+
 	
 	public static void showSubtitlePopupWindow(final Context context, final String s){
 		showToastPopupWindow((Activity)context, ((Activity)context).getWindow().getDecorView().findViewById(android.R.id.content), s, R.drawable.ic_launcher, subtitleShowTime, 0);

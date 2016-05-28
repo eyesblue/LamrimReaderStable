@@ -8,24 +8,24 @@ package es.disegnator;
 
 public final class R {
 	public static final class attr {
-		public static final int dayOfMonthColor = 0x7f01004a;
-		public static final int dayOfMonthFont = 0x7f01004b;
-		public static final int dayOfWeekColor = 0x7f010048;
-		public static final int dayOfWeekFont = 0x7f010049;
-		public static final int font = 0x7f01004c;
-		public static final int monthTitleColor = 0x7f010046;
-		public static final int monthTitleFont = 0x7f010047;
+		public static final int dayOfMonthColor = 0x7f0100b6;
+		public static final int dayOfMonthFont = 0x7f0100b7;
+		public static final int dayOfWeekColor = 0x7f0100b4;
+		public static final int dayOfWeekFont = 0x7f0100b5;
+		public static final int font = 0x7f0100b8;
+		public static final int monthTitleColor = 0x7f0100b2;
+		public static final int monthTitleFont = 0x7f0100b3;
 	}
 	public static final class color {
 		public static final int black = 0x7f0c000b;
 		public static final int blue = 0x7f0c000c;
-		public static final int currentDayOfMonthColor = 0x7f0c001f;
-		public static final int dayOfMonthColor = 0x7f0c0026;
-		public static final int dayOfWeekColor = 0x7f0c0027;
-		public static final int green = 0x7f0c0031;
-		public static final int monthTitleColor = 0x7f0c0049;
-		public static final int red = 0x7f0c0052;
-		public static final int silver = 0x7f0c0059;
+		public static final int currentDayOfMonthColor = 0x7f0c0015;
+		public static final int dayOfMonthColor = 0x7f0c001c;
+		public static final int dayOfWeekColor = 0x7f0c001d;
+		public static final int green = 0x7f0c0027;
+		public static final int monthTitleColor = 0x7f0c003f;
+		public static final int red = 0x7f0c0048;
+		public static final int silver = 0x7f0c004f;
 	}
 	public static final class dimen {
 		public static final int dateTitlePaddingBottom = 0x7f080045;
@@ -42,20 +42,20 @@ public final class R {
 		public static final int weekRowMinHeight = 0x7f080059;
 	}
 	public static final class drawable {
-		public static final int blue_circle = 0x7f0200bf;
-		public static final int blue_line = 0x7f0200c0;
-		public static final int blue_ring = 0x7f0200c1;
-		public static final int green_circle = 0x7f0200d9;
-		public static final int green_line = 0x7f0200da;
-		public static final int horizontal_line_with_gradient = 0x7f0200db;
-		public static final int ic_left = 0x7f0200df;
-		public static final int ic_left_blue = 0x7f0200e0;
-		public static final int ic_left_selector = 0x7f0200e1;
-		public static final int ic_right = 0x7f0200ee;
-		public static final int ic_right_blue = 0x7f0200ef;
-		public static final int ic_right_selector = 0x7f0200f0;
-		public static final int red_circle = 0x7f020112;
-		public static final int red_line = 0x7f020113;
+		public static final int blue_circle = 0x7f0200c5;
+		public static final int blue_line = 0x7f0200c6;
+		public static final int blue_ring = 0x7f0200c7;
+		public static final int green_circle = 0x7f0200dd;
+		public static final int green_line = 0x7f0200de;
+		public static final int horizontal_line_with_gradient = 0x7f0200df;
+		public static final int ic_left = 0x7f0200e3;
+		public static final int ic_left_blue = 0x7f0200e4;
+		public static final int ic_left_selector = 0x7f0200e5;
+		public static final int ic_right = 0x7f0200f3;
+		public static final int ic_right_blue = 0x7f0200f4;
+		public static final int ic_right_selector = 0x7f0200f5;
+		public static final int red_circle = 0x7f020117;
+		public static final int red_line = 0x7f020118;
 	}
 	public static final class id {
 		public static final int dateTitle = 0x7f0d00d7;
@@ -104,28 +104,28 @@ public final class R {
 		public static final int daysContainer = 0x7f0d00d9;
 		public static final int leftButton = 0x7f0d00d6;
 		public static final int rightButton = 0x7f0d00d8;
-		public static final int roboto_black = 0x7f0d0027;
-		public static final int roboto_black_italic = 0x7f0d0028;
-		public static final int roboto_bold = 0x7f0d0029;
-		public static final int roboto_bold_italic = 0x7f0d002a;
-		public static final int roboto_condensed_bold = 0x7f0d002b;
-		public static final int roboto_condensed_bold_italic = 0x7f0d002c;
-		public static final int roboto_condensed_italic = 0x7f0d002d;
-		public static final int roboto_condensed_light = 0x7f0d002e;
-		public static final int roboto_condensed_light_italic = 0x7f0d002f;
-		public static final int roboto_condensed_regular = 0x7f0d0030;
-		public static final int roboto_italic = 0x7f0d0031;
-		public static final int roboto_light = 0x7f0d0032;
-		public static final int roboto_light_italic = 0x7f0d0033;
-		public static final int roboto_medium = 0x7f0d0034;
-		public static final int roboto_medium_italic = 0x7f0d0035;
-		public static final int roboto_regular = 0x7f0d0036;
-		public static final int roboto_slab_bold = 0x7f0d0037;
-		public static final int roboto_slab_light = 0x7f0d0038;
-		public static final int roboto_slab_regular = 0x7f0d0039;
-		public static final int roboto_slab_thin = 0x7f0d003a;
-		public static final int roboto_thin = 0x7f0d003b;
-		public static final int roboto_thin_italic = 0x7f0d003c;
+		public static final int roboto_black = 0x7f0d0028;
+		public static final int roboto_black_italic = 0x7f0d0029;
+		public static final int roboto_bold = 0x7f0d002a;
+		public static final int roboto_bold_italic = 0x7f0d002b;
+		public static final int roboto_condensed_bold = 0x7f0d002c;
+		public static final int roboto_condensed_bold_italic = 0x7f0d002d;
+		public static final int roboto_condensed_italic = 0x7f0d002e;
+		public static final int roboto_condensed_light = 0x7f0d002f;
+		public static final int roboto_condensed_light_italic = 0x7f0d0030;
+		public static final int roboto_condensed_regular = 0x7f0d0031;
+		public static final int roboto_italic = 0x7f0d0032;
+		public static final int roboto_light = 0x7f0d0033;
+		public static final int roboto_light_italic = 0x7f0d0034;
+		public static final int roboto_medium = 0x7f0d0035;
+		public static final int roboto_medium_italic = 0x7f0d0036;
+		public static final int roboto_regular = 0x7f0d0037;
+		public static final int roboto_slab_bold = 0x7f0d0038;
+		public static final int roboto_slab_light = 0x7f0d0039;
+		public static final int roboto_slab_regular = 0x7f0d003a;
+		public static final int roboto_slab_thin = 0x7f0d003b;
+		public static final int roboto_thin = 0x7f0d003c;
+		public static final int roboto_thin_italic = 0x7f0d003d;
 	}
 	public static final class layout {
 		public static final int roboto_calendar_date_title_layout = 0x7f030038;
@@ -139,26 +139,26 @@ public final class R {
 		public static final int roboto_calendar_week_days_layout = 0x7f030040;
 	}
 	public static final class string {
-		public static final int currentDayOfMonthFont = 0x7f060045;
-		public static final int dayOfMonthFont = 0x7f060046;
-		public static final int dayOfWeekFont = 0x7f060047;
-		public static final int monthTitleFont = 0x7f0600a1;
+		public static final int currentDayOfMonthFont = 0x7f060025;
+		public static final int dayOfMonthFont = 0x7f060026;
+		public static final int dayOfWeekFont = 0x7f060027;
+		public static final int monthTitleFont = 0x7f060081;
 	}
 	public static final class style {
-		public static final int AppBaseTheme = 0x7f090005;
-		public static final int AppTheme = 0x7f090006;
+		public static final int AppBaseTheme = 0x7f09000c;
+		public static final int AppTheme = 0x7f09000d;
 	}
 	public static final class styleable {
-		public static final int[] RobotoCalendarView = { 0x7f010046, 0x7f010047, 0x7f010048, 0x7f010049, 0x7f01004a, 0x7f01004b };
+		public static final int[] RobotoCalendarView = { 0x7f0100b2, 0x7f0100b3, 0x7f0100b4, 0x7f0100b5, 0x7f0100b6, 0x7f0100b7 };
 		public static final int RobotoCalendarView_dayOfMonthColor = 4;
 		public static final int RobotoCalendarView_dayOfMonthFont = 5;
 		public static final int RobotoCalendarView_dayOfWeekColor = 2;
 		public static final int RobotoCalendarView_dayOfWeekFont = 3;
 		public static final int RobotoCalendarView_monthTitleColor = 0;
 		public static final int RobotoCalendarView_monthTitleFont = 1;
-		public static final int[] RobotoFonts = { 0x7f01004c };
+		public static final int[] RobotoFonts = { 0x7f0100b8 };
 		public static final int RobotoFonts_font = 0;
-		public static final int[] RobotoTextView = { 0x7f01004c };
+		public static final int[] RobotoTextView = { 0x7f0100b8 };
 		public static final int RobotoTextView_font = 0;
 	}
 }

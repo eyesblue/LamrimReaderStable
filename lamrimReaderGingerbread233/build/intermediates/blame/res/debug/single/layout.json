@@ -1,7 +1,7 @@
 [
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_up_container.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_up_container.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/dialog_color_picker.xml",
@@ -17,15 +17,15 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_chronometer.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_chronometer.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_menu_layout.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_layout.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_toolbar.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_toolbar.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/popup_record_list.xml",
@@ -33,11 +33,11 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_radio.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_radio.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_mode_bar.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_bar.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/main.xml",
@@ -45,7 +45,7 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_media_cancel_action.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_cancel_action.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/activity_calendar.xml",
@@ -53,11 +53,11 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_activity_chooser_view_list_item.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/support_simple_spinner_dropdown_item.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/save_region_dialog.xml",
@@ -65,15 +65,15 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_layout.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_layout.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_dialog_title_material.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_dialog_title_material.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_big_media.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/media_controller.xml",
@@ -93,7 +93,7 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_lines.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_lines.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/roboto_calendar_week_2.xml",
@@ -101,7 +101,7 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_multichoice_material.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_multichoice_material.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/roboto_calendar_date_title_layout.xml",
@@ -109,11 +109,11 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_checkbox.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_icon.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_icon.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/example2.xml",
@@ -129,11 +129,11 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_media_action.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_media_action.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/download_all_service_handler.xml",
@@ -157,11 +157,11 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_content_include.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_content_include.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_view_list_nav_layout.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/popup_record_list_row.xml",
@@ -169,7 +169,7 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_item_material.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_item_material.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/activity_file_dialog.xml",
@@ -177,15 +177,15 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_singlechoice_material.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_title_item.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_bar_title_item.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_alert_dialog_button_bar_material.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/roboto_calendar_week_days_layout.xml",
@@ -193,11 +193,11 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_activity_chooser_view.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/roboto_calendar_picker_layout.xml",
@@ -209,27 +209,27 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_simple.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_screen_simple.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_expanded_menu_layout.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_expanded_menu_layout.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_media.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_media.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_menu_item_layout.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_item_layout.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_time.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_time.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_select_dialog_material.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_select_dialog_material.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/theory_page_view.xml",
@@ -237,7 +237,7 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_search_view.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_view.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/lamrimreader_actionbar_control_panel.xml",
@@ -281,7 +281,7 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_mode_close_item_material.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/net_access_warn_dialog.xml",
@@ -289,15 +289,15 @@
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_popup_menu_item_layout.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_alert_dialog_material.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_material.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
-        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_big_media_narrow.xml"
+        "source": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_big_media_narrow.xml"
     },
     {
         "merged": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/layout/speech_row.xml",

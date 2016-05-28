@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="eyes.blue"
-    android:versionCode="186"
-    android:versionName="1.4.2" >
+    android:versionCode="187"
+    android:versionName="1.4.3" >
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -127,14 +127,7 @@
 
         <meta-data
             android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
-        <activity
-            android:name="com.google.android.gms.ads.AdActivity"
-            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-            android:theme="@android:style/Theme.Translucent" />
-        <activity
-            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
-            android:theme="@style/Theme.IAPTheme" />
+            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest> <!-- android:screenOrientation="landscape" -->

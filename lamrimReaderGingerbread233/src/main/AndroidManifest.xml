@@ -2,11 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="eyes.blue"
-    android:versionCode="187"
-    android:versionName="1.4.3" >
+    android:versionCode="188"
+    android:versionName="1.4.4">
 
-    <uses-sdk 
-        android:targetSdkVersion="23"
+    <uses-sdk
         android:minSdkVersion="9"
         tools:overrideLibrary="com.google.android.gms, com.google.android.gms.analytics"
     />

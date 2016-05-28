@@ -128,7 +128,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 	SharedPreferences runtime = null;
 	SharedPreferences playRecord = null;
 
-	MenuItem rootMenuItem, speechMenu, globalLamrim, playRegionRec,swRenderMode, prjWeb, exitApp;
+	MenuItem rootMenuItem, speechMenu, globalLamrim, setRegion, playRegionRec, swRenderMode, prjWeb, exitApp;
 
 	FileSysManager fsm = null;
 	RelativeLayout rootLayout = null;
@@ -833,8 +833,8 @@ public class LamrimReaderActivity extends AppCompatActivity {
 		
 		LayoutInflater factory = (LayoutInflater)getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
 	    final View v = factory.inflate(R.layout.region_option_dialog, null);
-	    TextView mediaPositionDesc=(TextView) v.findViewById(R.id.time);
-	    TextView startDesc=(TextView) v.findViewById(R.id.leftBoundDesc);
+//	    TextView mediaPositionDesc=(TextView) v.findViewById(R.id.time);
+		TextView startDesc=(TextView) v.findViewById(R.id.leftBoundDesc);
 	    TextView endDesc=(TextView) v.findViewById(R.id.rightBoundDesc);
 	    
 	    final LinearLayout leftBound=(LinearLayout) v.findViewById(R.id.setLeftBound);
@@ -843,11 +843,11 @@ public class LamrimReaderActivity extends AppCompatActivity {
 //	    final LinearLayout shareOpt=(LinearLayout) v.findViewById(R.id.shareOpt);
 	    final ImageView save=(ImageView) v.findViewById(R.id.save);
 //	    final ImageView share=(ImageView) v.findViewById(R.id.share);
-	    
-	    String timeStr=String.format(mediaPositionDesc.getText().toString(), SpeechData.getNameId(mediaIndex)+":"+Util.getMsToHMS(mediaPosition,":","",true));
-	    mediaPositionDesc.setText(timeStr);
-	    
-	    if(regionSet[0]!=-1){
+
+//	    String timeStr=String.format(mediaPositionDesc.getText().toString(), SpeechData.getNameId(mediaIndex)+":"+Util.getMsToHMS(mediaPosition,":","",true));
+//	    mediaPositionDesc.setText(timeStr);
+
+		if(regionSet[0]!=-1){
 	    	startDesc.setText(SpeechData.getNameId(regionSet[0])+":"+Util.getMsToHMS(regionSet[1],":","",true));
 	    }
 	    if(regionSet[2]!=-1){
@@ -885,8 +885,16 @@ public class LamrimReaderActivity extends AppCompatActivity {
 				}
 				*/
 				regionSet[0]=mediaIndex;
-				regionSet[1]=mpController.getSubtitle(mediaPosition).startTimeMs;
-				regionStartInfo=mpController.getSubtitle(mediaPosition).text;
+				int i = Util.subtitleBSearch(mpController.getSubtitle(), mediaPosition);
+				regionSet[1] = mpController.getSubtitle()[i].startTimeMs;
+				regionStartInfo = mpController.getSubtitle()[i].text;
+
+
+				if (bookMap != null && bookMap[i] != null) {
+					theoryHighlightRegion[0] = bookMap[i][0];
+					theoryHighlightRegion[1] = bookMap[i][1];
+				}
+
 				try{
 					setRegionOptDialog.dismiss();
 				}catch(Exception e){e.printStackTrace();}	// Don't force close if problem here.
@@ -908,8 +916,15 @@ public class LamrimReaderActivity extends AppCompatActivity {
 					return;
 				}*/
 				regionSet[2]=mediaIndex;
-				regionSet[3]=mpController.getSubtitle(mediaPosition).endTimeMs;
-				regionEndInfo=mpController.getSubtitle(mediaPosition).text;
+				int i = Util.subtitleBSearch(mpController.getSubtitle(), mediaPosition);
+				regionSet[3] = mpController.getSubtitle()[i].endTimeMs;
+				regionEndInfo = mpController.getSubtitle()[i].text;
+
+				if (bookMap != null && bookMap[i] != null) {
+					theoryHighlightRegion[2] = bookMap[i][0];
+					theoryHighlightRegion[3] = bookMap[i][1];
+				}
+
 				try{
 					setRegionOptDialog.dismiss();
 				}catch(Exception e){e.printStackTrace();}	// Don't force close if problem here.
@@ -923,8 +938,9 @@ public class LamrimReaderActivity extends AppCompatActivity {
 				}
 		
 				swapRegionSet();
-				
-				BaseDialogs.showEditRegionDialog(LamrimReaderActivity.this, regionSet[0] , regionSet[1], regionSet[2], regionSet[3], theoryHighlightRegion[0], theoryHighlightRegion[1], theoryHighlightRegion[2], theoryHighlightRegion[3], regionStartInfo+" ~ "+regionEndInfo, -1, new Runnable(){
+				// startMediaIndex, startTimeMs, endMediaIndex, endTimeMs, theoryStartPage, theoryStartLine, theoryEndPage, theoryEndLine, startSubtitle, endSubtitle
+				String[] subtitleInfo = Util.getRegionInfo(fsm, regionSet);
+				BaseDialogs.showEditRegionDialog(LamrimReaderActivity.this, regionSet[0], regionSet[1], regionSet[2], regionSet[3], theoryHighlightRegion[0], theoryHighlightRegion[1], theoryHighlightRegion[2], theoryHighlightRegion[3], subtitleInfo[0] + " ~ " + subtitleInfo[1], -1, new Runnable() {
 					@Override public void run() {
 						runOnUiThread(new Runnable(){
 							@Override
@@ -1050,7 +1066,8 @@ public class LamrimReaderActivity extends AppCompatActivity {
 			}});
 	    */
 	    setRegionOptDialog.setView(v);
-	    setRegionOptDialog.setCanceledOnTouchOutside(true);
+		setRegionOptDialog.setTitle("將目前播放位置設定為");
+		setRegionOptDialog.setCanceledOnTouchOutside(true);
 	    setRegionOptDialog.show();
 	}
 	
@@ -1468,7 +1485,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 //		GaLogger.sendEvent("activity", "LamrimReaderActivity", "into_onStart", null);
 
 		//int defTitleTextSize = getResources().getInteger(R.integer.defFontSize);
-		final int subtitleTextSize = runtime.getInt(getString(R.string.subtitleFontSizeKey), textDefSize);
+		final int subtitleTextSize = runtime.getInt(getString(R.string.subtitleFontSizeKey), (int) subtitleView.getTextSize());
 		subtitleView.setTextSize(TypedValue.COMPLEX_UNIT_PX, subtitleTextSize);
 		// int bookPage = runtime.getInt("bookPage", 0);
 		// jumpPage.setText(bookPage);
@@ -1773,8 +1790,10 @@ public class LamrimReaderActivity extends AppCompatActivity {
 		speechMenu.setIcon(R.drawable.speech);
 		globalLamrim = rootMenu.add(getString(R.string.globalLamrim));
 		globalLamrim.setIcon(R.drawable.global_lamrim);
+		setRegion = rootMenu.add(getString(R.string.menuStrSetRecord));
+		setRegion.setIcon(R.drawable.region);
 		playRegionRec = rootMenu.add(getString(R.string.menuStrPlayRegionRec));
-		playRegionRec.setIcon(R.drawable.region);
+		playRegionRec.setIcon(R.drawable.ic_region_play);
 		swRenderMode = rootMenu.add(getString(R.string.menuStrRenderMode));
 		swRenderMode.setIcon(R.drawable.render_mode);
 		prjWeb = rootMenu.add(getString(R.string.menuStrOpenProjectWeb));
@@ -1815,11 +1834,18 @@ public class LamrimReaderActivity extends AppCompatActivity {
 			startSpeechMenuActivity();
 		} else if (item.getTitle().equals(getString(R.string.globalLamrim))) {
 			startGlobalLamrimCalendarActivity();
-		}else if (item.getTitle().equals(getString(R.string.menuStrRenderMode))) {
+		} else if (item.getTitle().equals(getString(R.string.menuStrSetRecord))) {
+			if (mediaIndex == -1)
+				BaseDialogs.showMsgDialog(this, "未載入音檔", "請先從右上角點選圓形的選單圖示，再點選「選擇音檔」，最後選擇您要標記的音檔。");
+			else
+				showOnRegionOptionDialog(mediaIndex, mpController.getCurrentPosition());
+
+		} else if (item.getTitle().equals(getString(R.string.menuStrRenderMode))) {
 			switchMainView();
 		}  else if (item.getTitle().equals(getString(R.string.menuStrPlayRegionRec))) {
 			if (RegionRecord.records.size() > 0)showRecordListPopupMenu();
-			else showRegionRecTip();
+			else
+				BaseDialogs.showMsgDialog(this, "無區段記錄", "請在載入音檔後，移動播放位置到要標記的地方，再點選「區段紀錄」紀錄並儲存區段。");
 		} else if (item.getTitle().equals(getString(R.string.menuStrOpenProjectWeb))) {
 			startProjectWebUrl();
 		} else if (item.getTitle().equals(getString(R.string.exitApp))) {
@@ -1863,14 +1889,6 @@ public class LamrimReaderActivity extends AppCompatActivity {
 		} catch (android.content.ActivityNotFoundException ex) {
 		    Toast.makeText(LamrimReaderActivity.this, "您的裝置上未安裝任何可供使用的網頁瀏覽元件，無法開啟網頁。", Toast.LENGTH_LONG).show();
 		}
-	}
-	
-	private void showRegionRecTip(){
-		AlertDialog.Builder builderSingle =new AlertDialog.Builder(this).setTitle("無區段記錄").setIcon(android.R.drawable.ic_dialog_info)
-				.setMessage("請在載入音檔後，於播放面板右方點選區段紀錄鍵，紀錄並儲存區段。");
-		builderSingle.setPositiveButton("確定", null);
-		builderSingle.setCancelable(false);
-		builderSingle.show();
 	}
 
 	protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
