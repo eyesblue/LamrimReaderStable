@@ -37,7 +37,7 @@
             android:layout_toRightOf="@+id/textView5"
             android:gravity="center"
             android:orientation="vertical"
-            android:background="@drawable/apptheme_btn_default_holo_dark" >
+            android:background="@drawable/apptheme_btn_default_holo_dark">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -61,7 +61,7 @@
             android:layout_toLeftOf="@+id/textView5"
             android:gravity="center"
             android:orientation="vertical"
-            android:background="@drawable/apptheme_btn_default_holo_dark" >
+            android:background="@drawable/apptheme_btn_default_holo_dark">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -90,7 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:background="@drawable/apptheme_btn_default_holo_dark" >
+        android:background="@drawable/apptheme_btn_default_holo_dark">
 
         <ImageView
             android:id="@+id/save"

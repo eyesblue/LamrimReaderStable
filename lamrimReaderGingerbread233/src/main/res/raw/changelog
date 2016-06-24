@@ -23,6 +23,15 @@
   	<div class='title'><p><a href="http://www.facebook.com/lamrimreader">執行問題反應區</a></p></div>
   	<div class='title'><p><a href="http://lamrimreader.eyes-blue.com/">計畫首頁</a></p></div>
 
+$189
+% Version 1.4.5
+  _ 2016-6-24
+  * 加入字幕搜尋功能。
+  * 資源下載位置改為lamrimreader.gebis.global。
+  * 防止區段標記時可能因字幕檔案不存在而強制關閉問題。
+  * 加速廣論文體計算速度(顯示、搜尋等)。
+  * 修正006A,083B, 084A, 150B, 151A廣論/字幕對應表錯誤。
+
 $188
 % Version 1.4.4
   _ 2016-5-28

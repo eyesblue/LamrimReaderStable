@@ -9,12 +9,14 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="搜尋廣論"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:text="搜尋"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/lamrimLabel"
+        android:layout_toStartOf="@+id/lamrimLabel"
+        android:layout_marginRight="10dp" />
 
     <EditText
         android:id="@+id/searchInput"
@@ -46,5 +48,47 @@
         android:layout_marginLeft="5dp"
         android:background="#00000000"
         android:src="@drawable/search_next_icon" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/searchInput"
+        android:choiceMode="singleChoice"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="字幕"
+        android:id="@+id/subtitleLabel"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/seekBar"
+        android:layout_toEndOf="@+id/seekBar"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="廣論"
+        android:id="@+id/lamrimLabel"
+        android:layout_alignBottom="@+id/seekBar"
+        android:layout_toLeftOf="@+id/seekBar"
+        android:layout_toStartOf="@+id/seekBar" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_above="@+id/searchInput"
+        android:layout_centerHorizontal="true"
+        android:minWidth="40dp"
+        android:max="1"
+        android:progress="0"
+        android:indeterminate="false" />
 
 </RelativeLayout>

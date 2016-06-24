@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="eyes.blue"
-    android:versionCode="188"
-    android:versionName="1.4.4">
+    android:versionCode="189"
+    android:versionName="1.4.5">
 
     <uses-sdk
         android:minSdkVersion="9"

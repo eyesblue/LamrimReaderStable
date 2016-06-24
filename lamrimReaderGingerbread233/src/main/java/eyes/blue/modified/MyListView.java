@@ -590,23 +590,9 @@ public class MyListView extends ListView {
 	 * The direct must be MyListView.TO_START(from 0 to fromIndex) or MyListView.TO_END(from fromIndex to end of content).
 	 * */
 	public static String getContentStr(int startPage, int fromIndex, int direct){
-		System.out.println("Get content string page: "+startPage+", startWord: "+fromIndex);
-		String page=TheoryData.content[startPage].replace("‧", "").replace("。", "");
-		page=page.replace("<b>", "");
-		page=page.replace("</b>", "");
-		page=page.replace("<n>", "");
-		page=page.replace("</n>", "");
-		page=page.replace("<s>", "");
-		page=page.replace("</s>", "");
-		
-		
-		String result=null;
-		if(direct == TO_START)result=page.substring(0,fromIndex);
-		else result=page.substring(fromIndex); // <==== ************** need exam. ************* 
-		
-//		Log.d("MyListView","sample="+result);
-		
-		return result;
+		String page=TheoryData.content[startPage].replaceAll("[‧。]", "").replaceAll("</?.>", "");
+		if(direct == TO_START)return page.substring(0,fromIndex);
+		return page.substring(fromIndex);
 	}
 
 	/*

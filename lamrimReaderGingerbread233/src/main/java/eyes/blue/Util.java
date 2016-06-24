@@ -336,8 +336,7 @@ public class Util {
 	  public static SubtitleElement[] loadSubtitle(File file) {
 			ArrayList<SubtitleElement> subtitleList = new ArrayList<SubtitleElement>();
 			try {
-				System.out.println("Open " + file.getAbsolutePath()
-						+ " for read subtitle.");
+				System.out.println("Open " + file.getAbsolutePath() + " for read subtitle.");
 				BufferedReader br = new BufferedReader(new FileReader(file));
 				String stemp;
 				int lineCounter = 0;

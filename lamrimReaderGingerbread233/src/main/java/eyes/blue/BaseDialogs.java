@@ -1,24 +1,15 @@
 package eyes.blue;
 
-import java.io.File;
 import java.util.Calendar;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.SharedPreferences;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -206,5 +197,9 @@ public class BaseDialogs {
 		builderSingle.setPositiveButton("確定", null);
 		builderSingle.setCancelable(false);
 		builderSingle.show();
+	}
+
+	public static void  showSubtitleSearchDialog(Context c, SubtitleSearch[] sse){
+
 	}
 }

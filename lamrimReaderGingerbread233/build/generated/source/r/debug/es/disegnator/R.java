@@ -17,15 +17,15 @@ public final class R {
 		public static final int monthTitleFont = 0x7f0100b3;
 	}
 	public static final class color {
-		public static final int black = 0x7f0c000b;
-		public static final int blue = 0x7f0c000c;
-		public static final int currentDayOfMonthColor = 0x7f0c0015;
-		public static final int dayOfMonthColor = 0x7f0c001c;
-		public static final int dayOfWeekColor = 0x7f0c001d;
-		public static final int green = 0x7f0c0027;
-		public static final int monthTitleColor = 0x7f0c003f;
-		public static final int red = 0x7f0c0048;
-		public static final int silver = 0x7f0c004f;
+		public static final int black = 0x7f0c000c;
+		public static final int blue = 0x7f0c000d;
+		public static final int currentDayOfMonthColor = 0x7f0c0016;
+		public static final int dayOfMonthColor = 0x7f0c001d;
+		public static final int dayOfWeekColor = 0x7f0c001e;
+		public static final int green = 0x7f0c0028;
+		public static final int monthTitleColor = 0x7f0c0040;
+		public static final int red = 0x7f0c0049;
+		public static final int silver = 0x7f0c0050;
 	}
 	public static final class dimen {
 		public static final int dateTitlePaddingBottom = 0x7f080045;

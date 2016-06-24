@@ -820,6 +820,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 	}
 	
 	public class ButtonUpdater extends Thread {
+		long activeTime=180000;
 		JSONObject executing = null;
 		boolean cancelled = false;
 
@@ -833,8 +834,9 @@ public class SpeechMenuActivity extends AppCompatActivity {
 
 		@Override
 		public void run() {
+			activeTime+=System.currentTimeMillis();
 
-			while (!cancelled) {
+			while (!cancelled && System.currentTimeMillis()< activeTime) {
 				synchronized (btnDownloadAll) {
 					Log.d(getClass().getName(), "Button updater awake");
 					updateDownloadAllBtn();
