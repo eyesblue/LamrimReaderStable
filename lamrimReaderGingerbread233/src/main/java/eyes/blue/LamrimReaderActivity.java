@@ -1,6 +1,7 @@
 package eyes.blue;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -191,7 +192,8 @@ public class LamrimReaderActivity extends AppCompatActivity {
     public Boolean isActivityLoaded = Boolean.valueOf(false);
 
     // =================== For search view =====================
-    SubtitleSearch[] subtitleSearch = null;
+    AlertDialog searchDialog;
+    SubtitleSearch[] subtitleSearch = new SubtitleSearch[320];
     ArrayList<SubtitleSearchIndex> subtitleSearchResult = new ArrayList<>();
     SubtitleSearchAdapter subtitleSearchAdapter = null;
     TextView subtitleSearchHeaderTextView = null;
@@ -2364,42 +2366,109 @@ public class LamrimReaderActivity extends AppCompatActivity {
         setTextSizeDialog.show();
     }
 
+    private boolean loadSearchObj(final ProgressDialog pd){
+        final File subSearchCache=fsm.getSubtitleSearchCacheFile();
+        if(subSearchCache.exists()) {    // 嘗試從快取檔案取回字幕搜尋快取物件
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    pd.setTitle("讀取資料");
+                    pd.setMessage("字幕快取檔案讀取中，請稍候！");
+                    pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+                    pd.show();
+                }
+            });
+
+            try {
+                ObjectInputStream ois = new ObjectInputStream(new FileInputStream(subSearchCache));
+                subtitleSearch = (SubtitleSearch[]) ois.readObject();
+            } catch (Exception e) {
+                subSearchCache.delete();
+                Util.showErrorPopupWindow(LamrimReaderActivity.this,"載入快取失敗，請點選[選單] -> [選擇音檔] -> [儲存維護]後再嘗試一次。");
+                e.printStackTrace();
+            }
+        }
+        else {  // 從字幕檔案中重建字幕搜尋物件
+
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    pd.setTitle("讀取資料");
+                    pd.setMessage("字幕檔案讀取中，請稍候！");
+                    pd.setMax(320);
+                    pd.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+                    pd.show();
+                }
+            });
+
+            for (int i = 0; i < 320; i++) {
+                if (subtitleSearch[i] != null){
+                    pd.incrementProgressBy(1);
+                    continue;
+                }
+
+                File f = fsm.getLocalSubtitleFile(i);
+                if (!f.exists()) {
+                    pd.dismiss();
+                    BaseDialogs.showErrorDialog(LamrimReaderActivity.this, "字幕下載不完全，請先下載所有字幕。");
+                    return false;
+                }
+                subtitleSearch[i] = new SubtitleSearch(Util.loadSubtitle(f));
+                pd.incrementProgressBy(1);
+                if(Thread.currentThread().isInterrupted())return false;
+            }
+
+            // Write the object to disk with a new thread.
+            new Thread(new Runnable(){
+                @Override
+                public void run() {
+                    try {
+                        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(subSearchCache));
+                        oos.writeObject(subtitleSearch);
+                        oos.flush();
+                        oos.close();
+                        System.out.println("Write finish");
+                    }catch(Exception e){
+                        e.printStackTrace();
+                        GaLogger.sendException("Write catch file of subtitle search object", e, false);
+                    }
+                }
+            }).start();
+
+        }
+        
+        if(Thread.currentThread().isInterrupted())return false;
+        return true;
+    }
+
     private void showSearchSubtitleDialog(final String string) {
         final ProgressDialog pd = new ProgressDialog(this);
-        pd.setTitle("讀取資料");
-        pd.setMessage("字幕檔案讀取中，請稍候！");
-        pd.setMax(320);
-        pd.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
 
         Runnable run = new Runnable() {
             @Override
             public void run() {
                 // =============== 載入字幕資訊 ==============
-                long loadStartTime = System.currentTimeMillis();
-                if (subtitleSearch == null)
-                    subtitleSearch = new SubtitleSearch[320];
-                for (int i = 0; i < 320; i++) {
-                    if (subtitleSearch[i] != null) continue;
-
-                    File f = fsm.getLocalSubtitleFile(i);
-                    if (!f.exists()) {
-                        pd.dismiss();
-                        BaseDialogs.showErrorDialog(LamrimReaderActivity.this, "字幕下載不完全，請先下載所有字幕。");
-                        return;
+                boolean isSearchReady=true;
+                for (int i = 0; i < 320; i++)   // 檢查記憶體中是否320個搜尋物件是否都存在
+                    if (subtitleSearch[i] == null) {
+                        isSearchReady=false;
+                        break;
                     }
-                    subtitleSearch[i] = new SubtitleSearch(Util.loadSubtitle(f));
-                    pd.incrementProgressBy(1);
+
+                long loadStartTime = System.currentTimeMillis();
+                if(!isSearchReady) if(!loadSearchObj(pd)){
+                    Log.d(getClass().getName(),"User cancel the build data procedure.");
+                    return;
                 }
                 final long loadTime = System.currentTimeMillis() - loadStartTime;
-
                 subtitleSearchResult.clear();
 
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        pd.setTitle("搜尋中");
-                        pd.setMessage("搜尋「" + string + "」中 ...");
-                        pd.setProgress(0);
+ //                       pd.setTitle("搜尋中");
+ //                       pd.setMessage("搜尋「" + string + "」中 ...");
+ //                       pd.setProgress(0);
                         Thread t = new Thread() {
                             @Override
                             public void run() {
@@ -2409,13 +2478,13 @@ public class LamrimReaderActivity extends AppCompatActivity {
 
                                 for (int i = 0; i < 320; i++) {
                                     int[][] res = subtitleSearch[i].search(string);
+                                    pd.incrementProgressBy(1);
                                     if (res == null) continue;
 
                                     for (int j = 0; j < res.length; j++)
                                         subtitleSearchResult.add(new SubtitleSearchIndex(i, res[j], string.length()));
 
                                     counter += res.length;
-                                    pd.incrementProgressBy(1);
                                 }
 
                                 final long searchTime = System.currentTimeMillis() - searchStartTime;
@@ -2458,7 +2527,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                                         }
                                         // ==============================================================
                                         SubtitleSearch sse = subtitleSearch[ssi.mediaIndex];
-                                        SubtitleElement se = sse.getSubtitles()[ssi.getSubtitleIndex()];
+                                        SubtitleElement se = sse.getSubtitle(ssi.getSubtitleIndex());
                                         playNormalMode(ssi.mediaIndex, se.startTimeMs);
                                     }
                                 });
@@ -2476,7 +2545,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                                         subtitleSearchList.setVisibility(View.VISIBLE);
                                     }
                                 });
-
+                                GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "SEARCH_SUBTITLE", 1);
                             }
                         };
                         t.start();
@@ -2485,9 +2554,20 @@ public class LamrimReaderActivity extends AppCompatActivity {
             }
         };
 
-        Thread t = new Thread(run);
+        final Thread t = new Thread(run);
+        pd.setOnDismissListener(new DialogInterface.OnDismissListener() {
+            @Override
+            public void onDismiss(DialogInterface dialog) {
+                if(t.isAlive()) {
+                    t.interrupt();
+                    Log.d(getClass().getName(),"Stop build data thread of subtitle search.");
+                }
+            }
+        });
+
+
         t.start();
-        pd.show();
+//        pd.show();
 
     }
 
@@ -2610,7 +2690,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
         });
     }
 
-    AlertDialog searchDialog;
+
 
 
     class SearchListener implements OnClickListener {
@@ -2676,7 +2756,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
             }
             searchLastBtn.setEnabled(true);
             searchNextBtn.setEnabled(true);
-            GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "SEARCH", 1);
+            GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "SEARCH_LAMRIM", 1);
         }
     }
 
@@ -3402,7 +3482,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 
                 SubtitleSearchIndex ssi = subtitleSearchResult.get(position);
                 String speechName = SpeechData.getNameId(ssi.mediaIndex);
-                SubtitleElement subtitle = subtitleSearch[ssi.mediaIndex].getSubtitles()[ssi.getSubtitleIndex()];
+                SubtitleElement subtitle = subtitleSearch[ssi.mediaIndex].getSubtitle(ssi.getSubtitleIndex());
                 int searchTextlength = ssi.length;
                 int index = ssi.getTextIndex();
 
@@ -3429,8 +3509,6 @@ public class LamrimReaderActivity extends AppCompatActivity {
             return row;
         }
     }
-
-    ;
 
     class SubtitleSearchIndex {
         int[] data;

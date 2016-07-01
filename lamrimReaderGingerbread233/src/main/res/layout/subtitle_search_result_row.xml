@@ -23,7 +23,7 @@
         android:layout_centerVertical="true"
         android:layout_toRightOf="@+id/serial"
         android:layout_toEndOf="@+id/serial"
-        android:gravity="center_vertical|start|left">
+        android:gravity="center_vertical">
 
         <TextView
             android:layout_width="match_parent"

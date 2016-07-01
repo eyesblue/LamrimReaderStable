@@ -10,6 +10,7 @@
     <string name="regionPlayModeRecordFile">regionMode</string>
     <string name="GLModeRecordFile">GLMode</string>
     <string name="filePathRoot">lamrimreader</string>
+    <string name="subtitleSearchCache">subtitleSearchCache.ser</string>
 
     <integer name="isInit">0</integer>
 

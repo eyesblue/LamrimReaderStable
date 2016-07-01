@@ -662,7 +662,6 @@
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
     <bool name="ga_autoActivityTracking">true</bool>
     <bool name="ga_reportUncaughtExceptions">true</bool>
-    <color name="CYAN">#ffffff</color>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
     <color name="abc_search_url_text_pressed">@android:color/black</color>
@@ -1072,6 +1071,7 @@
     <string name="subtitleFgColorKey">subtitleFgColor</string>
     <string name="subtitleFontSize">字幕</string>
     <string name="subtitleFontSizeKey">SubtitleFontSize</string>
+    <string name="subtitleSearchCache">subtitleSearchCache.ser</string>
     <string name="subtitleSign">❏</string>
     <string name="theoryDirName">Theory</string>
     <string name="title_activity_calendar">全球廣論進度</string>

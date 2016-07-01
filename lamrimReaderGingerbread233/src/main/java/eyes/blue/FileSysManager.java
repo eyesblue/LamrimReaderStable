@@ -119,7 +119,6 @@ public class FileSysManager {
 		this.downloadListener=listener;
 	}
         
-        
         /*
          * the file structure is follow
          * [PackageDir]\[AppName](LamrimReader)\{Audio,Book,Subtitle}
@@ -305,6 +304,20 @@ public class FileSysManager {
         	File srcDir=new File(srcRoot[locate]+File.separator+dir);
         	return srcDir.listFiles();
         }
+
+	public File getSubtitleSearchCacheFile(){
+		String name=context.getString(R.string.subtitleSearchCache);
+		File extF=null, intF=null;
+		if(isExtMemWritable() && srcRoot[EXTERNAL] != null){
+			extF= new File(srcRoot[EXTERNAL]+File.separator+name);
+			if(extF.exists())return extF;
+		}
+		intF=new File(srcRoot[INTERNAL]+File.separator+name);
+		if(intF.exists())return intF;
+
+		if(extF!=null)return extF;
+		return intF;
+	}
         
         public void deleteAllSpeechFiles(int locate){
         	Log.d("FileSysManager","Delete all speech file in "+locateDesc[locate]);
@@ -512,6 +525,12 @@ public class FileSysManager {
 						return true;
 					return false;
 				}};
+
+			// Delete subtitle search cache file, execute 2 times, if both external and internal storage has one.
+			File cacheFile=getSubtitleSearchCacheFile();
+			if(cacheFile.exists())cacheFile.delete();
+			cacheFile=getSubtitleSearchCacheFile();
+			if(cacheFile.exists())cacheFile.delete();
 			
 			// Delete temp files.
 			File[] files=null;
