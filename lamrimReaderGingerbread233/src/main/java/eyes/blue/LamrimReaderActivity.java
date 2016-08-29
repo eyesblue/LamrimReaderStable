@@ -128,7 +128,6 @@ public class LamrimReaderActivity extends AppCompatActivity {
     final static int REGION_PLAY_MODE = 1;
     final static int GL_PLAY_MODE = 2;
 
-    boolean loadFromCreate = false;
     static int textDefSize, textMinSize, textMaxSize;
     int subtitleViewRenderMode = SUBTITLE_MODE;
     int playMode = -1;
@@ -148,7 +147,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
     FileSysManager fsm = null;
     RelativeLayout rootLayout = null;
 
-    Typeface educFont = null;
+    public static Typeface educFont = null;
 
     // the 3 object is paste on the popupwindow object, it not initial at
     // startup.
@@ -187,8 +186,6 @@ public class LamrimReaderActivity extends AppCompatActivity {
     WVersionManager versionManager = null;
 
     int bookMap[][] = null;
-    boolean searchChoiceLamrim = true;
-
     public Boolean isActivityLoaded = Boolean.valueOf(false);
 
     // =================== For search view =====================
@@ -202,6 +199,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
     ListView subtitleSearchList = null;
     boolean isSearchLamrim = true;
     // =========================================================
+    long appStartTimeMs=-1;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -211,7 +209,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 ///		requestWindowFeature(Window.FEATURE_NO_TITLE);
 //		requestWindowFeature(com.actionbarsherlock.view.Window.FEATURE_ACTION_BAR_OVERLAY);
 
-        loadFromCreate = true;
+        appStartTimeMs=System.currentTimeMillis();
         setContentView(R.layout.main);
 
         PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
@@ -255,7 +253,8 @@ public class LamrimReaderActivity extends AppCompatActivity {
 //		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         rootLayout = (RelativeLayout) findViewById(R.id.rootLayout);
 
-        educFont = Typeface.createFromAsset(this.getAssets(), "EUDC.TTF");
+        //educFont = Typeface.createFromAsset(this.getAssets(), "EUDC.TTF");
+        educFont = Typeface.createFromAsset(this.getAssets(), "BKT_Lamrim.ttf");
         try {
             pkgInfo = getPackageManager().getPackageInfo(getPackageName(), 0);
         } catch (NameNotFoundException e3) {
@@ -273,9 +272,9 @@ public class LamrimReaderActivity extends AppCompatActivity {
         if (screenDim.x < screenDim.y)
             screenDim.set(screenDim.y, screenDim.x);
 
-        textDefSize = Util.getDefFontSize(this);
-        textMinSize = Util.getMinFontSize(this);
-        textMaxSize = Util.getMaxFontSize(this);
+        textDefSize = (int)((TextView) findViewById(R.id.subtitleView)).getTextSize();
+        textMinSize = getResources().getInteger(R.integer.textMinSize);
+        textMaxSize = getResources().getInteger(R.integer.textMaxSize);
         Log.d(logTag, "Get font size: max=" + textMaxSize + ", def=" + textDefSize + ", min=" + textMinSize);
 
         LayoutInflater factory = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
@@ -303,6 +302,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 if (height <= minHeight) {
                     height = minHeight;
                     setSubtitleViewMode(SUBTITLE_MODE);
+                    GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "SWITCH_SUBTITLE_MODE", 1);
                     if (mpController.getMediaPlayerState() == MediaPlayerController.MP_PLAYING && mpController.getSubtitle() != null) {
                         if (mpController.getCurrentPosition() == -1)
                             return true;
@@ -312,6 +312,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 }
                 // set reading mode
                 else {
+                    GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "SWITCH_READING_MODE", 1);
                     // It is first time into reading mode, set the all text to
                     // subtitleView, but not set text every time.
                     if (subtitleViewRenderMode == SUBTITLE_MODE) {
@@ -417,7 +418,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 final int theoryTextSize = runtime.getInt(getString(R.string.bookFontSizeKey), textDefSize);
                 bookView.setTextSize(theoryTextSize);
                 bookView.setSelectionFromTop(bookPosition, bookShift);
-                GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "SWITCH", 1);
+                GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "SWITCH_THEME", 1);
             }
         });
 
@@ -486,18 +487,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 
         subtitleView = (TextView) findViewById(R.id.subtitleView);
         subtitleView.setTypeface(educFont);
-        //subtitleView.setBackgroundColor(getResources().getColor(R.color.defSubtitleBGcolor));
 
-        // subtitleView = new TextView(LamrimReaderActivity.this);
-		/*
-		 * subtitleView.setOnClickListener(new OnClickListener() {
-		 *
-		 * @Override public void onClick(View v) { Log.d(logTag, v +
-		 * " been clicked, Show media plyaer control panel."); if
-		 * (mpController.getMediaPlayerState() >=
-		 * MediaPlayerController.MP_PREPARED)
-		 * mpController.showMediaPlayerController(); } });
-		 */
         final GestureDetectorCompat subtitleViewGestureListener = new GestureDetectorCompat(
                 //getApplicationContext(), new SimpleOnGestureListener() {
                 LamrimReaderActivity.this, new SimpleOnGestureListener() {
@@ -556,8 +546,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                     // Unknown problem, there will return null on some
                     // machine.
                     Layout layout = subtitleView.getLayout();
-                    Log.d(logTag, "Layout is "
-                            + ((layout == null) ? "null" : "not null"));
+                    Log.d(logTag, "Layout is " + ((layout == null) ? "null" : "not null"));
                     if (layout == null)
                         return true;
                     // ======================================================
@@ -592,8 +581,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
         //final ScaleGestureDetector stScaleGestureDetector = new ScaleGestureDetector(this.getApplicationContext(), new SimpleOnScaleGestureListener() {
         final ScaleGestureDetector stScaleGestureDetector = new ScaleGestureDetector(LamrimReaderActivity.this, new SimpleOnScaleGestureListener() {
             //		class MyGestureDetector implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener, GestureDetector.{
-//			int textSizeMax=getResources().getInteger(R.integer.textMaxSize);
-//    		int textSizeMin=getResources().getInteger(R.integer.textMinSize);
+
             @Override
             public boolean onScaleBegin(ScaleGestureDetector detector) {
                 Log.d(getClass().getName(), "Begin scale called factor: " + detector.getScaleFactor());
@@ -604,7 +592,15 @@ public class LamrimReaderActivity extends AppCompatActivity {
             @Override
             public boolean onScale(ScaleGestureDetector detector) {
                 float size = subtitleView.getTextSize() * detector.getScaleFactor();
-                if (size < textMinSize || size > textMaxSize) return true;
+
+                if(size<=textMinSize && subtitleView.getTextSize()==textMinSize)
+                    return true;
+                else if( size >= textMaxSize && subtitleView.getTextSize()==textMaxSize)
+                    return true;
+
+                if(size<textMinSize)size=textMinSize;
+                else if(size>textMaxSize)size=textMaxSize;
+
                 // Log.d(getClass().getName(),"Get scale rate: "+detector.getScaleFactor()+", current Size: "+adapter.getTextSize()+", setSize: "+adapter.getTextSize()*detector.getScaleFactor());
                 subtitleView.setTextSize(TypedValue.COMPLEX_UNIT_PX, size);
                 // Log.d(getClass().getName(),"Realy size after setting: "+adapter.getTextSize());
@@ -747,55 +743,21 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 mpController.hideMediaPlayerController();
             }
         });
- /*       renderView.setOnTouchListener(new View.OnTouchListener(){
-            boolean cmdStart=false, hasFired=false;
-            float xStart=-1, yStart=-1;
 
-            @Override
-            public boolean onTouch(View view, MotionEvent event) {
-                    Log.d(getClass().getName(),"Into bookView.OnTouchListener");
-                    return true;
-            }});
-        */
-        // bookView.setScrollingCacheEnabled( false );
-
-//		rootLayout.setLongClickable(false);
-
-
-        // String appSubtitle=getString(R.string.app_name)
-        // +" V"+pkgInfo.versionName+"."+pkgInfo.versionCode;
         String appSubtitle = getString(R.string.app_name) + " V" + pkgInfo.versionName;
         ActionBar actionBar = getSupportActionBar();
         // Disable show App icon.
         actionBar.setDisplayShowHomeEnabled(false);
         if (actionBar != null) actionBar.setSubtitle(appSubtitle);
 
-		/*
-		 * FragmentManager fm = getSupportFragmentManager(); mTaskFragment =
-		 * (TaskFragment) fm.findFragmentByTag("PlayerTask");
-		 *
-		 * // If the Fragment is non-null, then it is currently being //
-		 * retained across a configuration change. if (mTaskFragment == null) {
-		 * mTaskFragment = new TaskFragment();
-		 * fm.beginTransaction().add(mTaskFragment, "PlayerTask").commit(); }
-		 * Log.d(funcLeave, "******* onCreate *******");
-		 */
+        int onCreateSpendTimeMs=(int)(System.currentTimeMillis()-appStartTimeMs);
+        Log.d(getClass().getName(), "=============== onCreate spend time: "+onCreateSpendTimeMs);
+        GaLogger.sendTimming("Initial", // Timing category
+                onCreateSpendTimeMs, // Timing
+                "LamrimReaderActivity.onCreate", // Timing name
+                null); // Timing label
 
-		/*
-		Log.d(getClass().getName(),"Let's check the undisplayable text:");
-		for(int i=0;i<TheoryData.content.length;i++){
-			Log.d(getClass().getName(),"Check page "+i+":");
-			float sampleW=subtitleView.getPaint().measureText("中");
-			String content=MyListView.getContentStr(i, 0, MyListView.TO_END);
-			for(int j=0;j<content.length();j++){
-				if(content.charAt(j)=='\n')continue;
-				float f=subtitleView.getPaint().measureText(""+content.charAt(j));
-				if(f!=sampleW)
-					Log.d(getClass().getName(),"Get difference word at Page: "+(i+1)+", index: "+j+", word: "+content.charAt(j-1)+"["+content.charAt(j)+"]"+content.charAt(j+1)+", Code: "+((int)content.charAt(j)));
-			}
-		}
-	    */
-    }
+    } // End of onCreate()
 
     // For catch global event, acquire again if user action happen.
     @Override
@@ -1175,7 +1137,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 
                     @Override
                     public void onPlayerError() {
-                        setSubtitleViewText(getString(R.string.app_name));
+                        setSubtitleViewText(getString(R.string.errＷhilePlayMedia));
                         GaLogger.sendEvent("error", "player_error", "error_happen", null);
                     }
 
@@ -1187,8 +1149,9 @@ public class LamrimReaderActivity extends AppCompatActivity {
                                 // synchronized (mpController){
                                 switch (subtitleViewRenderMode) {
                                     case SUBTITLE_MODE:
+                                        //Util.showSubtitlePopupWindow(LamrimReaderActivity.this, subtitle.text + " - (" + Util.getMsToHMS(subtitle.startTimeMs, "\"", "'", false) + " - " + Util.getMsToHMS(subtitle.endTimeMs, "\"", "'", false) + ") #" + (index + 1));
+
                                         //Util.showSubtitleToast(LamrimReaderActivity.this, subtitle.text+ " - (" + Util.getMsToHMS(subtitle.startTimeMs, "\"", "'", false) + " - "	+ Util.getMsToHMS(subtitle.endTimeMs, "\"", "'", false) + ')');
-                                        Util.showSubtitlePopupWindow(LamrimReaderActivity.this, subtitle.text + " - (" + Util.getMsToHMS(subtitle.startTimeMs, "\"", "'", false) + " - " + Util.getMsToHMS(subtitle.endTimeMs, "\"", "'", false) + ") #" + (index + 1));
                                         //		if(bookMap[index]!=null){
                                         //			//Log.d(getClass().getName(),"Highlight page"+(bookMap[index][0]+1)+", line "+(bookMap[index][1]+1)+", word "+(bookMap[index][2]+1)+", length="+subtitle.text.length());
                                         //			bookView.setHighlightWord(bookMap[index][0], bookMap[index][1], bookMap[index][2], bookMap[index][3]);
@@ -1554,7 +1517,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        Log.d(getClass().getName(), "**** Into onResume() loadFromCreate = " + loadFromCreate + " ****");
+        Log.d(getClass().getName(), "**** Into onResume() ****");
 		/*
 		 * While in the sleep mode, the life cycle into onPause, when user
 		 * active the application the life cycle become onResume -> onPause ->
@@ -1645,7 +1608,6 @@ public class LamrimReaderActivity extends AppCompatActivity {
             if (!fsm.isFilesReady(mediaIndex)) {
                 Util.showErrorPopupWindow(LamrimReaderActivity.this, SpeechData.getSubtitleName(mediaIndex) + "音檔或字幕檔案不存在，無法載回最後狀態", 1000);
                 setSubtitleViewText(SpeechData.getSubtitleName(mediaIndex) + "音檔或字幕檔案不存在，無法載回最後狀態");
-                loadFromCreate = false;
                 return;
             }
             Log.d(logTag, "Call startPlay from onResume.");
@@ -1678,7 +1640,6 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 else leakMedia = mEnd;
                 Util.showErrorPopupWindow(LamrimReaderActivity.this, SpeechData.getSubtitleName(leakMedia) + "音檔或字幕檔案不存在，無法載入媒體！", 1000);
                 setSubtitleViewText(SpeechData.getSubtitleName(leakMedia) + "音檔或字幕檔案不存在，無法載入媒體！");
-                loadFromCreate = false;
                 return;
             }
 
@@ -1698,7 +1659,6 @@ public class LamrimReaderActivity extends AppCompatActivity {
             );
         }
 
-        loadFromCreate = false;
         Log.d(getClass().getName(), "**** Leave onResume() ****");
     }
 
@@ -2271,8 +2231,8 @@ public class LamrimReaderActivity extends AppCompatActivity {
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                theorySb.setMax(Math.round(textMaxSize));
-                subtitleSb.setMax(Math.round(textMaxSize));
+                theorySb.setMax(textMaxSize- textMinSize);
+                subtitleSb.setMax(textMaxSize- textMinSize);
                 theorySb.setProgress(orgTheorySize - textMinSize);
                 subtitleSb.setProgress(orgSubtitleSize - textMinSize);
             }
@@ -2379,6 +2339,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 }
             });
 
+            final long startLoadTime=System.currentTimeMillis();
             try {
                 ObjectInputStream ois = new ObjectInputStream(new FileInputStream(subSearchCache));
                 subtitleSearch = (SubtitleSearch[]) ois.readObject();
@@ -2386,7 +2347,12 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 subSearchCache.delete();
                 Util.showErrorPopupWindow(LamrimReaderActivity.this,"載入快取失敗，請點選[選單] -> [選擇音檔] -> [儲存維護]後再嘗試一次。");
                 e.printStackTrace();
+                return false;
             }
+            GaLogger.sendTimming("Load all subtitle", // Timing category
+                    System.currentTimeMillis() - startLoadTime, // Timing
+                    "Load from cache", // Timing name
+                    null); // Timing label
         }
         else {  // 從字幕檔案中重建字幕搜尋物件
 
@@ -2401,9 +2367,12 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 }
             });
 
+            final long startLoadTime=System.currentTimeMillis();
+            boolean noLeak=true;
             for (int i = 0; i < 320; i++) {
                 if (subtitleSearch[i] != null){
                     pd.incrementProgressBy(1);
+                    noLeak=false;
                     continue;
                 }
 
@@ -2418,10 +2387,17 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 if(Thread.currentThread().isInterrupted())return false;
             }
 
+            if(noLeak)
+                GaLogger.sendTimming("Load all subtitle", // Timing category
+                    System.currentTimeMillis() - startLoadTime, // Timing
+                    "Load from SRT file", // Timing name
+                    null); // Timing label
+
             // Write the object to disk with a new thread.
             new Thread(new Runnable(){
                 @Override
                 public void run() {
+                    final long startLoadTime=System.currentTimeMillis();
                     try {
                         ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(subSearchCache));
                         oos.writeObject(subtitleSearch);
@@ -2431,7 +2407,12 @@ public class LamrimReaderActivity extends AppCompatActivity {
                     }catch(Exception e){
                         e.printStackTrace();
                         GaLogger.sendException("Write catch file of subtitle search object", e, false);
+                        return;
                     }
+                    GaLogger.sendTimming("Load all subtitle", // Timing category
+                            System.currentTimeMillis() - startLoadTime, // Timing
+                            "Save cache to file", // Timing name
+                            null); // Timing label
                 }
             }).start();
 

@@ -26,7 +26,7 @@ public final class R {
 		public static final int wrap_content = 0x7f0d0018;
 	}
 	public static final class integer {
-		public static final int google_play_services_version = 0x7f0a000a;
+		public static final int google_play_services_version = 0x7f0a0009;
 	}
 	public static final class layout {
 	}

@@ -40,21 +40,21 @@
         jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/colorPickerView/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="7c0c48cb92f6eae1dd05ed8aef85bcc4e78beeb6">
+        sha1="a85dd3add1bf0974706d0c5eb648566adace84a8">
         <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/LamrimReaderStable-colorPickerView-unspecified_0f6f7461b82ebf1c037bee7ecbaeaa5b48d6bcce.jar" />
     </item>
     <item
         jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/wVersionManager/unspecified/jars/libs/org.apache.http.legacy.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="5bde2e68de42ef8723344bd9023e3c3efc87d458">
+        sha1="0b9c6bba9e014662bd8931402e69a031440e64df">
         <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/org.apache.http.legacy_26671ad063b74379c3cf00c5604827d5737a5dfc.jar" />
     </item>
     <item
         jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="9d8db35b24a6f434e8851b0cf05074618ea11ba1">
+        sha1="568615b29459402c1410a71c6d0eaf098bddab2b">
         <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/LamrimReaderStable-newQuickAction-unspecified_f33ac5eb22981675379e8c224731c1b591e3fb0c.jar" />
     </item>
     <item
@@ -82,14 +82,14 @@
         jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="8012f186e055c86b94f9433eb05c3ffc529a0ff9">
+        sha1="15956a5e90b2c0cda9b13a5fd8bc9f7dbe7bbd0f">
         <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/LamrimReaderStable-robotoCalendarLibrary-unspecified_bd3095e45401dbc426f34fe72f5be0d8604d0eb1.jar" />
     </item>
     <item
         jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/wVersionManager/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="23.0.3"
-        sha1="4ee00333d40f58290f149af7aae208181dcea5d6">
+        sha1="8f0338f6b8a533ffe86c56715302b13326fa120f">
         <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/LamrimReaderStable-wVersionManager-unspecified_bdf9d86d85bfc74d94ed650c121f8001b0c0fd12.jar" />
     </item>
     <item

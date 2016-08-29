@@ -69,7 +69,7 @@ public final class R {
 	}
 	public static final class string {
 		public static final int app_name = 0x7f060017;
-		public static final int hello = 0x7f060066;
+		public static final int hello = 0x7f060067;
 	}
 	public static final class style {
 		public static final int Animations = 0x7f090098;

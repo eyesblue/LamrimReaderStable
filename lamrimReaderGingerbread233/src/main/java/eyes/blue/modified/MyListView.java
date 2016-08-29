@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import eyes.blue.GaLogger;
+import eyes.blue.LamrimReaderActivity;
 import eyes.blue.R;
 import eyes.blue.SpeechData;
 import eyes.blue.TheoryData;
@@ -71,7 +72,9 @@ public class MyListView extends ListView {
 	
 	private void init(){
 		runtime = context.getSharedPreferences(context.getString(R.string.runtimeStateFile), 0);
-		educFont=Typeface.createFromAsset(context.getAssets(), "EUDC.TTF");
+		final int textSizeMax = getResources().getInteger(R.integer.textMaxSize);
+		final int textSizeMin = getResources().getInteger(R.integer.textMinSize);
+
 		bookList = new ArrayList<HashMap<String, String>>();
         int pIndex = 0;
 
@@ -86,11 +89,7 @@ public class MyListView extends ListView {
 		setAdapter(adapter);
     	
     	setScaleGestureDetector(new ScaleGestureDetector(context,new SimpleOnScaleGestureListener() {
-    		//int textSizeMax=context.getResources().getInteger(R.integer.textMaxSize);
-    		//int textSizeMin=context.getResources().getInteger(R.integer.textMinSize);
-    		
-    		int textSizeMax=Util.getMaxFontSize((Activity)context);
-    		int textSizeMin=Util.getMinFontSize((Activity)context);
+
     		@Override
     		public boolean onScaleBegin(ScaleGestureDetector detector) {
     			Log.d(getClass().getName(),"Begin scale called factor: "+detector.getScaleFactor());
@@ -100,9 +99,14 @@ public class MyListView extends ListView {
     		@Override
     		public boolean onScale(ScaleGestureDetector detector) {
     			float size=adapter.getTextSize()*detector.getScaleFactor();
-    			if(size<textSizeMin || size > textSizeMax)return true;
-//    				Log.d(getClass().getName(),"Get scale rate: "+detector.getScaleFactor()+", current Size: "+adapter.getTextSize()+", setSize: "+adapter.getTextSize()*detector.getScaleFactor());
-    				
+				Log.d(getClass().getName(),"Get scale rate: "+detector.getScaleFactor()+", current Size: "+adapter.getTextSize()+", setSize: "+adapter.getTextSize()*detector.getScaleFactor());
+    			if(size<=textSizeMin && adapter.getTextSize()==textSizeMin)
+					return true;
+				else if( size >= textSizeMax && adapter.getTextSize()==textSizeMax)
+					return true;
+
+				if(size<textSizeMin)size=textSizeMin;
+				else if(size>textSizeMax)size=textSizeMax;
     			adapter.setTextSize(size);
     			adapter.notifyDataSetChanged();
 //    				Log.d(getClass().getName(),"set size after setting: "+adapter.getTextSize());
@@ -680,10 +684,13 @@ public class MyListView extends ListView {
 			View row = convertView;
 			if (row == null) {
 				Log.d(getClass().getName(), "row=null, construct it.");
+				if(educFont ==null)
+					educFont= LamrimReaderActivity.educFont;
 				LayoutInflater inflater = ((Activity)context).getLayoutInflater();
 				row = inflater.inflate(R.layout.theory_page_view, parent, false);
 				
 				boolean isDarkTheme=runtime.getBoolean(context.getString(R.string.isDarkThemeKey), true);
+				((TheoryPageView) row.findViewById(R.id.pageContentView)).setTypeface(educFont);
 				TextView pNum = (TextView) row.findViewById(R.id.pageNumView);
 				int sdk = android.os.Build.VERSION.SDK_INT;
 				int background=-1,textColor=-1;
@@ -701,13 +708,13 @@ public class MyListView extends ListView {
 				else 
 					row.setBackground(getResources().getDrawable(background));
 				pNum.setTextColor(context.getResources().getColor(textColor));
+				pNum.setTypeface(educFont);
 			}
 
 			// / Log.d(logTag, "row=" + row+", ConvertView="+convertView);
 			TheoryPageView bContent = (TheoryPageView) row.findViewById(R.id.pageContentView);
 			bContent.setHorizontallyScrolling(true);
 			// bContent.drawPoints(new int[0][0]);
-			bContent.setTypeface(educFont);
 			bContent.setText(bookList.get(position).get("page"));
 			if(highlightLine!=null && position>=highlightLine[0][0] && position<=highlightLine[highlightLine.length-1][0]){
 				int index=position-highlightLine[0][0];

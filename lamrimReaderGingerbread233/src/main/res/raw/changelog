@@ -24,6 +24,14 @@
   	<div class='title'><p><a href="http://lamrimreader.eyes-blue.com/">計畫首頁</a></p></div>
 
 
+$191
+% Version 1.4.7
+  _ 2016-7-19
+  * 改變字體為標楷體。
+  * 調整版面顯示方式。
+  * 最大字型調整為200dp。
+  * 修正廣論原文標題未加粗問題。
+
 $190
 % Version 1.4.6
   _ 2016-7-1

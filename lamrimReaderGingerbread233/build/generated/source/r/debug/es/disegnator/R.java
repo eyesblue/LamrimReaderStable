@@ -142,7 +142,7 @@ public final class R {
 		public static final int currentDayOfMonthFont = 0x7f060025;
 		public static final int dayOfMonthFont = 0x7f060026;
 		public static final int dayOfWeekFont = 0x7f060027;
-		public static final int monthTitleFont = 0x7f060081;
+		public static final int monthTitleFont = 0x7f060082;
 	}
 	public static final class style {
 		public static final int AppBaseTheme = 0x7f09000c;

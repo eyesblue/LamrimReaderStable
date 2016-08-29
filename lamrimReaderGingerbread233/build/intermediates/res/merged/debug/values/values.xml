@@ -895,7 +895,6 @@
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>
     <integer name="cancel_button_image_alpha">127</integer>
-    <integer name="defFontSize">4</integer>
     <integer name="downloadBufferSize">16384</integer>
     <integer name="ga_sessionTimeout">30</integer>
     <integer name="google_play_services_version">8487000</integer>
@@ -907,8 +906,8 @@
     <integer name="subtitleReservSizeK">102400</integer>
     <integer name="subtitleScrollTouchBtnHeightPercentDp">3</integer>
     <integer name="subtitleScrollTouchBtnWidthPercentDp">10</integer>
-    <integer name="textMaxSize">10</integer>
-    <integer name="textMinSize">2</integer>
+    <integer name="textMaxSize">200</integer>
+    <integer name="textMinSize">12</integer>
     <integer name="theorySmallTextSizePercent">90</integer>
     <string name="GLModeRecordFile">GLMode</string>
     <string name="abc_action_bar_home_description">Navigate home</string>
@@ -999,6 +998,7 @@
     <string name="errISEwhileSetPlayerSrc">開啟語音檔時發生撥放器狀態錯誤!</string>
     <string name="errSEwhileSetPlayerSrc">開啟語音檔時發生安全性錯誤!</string>
     <string name="errWhileReleasePlayer">釋放撥放器時發生狀態錯誤!</string>
+    <string name="errＷhilePlayMedia">播放媒體時發生錯誤，請重新載入！</string>
     <string name="exitApp">關閉</string>
     <string name="eyes.blue.LamrimReaderActivity">Main</string>
     <string name="eyes.blue.SpeechMenuActivity">SpeechMenu</string>

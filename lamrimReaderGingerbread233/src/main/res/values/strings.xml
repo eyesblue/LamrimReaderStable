@@ -24,9 +24,8 @@
     <!-- Default Value -->
     <integer name="screenOnTime">300000</integer>
     <string name="versionCheckUrl">http://lamrimreader.eyes-blue.com/appresources/publish/notifier.json</string>
-    <integer name="textMaxSize">10</integer>
-    <integer name="textMinSize">2</integer>
-    <integer name="defFontSize">4</integer>
+    <integer name="textMaxSize">200</integer>
+    <integer name="textMinSize">12</integer>
     <integer name="theorySmallTextSizePercent">90</integer>
     <string name="reloadLastState">載回進度</string>
 
@@ -118,6 +117,7 @@
     <string name="errIOEwhileSetPlayerSrc">無法正常讀取音檔，請檢查音檔是否損毀，請試著重新下載[%1$s]音檔。</string>
     <string name="errISEwhilePrepPlayer">準備語音檔時發生撥放器狀態錯誤!</string>
     <string name="errIOEwhilePrepPlayer">準備語音檔時發生輸出入錯誤!</string>
+    <string name="errＷhilePlayMedia">播放媒體時發生錯誤，請重新載入！</string>
     <string name="inputTitleHint">請輸入標題！</string>
     <string name="regionRecordListViewPage">regionListPage</string>
     <string name="regionRecordListViewPageShift">regionListPageShift</string>
