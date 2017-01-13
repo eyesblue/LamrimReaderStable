@@ -2,109 +2,211 @@
 <items version="2" >
 
     <item
-        jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/libs/javacsv.jar"
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.3"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.android.support-support-fragment-25.1.0_49bc762f14255a52e17bb2564654abc1c1770294.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.android.support-support-v4-25.1.0_722765d043486a98feffd50191db650020fcb0b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\libs\javacsv.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
         sha1="afed46cadd463453bbf007625ecfa3afac097f37">
-        <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/javacsv_bfac8c9c59e412b4364ca3d76d80d7d2a9f8380b.jar" />
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\javacsv_00e64aa25d52b2a27b331d5ac448e0078283d599.jar" />
     </item>
     <item
-        jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/com.android.support-support-v4-23.4.0_88d4b5f7d284212a9e951c66f03fe038becea82f.jar" />
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.android.support-animated-vector-drawable-25.1.0_7520733a1032c95c0f2dbb5a5a30bf47d583b2b9.jar" />
     </item>
     <item
-        jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.3"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/com.android.support-animated-vector-drawable-23.4.0_3bb7a0948d3322f62bb5d1e66d71aef0f26a09c1.jar" />
+        optimize="true"
+        revision="25.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-basement-10.0.1_786ef3c2aca22d5a8c512c864c684f7b56427102.jar" />
     </item>
     <item
-        jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.0.1\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/com.android.support-appcompat-v7-23.4.0_6829d7144a730fd275a61f87c84d01ea49f76cc9.jar" />
+        optimize="true"
+        revision="25.0.2"
+        sha1="4c829ff0ccfecb28a999ee46d9e75948dfc777a4">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-analytics-10.0.1_f4efd3d5f37523838627c6ca7e3d900b07e5bafa.jar" />
     </item>
     <item
-        jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\LamrimReaderStable\wVersionManager\unspecified\jars\libs\org.apache.http.legacy.jar"
         jumboMode="false"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/com.android.support-support-vector-drawable-23.4.0_cd272b938210678632e72e001646b9fcb12fac57.jar" />
+        optimize="true"
+        revision="25.0.2"
+        sha1="49bc2d83ccb0cfe1dbc853e3ba80db0f950ed96d">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\org.apache.http.legacy_b43f0fe120f61a54cb7e2aa1c71243bac7e5d017.jar" />
     </item>
     <item
-        jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/colorPickerView/unspecified/jars/classes.jar"
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.3"
-        sha1="a85dd3add1bf0974706d0c5eb648566adace84a8">
-        <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/LamrimReaderStable-colorPickerView-unspecified_0f6f7461b82ebf1c037bee7ecbaeaa5b48d6bcce.jar" />
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.android.support-support-compat-25.1.0_7d9a485ef3bb7e9aa38cb85c14e064a0d95d41e2.jar" />
     </item>
     <item
-        jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/wVersionManager/unspecified/jars/libs/org.apache.http.legacy.jar"
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.3"
-        sha1="0b9c6bba9e014662bd8931402e69a031440e64df">
-        <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/org.apache.http.legacy_26671ad063b74379c3cf00c5604827d5737a5dfc.jar" />
+        optimize="true"
+        revision="25.0.2"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-tasks-10.0.1_bb042cc334aeba32fc8735ef129a440dc80439b5.jar" />
     </item>
     <item
-        jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/newQuickAction/unspecified/jars/classes.jar"
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-v4-impl\10.0.1\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.3"
-        sha1="568615b29459402c1410a71c6d0eaf098bddab2b">
-        <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/LamrimReaderStable-newQuickAction-unspecified_f33ac5eb22981675379e8c224731c1b591e3fb0c.jar" />
+        optimize="true"
+        revision="25.0.2"
+        sha1="f23ad0f8e58713ff4b55f61c0bbde3830378347c">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-tagmanager-v4-impl-10.0.1_bbc11177f09b81a70faf4f53d7dbf0285854cd41.jar" />
     </item>
     <item
-        jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.3"
-        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
-        <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-basement-8.4.0_8ca35e40fedabac13e9e3728fd13d278c029d71f.jar" />
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.android.support-support-core-ui-25.1.0_458b2f17ecb422921bc10b4562b9087564d9a6d7.jar" />
     </item>
     <item
-        jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/jars/classes.jar"
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.3"
-        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
-        <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-analytics-8.4.0_f12cf31b6b5fa3b3d41980b0672e50fe24f2a38a.jar" />
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.android.support-support-media-compat-25.1.0_417a5b0370d7e205ca969317117512fa82a4c7c9.jar" />
     </item>
     <item
-        jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/libs/commons-lang3-3.1.jar"
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.3"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-base-10.0.1_0c083f0c9d4606cf21f9fe51650e6c4c77855a4c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.android.support-support-core-utils-25.1.0_b922fdd963ea9168844a47a1cf17cfd814bb6ec1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.android.support-support-vector-drawable-25.1.0_e2046a1ba0520b36d6803320285f228af7a97059.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.android.support-appcompat-v7-25.1.0_ea94adb8413edf2c634142fd38d7b490df7455fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\LamrimReaderStable\newQuickAction\unspecified\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5ce43f9a13a525b74275c79827bc548c7d662be2">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\LamrimReaderStable-newQuickAction-unspecified_0d2d499b63acb4450cec9dcc025d31cae3c83fa0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-analytics-impl-10.0.1_ac0fe8de4db8fa69604cde0072e7f0fc0e5d1023.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\libs\commons-lang3-3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
         sha1="905075e6c80f206bbe6cf1e809d2caa69f420c76">
-        <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/commons-lang3-3.1_ffbd4469d6427775c60cd056b3c36a85226969fe.jar" />
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\commons-lang3-3.1_513ef0631df579e351a2ada88564ddcb89e6fb44.jar" />
     </item>
     <item
-        jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/robotoCalendarLibrary/unspecified/jars/classes.jar"
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\LamrimReaderStable\robotoCalendarLibrary\unspecified\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.3"
-        sha1="15956a5e90b2c0cda9b13a5fd8bc9f7dbe7bbd0f">
-        <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/LamrimReaderStable-robotoCalendarLibrary-unspecified_bd3095e45401dbc426f34fe72f5be0d8604d0eb1.jar" />
+        optimize="true"
+        revision="25.0.2"
+        sha1="aa99b8e4fd0a7869a903729070081356f09cabf8">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\LamrimReaderStable-robotoCalendarLibrary-unspecified_2d1ea1d29489f6a23e57def428101d2523bd084e.jar" />
     </item>
     <item
-        jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/LamrimReaderStable/wVersionManager/unspecified/jars/classes.jar"
+        is-multidex="false"
+        jar="C:\Users\eyesblue\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
         jumboMode="false"
-        revision="23.0.3"
-        sha1="8f0338f6b8a533ffe86c56715302b13326fa120f">
-        <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/LamrimReaderStable-wVersionManager-unspecified_bdf9d86d85bfc74d94ed650c121f8001b0c0fd12.jar" />
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\support-annotations-25.1.0_9de5685da537b08b5cf5775c55bc304f9fc38476.jar" />
     </item>
     <item
-        jar="/Users/father/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\LamrimReaderStable\colorPickerView\unspecified\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.3"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/support-annotations-23.4.0_0a7dc36268397d61cd8db67aa2e98a16531e467c.jar" />
+        optimize="true"
+        revision="25.0.2"
+        sha1="79a5d9bc9da93a96b8b5ec94fea167bc1b972330">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\LamrimReaderStable-colorPickerView-unspecified_316b3c068a4410be688d57f72cce2d8eae067c6a.jar" />
     </item>
     <item
-        jar="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        is-multidex="false"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\LamrimReaderStable\wVersionManager\unspecified\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.3"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/pre-dexed/release/internal_impl-23.4.0_c817a61150a798a04ee069257617f2aa35668aab.jar" />
+        optimize="true"
+        revision="25.0.2"
+        sha1="ef225571c0d2b09f880d96e66483296525c350a3">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\LamrimReaderStable-wVersionManager-unspecified_1470292cd9784a3b32d30993ef0b843e2ab93edf.jar" />
     </item>
 
 </items>

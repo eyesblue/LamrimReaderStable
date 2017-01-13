@@ -23,6 +23,10 @@
   	<div class='title'><p><a href="http://www.facebook.com/lamrimreader">執行問題反應區</a></p></div>
   	<div class='title'><p><a href="http://lamrimreader.eyes-blue.com/">計畫首頁</a></p></div>
 
+$192
+% Version 1.4.8
+  _ 2017-1-12
+  * 修正「儲存管理」頁面中選擇目錄時會強制關閉問題。
 
 $191
 % Version 1.4.7

@@ -6,7 +6,7 @@ public class SpeechData {
 		try{
 			result=name[i].substring(0, 7);
 		}catch(ArrayIndexOutOfBoundsException e){
-			GaLogger.sendException("Access index of name["+i+"]", e, true);
+			AnalyticsApplication.sendException("Access index of name["+i+"]", e, true);
 			throw new ArrayIndexOutOfBoundsException();
 		}
 				

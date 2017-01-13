@@ -3,7 +3,6 @@ package eyes.blue;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.Socket;
@@ -16,10 +15,8 @@ import java.security.NoSuchAlgorithmException;
 import java.security.UnrecoverableKeyException;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Hashtable;
@@ -61,15 +58,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Handler;
-import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 public class CalendarActivity extends AppCompatActivity {
@@ -93,6 +85,8 @@ public class CalendarActivity extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_calendar);
+
+		AnalyticsApplication application = (AnalyticsApplication) getApplication();
 
 		LayoutInflater factory = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
 		actionBarControlPanel = factory.inflate(R.layout.calendar_actionbar_control_panel, null);
@@ -131,7 +125,7 @@ public class CalendarActivity extends AppCompatActivity {
 				Intent intent = new Intent();
 				intent.putExtra("reloadLastState", true);
 				setResult(Activity.RESULT_OK, intent);
-				GaLogger.sendEvent("ui_action", "CalendarActivity", "ReloadLastState", null);
+				AnalyticsApplication.sendEvent("ui_action", "CalendarActivity", "ReloadLastState");
 				finish();
 			}
 		});
@@ -249,7 +243,7 @@ public class CalendarActivity extends AppCompatActivity {
 			Intent intent = new Intent();
 			intent.putExtra("reloadLastState", true);
 			setResult(Activity.RESULT_OK, intent);
-			GaLogger.sendEvent("ui_action", "CalendarActivity", "ReloadLastState", null);
+			AnalyticsApplication.sendEvent("ui_action", "CalendarActivity", "ReloadLastState", null);
 			finish();
 			return true;
 		}
@@ -325,7 +319,7 @@ public class CalendarActivity extends AppCompatActivity {
 												e.printStackTrace();
 											}    // Don't force close if problem here.
 											dialogShowing = false;
-											GaLogger.sendEvent("ui_action", "CalendarActivity", "ShowInfoDialog_" + intent.getStringExtra("selectedDay"), null);
+											AnalyticsApplication.sendEvent("ui_action", "CalendarActivity", "ShowInfoDialog_" + intent.getStringExtra("selectedDay"));
 											finish();
 										} else {
 											final Intent speechMenu = new Intent(CalendarActivity.this, SpeechMenuActivity.class);
@@ -483,14 +477,14 @@ public class CalendarActivity extends AppCompatActivity {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 			Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView), getString(R.string.localGlobalLamrimScheduleFileNotFound));
-			GaLogger.sendException("File: " + file.getAbsolutePath(), e, true);
+			AnalyticsApplication.sendException("File: " + file.getAbsolutePath(), e, true);
 			return false;
 		}
 
 		try {
 			if (!csvr.readRecord()) {
 				Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView), getString(R.string.localGlobalLamrimScheduleFileReadErr));
-				GaLogger.sendException(
+				AnalyticsApplication.sendException(
 						"Error happen while csv reader read record csvr.readRecord()",
 						new Exception("Error happen while read record of csv reader."),
 						true);
@@ -499,7 +493,7 @@ public class CalendarActivity extends AppCompatActivity {
 			int count = csvr.getColumnCount();
 			if (count < 2) {
 				Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView), getString(R.string.localGlobalLamrimScheduleFileRangeFmtErr));
-				GaLogger.sendException(
+				AnalyticsApplication.sendException(
 						"Error: the date start and date end colume of global lamrim schedule file is not 2 colume",
 						new Exception("Global Lamrim schedule file format error."),	true);
 				return false;
@@ -523,7 +517,7 @@ public class CalendarActivity extends AppCompatActivity {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 				Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView), getString(R.string.localGlobalLamrimScheduleFileDateFmtErr));
-				GaLogger.sendException(
+				AnalyticsApplication.sendException(
 						"Error happen while parse data region of Global Lamrim schedule file: data1="
 								+ csvr.get(0) + ", data2=" + csvr.get(1), e,
 						true);
@@ -532,7 +526,7 @@ public class CalendarActivity extends AppCompatActivity {
 		} catch (IOException e) {
 			e.printStackTrace();
 			Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView), getString(R.string.localGlobalLamrimScheduleFileReadErr));
-			GaLogger.sendException(
+			AnalyticsApplication.sendException(
 					"IOException happen while read date region of global lamrim schedule file.",
 					e, true);
 			return false;
@@ -563,7 +557,7 @@ public class CalendarActivity extends AppCompatActivity {
 			e.printStackTrace();
 			Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView),
 					getString(R.string.localGlobalLamrimScheduleFileDecodeErr));
-			GaLogger.sendException("IOException happen while read data of global lamrim schedule file.",
+			AnalyticsApplication.sendException("IOException happen while read data of global lamrim schedule file.",
 					e, true);
 			return false;
 		}
@@ -586,7 +580,7 @@ public class CalendarActivity extends AppCompatActivity {
 			e.printStackTrace();
 			Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView),
 					getString(R.string.localGlobalLamrimScheduleFileReadErr)+ "\"" + glr + "\"");
-			GaLogger.sendException("Date format parse error: startDate="
+			AnalyticsApplication.sendException("Date format parse error: startDate="
 					+ startDate + ", endDate=" + endDate, e, true);
 			return false;
 		}
@@ -600,7 +594,7 @@ public class CalendarActivity extends AppCompatActivity {
 				key = dateFormater.format(startDate);
 				glSchedule.put(key, glr);
 			}catch(ArrayIndexOutOfBoundsException aiobe){
-				GaLogger.sendException("Locale="+Locale.getDefault().getDisplayCountry()+", Language="+Locale.getDefault().getDisplayLanguage()+", Date data=" + startDate.toString(), aiobe, true);
+				AnalyticsApplication.sendException("Locale="+Locale.getDefault().getDisplayCountry()+", Language="+Locale.getDefault().getDisplayLanguage()+", Date data=" + startDate.toString(), aiobe, true);
 			}
 			
 		}
@@ -612,7 +606,7 @@ public class CalendarActivity extends AppCompatActivity {
 	private Date parseDate(String dateStr){
 		String[] set=dateStr.split("/");
 		if(set.length!=3){
-			GaLogger.sendException("The format of date string error, it should be YYYY/MM/DD, string is ["+dateStr+"]", new Exception("Date Format Error"), true);
+			AnalyticsApplication.sendException("The format of date string error, it should be YYYY/MM/DD, string is ["+dateStr+"]", new Exception("Date Format Error"), true);
 			return null;
 		}
 		
@@ -621,7 +615,7 @@ public class CalendarActivity extends AppCompatActivity {
 			try{
 				dateNum[i]=Integer.parseInt(set[i]);
 			}catch(NumberFormatException nfe){
-				GaLogger.sendException("The format of date string error, it should be number but error while parse integer, string is ["+dateStr+"]", nfe, true);
+				AnalyticsApplication.sendException("The format of date string error, it should be number but error while parse integer, string is ["+dateStr+"]", nfe, true);
 				return null;
 			}
 		}
@@ -632,7 +626,7 @@ public class CalendarActivity extends AppCompatActivity {
 		isCorrect&=(dateNum[2]<0) || (dateNum[2]>31);
 		
 		if(!isCorrect){
-			GaLogger.sendException("The format of date string error, the range of number over it should be, string is ["+dateStr+"]", new Exception(), true);
+			AnalyticsApplication.sendException("The format of date string error, the range of number over it should be, string is ["+dateStr+"]", new Exception(), true);
 			return null;
 		}
 		
@@ -652,7 +646,7 @@ public class CalendarActivity extends AppCompatActivity {
 							downloadPDialog.show();
 							dialogShowing = true;
 						} catch (Exception e) {
-							GaLogger.sendException("Error happen while show download progress dialog.", e, false);
+							AnalyticsApplication.sendException("Error happen while show download progress dialog.", e, false);
 						}
 					}
 				}, 200);
@@ -668,7 +662,7 @@ public class CalendarActivity extends AppCompatActivity {
 					downloadPDialog.dismiss();
 					dialogShowing = false;
 				} catch (Exception e) {
-					GaLogger.sendException("Error happen while dismiss download progress dialog.", e, false);
+					AnalyticsApplication.sendException("Error happen while dismiss download progress dialog.", e, false);
 				}
 			}
 		});
@@ -753,7 +747,7 @@ public class CalendarActivity extends AppCompatActivity {
 					fos = new FileOutputStream(tmpFile);
 				} catch (FileNotFoundException e) {
 					e.printStackTrace();
-					GaLogger.sendException("Can't create temp file.", e, true);
+					AnalyticsApplication.sendException("Can't create temp file.", e, true);
 					Util.showErrorPopupWindow(CalendarActivity.this, findViewById(R.id.rootView), "無法建立暫存檔，請檢查磁碟空間是否足夠。");
 					if (downloadPDialog.isShowing()) {
 						dismissDownloadProgressDialog();

@@ -8,10 +8,10 @@ package com.winsontan520.wversionmanager.library;
 
 public final class R {
 	public static final class drawable {
-		public static final int ic_launcher = 0x7f0200e2;
+		public static final int ic_launcher = 0x7f0200ff;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f060017;
+		public static final int app_name = 0x7f070034;
 	}
 	public static final class style {
 		public static final int AppBaseTheme = 0x7f09000c;

@@ -15,9 +15,6 @@ import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.AudioManager.OnAudioFocusChangeListener;
 import android.media.MediaPlayer.OnPreparedListener;
-import android.os.AsyncTask;
-import android.os.AsyncTask.Status;
-import android.os.Handler;
 import android.os.PowerManager;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -63,7 +60,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 	int regionStartMs = -1;
 	int regionEndMs = -1;
 	ViewGroup anchorView=null;
-	
+
 //	VideoControllerView controller;
 	public MediaPlayerController(LamrimReaderActivity activity, View anchorView, FileSysManager fsm, final MediaPlayerControllerListener changedListener){
 		this(activity, anchorView);
@@ -156,7 +153,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 				     *      but the MediaPlayer control panel still try to get information from the media player.
 				     * */
 				    if(what!=-38)
-				    	GaLogger.sendException("MediaPlayer_Error: mpState="+mpState+", what="+whatStr+"("+what+"), extra="+extraStr+"("+extra+")", new Exception(), true);
+						AnalyticsApplication.sendException("MediaPlayer_Error: mpState="+mpState+", what="+whatStr+"("+what+"), extra="+extraStr+"("+extra+")", new Exception(), true);
 					return false;
 				}
 			});
@@ -315,7 +312,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 				
 				changedListener.onPlayerError();
 				e.printStackTrace();
-				GaLogger.sendException("mpState="+mpState, e, true);
+				AnalyticsApplication.sendException("mpState="+mpState, e, true);
 			}
 		}
 	}
@@ -340,7 +337,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 			}catch(Exception e){
 				changedListener.onPlayerError();
 				e.printStackTrace();
-				GaLogger.sendException("mpState="+mpState, e, true);
+				AnalyticsApplication.sendException("mpState="+mpState, e, true);
 			return 0;
 			}
 		}
@@ -357,7 +354,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 			}catch(Exception e){
 				changedListener.onPlayerError();
 				e.printStackTrace();
-				GaLogger.sendException("mpState="+mpState, e, true);
+				AnalyticsApplication.sendException("mpState="+mpState, e, true);
 				return 0;
 			}
 		}
@@ -374,7 +371,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			GaLogger.sendException(e, false);
+			AnalyticsApplication.sendException(e, false);
 			return false;
 		}
 	}
@@ -429,7 +426,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 				return;
 			}
 			if(mpState == MP_INITING){
-				GaLogger.sendException("Reset media at loading file stage, skip reset, mpState="+mpState+", mediaPlayer="+mediaPlayer, new Exception(), true);
+				AnalyticsApplication.sendException("Reset media at loading file stage, skip reset, mpState="+mpState+", mediaPlayer="+mediaPlayer, new Exception(), true);
 				return;
 			}
 		}
@@ -449,7 +446,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 			}catch(Exception e){
 				e.printStackTrace();
 				changedListener.onPlayerError();
-				GaLogger.sendException("mpState="+mpState, e, true);
+				AnalyticsApplication.sendException("mpState="+mpState, e, true);
 			}
 		}
 		synchronized(playingIndexKey){
@@ -535,7 +532,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 			if(mpState != MP_IDLE)reset();
 			mpState=MP_INITING;
 			if(mediaPlayer==null){
-				GaLogger.sendException("MediaPlayerController.setDataSource(): The MediaPlayer become null, memory free = "+Util.getMemInfo(activity)+"M", new Exception(), false);
+				AnalyticsApplication.sendException("MediaPlayerController.setDataSource(): The MediaPlayer become null, memory free = "+Util.getMemInfo(activity)+"M", new Exception(), false);
 				Util.showInfoPopupWindow(activity, anchorView, "多媒體播放器重建中");
 				createMediaPlayer();
 			}
@@ -553,20 +550,20 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 				}
 			}
 			catch(IllegalArgumentException iae){
-				GaLogger.sendException("SetDataSource in an invalid state, mpState="+mpState+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), iae, true);
+				AnalyticsApplication.sendException("SetDataSource in an invalid state, mpState="+mpState+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), iae, true);
 				if(!setDataSrcByFD(context, speechFile)){
 					createMediaPlayer();
 					return;
 				}
 			}
 			catch(IOException ioe){
-				GaLogger.sendException("Can't setDataSource by normal way, mpState="+mpState+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), ioe, true);
+				AnalyticsApplication.sendException("Can't setDataSource by normal way, mpState="+mpState+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), ioe, true);
 				if(!setDataSrcByFD(context, speechFile)){
 					createMediaPlayer();
 					return;
 				}
 			}catch(Exception e){
-				GaLogger.sendException("Error happen while load media, mpState="+mpState+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), e, true);
+				AnalyticsApplication.sendException("Error happen while load media, mpState="+mpState+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), e, true);
 				Util.showErrorPopupWindow(activity, anchorView, "讀取音檔失敗，請重新嘗試。");
 				createMediaPlayer();
 				return;
@@ -594,7 +591,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 		if(!hasErr)return true;
 //		String errStr="無法正常讀取音檔，請檢查音檔是否損毀，請試著重新下載此音檔，若確定非上述問題，請回報開發者您的機型無法正常播放音檔。";
 //		Util.showErrorPopupWindow(activity, anchorView, errStr);
-		GaLogger.sendException("Can't setDataSource by FileDescriptor way, mpState="+mpState+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), e, true);
+		AnalyticsApplication.sendException("Can't setDataSource by FileDescriptor way, mpState="+mpState+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), e, true);
 		return false;
 	}
 
@@ -1024,7 +1021,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 					pause();
 					//release();
 				} catch (IllegalStateException e) {
-					GaLogger.sendException("AudioFocusChangeListener.AUDIOFOCUS_LOSS", e, false);
+					AnalyticsApplication.sendException("AudioFocusChangeListener.AUDIOFOCUS_LOSS", e, false);
 					e.printStackTrace();
 				}
 				// mpController.stopSubtitleTimer();
@@ -1038,7 +1035,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 					lastState=getMediaPlayerState();
 					pause();
 				} catch (IllegalStateException e) {
-					GaLogger.sendException("AudioFocusChangeListener.AUDIOFOCUS_LOSS_TRANSIENT", e, false);
+					AnalyticsApplication.sendException("AudioFocusChangeListener.AUDIOFOCUS_LOSS_TRANSIENT", e, false);
 					e.printStackTrace();
 				}
 				// mpController.stopSubtitleTimer();
@@ -1054,7 +1051,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 					pause();
 				} catch (IllegalStateException e) {
 					e.printStackTrace();
-					GaLogger.sendException("AudioFocusChangeListener.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK", e, false);
+					AnalyticsApplication.sendException("AudioFocusChangeListener.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK", e, false);
 				}
 				// mpController.stopSubtitleTimer();
 				break;
@@ -1076,7 +1073,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 	        KeyEvent Xevent = (KeyEvent)intent.getParcelableExtra(Intent.EXTRA_KEY_EVENT);
 	        
 	        if(event == null || Xevent == null){
-	        	GaLogger.sendException("MediaPlayerRemoteController get key event but event is null.", new NullPointerException(), true);
+					AnalyticsApplication.sendException("MediaPlayerRemoteController get key event but event is null.", new NullPointerException(), true);
 	        	return;
 	        }
 	        
@@ -1175,15 +1172,15 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 					
 					}catch(IllegalStateException e) {
 						e.printStackTrace();
-						GaLogger.sendException("SubtitleTimer_EXCEPTION: mpState="+mpState+", playPoint="+playPoint+", playArrayIndex="+playArrayIndex+", regionEndMs="+regionEndMs, e, true);
+						AnalyticsApplication.sendException("SubtitleTimer_EXCEPTION: mpState="+mpState+", playPoint="+playPoint+", playArrayIndex="+playArrayIndex+", regionEndMs="+regionEndMs, e, true);
 						return null;
 					}catch (InterruptedException e) {
 //						e.printStackTrace();
-						GaLogger.sendException("SubtitleTimer_EXCEPTION: mpState="+mpState+", playPoint="+playPoint+", playArrayIndex="+playArrayIndex+", regionEndMs="+regionEndMs, e, true);
+						AnalyticsApplication.sendException("SubtitleTimer_EXCEPTION: mpState="+mpState+", playPoint="+playPoint+", playArrayIndex="+playArrayIndex+", regionEndMs="+regionEndMs, e, true);
 						return null;
 					}catch (Exception e) {
 //						e.printStackTrace();
-						GaLogger.sendException("SubtitleTimer_EXCEPTION: mpState="+mpState+", playPoint="+playPoint+", playArrayIndex="+playArrayIndex+", regionEndMs="+regionEndMs, e, true);
+						AnalyticsApplication.sendException("SubtitleTimer_EXCEPTION: mpState="+mpState+", playPoint="+playPoint+", playArrayIndex="+playArrayIndex+", regionEndMs="+regionEndMs, e, true);
 						return null;
 					}
 				}
@@ -1268,21 +1265,21 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 
 				} catch (IllegalStateException e) {
 					e.printStackTrace();
-					GaLogger.sendException("SubtitleTimer_EXCEPTION: mpState="
+					AnalyticsApplication.sendException("SubtitleTimer_EXCEPTION: mpState="
 							+ mpState + ", playPoint=" + playPoint
 							+ ", playArrayIndex=" + playArrayIndex
 							+ ", regionEndMs=" + regionEndMs, e, true);
 					return;
 				} catch (InterruptedException e) {
 					// e.printStackTrace();
-					GaLogger.sendException("SubtitleTimer_EXCEPTION: mpState="
+					AnalyticsApplication.sendException("SubtitleTimer_EXCEPTION: mpState="
 							+ mpState + ", playPoint=" + playPoint
 							+ ", playArrayIndex=" + playArrayIndex
 							+ ", regionEndMs=" + regionEndMs, e, true);
 					return;
 				} catch (Exception e) {
 					// e.printStackTrace();
-					GaLogger.sendException("SubtitleTimer_EXCEPTION: mpState="
+					AnalyticsApplication.sendException("SubtitleTimer_EXCEPTION: mpState="
 							+ mpState + ", playPoint=" + playPoint
 							+ ", playArrayIndex=" + playArrayIndex
 							+ ", regionEndMs=" + regionEndMs, e, true);

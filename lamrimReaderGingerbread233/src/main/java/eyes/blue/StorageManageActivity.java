@@ -1,47 +1,40 @@
 package eyes.blue;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
-import android.os.Handler;
-import android.os.PowerManager;
-import android.os.StatFs;
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
-import android.content.ClipData;
-import android.content.ClipboardManager;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 //import android.support.v4.provider.DocumentFile;
+import android.os.Environment;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.provider.DocumentFile;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
-import android.widget.ScrollView;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class StorageManageActivity extends AppCompatActivity {
-	private static final int OPEN_DOCUMENT_TREE_ABV_21 = 1;
-	private static final int OPEN_DOCUMENT_TREE_UND_19 = 0;
+	private static final int STORAGE_ACCESS_PERMISSION_REQUEST=1;
+	private static final int OPEN_DOCUMENT_TREE_ABV_23 = 1;
+	private static final int OPEN_DOCUMENT_TREE_UND_23 = 2;
 	FileSysManager fsm=null;
 	TextView extSpeechPathInfo, extSubtitlePathInfo, intSpeechPathInfo, intSubtitlePathInfo, extFreePercent, intFreePercent, extAppUsagePercent, intAppUsagePercent, intFree, extFree, extAppUseage, intAppUseage, labelChoicePath;
 	Button btnMoveAllToExt, btnMoveAllToInt, btnMoveToUserSpy, btnDelExtFiles, btnDelIntFiles, btnOk;
@@ -162,7 +155,7 @@ public class StorageManageActivity extends AppCompatActivity {
 			public void onClick(View arg0) {
 				btnMoveToUserSpy.setEnabled(false);
 
-				GaLogger.sendEvent("statistics", "MOVE_FILE_TO_SPECIFY_FOLDER", "CLICK", 1);
+				AnalyticsApplication.sendEvent("statistics", "MOVE_FILE_TO_SPECIFY_FOLDER", "CLICK", 1);
 				
 				Log.d(getClass().getName(),"thread started");
 				String path=filePathInput.getText().toString();
@@ -206,7 +199,7 @@ public class StorageManageActivity extends AppCompatActivity {
 				
 				Util.showInfoPopupWindow(StorageManageActivity.this, "背景移動中，請檢視通知列以瞭解進度，移動過程中請勿執行其他操作。");
 				startService(intent);
-				GaLogger.sendEvent("ui_action", "botton_pressed", "reloadLastState_MoveFileToUserSpecify", null);
+				AnalyticsApplication.sendEvent("ui_action", "botton_pressed", "reloadLastState_MoveFileToUserSpecify", null);
 				
 				refreshUsage();
 				btnMoveToUserSpy.setEnabled(true);
@@ -278,25 +271,31 @@ public class StorageManageActivity extends AppCompatActivity {
 		btnChoicePath.setOnClickListener(new OnClickListener (){
 			@Override
 			public void onClick(View v) {
-/*				if(Build.VERSION.SDK_INT >= 19){
-					Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);
-				    startActivityForResult(intent, OPEN_DOCUMENT_TREE_ABV_19);
+				if(Build.VERSION.SDK_INT >= 23){
+					int permissionCheck = ContextCompat.checkSelfPermission(StorageManageActivity.this, Manifest.permission.READ_EXTERNAL_STORAGE);
+					if (permissionCheck != PackageManager.PERMISSION_GRANTED) {
+						ActivityCompat.requestPermissions(StorageManageActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, STORAGE_ACCESS_PERMISSION_REQUEST);
+					} else {
+						// Your app already has the permission to access files and folders
+						// so you can simply open FileChooser here.
+						showFileDialogActivity();
+					}
 				}
-				else{
-*/
-					Intent intent = new Intent(getBaseContext(), FileDialogActivity.class);
-					intent.putExtra(FileDialogActivity.TITLE, "請選擇存放目錄");
-                	intent.putExtra(FileDialogActivity.START_PATH, "/sdcard");
-                
-                	//can user select directories or not
-                	intent.putExtra(FileDialogActivity.CAN_SELECT_DIR, true);
-                
-                	//alternatively you can set file filter
-                	//intent.putExtra(FileDialog.FORMAT_FILTER, new String[] { "png" });
-                
-                	startActivityForResult(intent, OPEN_DOCUMENT_TREE_UND_19);
-//				}
+				else
+					showFileDialogActivity();
 			}});
+
+/*
+		btnChoicePath.setOnClickListener(new OnClickListener (){
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getBaseContext(), FileChooserActivity.class);
+				intent.putExtra(FileChooserActivity.INPUT_FOLDER_MODE, true);
+				intent.putExtra(FileChooserActivity.INPUT_CAN_CREATE_FILES, true);
+				intent.putExtra(FileChooserActivity.INPUT_START_FOLDER, Environment.getExternalStorageDirectory());
+				startActivityForResult(intent, OPEN_DOCUMENT_TREE_UND_19);
+			}});
+*/
 		
 		btnOk.setOnClickListener(new OnClickListener (){
 			@Override
@@ -438,18 +437,6 @@ public class StorageManageActivity extends AppCompatActivity {
 		Log.d(getClass().getName(),"Leave onCreate");
 	}
 	
-	@Override
-	protected void onStart() {
-		super.onStart();
-		GaLogger.activityStart(this);
-	}
-	
-	@Override
-	protected void onStop() {
-		super.onStop();
-		GaLogger.activityStop(this);
-	}
-	
 	private void refreshUsage(){
 		new Thread(new Runnable(){
 			@Override
@@ -504,45 +491,61 @@ public class StorageManageActivity extends AppCompatActivity {
 	@Override
 	public void finish() {
 		super.finish();
-		GaLogger.sendEvent("storage_status", "ext_storage", "free_percent", Math.round(((double)extFreeB/extTotal)*100));
-		GaLogger.sendEvent("storage_status", "ext_storage", "usage_percent", Math.round(Math.round(((double)extUsed/extTotal)*100)));
-		GaLogger.sendEvent("storage_status", "ext_storage", "free_byte", extFreeB);
-		GaLogger.sendEvent("storage_status", "ext_storage", "used_byte", extUsed);
+		AnalyticsApplication.sendEvent("storage_status", "ext_storage", "free_percent", Math.round(((double)extFreeB/extTotal)*100));
+		AnalyticsApplication.sendEvent("storage_status", "ext_storage", "usage_percent", Math.round(Math.round(((double)extUsed/extTotal)*100)));
+		AnalyticsApplication.sendEvent("storage_status", "ext_storage", "free_byte", extFreeB);
+		AnalyticsApplication.sendEvent("storage_status", "ext_storage", "used_byte", extUsed);
 		
-		GaLogger.sendEvent("storage_status", "int_storage", "free_percent", Math.round(((double)intFreeB/intTotal)*100));
-		GaLogger.sendEvent("storage_status", "int_storage", "usage_percent", Math.round(Math.round(((double)intUsed/intTotal)*100)));
-		GaLogger.sendEvent("storage_status", "int_storage", "free_byte", intFreeB);
-		GaLogger.sendEvent("storage_status", "int_storage", "used_byte", intUsed);
+		AnalyticsApplication.sendEvent("storage_status", "int_storage", "free_percent", Math.round(((double)intFreeB/intTotal)*100));
+		AnalyticsApplication.sendEvent("storage_status", "int_storage", "usage_percent", Math.round(Math.round(((double)intUsed/intTotal)*100)));
+		AnalyticsApplication.sendEvent("storage_status", "int_storage", "free_byte", intFreeB);
+		AnalyticsApplication.sendEvent("storage_status", "int_storage", "used_byte", intUsed);
 		
 		boolean isUserSpecifyDir=runtime.getBoolean(getString(R.string.isUseThirdDir),false);
-		GaLogger.sendEvent("storage_status", "user_specify_dir", "boolean", ((isUserSpecifyDir)?1:0));
+		AnalyticsApplication.sendEvent("storage_status", "user_specify_dir", "boolean", ((isUserSpecifyDir)?1:0));
 		if(isUserSpecifyDir)
-			GaLogger.sendEvent("storage_status", "user_specify_dir", runtime.getString(getString(R.string.userSpecifySpeechDir), null), null);
+			AnalyticsApplication.sendEvent("storage_status", "user_specify_dir", runtime.getString(getString(R.string.userSpecifySpeechDir), null), null);
 			
-		else GaLogger.sendEvent("storage_status", "user_specify_dir", fsm.getSysDefMediaDir(), null);
+		else AnalyticsApplication.sendEvent("storage_status", "user_specify_dir", fsm.getSysDefMediaDir(), null);
 	}
-	
-	private String numToKMG(long num){
-		Log.d(getClass().getName(),"Cac: "+num);
-		String[] unit={"","K","M","G","T"};
-		String s=""+num;
-		int len=s.length();
-		
-		int sign=(int) (len/3);
-		if(sign*3==len)sign--;
-		
-		int index=sign*3;
-		String result=s.substring(0, s.length()-index)+'.'+s.charAt(index)+unit[sign];
-		Log.d(getClass().getName(),"Num= "+s+", Length: "+s.length()+", result="+result);
-		return result;
-	}
-	
 	
 	public synchronized void onActivityResult(final int requestCode, int resultCode, final Intent data) {
 		if (resultCode != Activity.RESULT_OK || data == null) return;
 
 		switch(requestCode){
-		case OPEN_DOCUMENT_TREE_UND_19:
+		case OPEN_DOCUMENT_TREE_UND_23:
+
+/*			String filePath=null;
+			Bundle bundle = data.getExtras();
+
+			if(bundle != null)
+			{
+				if(bundle.containsKey(FileChooserActivity.OUTPUT_NEW_FILE_NAME)) {
+					File folder = (File) bundle.get(FileChooserActivity.OUTPUT_FILE_OBJECT);
+					String name = bundle.getString(FileChooserActivity.OUTPUT_NEW_FILE_NAME);
+					filePath = folder.getAbsolutePath() + "/" + name;
+					File newFolder=new File(filePath);
+					if(!newFolder.mkdirs()){
+						BaseDialogs.showErrorDialog(StorageManageActivity.this,"您所選擇的位置 "+filePath+" 無法建立資料夾，請重新操作。");
+						break;
+					}
+
+				} else {
+					File file = (File) bundle.get(FileChooserActivity.OUTPUT_FILE_OBJECT);
+					if(!file.canWrite()){
+						BaseDialogs.showErrorDialog(StorageManageActivity.this,"您所選擇的位置 "+filePath+" 無法寫入檔案，請重新操作。");
+						break;
+					}
+					filePath = file.getAbsolutePath();
+				}
+			}
+			final String mustFinalString=filePath;
+			filePathInput.postDelayed(new Runnable(){
+				@Override
+				public void run() {
+					filePathInput.setText(mustFinalString);
+				}},200);
+*/
 			final String filePath = data.getStringExtra(FileDialogActivity.RESULT_PATH);
 			filePathInput.postDelayed(new Runnable(){
 				@Override
@@ -550,7 +553,7 @@ public class StorageManageActivity extends AppCompatActivity {
 					filePathInput.setText(filePath);
 				}},500);
 			break;
-/*			case OPEN_DOCUMENT_TREE_ABV_21:
+			case OPEN_DOCUMENT_TREE_ABV_23:
 			final Uri treeUri = data.getData();
 	        final DocumentFile pickedDir = DocumentFile.fromTreeUri(this, treeUri);
 	        
@@ -558,9 +561,9 @@ public class StorageManageActivity extends AppCompatActivity {
 				@Override
 				public void run() {
 					filePathInput.setText(pickedDir.getUri().getPath());
-				}},500);
+				}},200);
 	        break;
-*/
+
 		}
 /*
 		// Avoid EditText bug,  the EditText will not change to the new value without the thread.
@@ -580,6 +583,38 @@ public class StorageManageActivity extends AppCompatActivity {
 			}}).start();
 	*/	
     }
+
+	@Override
+	public void onRequestPermissionsResult(int requestCode,  String[] permissions,  int[] grantResults) {
+		super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+		if (requestCode == STORAGE_ACCESS_PERMISSION_REQUEST) {
+			if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+				// Permission granted.
+			}
+		}
+	}
+
+	private void showFileDialogActivity(){
+		File f=null;
+		if(Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState()))  // Check is external storage mounted, no matter read only or read/write.
+			f=Environment.getExternalStorageDirectory();
+		else
+			f=getFilesDir();
+
+		Toast.makeText(this, "Show folder: "+f.getAbsolutePath(), Toast.LENGTH_LONG).show();
+		Intent intent = new Intent(getBaseContext(), FileDialogActivity.class);
+		intent.putExtra(FileDialogActivity.TITLE, "請選擇存放目錄");
+		intent.putExtra(FileDialogActivity.START_PATH, f.getAbsolutePath());
+		intent.putExtra(FileDialogActivity.CAN_SELECT_DIR, true);
+		startActivityForResult(intent, OPEN_DOCUMENT_TREE_UND_23);
+/*
+		Intent intent = new Intent(getBaseContext(), FileChooserActivity.class);
+		intent.putExtra(FileChooserActivity.INPUT_FOLDER_MODE, true);
+		intent.putExtra(FileChooserActivity.INPUT_CAN_CREATE_FILES, true);
+		intent.putExtra(FileChooserActivity.INPUT_START_FOLDER, Environment.getExternalStorageDirectory());
+		startActivityForResult(intent, OPEN_DOCUMENT_TREE_UND_23);
+		*/
+	}
 	
 	private void showAskMoveToSpecifyDialog(final String path) {
 		final AlertDialog.Builder builder=getConfirmDialog();
@@ -627,6 +662,22 @@ public class StorageManageActivity extends AppCompatActivity {
 				builder.create().show();
 			}});
 	}
+
+	private String numToKMG(long num){
+		Log.d(getClass().getName(),"Cac: "+num);
+		String[] unit={"","K","M","G","T"};
+		String s=""+num;
+		int len=s.length();
+
+		int sign=(int) (len/3);
+		if(sign*3==len)sign--;
+
+		int index=sign*3;
+		String result=s.substring(0, s.length()-index)+'.'+s.charAt(index)+unit[sign];
+		Log.d(getClass().getName(),"Num= "+s+", Length: "+s.length()+", result="+result);
+		return result;
+	}
+
 
 	private AlertDialog.Builder getConfirmDialog(){
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);

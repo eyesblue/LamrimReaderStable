@@ -2,13 +2,10 @@ package eyes.blue;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.text.NumberFormat;
@@ -139,8 +136,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
     MyListView bookView = null;
     ImageView renderView = null;
     TextView subtitleView = null;
-    SharedPreferences runtime = null;
-    SharedPreferences playRecord = null;
+    SharedPreferences runtime = null, playRecord = null;
 
     MenuItem rootMenuItem, speechMenu, globalLamrim, setRegion, playRegionRec, swRenderMode, prjWeb, exitApp;
 
@@ -211,6 +207,8 @@ public class LamrimReaderActivity extends AppCompatActivity {
 
         appStartTimeMs=System.currentTimeMillis();
         setContentView(R.layout.main);
+
+        AnalyticsApplication application = (AnalyticsApplication) getApplication();
 
         PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
         wakeLock = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK | PowerManager.ON_AFTER_RELEASE, "LamrimReader");
@@ -302,7 +300,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 if (height <= minHeight) {
                     height = minHeight;
                     setSubtitleViewMode(SUBTITLE_MODE);
-                    GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "SWITCH_SUBTITLE_MODE", 1);
+                    AnalyticsApplication.sendEvent("ui_action", "LamrimReaderActivity", "SWITCH_SUBTITLE_MODE", 1);
                     if (mpController.getMediaPlayerState() == MediaPlayerController.MP_PLAYING && mpController.getSubtitle() != null) {
                         if (mpController.getCurrentPosition() == -1)
                             return true;
@@ -312,7 +310,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 }
                 // set reading mode
                 else {
-                    GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "SWITCH_READING_MODE", 1);
+                    AnalyticsApplication.sendEvent("ui_action", "LamrimReaderActivity", "SWITCH_READING_MODE", 1);
                     // It is first time into reading mode, set the all text to
                     // subtitleView, but not set text every time.
                     if (subtitleViewRenderMode == SUBTITLE_MODE) {
@@ -380,7 +378,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         bookView.setSelectionFromTop(pageNum, 0);
-                        GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "jump_page_" + pageNum, null);
+                        AnalyticsApplication.sendEvent("ui_action", "LamrimReaderActivity", "jump_page_" + pageNum);
                     }
                 }, 200);
                 // bookView.setItemChecked(num-1, true);
@@ -418,7 +416,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 final int theoryTextSize = runtime.getInt(getString(R.string.bookFontSizeKey), textDefSize);
                 bookView.setTextSize(theoryTextSize);
                 bookView.setSelectionFromTop(bookPosition, bookShift);
-                GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "SWITCH_THEME", 1);
+                AnalyticsApplication.sendEvent("ui_action", "LamrimReaderActivity", "SWITCH_THEME", 1);
             }
         });
 
@@ -443,7 +441,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
             public void onProgressChanged(SeekBar arg0, int arg1, boolean arg2) {
                 volumeController.setSelected(true);
                 audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, arg1, 0);
-                GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "volume_control_arg1", null);
+                AnalyticsApplication.sendEvent("ui_action", "LamrimReaderActivity", "volume_control_arg1");
             }
         });
 
@@ -509,7 +507,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                     showMediaController();
 ///							showTitle();
                 }
-                GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "Subtitle_SingleTap", null);
+                AnalyticsApplication.sendEvent("ui_action", "LamrimReaderActivity", "Subtitle_SingleTap");
                 return true;
             }
 
@@ -531,7 +529,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                         subtitleView.scrollTo(subtitleView.getScrollX(), subtitleView.getLineBounds(line, null) - subtitleView.getLineHeight());
                     } catch (Exception et) {
                         et.printStackTrace();
-                        GaLogger.sendException("readingModeSEindex under contruct and read.", et, true);
+                        AnalyticsApplication.sendException("readingModeSEindex under contruct and read.", et, true);
                     }
                 }
                 return true;
@@ -585,7 +583,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
             @Override
             public boolean onScaleBegin(ScaleGestureDetector detector) {
                 Log.d(getClass().getName(), "Begin scale called factor: " + detector.getScaleFactor());
-//						GaLogger.sendEvent("ui_action", "subtitle_event", "scale_start", null);
+//						AnalyticsApplication.sendEvent("ui_action", "subtitle_event", "scale_start", null);
                 return true;
             }
 
@@ -615,7 +613,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = runtime.edit();
                 editor.putInt(getString(R.string.subtitleFontSizeKey), (int) subtitleView.getTextSize());
                 editor.commit();
-                GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "Subtitle_FingerScale", null);
+                AnalyticsApplication.sendEvent("ui_action", "LamrimReaderActivity", "Subtitle_FingerScale");
             }
         });
 
@@ -633,7 +631,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                     // Log.d(logTag, "Subtitle OnTouchListener return "+res);
                 } catch (Exception e) {
                     e.printStackTrace();
-                    GaLogger.sendEvent("exception", "SubtitleView", "ScaleGestureDetector", null);
+                    AnalyticsApplication.sendEvent("exception", "SubtitleView", "ScaleGestureDetector");
                     return true;
                 }
 
@@ -693,7 +691,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                     //bookView.setSelectionFromTop(bookViewMountPoint[0], bookViewMountPoint[1]);
                 }
                 Log.d(getClass().getName(), "Jump to theory page index " + bookViewMountPoint[0] + " shift " + bookViewMountPoint[1]);
-                GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "Bookview_DoubleClick", null);
+                AnalyticsApplication.sendEvent("ui_action", "LamrimReaderActivity", "Bookview_DoubleClick");
                 return true;
             }
         });
@@ -752,9 +750,9 @@ public class LamrimReaderActivity extends AppCompatActivity {
 
         int onCreateSpendTimeMs=(int)(System.currentTimeMillis()-appStartTimeMs);
         Log.d(getClass().getName(), "=============== onCreate spend time: "+onCreateSpendTimeMs);
-        GaLogger.sendTimming("Initial", // Timing category
+        AnalyticsApplication.sendTimming("LamrimReaderActivity", // Timing category
                 onCreateSpendTimeMs, // Timing
-                "LamrimReaderActivity.onCreate", // Timing name
+                "Initial time", // Timing name
                 null); // Timing label
 
     } // End of onCreate()
@@ -807,7 +805,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
             } catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             }
-        GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "ShareRegion_SharePressed", 1);
+        AnalyticsApplication.sendEvent("ui_action", "LamrimReaderActivity", "ShareRegion_SharePressed", 1);
         shareSegment(lamrimCmdUri + queryStr);
     }
 
@@ -1125,7 +1123,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                                             subtitleView.setText(str);
                                         } catch (Exception e) {
                                             e.printStackTrace();
-                                            GaLogger.sendException("mediaIndex=" + mediaIndex
+                                            AnalyticsApplication.sendException("mediaIndex=" + mediaIndex
                                                     + ", subtitleIndex=" + index
                                                     + ", totalLen=" + str.length(), e, true);
                                         }
@@ -1138,7 +1136,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                     @Override
                     public void onPlayerError() {
                         setSubtitleViewText(getString(R.string.errＷhilePlayMedia));
-                        GaLogger.sendEvent("error", "player_error", "error_happen", null);
+                        AnalyticsApplication.sendEvent("error", "player_error", "error_happen");
                     }
 
                     @Override
@@ -1167,7 +1165,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                                             subtitleView.setText(str);
                                         } catch (Exception e) {
                                             e.printStackTrace();
-                                            GaLogger.sendException("mediaIndex=" + mediaIndex + ", subtitleIndex=" + index + ", totalLen=" + str.length(), e, true);
+                                            AnalyticsApplication.sendException("mediaIndex=" + mediaIndex + ", subtitleIndex=" + index + ", totalLen=" + str.length(), e, true);
                                         }
                                         break;
                                 }
@@ -1188,7 +1186,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                             return;
                         }
                         Log.d(getClass().getName(), "MediaPlayer prepared, show controller.");
-                        GaLogger.sendEvent("play_action", "player_event", SpeechData.getSubtitleName(mediaIndex) + "_prepared", null);
+                        AnalyticsApplication.sendEvent("play_action", "player_event", SpeechData.getSubtitleName(mediaIndex) + "_prepared");
 
                         if (mpController.isSubtitleReady()) {
                             setSubtitleViewText(getString(R.string.dlgHintShowMpController));
@@ -1214,7 +1212,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                                         //Util.showErrorPopupWindow(getApplicationContext(), "此音檔字幕似乎不完整，請嘗試重新下載此字幕(選擇音檔 -> 長按"+SpeechData.getSubtitleName(mediaIndex)+" -> 更新)。");
                                         Util.showErrorPopupWindow(LamrimReaderActivity.this, errMsg);
                                         setSubtitleViewText(errMsg);
-                                        GaLogger.sendException("Theory index over subtitle index at " + SpeechData.getSubtitleName(mediaIndex) + " read index=" + index + ", array length=" + se.length, new ArrayIndexOutOfBoundsException(), true);
+                                        AnalyticsApplication.sendException("Theory index over subtitle index at " + SpeechData.getSubtitleName(mediaIndex) + " read index=" + index + ", array length=" + se.length, new ArrayIndexOutOfBoundsException(), true);
                                         return;
                                         //continue;
                                     }
@@ -1491,9 +1489,6 @@ public class LamrimReaderActivity extends AppCompatActivity {
 		// modeSwBtn.getLayoutParams().height = (int) modeSwBtnHeight;
 */
 
-        GaLogger.activityStart(this);
-//		GaLogger.sendEvent("activity", "LamrimReaderActivity", "into_onStart", null);
-
         //int defTitleTextSize = getResources().getInteger(R.integer.defFontSize);
         final int subtitleTextSize = runtime.getInt(getString(R.string.subtitleFontSizeKey), (int) subtitleView.getTextSize());
         subtitleView.setTextSize(TypedValue.COMPLEX_UNIT_PX, subtitleTextSize);
@@ -1576,7 +1571,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
             SharedPreferences.Editor editor = playRecord.edit();
             editor.putInt("playPosition", cmdIntent.getIntExtra("startTimeMs", 0));
             editor.commit();
-            GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "ShareRegion_Open", 1);
+            AnalyticsApplication.sendEvent("ui_action", "LamrimReaderActivity", "ShareRegion_Open", 1);
             return;
         }
 
@@ -1693,12 +1688,6 @@ public class LamrimReaderActivity extends AppCompatActivity {
         } catch (IllegalStateException e) {
             e.printStackTrace();
         }
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        GaLogger.activityStop(this);
     }
 
     @Override
@@ -1820,7 +1809,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         Log.d(funcInto, "****OptionsItemselected, select item=" + item.getItemId() + ", String=" + item.getTitle() + ", Order=" + item.getOrder() + " ****");
         String gid = (String) item.getTitle();
-        GaLogger.sendEvent("ui_action", "menu_event", ((gid.length() == 0) ? "root_menu" : gid) + "_pressed", null);
+        AnalyticsApplication.sendEvent("ui_action", "menu_event", ((gid.length() == 0) ? "root_menu" : gid) + "_pressed");
 
 		/*  // Always show enabled menu item now.
 		if (item.equals(rootMenuItem)) {
@@ -1943,7 +1932,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 
                 Log.d(logTag, "Call reset player in onActivityResult.");
                 mpController.reset();
-//			GaLogger.sendEvent("activity", "SpeechMenu_result", "select_index_"	+ selected, null);
+//			AnalyticsApplication.sendEvent("activity", "SpeechMenu_result", "select_index_"	+ selected, null);
                 // After onActivityResult, the life-cycle will return to onStart,
                 // do start downloader in OnResume.
                 break;
@@ -2058,7 +2047,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
     public boolean startPlay(final int mediaIndex) {
         if (mediaIndex == -1) {
             Util.showErrorPopupWindow(LamrimReaderActivity.this, "偵測到錯誤參數，放棄載入音檔。", 1000);
-            GaLogger.sendException("PLAY_EXCEPTION: the media index is -1", new ArrayIndexOutOfBoundsException(), true);
+            AnalyticsApplication.sendException("PLAY_EXCEPTION: the media index is -1", new ArrayIndexOutOfBoundsException(), true);
             return false;
         }
         // This avoid the unlimit loop that reload last state on onResume -> file not exist -> SpeechMenuActivity -> showDownloadDialog -> disallow -> onResume ... so on.
@@ -2088,7 +2077,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 						int loadingMedia=mpController.getLoadingMediaIndex();
 						if(loadingMedia==mediaIndex){
 							Log.d(logTag,"The media index "+mediaIndex+" has loading, skip this procedure.");
-							GaLogger.sendEvent("error", "loading_media",	"duplicate_thread", 1);
+							AnalyticsApplication.sendEvent("error", "loading_media",	"duplicate_thread", 1);
 							return ;
 						}*/
 
@@ -2102,19 +2091,19 @@ public class LamrimReaderActivity extends AppCompatActivity {
                         mpController.setDataSource(LamrimReaderActivity.this, mediaIndex);
                     } catch (IllegalArgumentException e) {
                         setSubtitleViewText(getString(R.string.errIAEwhileSetPlayerSrc));
-                        GaLogger.sendEvent("error", "player_error", "IllegalArgumentException", null);
+                        AnalyticsApplication.sendEvent("error", "player_error", "IllegalArgumentException");
                         e.printStackTrace();
                     } catch (SecurityException e) {
                         setSubtitleViewText(getString(R.string.errSEwhileSetPlayerSrc));
-                        GaLogger.sendEvent("error", "player_error", "SecurityException", null);
+                        AnalyticsApplication.sendEvent("error", "player_error", "SecurityException");
                         e.printStackTrace();
                     } catch (IllegalStateException e) {
                         setSubtitleViewText(getString(R.string.errISEwhileSetPlayerSrc));
-                        GaLogger.sendEvent("error", "player_error", "IllegalStateException", null);
+                        AnalyticsApplication.sendEvent("error", "player_error", "IllegalStateException");
                         e.printStackTrace();
                     } catch (IOException e) {
                         setSubtitleViewText(String.format(getString(R.string.errIOEwhileSetPlayerSrc), SpeechData.getNameId(mediaIndex)));
-                        GaLogger.sendEvent("error", "player_error", "IOException", null);
+                        AnalyticsApplication.sendEvent("error", "player_error", "IOException");
                         e.printStackTrace();
                     }
                     return;
@@ -2154,19 +2143,19 @@ public class LamrimReaderActivity extends AppCompatActivity {
 					mpController.setDataSource(getApplicationContext(),	mediaIndex);
 				} catch (IllegalArgumentException e) {
 					setSubtitleViewText(getString(R.string.errIAEwhileSetPlayerSrc));
-					GaLogger.sendEvent("error", "player_error",	"IllegalArgumentException", null);
+					AnalyticsApplication.sendEvent("error", "player_error",	"IllegalArgumentException", null);
 					e.printStackTrace();
 				} catch (SecurityException e) {
 					setSubtitleViewText(getString(R.string.errSEwhileSetPlayerSrc));
-					GaLogger.sendEvent("error", "player_error",	"SecurityException", null);
+					AnalyticsApplication.sendEvent("error", "player_error",	"SecurityException", null);
 					e.printStackTrace();
 				} catch (IllegalStateException e) {
 					setSubtitleViewText(getString(R.string.errISEwhileSetPlayerSrc));
-					GaLogger.sendEvent("error", "player_error",	"IllegalStateException", null);
+					AnalyticsApplication.sendEvent("error", "player_error",	"IllegalStateException", null);
 					e.printStackTrace();
 				} catch (IOException e) {
 					setSubtitleViewText(getString(R.string.errIOEwhileSetPlayerSrc));
-					GaLogger.sendEvent("error", "player_error", "IOException",null);
+					AnalyticsApplication.sendEvent("error", "player_error", "IOException",null);
 					e.printStackTrace();
 				}
 				// }
@@ -2282,7 +2271,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = runtime.edit();
                 editor.putInt(getString(R.string.bookFontSizeKey), (int) bookView.getTextSize());
                 editor.commit();
-                GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "BookView_ChangeTextSizeWithSeekBar", null);
+                AnalyticsApplication.sendEvent("ui_action", "LamrimReaderActivity", "BookView_ChangeTextSizeWithSeekBar");
             }
         };
         theorySb.setOnSeekBarChangeListener(sbListener);
@@ -2349,9 +2338,9 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 e.printStackTrace();
                 return false;
             }
-            GaLogger.sendTimming("Load all subtitle", // Timing category
+            AnalyticsApplication.sendTimming(getClass().getName(), // Timing category
                     System.currentTimeMillis() - startLoadTime, // Timing
-                    "Load from cache", // Timing name
+                    "Load all subtitle from cache", // Timing name
                     null); // Timing label
         }
         else {  // 從字幕檔案中重建字幕搜尋物件
@@ -2388,9 +2377,9 @@ public class LamrimReaderActivity extends AppCompatActivity {
             }
 
             if(noLeak)
-                GaLogger.sendTimming("Load all subtitle", // Timing category
+                AnalyticsApplication.sendTimming(getClass().getName(), // Timing category
                     System.currentTimeMillis() - startLoadTime, // Timing
-                    "Load from SRT file", // Timing name
+                    "Load all subtitle from SRT file", // Timing name
                     null); // Timing label
 
             // Write the object to disk with a new thread.
@@ -2406,12 +2395,12 @@ public class LamrimReaderActivity extends AppCompatActivity {
                         System.out.println("Write finish");
                     }catch(Exception e){
                         e.printStackTrace();
-                        GaLogger.sendException("Write catch file of subtitle search object", e, false);
+                        AnalyticsApplication.sendException("Write catch file of subtitle search object", e, false);
                         return;
                     }
-                    GaLogger.sendTimming("Load all subtitle", // Timing category
+                    AnalyticsApplication.sendTimming(getClass().getName(), // Timing category
                             System.currentTimeMillis() - startLoadTime, // Timing
-                            "Save cache to file", // Timing name
+                            "Save subtitle cache to file", // Timing name
                             null); // Timing label
                 }
             }).start();
@@ -2526,7 +2515,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                                         subtitleSearchList.setVisibility(View.VISIBLE);
                                     }
                                 });
-                                GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "SEARCH_SUBTITLE", 1);
+                                AnalyticsApplication.sendEvent(getClass().getName(), "UI Event", "SEARCH_SUBTITLE", 1);
                             }
                         };
                         t.start();
@@ -2733,11 +2722,11 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 }
             } catch (Exception e) {
                 e.printStackTrace();
-                GaLogger.sendException("Search_EXCEPTION: (" + str + ")", e, true);
+                AnalyticsApplication.sendException("Search_EXCEPTION: (" + str + ")", e, true);
             }
             searchLastBtn.setEnabled(true);
             searchNextBtn.setEnabled(true);
-            GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "SEARCH_LAMRIM", 1);
+            AnalyticsApplication.sendEvent(getClass().getName(), "ui_action", "SEARCH_LAMRIM", 1);
         }
     }
 
@@ -2788,7 +2777,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 				}
 			}catch(Exception e){
 				e.printStackTrace();
-				GaLogger.sendException("Error happen while SEARCH "+str, e, true);
+				AnalyticsApplication.sendException("Error happen while SEARCH "+str, e, true);
 			}
 			searchBtn.setEnabled(true);
 		}
@@ -2821,7 +2810,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 
 		BaseDialogs.showEditRegionDialog(LamrimReaderActivity.this, mediaIndex,
 				regionStartMs, regionEndMs, null, info, -1, callBack);
-		GaLogger.sendEvent("ui_action", "show_dialog", "save_region", null);
+		AnalyticsApplication.sendEvent("ui_action", "show_dialog", "save_region", null);
 	}*/
 
     private void showRecordListPopupMenu() {
@@ -2893,7 +2882,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }    // Don't force close if problem here.
-                GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "PlaySavedRegionRecord", 1);
+                AnalyticsApplication.sendEvent(getClass().getName(),"ui_action", "PlaySavedRegionRecord", 1);
             }
         });
 
@@ -2910,7 +2899,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 editor.putInt(pageKey, pageCount);
                 editor.putInt(pageShiftKey, shift);
                 editor.commit();
-                GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "CancelSelectSavedRegionRecord", 1);
+                AnalyticsApplication.sendEvent(getClass().getName(), "ui_action", "CancelSelectSavedRegionRecord", 1);
             }
         });
         popupWindow.setFocusable(true);
@@ -2923,7 +2912,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
         popupWindow.setAnimationStyle(R.style.AnimationPopup);
         popupWindow.update();
         popupWindow.showAtLocation(findViewById(R.id.rootLayout), Gravity.LEFT | Gravity.TOP, 0, contentViewTop);
-        GaLogger.sendEvent("ui_action", "LamrimReaderActivity", "ShowRecordList", null);
+        AnalyticsApplication.sendEvent(getClass().getName(), "ui_action", "ShowRecordList");
         // popupWindow.showAsDropDown(findViewById(R.id.subtitleView),0, 0);
         // popupWindow.showAsDropDown(findViewById(R.id.subtitleView));
     }

@@ -60,7 +60,7 @@ public class MoveFileService extends IntentService {
 		}
 		if(wakeLock.isHeld())wakeLock.release();
 		
-		GaLogger.sendEvent("statistics", "MOVE_FILE_TO_SPECIFY_FOLDER", "FINISH", 1);
+		AnalyticsApplication.sendEvent("statistics", "MOVE_FILE_TO_SPECIFY_FOLDER", "FINISH", 1);
 		Log.d(getClass().getName(),"Move File Service terminate.");
 	}
 

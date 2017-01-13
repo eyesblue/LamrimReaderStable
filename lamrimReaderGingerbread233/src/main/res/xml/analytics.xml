@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="https://schemas.android.com/tools" tools:ignore="TypographyDashes">
+
+    <!-- Replace placeholder ID with your tracking ID -->
+    <string name="ga_trackingId">UA-29343996-2</string>
+
+    <!-- Enable automatic activity tracking -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+
+    <string name="eyes.blue.LamrimReaderActivity">MainScreen</string>
+    <string name="eyes.blue.SpeechMenuActivity">SpeechMenu</string>
+    <string name="eyes.blue.StorageManageActivity">StorageManage</string>
+
+    <integer name="ga_sessionTimeout">300</integer>
+
+    <!-- Enable automatic exception tracking -->
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+</resources>

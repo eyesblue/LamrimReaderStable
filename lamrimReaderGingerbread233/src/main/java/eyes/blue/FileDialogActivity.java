@@ -10,6 +10,7 @@ import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -20,6 +21,7 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Activity para escolha de arquivos/diretorios.
@@ -222,8 +224,10 @@ public class FileDialogActivity extends ListActivity {
 		File f = new File(currentPath);
 		File[] files = f.listFiles();
 		if (files == null) {
-			currentPath = ROOT;
-			f = new File(currentPath);
+		//	currentPath = ROOT;
+
+			//f = new File(currentPath);
+
 			files = f.listFiles();
 		}
 		myPath.setText(getText(R.string.location) + ": " + currentPath);
@@ -354,7 +358,7 @@ public class FileDialogActivity extends ListActivity {
 				layoutCreate.setVisibility(View.GONE);
 				layoutSelect.setVisibility(View.VISIBLE);
 			} else {
-				if (!currentPath.equals(ROOT)) {
+				if (!currentPath.equals(ROOT) && (new File(currentPath)).getParentFile().canRead()) {
 					getDir(parentPath);
 				} else {
 					return super.onKeyDown(keyCode, event);

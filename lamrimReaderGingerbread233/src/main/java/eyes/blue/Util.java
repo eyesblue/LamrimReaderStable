@@ -170,7 +170,7 @@ public class Util {
 					mPopToast.showAtLocation(rootView, Gravity.CENTER, 0, 0);
 					subtitleLastShowTime=System.currentTimeMillis();
 				}catch(Exception e){
-//					GaLogger.sendException("SHOW_TOAST", e, true);
+//					AnalyticsApplication.sendException("SHOW_TOAST", e, true);
 					e.printStackTrace();
 					return;
 				}

@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         applicationId "eyes.blue"
         minSdkVersion 9
-        targetSdkVersion 23
+        targetSdkVersion 25
     }
 
     buildTypes {
@@ -23,9 +23,9 @@ dependencies {
     compile project(':robotoCalendarLibrary')
     compile project(':colorPickerView')
     compile project(':wVersionManager')
-    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:support-v4:25.1.0'
     compile files('libs/commons-lang3-3.1.jar')
     compile files('libs/javacsv.jar')
-    compile 'com.google.android.gms:play-services-analytics:8.4.0'
-    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.google.android.gms:play-services-analytics:10.0.1'
+    compile 'com.android.support:appcompat-v7:25.1.0'
 }

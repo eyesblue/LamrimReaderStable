@@ -159,10 +159,6 @@ public class FileSysManager {
         		if(!subDir.exists())subDir.mkdirs();
         	}
         	
-        	boolean hasCheckedOlderSubtitle=runtime.getBoolean(context.getString(R.string.checkSubtitleV20141127), false);
-        	if(!hasCheckedOlderSubtitle)
-        		deleteOlderSubtitle();
-        	
 /*        	// Move old files(LamrimReader/{audio,subtitle,theory} to new direct(廣論App/{audio,subtitle,theory}).
         	File oldDirRoot=new File(srcRoot[INTERNAL]+File.separator+dirs[0]).getParentFile().getParentFile();
         	Log.d("FileSysManager","Pkg dir: "+oldDirRoot.getAbsolutePath());
@@ -174,27 +170,7 @@ public class FileSysManager {
         		oldSubDir.renameTo(subDir);
         	}
 */		}
-        
-        private void deleteOlderSubtitle(){
-        	new Thread(new Runnable(){
-				@Override
-				public void run() {
-					long date=1417216380000L;// 2014/11/28 23:13
-		        	for(int i=0;i<SpeechData.name.length;i++){
-		        		File f=getLocalSubtitleFile(i);
-		        		if(f==null || !f.exists())continue;
-		        		if(f.lastModified()<date){
-		        			Log.d("FileSysManager","Delete Older subtitle "+SpeechData.getSubtitleName(i));
-		        			f.delete();
-		        		}
-		        	}
-		        	
-		        	SharedPreferences.Editor editor=runtime.edit();
-		        	editor.putBoolean(context.getString(R.string.checkSubtitleV20141127), true);
-		        	editor.commit();
-		        	
-				}}).start();
-        }
+
         /*
          * The location of media file is [PackageDir]\[AppName](LamrimReader)\Audio
          * If the file exist, return the exist file no matter internal or external,

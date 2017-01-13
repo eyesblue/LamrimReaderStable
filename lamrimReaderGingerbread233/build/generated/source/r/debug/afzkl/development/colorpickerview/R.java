@@ -8,39 +8,39 @@ package afzkl.development.colorpickerview;
 
 public final class R {
 	public static final class attr {
-		public static final int alphaChannelText = 0x7f010098;
-		public static final int alphaChannelVisible = 0x7f010097;
-		public static final int colorPickerBorderColor = 0x7f01009a;
-		public static final int colorPickerSliderColor = 0x7f010099;
-		public static final int showDialogTitle = 0x7f010095;
-		public static final int showSelectedColorInList = 0x7f010096;
+		public static final int alphaChannelText = 0x7f0100a1;
+		public static final int alphaChannelVisible = 0x7f0100a0;
+		public static final int colorPickerBorderColor = 0x7f0100a3;
+		public static final int colorPickerSliderColor = 0x7f0100a2;
+		public static final int showDialogTitle = 0x7f01009e;
+		public static final int showSelectedColorInList = 0x7f01009f;
 	}
 	public static final class drawable {
-		public static final int icon = 0x7f0200f9;
+		public static final int icon = 0x7f020116;
 	}
 	public static final class id {
 		public static final int color_panel_new = 0x7f0d0004;
 		public static final int color_panel_old = 0x7f0d0005;
 		public static final int color_picker_view = 0x7f0d0006;
 		public static final int dialog_color_picker_extra_layout_landscape = 0x7f0d0007;
-		public static final int layout1 = 0x7f0d0088;
+		public static final int layout1 = 0x7f0d0094;
 		public static final int preference_preview_color_panel = 0x7f0d0009;
 	}
 	public static final class layout {
-		public static final int dialog_color_picker = 0x7f030020;
-		public static final int preference_preview_layout = 0x7f030034;
+		public static final int dialog_color_picker = 0x7f030022;
+		public static final int preference_preview_layout = 0x7f03003d;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f060017;
+		public static final int app_name = 0x7f070034;
 	}
 	public static final class style {
 		public static final int dialog_color_pciker_view_portrait = 0x7f090001;
 	}
 	public static final class styleable {
-		public static final int[] ColorPickerPreference = { 0x7f010095, 0x7f010096 };
+		public static final int[] ColorPickerPreference = { 0x7f01009e, 0x7f01009f };
 		public static final int ColorPickerPreference_showDialogTitle = 0;
 		public static final int ColorPickerPreference_showSelectedColorInList = 1;
-		public static final int[] ColorPickerView = { 0x7f010097, 0x7f010098, 0x7f010099, 0x7f01009a };
+		public static final int[] ColorPickerView = { 0x7f0100a0, 0x7f0100a1, 0x7f0100a2, 0x7f0100a3 };
 		public static final int ColorPickerView_alphaChannelText = 1;
 		public static final int ColorPickerView_alphaChannelVisible = 0;
 		public static final int ColorPickerView_colorPickerBorderColor = 3;

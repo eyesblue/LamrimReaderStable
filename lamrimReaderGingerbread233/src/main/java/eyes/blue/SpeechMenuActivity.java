@@ -9,8 +9,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.zip.CRC32;
-import java.util.zip.Checksum;
 
 import net.londatiga.android.ActionItem;
 import net.londatiga.android.QuickAction;
@@ -22,7 +20,6 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.annotation.SuppressLint;
@@ -30,7 +27,6 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningServiceInfo;
 import android.app.AlertDialog;
-import android.app.ListActivity;
 import android.app.NotificationManager;
 import android.app.ProgressDialog;
 import android.content.BroadcastReceiver;
@@ -39,38 +35,28 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
-import android.graphics.Color;
-import android.graphics.drawable.Drawable;
-import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
-import android.os.PowerManager;
 import android.support.v4.app.NavUtils;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.Log;
-import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.NumberPicker;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class SpeechMenuActivity extends AppCompatActivity {
 	FileSysManager fsm=null;
@@ -133,7 +119,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 			switch(actionId){
 			case PLAY:
 				resultAndPlay(manageItemIndex);
-				GaLogger.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Play", null);
+				AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Play", null);
 				break;
 			case UPDATE:
 				DialogInterface.OnClickListener updateListener=new DialogInterface.OnClickListener(){
@@ -145,7 +131,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 			        	f=fsm.getLocalSubtitleFile(manageItemIndex);
 			        	if(f!=null)f.delete();
 			        	downloadSrc(manageItemIndex);
-			        	GaLogger.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Update", null);
+			        	AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Update", null);
 					}};
 	        	
 				BaseDialogs.showDelWarnDialog(SpeechMenuActivity.this, "檔案", null, updateListener, null, null);
@@ -160,13 +146,13 @@ public class SpeechMenuActivity extends AppCompatActivity {
 			        	f=fsm.getLocalSubtitleFile(manageItemIndex);
 			        	if(f!=null)f.delete();
 			        	updateUi(manageItemIndex,true);
-			        	GaLogger.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Delete", null);
+			        	AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Delete", null);
 					}};
 
 				BaseDialogs.showDelWarnDialog(SpeechMenuActivity.this, "檔案", null, deleteListener, null, null);
 	        	break;
 			case CANCEL:
-				GaLogger.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Cancel", null);
+				AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Cancel", null);
 				break;
 			};
 		}
@@ -220,7 +206,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 				Log.d("SpeechMenuActivity","File not exist, start download.");
 				downloadSrc(position);
 			}
-			GaLogger.sendEvent("ui_action", "SpeechMenuActivity", "select_item_"+SpeechData.getSubtitleName(position), null);
+			AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "select_item_"+SpeechData.getSubtitleName(position), null);
 	}});
 
 	speechList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
@@ -231,7 +217,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 				return false;
 			manageItemIndex=position;
 			mQuickAction.show(v);
-			GaLogger.sendEvent("ui_action", "SpeechMenuActivity", "ShowMenu", null);
+			AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "ShowMenu", null);
 			//itemManageDialog=getItemManageDialog(position);
 			//itemManageDialog.show();
 //			if(!wakeLock.isHeld()){wakeLock.acquire();}
@@ -254,7 +240,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 		public void onClick(View arg0) {
 			if(fireLock())return;
 			maintain();
-			GaLogger.sendEvent("ui_action", "SpeechMenuActivity", "MaintainFiles", null);
+			AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "MaintainFiles", null);
 		}});
 	
 	btnManageStorage.setOnClickListener(new View.OnClickListener (){
@@ -264,7 +250,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 			final Intent storageManage = new Intent(SpeechMenuActivity.this, StorageManageActivity.class);
 			startActivity(storageManage);
 			buttonUpdater.cancel();
-			GaLogger.sendEvent("ui_action", "SpeechMenuActivity", "ManageStorage", null);
+			AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "ManageStorage", null);
 		}});
 
 	 }
@@ -272,17 +258,10 @@ public class SpeechMenuActivity extends AppCompatActivity {
 // End of onCreate
 	
 	@Override
-	protected void onStart() {
-		super.onStart();
-		GaLogger.activityStart(this);
-	}
-	
-	@Override
 	protected void onResume() {
 		super.onResume();
 		this.registerReceiver(downloadAllServiceReceiver, downloadAllServiceIntentFilter);
-		
-		
+
 		final int speechMenuPage=runtime.getInt("speechMenuPage", 0);
 //		final int speechMenuPageShift=runtime.getInt("speechMenuPageShift", 0);
 		int lastPage=runtime.getInt("lastViewItem", -1);
@@ -302,7 +281,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 		int resource[]=b.getIntArray("index");
 		if(resource == null || resource.length<=0){
 			Log.e(getClass().getName(),"Start SpeechMenuActivity with download command, but no media index extras, skip download.");
-			GaLogger.sendException("Start SpeechMenuActivity with download command, but no media index extras, skip download.", new Exception(), true);
+			AnalyticsApplication.sendException("Start SpeechMenuActivity with download command, but no media index extras, skip download.", new Exception(), true);
 			return;
 		}
 		downloadSrc(resource);
@@ -329,12 +308,6 @@ public class SpeechMenuActivity extends AppCompatActivity {
 		finish();
 	}
 	*/
-	
-	@Override
-	protected void onStop() {
-		super.onStop();
-		GaLogger.activityStop(this);
-	}
 	
 	@Override
 	protected void onDestroy(){
@@ -371,7 +344,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 			Intent playWindow = new Intent();
 			playWindow.putExtra("reloadLastState", true);
 			setResult(Activity.RESULT_OK, playWindow);
-			GaLogger.sendEvent("ui_action", "SpeechMenuActivity", "ReloadLastState", null);
+			AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "ReloadLastState", null);
 			finish();
 		}
 		return true;
@@ -682,7 +655,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 							synchronized(btnDownloadAll){
 								if(fireLock())return;
 								downloadAllSrc();
-								GaLogger.sendEvent("ui_action", "SpeechMenuActivity", "DownloadAll", null);
+								AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "DownloadAll", null);
 							}
 						}});
 				}
@@ -962,7 +935,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 				}catch(NullPointerException npe){
 					Log.d(getClass().getName(),"The storage media has not usable, skip.");
 					Util.showErrorPopupWindow(SpeechMenuActivity.this, "儲存空間不足或無法使用儲存裝置，請檢查您的儲存裝置是否正常，或磁碟已被電腦連線所獨佔！");
-					GaLogger.sendException("There is no storage usable.", npe, true);
+					AnalyticsApplication.sendException("There is no storage usable.", npe, true);
 					unlockScreen();
 					return;
 				}
@@ -1002,7 +975,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 //						if(!wakeLock.isHeld()){wakeLock.acquire();}
 							dialog.show();
 						}catch(Exception e){
-							GaLogger.sendException("Error happen while show download progress dialog.", e, true);
+							AnalyticsApplication.sendException("Error happen while show download progress dialog.", e, true);
 						}
 					}});
 		}
@@ -1065,7 +1038,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 						"User canceled, download procedure skip!");
 				return false;
 			}
-			GaLogger.sendTimming("download", // Timing category
+			AnalyticsApplication.sendTimming("download", // Timing category
 					System.currentTimeMillis() - respWaitStartTime, // Timing
 					"wait resp time", // Timing name
 					null); // Timing label

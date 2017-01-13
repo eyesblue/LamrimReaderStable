@@ -2,25 +2,20 @@ package eyes.blue.modified;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
-import eyes.blue.GaLogger;
+import eyes.blue.AnalyticsApplication;
 import eyes.blue.LamrimReaderActivity;
 import eyes.blue.R;
-import eyes.blue.SpeechData;
 import eyes.blue.TheoryData;
 import eyes.blue.TheoryPageView;
-import eyes.blue.Util;
+
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.database.DataSetObserver;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.Typeface;
-import android.os.Handler;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.util.TypedValue;
@@ -31,10 +26,8 @@ import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ScaleGestureDetector.SimpleOnScaleGestureListener;
-import android.widget.AbsListView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 public class MyListView extends ListView {
@@ -93,7 +86,7 @@ public class MyListView extends ListView {
     		@Override
     		public boolean onScaleBegin(ScaleGestureDetector detector) {
     			Log.d(getClass().getName(),"Begin scale called factor: "+detector.getScaleFactor());
-    			GaLogger.sendEvent("ui_action", "bookview_event", "change_text_size_start", null);
+				AnalyticsApplication.sendEvent("ui_action", "bookview_event", "change_text_size_start", null);
     			return true;
     		}
     		@Override
@@ -117,7 +110,7 @@ public class MyListView extends ListView {
     			SharedPreferences.Editor editor = runtime.edit();
     			editor.putInt(context.getString(R.string.bookFontSizeKey), (int) adapter.getTextSize());
     			editor.commit();
-    			GaLogger.sendEvent("ui_action", "bookview_event", "change_text_size_end", null);
+    			AnalyticsApplication.sendEvent("ui_action", "bookview_event", "change_text_size_end", null);
     		}
     		}));
     	
@@ -135,7 +128,7 @@ public class MyListView extends ListView {
 				res=scaleGestureDetector.onTouchEvent(event);
 			}catch(Exception e){
 				e.printStackTrace();
-				GaLogger.sendException(e, true);
+				AnalyticsApplication.sendException(e, true);
 				return false;
 			}
 //			Log.d(getClass().getName(),"Scale return "+res);
@@ -146,7 +139,7 @@ public class MyListView extends ListView {
 			res=super.onTouchEvent(event) | gestureListener.onTouchEvent(event) ;
 		}catch(Exception e){
 			e.printStackTrace();
-			GaLogger.sendException(e, true);
+			AnalyticsApplication.sendException(e, true);
 			return false;
 		}
 //		Log.d(getClass().getName(),"TheoryPageView onTouchEvent return "+res);

@@ -5,10 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.util.zip.CRC32;
-import java.util.zip.Checksum;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -17,10 +13,7 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.json.JSONException;
-import org.json.JSONObject;
 
-import android.app.Activity;
 import android.app.IntentService;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -28,17 +21,10 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
-import android.os.Bundle;
-import android.os.Environment;
-import android.os.Message;
-import android.os.Messenger;
 import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
 import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.TaskStackBuilder;
 import android.util.Log;
-import android.widget.RemoteViews;
 
 
 public class DownloadAllService extends IntentService {
@@ -56,7 +42,6 @@ public class DownloadAllService extends IntentService {
 	PowerManager powerManager=null;
 	WakeLock wakeLock = null;
 	public static int notificationId=0;	// Always update notification but create new one.
-	
 	
 	public DownloadAllService() {
 		super("DownloadAllService");
@@ -76,7 +61,9 @@ public class DownloadAllService extends IntentService {
 	@Override
 	protected void onHandleIntent(Intent intent) {
 		Log.d(getClass().getName(), "Into onHandleIntent of download all service");
-		
+
+		AnalyticsApplication application = (AnalyticsApplication) getApplication();
+
 		fsm=new FileSysManager(getBaseContext());
 		defaultThreads=intent.getIntExtra("threadCount", 4);
 		if(defaultThreads<1){
@@ -326,7 +313,7 @@ public class DownloadAllService extends IntentService {
 				}catch(NullPointerException npe){
 					Log.d(getClass().getName(),"The storage media has not usable, skip.");
 					reportStorageUnusable();
-					GaLogger.sendException("There is no storage usable.", npe, true);
+					AnalyticsApplication.sendException("There is no storage usable.", npe, true);
 					return;
 				}
 				if(!subtitleExist){
@@ -388,7 +375,7 @@ public class DownloadAllService extends IntentService {
 	        	Log.d(getClass().getName(),"User canceled, download procedure skip!");
 	        	return false;
 	        }
-	        GaLogger.sendTimming("download",    // Timing category (required)
+			AnalyticsApplication.sendTimming("download",    // Timing category (required)
 	                          System.currentTimeMillis()-respWaitStartTime,       // Timing interval in milliseconds (required)
 	                    "wait resp time",  // Timing name
 	                    null);           // Timing label
@@ -478,7 +465,7 @@ public class DownloadAllService extends IntentService {
 	        }
 
 	        int spend=(int) (System.currentTimeMillis()-startTime);
-	        GaLogger.sendTimming("download",    // Timing category (required)
+			AnalyticsApplication.sendTimming("download",    // Timing category (required)
 					(long) spend,       // Timing interval in milliseconds (required)
 					"download time",  // Timing name
 					null);           // Timing label

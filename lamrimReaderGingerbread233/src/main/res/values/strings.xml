@@ -176,7 +176,7 @@
     <string name="dlgEndLineGreaterThenStart">結束行數小於起始行數。</string>
     <string name="dlgLineNumOverPageCount">輸入的行數超過該頁的行數。</string>
     <string name="dlgPageNumOverPageCount">輸入的頁數超過廣論總頁數。</string>
-    <string name="dlgRecordTheoryIndex">廣論 %1$s 頁  %2$s 行 ~ %3$s 頁 %4$s 行</string>
+    <string name="dlgRecordTheoryIndex">廣論 %1$d 頁  %2$d 行 ~ %3$d 頁 %4$d 行</string>
 
     <!-- For file selector -->
     <string name="location">位置</string>
