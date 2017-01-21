@@ -2,6 +2,7 @@ package eyes.blue;
 
 import android.app.Activity;
 import android.app.Application;
+import android.util.Log;
 
 import com.google.android.gms.analytics.ExceptionParser;
 import com.google.android.gms.analytics.ExceptionReporter;
@@ -34,6 +35,19 @@ public class AnalyticsApplication extends Application{
 				mTracker.enableAdvertisingIdCollection(true);
 				mTracker.enableExceptionReporting(true);
 			}
+
+			Thread.UncaughtExceptionHandler uncaughtExceptionHandler = Thread.getDefaultUncaughtExceptionHandler();
+			if (uncaughtExceptionHandler instanceof ExceptionReporter) {
+				ExceptionReporter exceptionReporter = (ExceptionReporter) uncaughtExceptionHandler;
+				exceptionReporter.setExceptionParser(new ExceptionParser(){
+
+					@Override
+					public String getDescription(String threadId, Throwable throwable) {
+						return "UNCHATCHED: V"+android.os.Build.VERSION.RELEASE+", "+Util.getDeviceName()+", "+"Thread: {" + threadId + "}, Exception: " + ExceptionUtils.getStackTrace(throwable);
+					}});
+			}
+			Thread.setDefaultUncaughtExceptionHandler(uncaughtExceptionHandler);
+
 			return mTracker;
 		}
 
@@ -81,7 +95,10 @@ public class AnalyticsApplication extends Application{
 		sendEvent(category,  action,  label,null);
 	}
 	public static void sendEvent(String category, String action, String label, Long value){
-		if(mTracker==null)return;
+		if(mTracker==null){
+			Log.d("LamrimReader","The TRACKER of GOOGLE ANALYTICS is NULL !!!!");
+			return;
+		}
 
 		if(value!=null)
 			mTracker.send(new HitBuilders.EventBuilder()

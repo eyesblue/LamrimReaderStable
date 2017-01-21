@@ -1,17 +1,17 @@
 [
     {
-        "outputFile": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/values-te-rIN/values-te-rIN.xml",
+        "outputFile": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-te-rIN\\values-te-rIN.xml",
         "map": [
             {
                 "to": {
                     "startLine": 2,
                     "startColumn": 4,
-                    "startOffset": 105,
+                    "startOffset": 55,
                     "endColumn": 113,
-                    "endOffset": 214
+                    "endOffset": 164
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -25,12 +25,12 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 219,
+                    "startOffset": 169,
                     "endColumn": 107,
-                    "endOffset": 322
+                    "endOffset": 272
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -44,12 +44,12 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 327,
+                    "startOffset": 277,
                     "endColumn": 122,
-                    "endOffset": 445
+                    "endOffset": 395
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -63,12 +63,12 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 450,
+                    "startOffset": 400,
                     "endColumn": 108,
-                    "endOffset": 554
+                    "endOffset": 504
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -82,12 +82,12 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 559,
+                    "startOffset": 509,
                     "endColumn": 110,
-                    "endOffset": 665
+                    "endOffset": 615
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -101,12 +101,12 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 670,
+                    "startOffset": 620,
                     "endColumn": 89,
-                    "endOffset": 755
+                    "endOffset": 705
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -120,12 +120,12 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 760,
+                    "startOffset": 710,
                     "endColumn": 104,
-                    "endOffset": 860
+                    "endOffset": 810
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -139,12 +139,12 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 865,
+                    "startOffset": 815,
                     "endColumn": 124,
-                    "endOffset": 985
+                    "endOffset": 935
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -158,12 +158,12 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 990,
+                    "startOffset": 940,
                     "endColumn": 81,
-                    "endOffset": 1067
+                    "endOffset": 1017
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -177,12 +177,12 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1072,
+                    "startOffset": 1022,
                     "endColumn": 81,
-                    "endOffset": 1149
+                    "endOffset": 1099
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -196,12 +196,12 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1154,
+                    "startOffset": 1104,
                     "endColumn": 84,
-                    "endOffset": 1234
+                    "endOffset": 1184
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -215,12 +215,12 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1239,
+                    "startOffset": 1189,
                     "endColumn": 112,
-                    "endOffset": 1347
+                    "endOffset": 1297
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -234,12 +234,12 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1352,
+                    "startOffset": 1302,
                     "endColumn": 107,
-                    "endOffset": 1455
+                    "endOffset": 1405
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -253,12 +253,12 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1460,
+                    "startOffset": 1410,
                     "endColumn": 99,
-                    "endOffset": 1555
+                    "endOffset": 1505
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -272,12 +272,12 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1560,
+                    "startOffset": 1510,
                     "endColumn": 110,
-                    "endOffset": 1666
+                    "endOffset": 1616
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -291,12 +291,12 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1671,
+                    "startOffset": 1621,
                     "endColumn": 101,
-                    "endOffset": 1768
+                    "endOffset": 1718
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -310,12 +310,12 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1773,
+                    "startOffset": 1723,
                     "endColumn": 116,
-                    "endOffset": 1885
+                    "endOffset": 1835
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -329,12 +329,12 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1890,
+                    "startOffset": 1840,
                     "endColumn": 126,
-                    "endOffset": 2012
+                    "endOffset": 1962
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -348,12 +348,12 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 2017,
+                    "startOffset": 1967,
                     "endColumn": 100,
-                    "endOffset": 2113
+                    "endOffset": 2063
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -367,18 +367,18 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 2118,
-                    "endColumn": 226,
-                    "endOffset": 2340
+                    "startOffset": 2068,
+                    "endColumn": 82,
+                    "endOffset": 2146
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values-te-rIN/common_strings.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 170,
-                        "endColumn": 230,
-                        "endOffset": 396
+                        "startOffset": 2068,
+                        "endColumn": 82,
+                        "endOffset": 2146
                     }
                 }
             },
@@ -386,18 +386,18 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 2345,
+                    "startOffset": 2151,
                     "endColumn": 100,
-                    "endOffset": 2441
+                    "endOffset": 2247
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-te-rIN/values-te-rIN.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-te-rIN\\values-te-rIN.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 2068,
+                        "startOffset": 2151,
                         "endColumn": 100,
-                        "endOffset": 2164
+                        "endOffset": 2247
                     }
                 }
             }

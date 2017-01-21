@@ -1,17 +1,17 @@
 [
     {
-        "outputFile": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/values-ne-rNP/values-ne-rNP.xml",
+        "outputFile": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ne-rNP\\values-ne-rNP.xml",
         "map": [
             {
                 "to": {
                     "startLine": 2,
                     "startColumn": 4,
-                    "startOffset": 105,
+                    "startOffset": 55,
                     "endColumn": 104,
-                    "endOffset": 205
+                    "endOffset": 155
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -25,12 +25,12 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 210,
+                    "startOffset": 160,
                     "endColumn": 107,
-                    "endOffset": 313
+                    "endOffset": 263
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -44,12 +44,12 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 318,
+                    "startOffset": 268,
                     "endColumn": 122,
-                    "endOffset": 436
+                    "endOffset": 386
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -63,12 +63,12 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 441,
+                    "startOffset": 391,
                     "endColumn": 103,
-                    "endOffset": 540
+                    "endOffset": 490
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -82,12 +82,12 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 545,
+                    "startOffset": 495,
                     "endColumn": 107,
-                    "endOffset": 648
+                    "endOffset": 598
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -101,12 +101,12 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 653,
+                    "startOffset": 603,
                     "endColumn": 90,
-                    "endOffset": 739
+                    "endOffset": 689
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -120,12 +120,12 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 744,
+                    "startOffset": 694,
                     "endColumn": 106,
-                    "endOffset": 846
+                    "endOffset": 796
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -139,12 +139,12 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 851,
+                    "startOffset": 801,
                     "endColumn": 126,
-                    "endOffset": 973
+                    "endOffset": 923
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -158,12 +158,12 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 978,
+                    "startOffset": 928,
                     "endColumn": 93,
-                    "endOffset": 1067
+                    "endOffset": 1017
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -177,12 +177,12 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1072,
+                    "startOffset": 1022,
                     "endColumn": 89,
-                    "endOffset": 1157
+                    "endOffset": 1107
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -196,12 +196,12 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1162,
+                    "startOffset": 1112,
                     "endColumn": 87,
-                    "endOffset": 1245
+                    "endOffset": 1195
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -215,12 +215,12 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1250,
+                    "startOffset": 1200,
                     "endColumn": 109,
-                    "endOffset": 1355
+                    "endOffset": 1305
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -234,12 +234,12 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1360,
+                    "startOffset": 1310,
                     "endColumn": 115,
-                    "endOffset": 1471
+                    "endOffset": 1421
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -253,12 +253,12 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1476,
+                    "startOffset": 1426,
                     "endColumn": 102,
-                    "endOffset": 1574
+                    "endOffset": 1524
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -272,12 +272,12 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1579,
+                    "startOffset": 1529,
                     "endColumn": 114,
-                    "endOffset": 1689
+                    "endOffset": 1639
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -291,12 +291,12 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1694,
+                    "startOffset": 1644,
                     "endColumn": 101,
-                    "endOffset": 1791
+                    "endOffset": 1741
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -310,12 +310,12 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1796,
+                    "startOffset": 1746,
                     "endColumn": 114,
-                    "endOffset": 1906
+                    "endOffset": 1856
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -329,12 +329,12 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1911,
+                    "startOffset": 1861,
                     "endColumn": 130,
-                    "endOffset": 2037
+                    "endOffset": 1987
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -348,12 +348,12 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 2042,
+                    "startOffset": 1992,
                     "endColumn": 111,
-                    "endOffset": 2149
+                    "endOffset": 2099
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -367,18 +367,18 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 2154,
-                    "endColumn": 245,
-                    "endOffset": 2395
+                    "startOffset": 2104,
+                    "endColumn": 85,
+                    "endOffset": 2185
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values-ne-rNP/common_strings.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 170,
-                        "endColumn": 249,
-                        "endOffset": 415
+                        "startOffset": 2104,
+                        "endColumn": 85,
+                        "endOffset": 2185
                     }
                 }
             },
@@ -386,18 +386,18 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 2400,
+                    "startOffset": 2190,
                     "endColumn": 100,
-                    "endOffset": 2496
+                    "endOffset": 2286
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ne-rNP/values-ne-rNP.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ne-rNP\\values-ne-rNP.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 2104,
+                        "startOffset": 2190,
                         "endColumn": 100,
-                        "endOffset": 2200
+                        "endOffset": 2286
                     }
                 }
             }

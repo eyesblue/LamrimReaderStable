@@ -65,8 +65,7 @@ public class FileDialogActivity extends ListActivity {
 	/**
 	 * Parametro de entrada da Activity: tipo de selecao: pode criar novos paths
 	 * ou nao. Padrao: nao permite.
-	 * 
-	 * @see {@link SelectionMode}
+	 *
 	 */
 	public static final String SELECTION_MODE = "SELECTION_MODE";
 
@@ -111,6 +110,9 @@ public class FileDialogActivity extends ListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setResult(RESULT_CANCELED, getIntent());
+
+		AnalyticsApplication application = (AnalyticsApplication) getApplication();
+		application.getDefaultTracker();
 
 		setContentView(R.layout.activity_file_dialog);
 		myPath = (TextView) findViewById(R.id.path);

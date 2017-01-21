@@ -63,6 +63,7 @@ public class DownloadAllService extends IntentService {
 		Log.d(getClass().getName(), "Into onHandleIntent of download all service");
 
 		AnalyticsApplication application = (AnalyticsApplication) getApplication();
+		application.getDefaultTracker();
 
 		fsm=new FileSysManager(getBaseContext());
 		defaultThreads=intent.getIntExtra("threadCount", 4);
@@ -193,7 +194,8 @@ public class DownloadAllService extends IntentService {
 	 * This function just need for notification, but not SpeechMenuActivity.
 	 * */
 	private synchronized void reportStartDownloadIndex(int threadId, int downloadIndex) {
-		notifyMsg[threadId]="\t"+SpeechData.getSubtitleName(downloadIndex);
+		if(threadId == 0)notifyMsg[threadId]=SpeechData.getSubtitleName(downloadIndex);
+		else notifyMsg[threadId]=", "+SpeechData.getSubtitleName(downloadIndex);
 		String msg="下載列表：";
 		
 		for(int i=0;i<defaultThreads;i++){

@@ -1,17 +1,17 @@
 [
     {
-        "outputFile": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/values-ky-rKG/values-ky-rKG.xml",
+        "outputFile": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ky-rKG\\values-ky-rKG.xml",
         "map": [
             {
                 "to": {
                     "startLine": 2,
                     "startColumn": 4,
-                    "startOffset": 105,
+                    "startOffset": 55,
                     "endColumn": 103,
-                    "endOffset": 204
+                    "endOffset": 154
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -25,12 +25,12 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 209,
+                    "startOffset": 159,
                     "endColumn": 107,
-                    "endOffset": 312
+                    "endOffset": 262
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -44,12 +44,12 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 317,
+                    "startOffset": 267,
                     "endColumn": 122,
-                    "endOffset": 435
+                    "endOffset": 385
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -63,12 +63,12 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 440,
+                    "startOffset": 390,
                     "endColumn": 94,
-                    "endOffset": 530
+                    "endOffset": 480
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -82,12 +82,12 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 535,
+                    "startOffset": 485,
                     "endColumn": 118,
-                    "endOffset": 649
+                    "endOffset": 599
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -101,12 +101,12 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 654,
+                    "startOffset": 604,
                     "endColumn": 83,
-                    "endOffset": 733
+                    "endOffset": 683
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -120,12 +120,12 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 738,
+                    "startOffset": 688,
                     "endColumn": 106,
-                    "endOffset": 840
+                    "endOffset": 790
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -139,12 +139,12 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 845,
+                    "startOffset": 795,
                     "endColumn": 116,
-                    "endOffset": 957
+                    "endOffset": 907
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -158,12 +158,12 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 962,
+                    "startOffset": 912,
                     "endColumn": 77,
-                    "endOffset": 1035
+                    "endOffset": 985
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -177,12 +177,12 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1040,
+                    "startOffset": 990,
                     "endColumn": 78,
-                    "endOffset": 1114
+                    "endOffset": 1064
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -196,12 +196,12 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1119,
+                    "startOffset": 1069,
                     "endColumn": 80,
-                    "endOffset": 1195
+                    "endOffset": 1145
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -215,12 +215,12 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1200,
+                    "startOffset": 1150,
                     "endColumn": 109,
-                    "endOffset": 1305
+                    "endOffset": 1255
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -234,12 +234,12 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1310,
+                    "startOffset": 1260,
                     "endColumn": 106,
-                    "endOffset": 1412
+                    "endOffset": 1362
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -253,12 +253,12 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1417,
+                    "startOffset": 1367,
                     "endColumn": 97,
-                    "endOffset": 1510
+                    "endOffset": 1460
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -272,12 +272,12 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1515,
+                    "startOffset": 1465,
                     "endColumn": 105,
-                    "endOffset": 1616
+                    "endOffset": 1566
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -291,12 +291,12 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1621,
+                    "startOffset": 1571,
                     "endColumn": 106,
-                    "endOffset": 1723
+                    "endOffset": 1673
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -310,12 +310,12 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1728,
+                    "startOffset": 1678,
                     "endColumn": 100,
-                    "endOffset": 1824
+                    "endOffset": 1774
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -329,12 +329,12 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1829,
+                    "startOffset": 1779,
                     "endColumn": 123,
-                    "endOffset": 1948
+                    "endOffset": 1898
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -348,12 +348,12 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1953,
+                    "startOffset": 1903,
                     "endColumn": 102,
-                    "endOffset": 2051
+                    "endOffset": 2001
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -367,18 +367,18 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 2056,
-                    "endColumn": 251,
-                    "endOffset": 2303
+                    "startOffset": 2006,
+                    "endColumn": 80,
+                    "endOffset": 2082
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values-ky-rKG/common_strings.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 170,
-                        "endColumn": 255,
-                        "endOffset": 421
+                        "startOffset": 2006,
+                        "endColumn": 80,
+                        "endOffset": 2082
                     }
                 }
             },
@@ -386,18 +386,18 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 2308,
+                    "startOffset": 2087,
                     "endColumn": 100,
-                    "endOffset": 2404
+                    "endOffset": 2183
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ky-rKG/values-ky-rKG.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-ky-rKG\\values-ky-rKG.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 2006,
+                        "startOffset": 2087,
                         "endColumn": 100,
-                        "endOffset": 2102
+                        "endOffset": 2183
                     }
                 }
             }

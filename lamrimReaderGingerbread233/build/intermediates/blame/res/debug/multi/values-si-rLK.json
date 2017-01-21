@@ -1,17 +1,17 @@
 [
     {
-        "outputFile": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/res/merged/debug/values-si-rLK/values-si-rLK.xml",
+        "outputFile": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-si-rLK\\values-si-rLK.xml",
         "map": [
             {
                 "to": {
                     "startLine": 2,
                     "startColumn": 4,
-                    "startOffset": 105,
+                    "startOffset": 55,
                     "endColumn": 109,
-                    "endOffset": 210
+                    "endOffset": 160
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -25,12 +25,12 @@
                 "to": {
                     "startLine": 3,
                     "startColumn": 4,
-                    "startOffset": 215,
+                    "startOffset": 165,
                     "endColumn": 107,
-                    "endOffset": 318
+                    "endOffset": 268
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -44,12 +44,12 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 323,
+                    "startOffset": 273,
                     "endColumn": 122,
-                    "endOffset": 441
+                    "endOffset": 391
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -63,12 +63,12 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 446,
+                    "startOffset": 396,
                     "endColumn": 106,
-                    "endOffset": 548
+                    "endOffset": 498
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -82,12 +82,12 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 553,
+                    "startOffset": 503,
                     "endColumn": 106,
-                    "endOffset": 655
+                    "endOffset": 605
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -101,12 +101,12 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 660,
+                    "startOffset": 610,
                     "endColumn": 87,
-                    "endOffset": 743
+                    "endOffset": 693
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -120,12 +120,12 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 748,
+                    "startOffset": 698,
                     "endColumn": 104,
-                    "endOffset": 848
+                    "endOffset": 798
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -139,12 +139,12 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 853,
+                    "startOffset": 803,
                     "endColumn": 115,
-                    "endOffset": 964
+                    "endOffset": 914
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -158,12 +158,12 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 969,
+                    "startOffset": 919,
                     "endColumn": 88,
-                    "endOffset": 1053
+                    "endOffset": 1003
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -177,12 +177,12 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1058,
+                    "startOffset": 1008,
                     "endColumn": 86,
-                    "endOffset": 1140
+                    "endOffset": 1090
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -196,12 +196,12 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1145,
+                    "startOffset": 1095,
                     "endColumn": 83,
-                    "endOffset": 1224
+                    "endOffset": 1174
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -215,12 +215,12 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1229,
+                    "startOffset": 1179,
                     "endColumn": 108,
-                    "endOffset": 1333
+                    "endOffset": 1283
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -234,12 +234,12 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1338,
+                    "startOffset": 1288,
                     "endColumn": 104,
-                    "endOffset": 1438
+                    "endOffset": 1388
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -253,12 +253,12 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1443,
+                    "startOffset": 1393,
                     "endColumn": 97,
-                    "endOffset": 1536
+                    "endOffset": 1486
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -272,12 +272,12 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1541,
+                    "startOffset": 1491,
                     "endColumn": 109,
-                    "endOffset": 1646
+                    "endOffset": 1596
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -291,12 +291,12 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1651,
+                    "startOffset": 1601,
                     "endColumn": 98,
-                    "endOffset": 1745
+                    "endOffset": 1695
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -310,12 +310,12 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1750,
+                    "startOffset": 1700,
                     "endColumn": 105,
-                    "endOffset": 1851
+                    "endOffset": 1801
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -329,12 +329,12 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1856,
+                    "startOffset": 1806,
                     "endColumn": 120,
-                    "endOffset": 1972
+                    "endOffset": 1922
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -348,12 +348,12 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1977,
+                    "startOffset": 1927,
                     "endColumn": 98,
-                    "endOffset": 2071
+                    "endOffset": 2021
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -367,18 +367,18 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 2076,
-                    "endColumn": 229,
-                    "endOffset": 2301
+                    "startOffset": 2026,
+                    "endColumn": 81,
+                    "endOffset": 2103
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values-si-rLK/common_strings.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
-                        "startLine": 3,
+                        "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 170,
-                        "endColumn": 233,
-                        "endOffset": 399
+                        "startOffset": 2026,
+                        "endColumn": 81,
+                        "endOffset": 2103
                     }
                 }
             },
@@ -386,18 +386,18 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 2306,
+                    "startOffset": 2108,
                     "endColumn": 100,
-                    "endOffset": 2402
+                    "endOffset": 2204
                 },
                 "from": {
-                    "file": "/Users/father/Dropbox/LamrimReaderStable/lamrimReaderGingerbread233/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-si-rLK/values-si-rLK.xml",
+                    "file": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\values-si-rLK\\values-si-rLK.xml",
                     "position": {
-                        "startLine": 21,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 2026,
+                        "startOffset": 2108,
                         "endColumn": 100,
-                        "endOffset": 2122
+                        "endOffset": 2204
                     }
                 }
             }

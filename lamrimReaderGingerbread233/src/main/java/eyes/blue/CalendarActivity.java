@@ -87,6 +87,7 @@ public class CalendarActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_calendar);
 
 		AnalyticsApplication application = (AnalyticsApplication) getApplication();
+		application.getDefaultTracker();
 
 		LayoutInflater factory = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
 		actionBarControlPanel = factory.inflate(R.layout.calendar_actionbar_control_panel, null);

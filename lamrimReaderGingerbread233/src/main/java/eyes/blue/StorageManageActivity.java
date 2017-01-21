@@ -57,6 +57,10 @@ public class StorageManageActivity extends AppCompatActivity {
 		this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 //		PowerManager powerManager=(PowerManager) getSystemService(Context.POWER_SERVICE);
 //		wakeLock = powerManager.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, getClass().getName());
+
+		AnalyticsApplication application = (AnalyticsApplication) getApplication();
+		application.getDefaultTracker();
+
 		runtime = getSharedPreferences(getString(R.string.runtimeStateFile), 0);
 		fsm=new FileSysManager(this);
 		//if(!wakeLock.isHeld()){wakeLock.acquire();}
@@ -311,33 +315,13 @@ public class StorageManageActivity extends AppCompatActivity {
 				
 				if(filePathInput.getText().toString().length()==0){
 					filePathInput.setText(fsm.getSysDefMediaDir());
-					AlertDialog.Builder builder = new AlertDialog.Builder(StorageManageActivity.this);
-					builder.setTitle("目錄錯誤");
-					builder.setMessage("路徑不可為空！請重新選擇。");
-					builder.setPositiveButton(getString(R.string.dlgOk), new DialogInterface.OnClickListener (){
-						@Override
-						public void onClick(DialogInterface dialog,	int which) {
-							try{
-								dialog.dismiss();
-							}catch(Exception e){e.printStackTrace();}
-						}});
-					builder.create().show();
+					BaseDialogs.showErrorDialog(StorageManageActivity.this, "目錄錯誤", "路徑不可為空！請重新選擇。");
 					return;
 				}
 					// Check is the path is FILE
 				File f=new File(filePathInput.getText().toString());
 				if(f.isFile()){
-					AlertDialog.Builder builder = new AlertDialog.Builder(StorageManageActivity.this);
-					builder.setTitle("目錄錯誤");
-					builder.setMessage("您所指定的儲存位置為檔案！請重新選擇。");
-					builder.setPositiveButton(getString(R.string.dlgOk), new DialogInterface.OnClickListener (){
-						@Override
-						public void onClick(DialogInterface dialog,	int which) {
-							try{
-								dialog.dismiss();
-							}catch(Exception e){e.printStackTrace();}
-						}});
-					builder.create().show();
+					BaseDialogs.showErrorDialog(StorageManageActivity.this, "目錄錯誤", "您所指定的儲存位置為檔案！請重新選擇。");
 					return;
 				}
 				
@@ -346,34 +330,14 @@ public class StorageManageActivity extends AppCompatActivity {
 				// The kitkat can read external area, but not write.
 				if(Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT){
 					if((!f.exists() || !f.canRead())){
-						AlertDialog.Builder builder = new AlertDialog.Builder(StorageManageActivity.this);
-						builder.setTitle("權限錯誤");
-						builder.setMessage("您所指定的儲存目錄無法建立或無讀取權限！請重新選擇。");
-						builder.setPositiveButton(getString(R.string.dlgOk), new DialogInterface.OnClickListener (){
-							@Override
-							public void onClick(DialogInterface dialog,	int which) {
-								try{
-									dialog.dismiss();
-								}catch(Exception e){e.printStackTrace();}
-							}});
-						builder.create().show();
+						BaseDialogs.showErrorDialog(StorageManageActivity.this, "權限錯誤", "您所指定的儲存目錄無法建立或無讀取權限！請重新選擇。");
 						return;
 					}
 				}
 				else{
 					if(!f.exists() || !f.canWrite())
 					{
-						AlertDialog.Builder builder = new AlertDialog.Builder(StorageManageActivity.this);
-						builder.setTitle("權限錯誤");
-						builder.setMessage("您所指定的儲存位置無法寫入！請重新選擇。");
-						builder.setPositiveButton(getString(R.string.dlgOk), new DialogInterface.OnClickListener (){
-							@Override
-							public void onClick(DialogInterface dialog,	int which) {
-								try{
-									dialog.dismiss();
-								}catch(Exception e){e.printStackTrace();}
-							}});
-						builder.create().show();
+						BaseDialogs.showErrorDialog(StorageManageActivity.this, "權限錯誤", "您所指定的儲存位置無法寫入！請重新選擇。");
 						return;
 					}
 				}
@@ -383,18 +347,7 @@ public class StorageManageActivity extends AppCompatActivity {
 				editor.commit();
 				
 				if(Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT){
-					AlertDialog.Builder builder = new AlertDialog.Builder(StorageManageActivity.this);
-					builder.setTitle("無法自動補檔警告");
-					builder.setMessage("您的系統為Kitkat(4.4)版，由於系統限制，外部目錄僅能讀取，無法自動補檔，請確認該目錄中包含所有音檔。");
-					builder.setPositiveButton(getString(R.string.dlgOk), new DialogInterface.OnClickListener (){
-						@Override
-						public void onClick(DialogInterface dialog,	int which) {
-							try{
-								dialog.dismiss();
-								finish();
-							}catch(Exception e){e.printStackTrace();}
-						}});
-					builder.create().show();
+					BaseDialogs.showErrorDialog(StorageManageActivity.this, "無法自動補檔警告", "您的系統為Kitkat(4.4)版，由於系統限制，外部目錄僅能讀取，無法自動補檔，請確認該目錄中包含所有音檔。");
 				}
 				else
 					finish();
@@ -596,12 +549,17 @@ public class StorageManageActivity extends AppCompatActivity {
 
 	private void showFileDialogActivity(){
 		File f=null;
-		if(Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState()))  // Check is external storage mounted, no matter read only or read/write.
-			f=Environment.getExternalStorageDirectory();
-		else
-			f=getFilesDir();
+		String ind="";
+		if(Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {  // Check is external storage mounted, no matter read only or read/write.
+			f = Environment.getExternalStorageDirectory();
+			ind="外部儲存區域";
+		}
+		else {
+			f = getFilesDir();
+			ind="內部儲存區域";
+		}
 
-		Toast.makeText(this, "Show folder: "+f.getAbsolutePath(), Toast.LENGTH_LONG).show();
+		Toast.makeText(this, ind, Toast.LENGTH_LONG).show();
 		Intent intent = new Intent(getBaseContext(), FileDialogActivity.class);
 		intent.putExtra(FileDialogActivity.TITLE, "請選擇存放目錄");
 		intent.putExtra(FileDialogActivity.START_PATH, f.getAbsolutePath());

@@ -25,9 +25,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
-import android.content.pm.ResolveInfo;
 import android.graphics.Color;
 import android.graphics.Point;
 import android.graphics.Rect;
@@ -80,8 +78,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.PopupWindow;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
@@ -209,6 +205,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
         setContentView(R.layout.main);
 
         AnalyticsApplication application = (AnalyticsApplication) getApplication();
+        application.getDefaultTracker();
 
         PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
         wakeLock = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK | PowerManager.ON_AFTER_RELEASE, "LamrimReader");
@@ -275,8 +272,6 @@ public class LamrimReaderActivity extends AppCompatActivity {
         textMaxSize = getResources().getInteger(R.integer.textMaxSize);
         Log.d(logTag, "Get font size: max=" + textMaxSize + ", def=" + textDefSize + ", min=" + textMinSize);
 
-        LayoutInflater factory = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
-        actionBarControlPanel = factory.inflate(R.layout.lamrimreader_actionbar_control_panel, null);
         modeSwBtn = (Button) findViewById(R.id.modeSwBtn);
         modeSwBtn.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -330,6 +325,8 @@ public class LamrimReaderActivity extends AppCompatActivity {
             }
         });
 
+        LayoutInflater factory = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
+        actionBarControlPanel = factory.inflate(R.layout.lamrimreader_actionbar_control_panel, null);
         bookIcon = (ImageView) actionBarControlPanel.findViewById(R.id.bookIcon);
         /*
 		 * bookIcon.setOnClickListener(new View.OnClickListener(){
@@ -701,7 +698,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
                     Log.d(getClass().getName(), "Hide media player controller.");
-                    mpController.hideMediaPlayerController();
+                    hideMediaController(false);
                 }
                 return false;
             }
@@ -738,7 +735,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                     createMpController();
                     return;
                 }
-                mpController.hideMediaPlayerController();
+                hideMediaController(false);
             }
         });
 
@@ -947,6 +944,16 @@ public class LamrimReaderActivity extends AppCompatActivity {
                                             Log.d(logTag, "Warring: the regionRecordAdapter = null !!!");
                                         else
                                             regionRecordAdapter.notifyDataSetChanged();
+
+                                        new Handler().postDelayed(new Runnable() {
+                                            @Override
+                                            public void run() {
+                                                InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                                                imm.hideSoftInputFromWindow(jumpPage.getWindowToken(), 0);
+                                                hideMediaController(false);
+//                       showMediaController();
+                                            }
+                                        },200);
                                     }
                                 });
                             }
@@ -1066,6 +1073,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 			    builder.show();
 			}});
 	    */
+
         setRegionOptDialog.setView(v);
         setRegionOptDialog.setTitle("將目前播放位置設定為");
         setRegionOptDialog.setCanceledOnTouchOutside(true);
@@ -1344,12 +1352,6 @@ public class LamrimReaderActivity extends AppCompatActivity {
                     @Override
                     public void onPause() {
                         Log.d(getClass().getName(), "Show Title bar.");
-//						showTitle();
-
-                        //getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
-                        //getSupportActionBar().show();
-
-//						if (wakeLock.isHeld())wakeLock.release();
                     }
 
                     @Override
@@ -1367,13 +1369,14 @@ public class LamrimReaderActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 showOnRegionOptionDialog(mediaIndex, mpController.getCurrentPosition());
-                mpController.showControllerView(LamrimReaderActivity.this);
+                showMediaController();
             }
         });
 
-        mpController.setOnReportClick(new OnClickListener() {
+        mpController.setOnPinClick(new OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if (mpController == null) {
                     setSubtitleViewText("播放器已被系統回收，請重新載入。");
                     createMpController();
@@ -1383,93 +1386,16 @@ public class LamrimReaderActivity extends AppCompatActivity {
                     return;
                 }
 
-                LayoutInflater factory = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
-                View reportView = factory.inflate(R.layout.report_view, null);
-
-                // Prepare data
-                final RadioGroup rg = (RadioGroup) reportView.findViewById(R.id.reportGroup);
-                SubtitleElement se = mpController.getSubtitle(mpController.getCurrentPosition());
-                final String time = Util.getMsToHMS(se.startTimeMs, ":", "", true) + " ~ " + Util.getMsToHMS(se.endTimeMs, ":", "", true);
-                final String text = se.text;
-                final String media = SpeechData.getNameId(mediaIndex);
-
-                RadioButton rb = (RadioButton) rg.findViewById(R.id.subtitleTimeErr);
-                rb.setText(String.format((String) rb.getText(), time));
-                rb = (RadioButton) rg.findViewById(R.id.subtitleTextErr);
-                rb.setText(String.format((String) rb.getText(), text));
-                rb = (RadioButton) rg.findViewById(R.id.finishCheckSubtitle);
-                rb.setText(String.format((String) rb.getText(), media));
-
-                AlertDialog dialog = null;
-                AlertDialog.Builder builder = new AlertDialog.Builder(LamrimReaderActivity.this);
-                builder.setTitle("回報錯誤");
-                builder.setNegativeButton(R.string.dlgCancel, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        try {
-                            dialog.dismiss();
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }    // Don't force close if problem here.
-                    }
-                });
-                builder.setPositiveButton(R.string.dlgOk, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        String subject = "廣論App錯誤回報", content = null;
-
-                        switch (rg.getCheckedRadioButtonId()) {
-                            case R.id.subtitleTimeErr:
-                                content = "貴團隊您好:\n\n末學發現字幕時間在 " + media + " 的 " + time + "(" + text + ")" + "處疑似有顯示時間上的錯誤，煩請再確認校正。\n\n";
-                                break;
-                            case R.id.subtitleTextErr:
-                                content = "貴團隊您好:\n\n末學發現字幕內容在 " + media + " 的 " + time + "(" + text + ")" + "處疑似有文字內容上的錯誤，煩請再確認校正。\n\n";
-                                break;
-                            case R.id.finishCheckSubtitle:
-                                content = "貴團隊您好:\n\n末學已將音檔" + media + "完整確認過無誤，可以開始封存該字幕。\n\n";
-                                break;
-                            case R.id.theoryTextErr:
-                                content = "貴團隊您好:\n\n末學發現廣論論文於 () 頁、()行、()字處疑似有內容上的錯誤，煩請再確認校正。\n\n";
-                                break;
-                        }
-
-                        content += Util.getDeviceName() + " V" + Build.VERSION.RELEASE + ", App版本: " + pkgInfo.versionName + "(" + pkgInfo.versionCode + ")";
-
-                        Intent i = new Intent(Intent.ACTION_SEND);
-                        i.setData(Uri.parse("mailto:"));
-                        i.setType("message/rfc822");
-                        i.putExtra(Intent.EXTRA_EMAIL, new String[]{"eyesblue@eyes-blue.com"});
-                        i.putExtra(Intent.EXTRA_SUBJECT, subject);
-                        i.putExtra(Intent.EXTRA_TEXT, content);
-
-                        PackageManager pkManager = getPackageManager();
-                        List<ResolveInfo> activities = pkManager.queryIntentActivities(i, 0);
-                        if (activities.size() > 1) {
-                            // Create and start the chooser
-                            Intent chooser = Intent.createChooser(i, "請選擇郵件App");
-                            startActivity(chooser);
-                        } else if (activities.size() == 1) {
-                            Log.d(getClass().getName(), "There is only one mail app for send report message.");
-                            startActivity(i);
-                        } else
-                            Util.showErrorPopupWindow(LamrimReaderActivity.this, rootLayout, "您的裝置上未安裝任何可供使用的電子郵件系統，無法寄送郵件。");
-
-						/*try {
-						    startActivity(Intent.createChooser(i, "請選擇郵件App"));
-						} catch (android.content.ActivityNotFoundException ex) {
-							Util.showErrorPopupWindow(LamrimReaderActivity.this, rootLayout, "您的裝置上未安裝任何可供使用的電子郵件系統，無法寄送郵件。");
-						}
-						*/
-                        try {
-                            dialog.dismiss();
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }    // Don't force close if problem here.
-                    }
-                });
-                builder.setView(reportView);
-                dialog = builder.create();
-                dialog.show();
+                ImageButton reportBtn=(ImageButton)mpController.getControllerView().findViewById(R.id.pinBtn);
+                boolean isClick=!reportBtn.isSelected();
+                reportBtn.setSelected(isClick);
+                if(isClick) {
+                    mpController.setShowLongTerm(true);
+                    showMediaController();
+                }else{
+                    mpController.setShowLongTerm(false);
+                    hideMediaController(true);
+                }
             }
         });
     }
@@ -1679,7 +1605,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
         // Avoid memory leak
-        mpController.hideMediaPlayerController();
+        hideMediaController(false);
         saveRuntime();
 
         try {
@@ -3422,7 +3348,10 @@ public class LamrimReaderActivity extends AppCompatActivity {
 		else ((ImageButton)mpController.getControllerView().findViewById(R.id.shareBtn)).setEnabled(false);
 		*/
     }
-
+    private void hideMediaController(boolean isForce){
+        if(isForce || !mpController.isShowLongTerm())
+            mpController.hideMediaPlayerController();
+    }
 
     private void highlightView(View v) {
         //Animation animation = (Animation) AnimationUtils.loadAnimation(this, R.anim.blank);
@@ -3618,7 +3547,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 
         private void startLamrimSection() {
             if (GLamrimSect[GLamrimSectIndex][0] == -1) return;
-            mpController.hideMediaPlayerController();
+            hideMediaController(true);
             Log.d(getClass().getName(), "Switch to first section of Global Lamrim.");
             mpController.reset();
 
@@ -3679,7 +3608,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
 
         private void startLamrimSection(int index) {
             Log.d(getClass().getName(), "Switch to speech " + SpeechData.getTheoryName(index));
-            mpController.hideMediaPlayerController();
+            hideMediaController(true);
             File media = fsm.getLocalMediaFile(index);
             File subtitle = fsm.getLocalSubtitleFile(index);
 

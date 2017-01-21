@@ -117,7 +117,7 @@ public class RegionRecord {
 					str+=objToString(records.get(i))+"\n";
 
 				try {
-					osw=new OutputStreamWriter(activity.openFileOutput(activity.getString(R.string.regionRecordColumeName),Context.MODE_WORLD_WRITEABLE));
+					osw=new OutputStreamWriter(activity.openFileOutput(activity.getString(R.string.regionRecordColumeName),Context.MODE_PRIVATE));
 					osw.write(str);
 					osw.flush();
 					osw.close();

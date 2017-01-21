@@ -404,8 +404,8 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 		mediaController.setOnRegionListener(listener);
 	}
 	
-	public void setOnReportClick(OnClickListener listener){
-		mediaController.setOnReportListener(listener);
+	public void setOnPinClick(OnClickListener listener){
+		mediaController.setOnPinListener(listener);
     }
 	
 // =================================================================
@@ -620,7 +620,12 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 	private void reloadMediaPlayer(){
 		if(mediaPlayer==null){}
 	}
-	
+
+
+	public void setShowLongTerm(boolean isLong){
+		mediaController.setShowLongTerm(isLong);
+	}
+	public boolean isShowLongTerm(){return mediaController.isShowLongTerm();}
 	/*
 	 * Show the floating player bar on activity, given the rootView of Activity.
 	 * */

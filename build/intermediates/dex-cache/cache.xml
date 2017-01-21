@@ -11,6 +11,42 @@
         <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.android.support-support-fragment-25.1.0_49bc762f14255a52e17bb2564654abc1c1770294.jar" />
     </item>
     <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_722765d043486a98feffd50191db650020fcb0b6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_7d9a485ef3bb7e9aa38cb85c14e064a0d95d41e2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4c829ff0ccfecb28a999ee46d9e75948dfc777a4">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-10.0.1_f4efd3d5f37523838627c6ca7e3d900b07e5bafa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_7520733a1032c95c0f2dbb5a5a30bf47d583b2b9\classes.dex" />
+    </item>
+    <item
         is-multidex="false"
         jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
         jumboMode="false"
@@ -18,6 +54,24 @@
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.android.support-support-v4-25.1.0_722765d043486a98feffd50191db650020fcb0b6.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.0.1_786ef3c2aca22d5a8c512c864c684f7b56427102\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\libs\javacsv.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="afed46cadd463453bbf007625ecfa3afac097f37">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\2\javacsv_00e64aa25d52b2a27b331d5ac448e0078283d599\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -36,6 +90,15 @@
         revision="25.0.2"
         sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
         <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.android.support-animated-vector-drawable-25.1.0_7520733a1032c95c0f2dbb5a5a30bf47d583b2b9.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="62ce086c0101918c94a4719cc86b07fb87bf06ad">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3edede46d12bf69917d7a17ed9b457dad7a148ff\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -74,6 +137,33 @@
         <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.android.support-support-compat-25.1.0_7d9a485ef3bb7e9aa38cb85c14e064a0d95d41e2.jar" />
     </item>
     <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_49bc762f14255a52e17bb2564654abc1c1770294\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\libs\commons-lang3-3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="905075e6c80f206bbe6cf1e809d2caa69f420c76">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\2\commons-lang3-3.1_513ef0631df579e351a2ada88564ddcb89e6fb44\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="270fba792bdfec1ff176866f3cc963998af9c02b">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_895d7098d1049e2f76c2854c045e9667140070c8\classes.dex" />
+    </item>
+    <item
         is-multidex="false"
         jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
         jumboMode="false"
@@ -81,6 +171,33 @@
         revision="25.0.2"
         sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
         <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-tasks-10.0.1_bb042cc334aeba32fc8735ef129a440dc80439b5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-v4-impl\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f23ad0f8e58713ff4b55f61c0bbde3830378347c">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-v4-impl-10.0.1_bbc11177f09b81a70faf4f53d7dbf0285854cd41\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-10.0.1_bb042cc334aeba32fc8735ef129a440dc80439b5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\LamrimReaderStable\wVersionManager\unspecified\jars\libs\org.apache.http.legacy.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="49bc2d83ccb0cfe1dbc853e3ba80db0f950ed96d">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\8\org.apache.http.legacy_b43f0fe120f61a54cb7e2aa1c71243bac7e5d017\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -119,6 +236,33 @@
         <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-base-10.0.1_0c083f0c9d4606cf21f9fe51650e6c4c77855a4c.jar" />
     </item>
     <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_458b2f17ecb422921bc10b4562b9087564d9a6d7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-10.0.1_0c083f0c9d4606cf21f9fe51650e6c4c77855a4c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_417a5b0370d7e205ca969317117512fa82a4c7c9\classes.dex" />
+    </item>
+    <item
         is-multidex="false"
         jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
         jumboMode="false"
@@ -135,6 +279,24 @@
         revision="25.0.2"
         sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
         <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.android.support-support-vector-drawable-25.1.0_e2046a1ba0520b36d6803320285f228af7a97059.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_b922fdd963ea9168844a47a1cf17cfd814bb6ec1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_e2046a1ba0520b36d6803320285f228af7a97059\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -155,6 +317,15 @@
         <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\LamrimReaderStable-newQuickAction-unspecified_0d2d499b63acb4450cec9dcc025d31cae3c83fa0.jar" />
     </item>
     <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-10.0.1_ac0fe8de4db8fa69604cde0072e7f0fc0e5d1023\classes.dex" />
+    </item>
+    <item
         is-multidex="false"
         jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.0.1\jars\classes.jar"
         jumboMode="false"
@@ -162,6 +333,15 @@
         revision="25.0.2"
         sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
         <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\com.google.android.gms-play-services-analytics-impl-10.0.1_ac0fe8de4db8fa69604cde0072e7f0fc0e5d1023.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_ea94adb8413edf2c634142fd38d7b490df7455fd\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -189,6 +369,15 @@
         revision="25.0.2"
         sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
         <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\pre-dexed\release\support-annotations-25.1.0_9de5685da537b08b5cf5775c55bc304f9fc38476.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\eyesblue\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_9de5685da537b08b5cf5775c55bc304f9fc38476\classes.dex" />
     </item>
     <item
         is-multidex="false"

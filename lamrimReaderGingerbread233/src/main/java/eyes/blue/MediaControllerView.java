@@ -84,6 +84,7 @@ public class MediaControllerView extends FrameLayout {
     private boolean             mDragging;
     //private static final int    sDefaultTimeout = 3000;
     private static final int    sDefaultTimeout = 4000;
+    private static int    displayTime = sDefaultTimeout;
     private static final int    FADE_OUT = 1;
     private static final int    SHOW_PROGRESS = 2;
     private boolean             mUseFastForward;
@@ -243,7 +244,7 @@ public class MediaControllerView extends FrameLayout {
      * automatically after 3 seconds of inactivity.
      */
     public void show() {
-        show(sDefaultTimeout);
+        show(displayTime);
     }
 
     /**
@@ -394,13 +395,13 @@ public class MediaControllerView extends FrameLayout {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        show(sDefaultTimeout);
+        show(displayTime);
         return true;
     }
 
     @Override
     public boolean onTrackballEvent(MotionEvent ev) {
-        show(sDefaultTimeout);
+        show(displayTime);
         return false;
     }
 
@@ -418,7 +419,7 @@ public class MediaControllerView extends FrameLayout {
                 || keyCode == KeyEvent.KEYCODE_SPACE) {
             if (uniqueDown) {
                 doPauseResume();
-                show(sDefaultTimeout);
+                show(displayTime);
                 if (mPauseButton != null) {
                     mPauseButton.requestFocus();
                 }
@@ -428,7 +429,7 @@ public class MediaControllerView extends FrameLayout {
             if (uniqueDown && !mPlayer.isPlaying()) {
                 mPlayer.start();
                 updatePausePlay();
-                show(sDefaultTimeout);
+                show(displayTime);
             }
             return true;
         } else if (keyCode == KeyEvent.KEYCODE_MEDIA_STOP
@@ -436,7 +437,7 @@ public class MediaControllerView extends FrameLayout {
             if (uniqueDown && mPlayer.isPlaying()) {
                 mPlayer.pause();
                 updatePausePlay();
-                show(sDefaultTimeout);
+                show(displayTime);
             }
             return true;
         } else if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN
@@ -451,21 +452,21 @@ public class MediaControllerView extends FrameLayout {
             return true;
         }
 
-        show(sDefaultTimeout);
+        show(displayTime);
         return super.dispatchKeyEvent(event);
     }
 
     private OnClickListener mPauseListener = new OnClickListener() {
         public void onClick(View v) {
             doPauseResume();
-            show(sDefaultTimeout);
+            show(displayTime);
         }
     };
 
     private OnClickListener mFullscreenListener = new OnClickListener() {
         public void onClick(View v) {
             doToggleFullscreen();
-            show(sDefaultTimeout);
+            show(displayTime);
         }
     };
 
@@ -526,8 +527,8 @@ public class MediaControllerView extends FrameLayout {
         regionButton.setOnClickListener(listener);
     }
     
-    public void setOnReportListener(OnClickListener listener){
-    	ImageButton reportBtn=(ImageButton)findViewById(R.id.reportBtn);
+    public void setOnPinListener(OnClickListener listener){
+    	ImageButton reportBtn=(ImageButton)findViewById(R.id.pinBtn);
     	reportBtn.setOnClickListener(listener);
     }
 
@@ -583,7 +584,7 @@ public class MediaControllerView extends FrameLayout {
             mDragging = false;
             setProgress();
             updatePausePlay();
-            show(sDefaultTimeout);
+            show(displayTime);
 
             // Ensure that progress is properly updated in the future,
             // the call to show() does not guarantee this because it is a
@@ -644,7 +645,7 @@ public class MediaControllerView extends FrameLayout {
             mPlayer.rewToLastSubtitle();
             setProgress();
 
-            show(sDefaultTimeout);
+            show(displayTime);
         }
     };
 
@@ -664,7 +665,7 @@ public class MediaControllerView extends FrameLayout {
             
             mPlayer.fwToNextSubtitle();
             setProgress();
-            show(sDefaultTimeout);
+            show(displayTime);
             
         }
     };
@@ -700,6 +701,13 @@ public class MediaControllerView extends FrameLayout {
             }
         }
     }
+
+    public void setShowLongTerm(boolean isLong){
+        if(isLong) displayTime=Integer.MAX_VALUE;
+        else displayTime=sDefaultTimeout;
+    }
+
+    public boolean isShowLongTerm(){return (displayTime==Integer.MAX_VALUE);}
 
     public void setClickable(boolean b){
     	Util.enableDisableViewGroup((ViewGroup)mRoot, b);

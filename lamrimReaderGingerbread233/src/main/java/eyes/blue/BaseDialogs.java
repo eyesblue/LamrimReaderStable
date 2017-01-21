@@ -175,15 +175,21 @@ public class BaseDialogs {
 	}
 	
 	public static void showErrorDialog(final Activity activity, final String msg){
+		showErrorDialog(activity, activity.getString(R.string.dlgInputError), msg);
+		return;
+	}
+
+	public static void showErrorDialog(final Activity activity,final String title,  final String msg){
 		activity.runOnUiThread(new Runnable(){
 			@Override
 			public void run() {
-				AlertDialog dialog=new AlertDialog.Builder(activity).setTitle(activity.getString(R.string.dlgInputError)).setMessage(msg).create();
+				AlertDialog dialog=new AlertDialog.Builder(activity).setTitle(title).setMessage(msg).create();
 				dialog.setCanceledOnTouchOutside(true);
 				dialog.show();
 			}});
 		return;
 	}
+
 	
 	public static void showToast(Context context,String msg){
 		Toast.makeText(context, msg, Toast.LENGTH_LONG).show();

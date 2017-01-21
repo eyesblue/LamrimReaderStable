@@ -85,173 +85,175 @@ public class SpeechMenuActivity extends AppCompatActivity {
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
-		
-	super.onCreate(savedInstanceState);
-	setContentView(R.layout.speech_menu);
-	rootView = findViewById(R.id.speechMenuRootView);
-	speechList=(ListView) findViewById(R.id.list);
-	btnDownloadAll=(ImageButton) findViewById(R.id.btnDownloadAll);
-	btnMaintain=(ImageButton) findViewById(R.id.btnMaintain);
-	btnManageStorage=(ImageButton) findViewById(R.id.btnManageStorage);
-	downloadAllTextView=(TextView)findViewById(R.id.downloadAllTextView);
-	
-	downloadAllServiceReceiver = new DownloadAllServiceReceiver();
-	downloadAllServiceIntentFilter = new IntentFilter("eyes.blue.action.DownloadAllService");
-//	PowerManager powerManager=(PowerManager) getSystemService(Context.POWER_SERVICE);
-//	wakeLock = powerManager.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, getClass().getName());
-	//wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, getClass().getName());
-	runtime = getSharedPreferences(getString(R.string.runtimeStateFile), 0);
-	fireLocker.start();
-	//if(!wakeLock.isHeld()){wakeLock.acquire();}
-	//if(wakeLock.isHeld())wakeLock.release();
-	fsm=new FileSysManager(this);
-	pd= getDlprgsDialog();
-	
-	final QuickAction mQuickAction 	= new QuickAction(this);
-	mQuickAction.addActionItem(new ActionItem(PLAY, getString(R.string.dlgManageSrcPlay), getResources().getDrawable(R.drawable.play)));
-	mQuickAction.addActionItem(new ActionItem(UPDATE, getString(R.string.dlgManageSrcUpdate), getResources().getDrawable(R.drawable.update)));
-	mQuickAction.addActionItem(new ActionItem(DELETE, getString(R.string.dlgManageSrcDel), getResources().getDrawable(R.drawable.delete)));
-	mQuickAction.addActionItem(new ActionItem(CANCEL, getString(R.string.dlgCancel), getResources().getDrawable(R.drawable.return_sign)));
-	
-	mQuickAction.setOnActionItemClickListener(new QuickAction.OnActionItemClickListener() {
-		@Override
-		public void onItemClick(QuickAction quickAction, int pos, int actionId) {
-			switch(actionId){
-			case PLAY:
-				resultAndPlay(manageItemIndex);
-				AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Play", null);
-				break;
-			case UPDATE:
-				DialogInterface.OnClickListener updateListener=new DialogInterface.OnClickListener(){
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						final ProgressDialog pd= new ProgressDialog(SpeechMenuActivity.this);
-						File f=fsm.getLocalMediaFile(manageItemIndex);
-			        	if(f!=null && !fsm.isFromUserSpecifyDir(f))f.delete();
-			        	f=fsm.getLocalSubtitleFile(manageItemIndex);
-			        	if(f!=null)f.delete();
-			        	downloadSrc(manageItemIndex);
-			        	AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Update", null);
-					}};
-	        	
-				BaseDialogs.showDelWarnDialog(SpeechMenuActivity.this, "檔案", null, updateListener, null, null);
-				break;
-			case DELETE:
-				DialogInterface.OnClickListener deleteListener=new DialogInterface.OnClickListener(){
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						final ProgressDialog pd= new ProgressDialog(SpeechMenuActivity.this);
-						File f=fsm.getLocalMediaFile(manageItemIndex);
-						if(f!=null && !fsm.isFromUserSpecifyDir(f))f.delete();
-			        	f=fsm.getLocalSubtitleFile(manageItemIndex);
-			        	if(f!=null)f.delete();
-			        	updateUi(manageItemIndex,true);
-			        	AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Delete", null);
-					}};
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.speech_menu);
+		AnalyticsApplication application = (AnalyticsApplication) getApplication();
+		application.getDefaultTracker();
 
-				BaseDialogs.showDelWarnDialog(SpeechMenuActivity.this, "檔案", null, deleteListener, null, null);
-	        	break;
-			case CANCEL:
-				AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Cancel", null);
-				break;
-			};
-		}
-	});
+		rootView = findViewById(R.id.speechMenuRootView);
+		speechList=(ListView) findViewById(R.id.list);
+		btnDownloadAll=(ImageButton) findViewById(R.id.btnDownloadAll);
+		btnMaintain=(ImageButton) findViewById(R.id.btnMaintain);
+		btnManageStorage=(ImageButton) findViewById(R.id.btnManageStorage);
+		downloadAllTextView=(TextView)findViewById(R.id.downloadAllTextView);
+
+		downloadAllServiceReceiver = new DownloadAllServiceReceiver();
+		downloadAllServiceIntentFilter = new IntentFilter("eyes.blue.action.DownloadAllService");
+	//	PowerManager powerManager=(PowerManager) getSystemService(Context.POWER_SERVICE);
+	//	wakeLock = powerManager.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, getClass().getName());
+		//wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, getClass().getName());
+		runtime = getSharedPreferences(getString(R.string.runtimeStateFile), 0);
+		fireLocker.start();
+		//if(!wakeLock.isHeld()){wakeLock.acquire();}
+		//if(wakeLock.isHeld())wakeLock.release();
+		fsm=new FileSysManager(this);
+		pd= getDlprgsDialog();
+
+		final QuickAction mQuickAction 	= new QuickAction(this);
+		mQuickAction.addActionItem(new ActionItem(PLAY, getString(R.string.dlgManageSrcPlay), getResources().getDrawable(R.drawable.play)));
+		mQuickAction.addActionItem(new ActionItem(UPDATE, getString(R.string.dlgManageSrcUpdate), getResources().getDrawable(R.drawable.update)));
+		mQuickAction.addActionItem(new ActionItem(DELETE, getString(R.string.dlgManageSrcDel), getResources().getDrawable(R.drawable.delete)));
+		mQuickAction.addActionItem(new ActionItem(CANCEL, getString(R.string.dlgCancel), getResources().getDrawable(R.drawable.return_sign)));
 	
-	mQuickAction.setOnDismissListener(new QuickAction.OnDismissListener() {
-		@Override
-		public void onDismiss() {
-			//Toast.makeText(getApplicationContext(), "Ups..dismissed", Toast.LENGTH_SHORT).show();
-		}
-	});
-	
-	String infos[]=getResources().getStringArray(R.array.desc);
-	descs=new String[infos.length];
-	subjects=new String[infos.length];
-	rangeDescs=new String[infos.length];
-	for(int i=0;i<infos.length;i++){
-//		Log.d(getClass().getName(),"Desc: "+infos[i]);
-		String[] sep=infos[i].split("-");
-		descs[i]=sep[0];
-		if(sep.length>1)subjects[i]=sep[1];
-		if(sep.length>2)rangeDescs[i]=sep[2];
-	}
+		mQuickAction.setOnActionItemClickListener(new QuickAction.OnActionItemClickListener() {
+			@Override
+			public void onItemClick(QuickAction quickAction, int pos, int actionId) {
+				switch(actionId){
+				case PLAY:
+					resultAndPlay(manageItemIndex);
+					AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Play", null);
+					break;
+				case UPDATE:
+					DialogInterface.OnClickListener updateListener=new DialogInterface.OnClickListener(){
+						@Override
+						public void onClick(DialogInterface dialog, int which) {
+							final ProgressDialog pd= new ProgressDialog(SpeechMenuActivity.this);
+							File f=fsm.getLocalMediaFile(manageItemIndex);
+							if(f!=null && !fsm.isFromUserSpecifyDir(f))f.delete();
+							f=fsm.getLocalSubtitleFile(manageItemIndex);
+							if(f!=null)f.delete();
+							downloadSrc(manageItemIndex);
+							AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Update", null);
+						}};
 
-	speechFlags=new boolean[SpeechData.name.length];
-	subtitleFlags=new boolean[SpeechData.name.length];
-	
-	// Initial fakeList
-	HashMap<String,Boolean> fakeItem = new HashMap<String,Boolean>();
-	fakeItem.put("title", false);
-	fakeItem.put("desc", false);
-	for(int i=0;i<SpeechData.name.length;i++)
-		fakeList.add( fakeItem );
+					BaseDialogs.showDelWarnDialog(SpeechMenuActivity.this, "檔案", null, updateListener, null, null);
+					break;
+				case DELETE:
+					DialogInterface.OnClickListener deleteListener=new DialogInterface.OnClickListener(){
+						@Override
+						public void onClick(DialogInterface dialog, int which) {
+							final ProgressDialog pd= new ProgressDialog(SpeechMenuActivity.this);
+							File f=fsm.getLocalMediaFile(manageItemIndex);
+							if(f!=null && !fsm.isFromUserSpecifyDir(f))f.delete();
+							f=fsm.getLocalSubtitleFile(manageItemIndex);
+							if(f!=null)f.delete();
+							updateUi(manageItemIndex,true);
+							AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Delete", null);
+						}};
 
-
-	adapter = new SpeechListAdapter(this, fakeList,
-			 R.layout.speech_row, new String[] { "page", "desc" },
-				new int[] { R.id.pageContentView, R.id.pageNumView });
-
-	speechList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-		@Override
-		public void onItemClick(AdapterView<?> arg0, View v, int position, long id) {
-			Log.d("SpeechMenuActivity","User click position "+position);
-			if(fireLock())return;
-
-			if(fsm.isFilesReady(position)){
-				Log.d("SpeechMenuActivity","File exist, return play.");
-				resultAndPlay(position);
+					BaseDialogs.showDelWarnDialog(SpeechMenuActivity.this, "檔案", null, deleteListener, null, null);
+					break;
+				case CANCEL:
+					AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Cancel", null);
+					break;
+				};
 			}
-			else {
-				Log.d("SpeechMenuActivity","File not exist, start download.");
-				downloadSrc(position);
-			}
-			AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "select_item_"+SpeechData.getSubtitleName(position), null);
-	}});
+		});
 
-	speechList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
-		@Override
-		public boolean onItemLongClick(AdapterView<?> parent, View v,int position, long id) {
-			// If there is no speech file, nor subtitle file, don't show the manage dialog.
-			if(!speechFlags[position]&&!subtitleFlags[position])
-				return false;
-			manageItemIndex=position;
-			mQuickAction.show(v);
-			AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "ShowMenu", null);
-			//itemManageDialog=getItemManageDialog(position);
-			//itemManageDialog.show();
-//			if(!wakeLock.isHeld()){wakeLock.acquire();}
-			return true;
+		mQuickAction.setOnDismissListener(new QuickAction.OnDismissListener() {
+			@Override
+			public void onDismiss() {
+				//Toast.makeText(getApplicationContext(), "Ups..dismissed", Toast.LENGTH_SHORT).show();
+			}
+		});
+
+		String infos[]=getResources().getStringArray(R.array.desc);
+		descs=new String[infos.length];
+		subjects=new String[infos.length];
+		rangeDescs=new String[infos.length];
+		for(int i=0;i<infos.length;i++){
+	//		Log.d(getClass().getName(),"Desc: "+infos[i]);
+			String[] sep=infos[i].split("-");
+			descs[i]=sep[0];
+			if(sep.length>1)subjects[i]=sep[1];
+			if(sep.length>2)rangeDescs[i]=sep[2];
 		}
-		
-		
-	});
-	
-	speechList.setAdapter( adapter );
-	 //啟用按鍵過濾功能
-	speechList.setTextFilterEnabled(true);
-	
-	updateDownloadAllBtn();
-	buttonUpdater=new ButtonUpdater();
-	buttonUpdater.start();
-	
-	btnMaintain.setOnClickListener(new View.OnClickListener (){
-		@Override
-		public void onClick(View arg0) {
-			if(fireLock())return;
-			maintain();
-			AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "MaintainFiles", null);
+
+		speechFlags=new boolean[SpeechData.name.length];
+		subtitleFlags=new boolean[SpeechData.name.length];
+
+		// Initial fakeList
+		HashMap<String,Boolean> fakeItem = new HashMap<String,Boolean>();
+		fakeItem.put("title", false);
+		fakeItem.put("desc", false);
+		for(int i=0;i<SpeechData.name.length;i++)
+			fakeList.add( fakeItem );
+
+
+		adapter = new SpeechListAdapter(this, fakeList,
+				 R.layout.speech_row, new String[] { "page", "desc" },
+					new int[] { R.id.pageContentView, R.id.pageNumView });
+
+		speechList.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View v, int position, long id) {
+				Log.d("SpeechMenuActivity","User click position "+position);
+				if(fireLock())return;
+
+				if(fsm.isFilesReady(position)){
+					Log.d("SpeechMenuActivity","File exist, return play.");
+					resultAndPlay(position);
+				}
+				else {
+					Log.d("SpeechMenuActivity","File not exist, start download.");
+					downloadSrc(position);
+				}
+				AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "select_item_"+SpeechData.getSubtitleName(position), null);
 		}});
-	
-	btnManageStorage.setOnClickListener(new View.OnClickListener (){
-		@Override
-		public void onClick(View v) {
-			if(fireLock())return;
-			final Intent storageManage = new Intent(SpeechMenuActivity.this, StorageManageActivity.class);
-			startActivity(storageManage);
-			buttonUpdater.cancel();
-			AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "ManageStorage", null);
-		}});
+
+		speechList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
+			@Override
+			public boolean onItemLongClick(AdapterView<?> parent, View v,int position, long id) {
+				// If there is no speech file, nor subtitle file, don't show the manage dialog.
+				if(!speechFlags[position]&&!subtitleFlags[position])
+					return false;
+				manageItemIndex=position;
+				mQuickAction.show(v);
+				AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "ShowMenu", null);
+				//itemManageDialog=getItemManageDialog(position);
+				//itemManageDialog.show();
+	//			if(!wakeLock.isHeld()){wakeLock.acquire();}
+				return true;
+			}
+
+
+		});
+
+		speechList.setAdapter( adapter );
+		 //啟用按鍵過濾功能
+		speechList.setTextFilterEnabled(true);
+
+		updateDownloadAllBtn();
+		buttonUpdater=new ButtonUpdater();
+		buttonUpdater.start();
+
+		btnMaintain.setOnClickListener(new View.OnClickListener (){
+			@Override
+			public void onClick(View arg0) {
+				if(fireLock())return;
+				maintain();
+				AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "MaintainFiles", null);
+			}});
+
+		btnManageStorage.setOnClickListener(new View.OnClickListener (){
+			@Override
+			public void onClick(View v) {
+				if(fireLock())return;
+				final Intent storageManage = new Intent(SpeechMenuActivity.this, StorageManageActivity.class);
+				startActivity(storageManage);
+				buttonUpdater.cancel();
+				AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "ManageStorage", null);
+			}});
 
 	 }
 	
@@ -696,6 +698,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 		public void onReceive(Context context, Intent intent) {
 			String action=intent.getStringExtra("action");
 			if(action.equalsIgnoreCase("start") || action.equalsIgnoreCase("stop")){
+				Log.d("ServiceReceiver", "Receive broadcast message: service "+action);
 				updateDownloadAllBtn();
 			}
 			else if(action.equalsIgnoreCase("download")){
@@ -712,6 +715,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 				if(isSuccess)updateUi(index, false);
 			}
 			else if(action.equalsIgnoreCase("terminate")){
+				Log.d("ServiceReceiver", "Receive broadcast message: service "+action);
 				buttonUpdater.cancel();
 				updateDownloadAllBtn();
 			}
