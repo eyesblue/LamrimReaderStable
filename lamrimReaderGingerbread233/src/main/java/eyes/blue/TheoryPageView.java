@@ -187,7 +187,6 @@ public class TheoryPageView extends TextView {
     			
         		start=i+1;
         		end=start;
-        		continue;
         	}
         	else if(c=='\n'){
 //        		Log.d("LamrimReader","Get new line, draw text from "+start+" to "+end+",on ("+x+","+y+") text length="+text.length());
@@ -208,7 +207,6 @@ public class TheoryPageView extends TextView {
         		start=i+1;
         		end=start;
         		lineCounter++;
-        		continue;
         	}
         	else if(c=='<'){
         		if(debug)Log.d("LamrimReader","Find a command start");

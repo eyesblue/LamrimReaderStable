@@ -26,6 +26,8 @@ import android.os.PowerManager.WakeLock;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 
 public class DownloadAllService extends IntentService {
 
@@ -33,7 +35,7 @@ public class DownloadAllService extends IntentService {
 	SharedPreferences runtime = null;
 	int defaultThreads = 4, downloadTimes=0,retryTimes=3;
 	Downloader threadPool[] = null;
-	String notifyMsg[]=null;
+	String notifyMsg[]=null, logTag=getClass().getName();
 	Integer downloadIndex = 0;
 	Integer successCount=0;
 	Integer failureCount=0;
@@ -42,13 +44,13 @@ public class DownloadAllService extends IntentService {
 	PowerManager powerManager=null;
 	WakeLock wakeLock = null;
 	public static int notificationId=0;	// Always update notification but create new one.
+	private FirebaseAnalytics mFirebaseAnalytics;
 	
 	public DownloadAllService() {
 		super("DownloadAllService");
 	}
 	public DownloadAllService(String name) {
 		super(name);
-		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
@@ -61,6 +63,7 @@ public class DownloadAllService extends IntentService {
 	@Override
 	protected void onHandleIntent(Intent intent) {
 		Log.d(getClass().getName(), "Into onHandleIntent of download all service");
+		mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
 		AnalyticsApplication application = (AnalyticsApplication) getApplication();
 		application.getDefaultTracker();
@@ -68,7 +71,7 @@ public class DownloadAllService extends IntentService {
 		fsm=new FileSysManager(getBaseContext());
 		defaultThreads=intent.getIntExtra("threadCount", 4);
 		if(defaultThreads<1){
-			Log.d(getClass().getName(), "DownloadAllService receive uncurrect thread count "+defaultThreads+", skip service.");
+			Log.d(getClass().getName(), "DownloadAllService receive incorrect thread count "+defaultThreads+", skip service.");
 			return;
 		}
 		threadPool = new Downloader[defaultThreads];
@@ -316,6 +319,7 @@ public class DownloadAllService extends IntentService {
 					Log.d(getClass().getName(),"The storage media has not usable, skip.");
 					reportStorageUnusable();
 					AnalyticsApplication.sendException("There is no storage usable.", npe, true);
+					Util.fireException("There is no storage usable.", npe);
 					return;
 				}
 				if(!subtitleExist){
@@ -377,11 +381,8 @@ public class DownloadAllService extends IntentService {
 	        	Log.d(getClass().getName(),"User canceled, download procedure skip!");
 	        	return false;
 	        }
-			AnalyticsApplication.sendTimming("download",    // Timing category (required)
-	                          System.currentTimeMillis()-respWaitStartTime,       // Timing interval in milliseconds (required)
-	                    "wait resp time",  // Timing name
-	                    null);           // Timing label
-
+			AnalyticsApplication.sendTimming("download", System.currentTimeMillis()-respWaitStartTime, "wait response time", null);
+			Util.fireTimming(DownloadAllService.this, mFirebaseAnalytics, logTag, Util.SPEND_TIME, "DOWNLOAD_RESPONSE_TIME", (int)(System.currentTimeMillis()-respWaitStartTime));
 
 	        HttpEntity httpEntity=response.getEntity();
 	        InputStream is=null;
@@ -467,11 +468,8 @@ public class DownloadAllService extends IntentService {
 	        }
 
 	        int spend=(int) (System.currentTimeMillis()-startTime);
-			AnalyticsApplication.sendTimming("download",    // Timing category (required)
-					(long) spend,       // Timing interval in milliseconds (required)
-					"download time",  // Timing name
-					null);           // Timing label
-
+			AnalyticsApplication.sendTimming("download", (long) spend, "download time", null);
+			Util.fireTimming(DownloadAllService.this, mFirebaseAnalytics, logTag, Util.SPEND_TIME, "DOWNLOAD_SPEND_TIME", (int)(System.currentTimeMillis()-respWaitStartTime));
 
 	        // rename the protected file name to correct file name
 	        tmpFile.renameTo(new File(outputPath));

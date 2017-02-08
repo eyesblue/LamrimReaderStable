@@ -16,6 +16,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -24,6 +25,9 @@ import java.util.zip.CRC32;
 import java.util.zip.Checksum;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
+
+import android.annotation.TargetApi;
+import android.os.Bundle;
 import android.view.ViewGroup.LayoutParams;
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -51,6 +55,11 @@ import android.widget.PopupWindow;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.firebase.crash.FirebaseCrash;
+
+import org.apache.commons.lang3.exception.ExceptionUtils;
 
 public class Util {
 //	static Toast toast = null;
@@ -638,4 +647,48 @@ public class Util {
 			return 1;
 		}
 	}
+
+	public static String MENU_CLICK = "MENU_CLICK";
+	public static String BUTTON_CLICK = "BUTTON_CLICK";
+	public static String SPEND_TIME = "SPEND_TIME";
+	public static String STATISTICS="STATISTICS";
+	public static void fireSelectEvent(FirebaseAnalytics mFirebaseAnalytics, String activity, String type, String name){
+		Bundle bundle = new Bundle();
+		bundle.putString(FirebaseAnalytics.Param.ITEM_CATEGORY, activity);
+		bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, type);
+//		bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, name);
+		bundle.putString(FirebaseAnalytics.Param.ITEM_ID, name);
+		mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+	}
+
+	@TargetApi(Build.VERSION_CODES.N)
+	public static void fireTimming(Context context, FirebaseAnalytics mFirebaseAnalytics, String logTag, String type, String name, int value){
+
+/*		Locale current ;
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
+			current = context.getResources().getConfiguration().getLocales().get(0);
+		} else{
+			current = context.getResources().getConfiguration().locale;
+		}
+*/
+		Bundle bundle = new Bundle();
+//		bundle.putString("Activity", logTag);
+		bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, type);
+//		bundle.putString("MANUFACTURER", android.os.Build.MANUFACTURER);
+//		bundle.putString("MODEL", Build.MODEL);
+//		bundle.putString("OS_VERSION", android.os.Build.VERSION.RELEASE);
+//		bundle.putString("LOCATE", current.getDisplayName());
+		//bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, name);
+		bundle.putString(FirebaseAnalytics.Param.ITEM_ID, name);
+		bundle.putString(FirebaseAnalytics.Param.VALUE, ""+value);
+		mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);
+	}
+
+	public static void fireException(String msg, Throwable e){
+		String repMsg=msg+", V"+android.os.Build.VERSION.RELEASE+", "+Util.getDeviceName()+", "+"Thread: {" + Thread.currentThread().getName() + "}";//, Exception: " + ExceptionUtils.getStackTrace(throwable)
+		FirebaseCrash.log(repMsg);
+		FirebaseCrash.report(e);
+	}
+
+
 }

@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="eyes.blue"
-    android:versionCode="194"
-    android:versionName="1.4.10">
+    android:versionCode="195"
+    android:versionName="1.4.11">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -20,7 +20,7 @@
         tools:replace="android:theme"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:launchMode="standard"
+        android:launchMode="singleTask"
         android:theme="@style/AppTheme"
         android:installLocation="auto" >
         <activity
@@ -83,24 +83,28 @@
             android:name="eyes.blue.IntentActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="landscape">
-            <intent-filter>
-        		<action android:name="android.intent.action.VIEW" />
-        		<category android:name="android.intent.category.DEFAULT" />
-        		<category android:name="android.intent.category.BROWSABLE" />
-        		<data android:scheme="file" />
-				<data android:mimeType="*/*" />
-        		<data android:pathPattern=".*\\.lrs" />
-        		<data android:pathPattern=".*\\..*\\.lrs"/>
-            	<data android:pathPattern=".*\\..*\\..*\\.lrs"/>
-            	<data android:pathPattern=".*\\..*\\..*\\..*\\.lrs"/>
-        		<data android:host="*" />
-			</intent-filter>
 			<intent-filter>
     			<action android:name="android.intent.action.VIEW" />
         		<category android:name="android.intent.category.DEFAULT" />
         		<category android:name="android.intent.category.BROWSABLE" />
-        		<data android:scheme="http" android:host="lamrimreader-cmd.eyes-blue.com" />
+        		<data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="lamrim" />
+                <data android:host="lamrimreader-cmd.eyes-blue.com" />
+                <data android:pathPrefix="/" />
 			</intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="file" />
+            <data android:mimeType="*/*" />
+            <data android:pathPattern=".*\\.lrs" />
+            <data android:pathPattern=".*\\..*\\.lrs"/>
+            <data android:pathPattern=".*\\..*\\..*\\.lrs"/>
+            <data android:pathPattern=".*\\..*\\..*\\..*\\.lrs"/>
+            <data android:host="*" />
+        </intent-filter>
 		</activity>
 		<service
             android:name=".DownloadAllService"
@@ -113,8 +117,12 @@
 			android:launchMode="singleTask"
 			android:taskAffinity=""
 			android:excludeFromRecents="true">
-		</activity>
-		
+		</activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
     </application>
 
 </manifest> <!-- android:screenOrientation="landscape" -->

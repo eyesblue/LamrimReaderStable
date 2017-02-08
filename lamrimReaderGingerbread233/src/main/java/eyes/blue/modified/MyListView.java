@@ -86,7 +86,7 @@ public class MyListView extends ListView {
     		@Override
     		public boolean onScaleBegin(ScaleGestureDetector detector) {
     			Log.d(getClass().getName(),"Begin scale called factor: "+detector.getScaleFactor());
-				AnalyticsApplication.sendEvent("ui_action", "bookview_event", "change_text_size_start", null);
+				AnalyticsApplication.sendEvent("ui_action", "bookview_event", "change_text_size_start");
     			return true;
     		}
     		@Override
@@ -110,7 +110,7 @@ public class MyListView extends ListView {
     			SharedPreferences.Editor editor = runtime.edit();
     			editor.putInt(context.getString(R.string.bookFontSizeKey), (int) adapter.getTextSize());
     			editor.commit();
-    			AnalyticsApplication.sendEvent("ui_action", "bookview_event", "change_text_size_end", null);
+    			AnalyticsApplication.sendEvent("ui_action", "bookview_event", "change_text_size_end");
     		}
     		}));
     	

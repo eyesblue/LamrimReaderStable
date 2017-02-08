@@ -19,6 +19,7 @@
     <string name="isUseThirdDir">useThirdDir</string>
     <string name="userSpecifySpeechDir">userSpecifySpeechDir</string>
 	<string name="isDarkThemeKey">isDarkTheme</string>
+    <string name="isShowInfoTextViewKey">isShowInfoTextView</string>
 	<string name="playModeKey">playMode</string>
 	
     <!-- Default Value -->
@@ -52,6 +53,7 @@
     <string name="defSubtitleType">SRT</string>
     <string name="defTheoryType">TXT</string>
     <string name="regionRecordFile">RegionRecord</string>
+    <bool name="isShareWithREST">false</bool>
     <string name="regionRecordColumeName">records</string>
     <string name="globalLamrimScheduleFile">GlobalLamrimSchedule</string>
     <string name="globalLamrimScheduleFileFormat">CSV</string>

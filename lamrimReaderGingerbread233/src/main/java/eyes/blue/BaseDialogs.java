@@ -15,29 +15,6 @@ import android.widget.Toast;
 
 public class BaseDialogs {
 	
-	
-	public static void showDelWarnDialog(Context context, String target, String positiveBtnString, DialogInterface.OnClickListener positiveListener, String negativeBtnString, DialogInterface.OnClickListener negativeListener){
-		AlertDialog.Builder builder = new AlertDialog.Builder(context);
-		builder.setTitle(String.format(context.getString(R.string.dlgDelWarnTitle),target));
-		builder.setMessage(String.format(context.getString(R.string.dlgDelWarnMsg),target));
-		
-		if(positiveBtnString == null)
-			positiveBtnString=context.getString(R.string.dlgOk);
-		
-		builder.setPositiveButton(positiveBtnString, positiveListener);
-		
-		if(negativeListener==null)
-			builder.setNegativeButton(context.getString(R.string.dlgCancel), new DialogInterface.OnClickListener() {
-				public void onClick(DialogInterface dialog, int id) {
-					dialog.cancel();
-				}
-			});
-		else
-			builder.setNegativeButton(negativeBtnString, negativeListener);
-		
-		builder.create().show();
-	}
-	
 	//public static void showEditRegionDialog(final Activity activity,final int mediaIndex, final int startTimeMs, final int endTimeMs,final String titleStr,final SimpleAdapter adapter, final int recIndex){
 	public static void showEditRegionDialog(final Activity activity,final int mediaStart, final int startTimeMs,final int mediaEnd, final int endTimeMs, final int theoryStartPage, final int theoryStartLine, final int theoryEndPage, final int theoryEndLine, final String info, final int recIndex,  final Runnable positiveListener){
 		LayoutInflater factory = (LayoutInflater)activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -94,7 +71,7 @@ public class BaseDialogs {
 				// Check name can't be empty.
 				String title=regionTitle.getText().toString().trim();
 				if(title.length()==0){
-					showErrorDialog(activity, activity.getString(R.string.inputTitleHint));
+					showSimpleErrorDialog(activity, activity.getString(R.string.inputTitleHint));
 					return;
 				}
 
@@ -111,38 +88,38 @@ public class BaseDialogs {
 					inStartLine=Integer.parseInt(inLineStart.trim())-1;
 					inEndLine=Integer.parseInt(inLineEnd.trim())-1;
 				}catch(NumberFormatException nfe){
-					showErrorDialog(activity, activity.getString(R.string.dlgNumberFormatError));
+					showSimpleErrorDialog(activity, activity.getString(R.string.dlgNumberFormatError));
 					return;
 				}
 				
 				if(theoryPageStart< 0 || theoryPageEnd< 0 || inStartLine<0 || inEndLine <0){
-					BaseDialogs.showErrorDialog(activity, activity.getString(R.string.dlgPageNumOverPageCount));
+					BaseDialogs.showSimpleErrorDialog(activity, activity.getString(R.string.dlgPageNumOverPageCount));
 					dialog.dismiss();
 					return;
 				}
 				
 				if(theoryPageStart>=TheoryData.content.length || theoryPageEnd >= TheoryData.content.length){
-					BaseDialogs.showErrorDialog(activity, activity.getString(R.string.dlgPageNumOverPageCount));
+					BaseDialogs.showSimpleErrorDialog(activity, activity.getString(R.string.dlgPageNumOverPageCount));
 					dialog.dismiss();
 					return;
 				}
 				
 				// Check if End page greater then Start page
 				if(theoryPageEnd < theoryPageStart){
-					showErrorDialog(activity, activity.getString(R.string.dlgEndPageGreaterThenStart));
+					showSimpleErrorDialog(activity, activity.getString(R.string.dlgEndPageGreaterThenStart));
 					return;
 				}
 				
 				// Check if the same page, but end line greater then start line
 				if(theoryPageEnd == theoryPageStart && inEndLine < inStartLine){
 					Log.d(getClass().getName(),"User input the same page, but line number end > start.");
-					showErrorDialog(activity, activity.getString(R.string.dlgEndLineGreaterThenStart));
+					showSimpleErrorDialog(activity, activity.getString(R.string.dlgEndLineGreaterThenStart));
 					return;
 				}
 				
 				// Check if the line count over the count of page.
 				if(inStartLine<0 || inEndLine >= TheoryData.content[theoryPageEnd].length()){
-					showErrorDialog(activity, activity.getString(R.string.dlgLineNumOverPageCount));
+					showSimpleErrorDialog(activity, activity.getString(R.string.dlgLineNumOverPageCount));
 					return;
 				}
 				
@@ -173,13 +150,36 @@ public class BaseDialogs {
 	    setTextSizeDialog.setCanceledOnTouchOutside(false);
 	    setTextSizeDialog.show();
 	}
+
+	public static void showDelWarnDialog(Context context, String target, DialogInterface.OnClickListener positiveListener, DialogInterface.OnClickListener negativeListener){
+		String title=String.format(context.getString(R.string.dlgDelWarnTitle),target);
+		String msg=String.format(context.getString(R.string.dlgDelWarnMsg),target);
+
+		showDialog(context, title, msg, positiveListener, null, true);
+	}
+
+	public static void showDialog(Context context, String title, String msg, DialogInterface.OnClickListener positiveListener, DialogInterface.OnClickListener negativeListener, boolean cancelOnTouchOutside){
+		AlertDialog.Builder builder = new AlertDialog.Builder(context);
+		builder.setTitle(title);
+		builder.setMessage(msg);
+
+		if(positiveListener!=null)
+			builder.setPositiveButton(context.getString(R.string.dlgOk), positiveListener);
+
+		if(negativeListener!=null)
+			builder.setNegativeButton(context.getString(R.string.dlgCancel), negativeListener);
+
+		AlertDialog dialog=builder.create();
+		dialog.setCanceledOnTouchOutside(cancelOnTouchOutside);
+		dialog.show();
+	}
 	
-	public static void showErrorDialog(final Activity activity, final String msg){
-		showErrorDialog(activity, activity.getString(R.string.dlgInputError), msg);
+	public static void showSimpleErrorDialog(final Activity activity, final String msg){
+		showSimpleErrorDialog(activity, activity.getString(R.string.dlgInputError), msg);
 		return;
 	}
 
-	public static void showErrorDialog(final Activity activity,final String title,  final String msg){
+	public static void showSimpleErrorDialog(final Activity activity,final String title,  final String msg){
 		activity.runOnUiThread(new Runnable(){
 			@Override
 			public void run() {
@@ -190,22 +190,13 @@ public class BaseDialogs {
 		return;
 	}
 
-	
-	public static void showToast(Context context,String msg){
-		Toast.makeText(context, msg, Toast.LENGTH_LONG).show();
-	}
-
-	public static void showMsgDialog(Context context, String title, String msg) {
+	public static void showSimpleMsgDialog(Context context, String title, String msg) {
 		AlertDialog.Builder builderSingle = new AlertDialog.Builder(context)
 				.setTitle(title)
 				.setIcon(android.R.drawable.ic_dialog_info)
 				.setMessage(msg);
-		builderSingle.setPositiveButton("確定", null);
+		builderSingle.setPositiveButton(context.getString(R.string.dlgOk), null);
 		builderSingle.setCancelable(false);
 		builderSingle.show();
-	}
-
-	public static void  showSubtitleSearchDialog(Context c, SubtitleSearch[] sse){
-
 	}
 }

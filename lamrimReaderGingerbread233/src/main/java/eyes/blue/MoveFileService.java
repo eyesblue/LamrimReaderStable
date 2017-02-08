@@ -6,6 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Locale;
+
 import android.app.IntentService;
 import android.app.NotificationManager;
 import android.content.Context;
@@ -16,16 +18,18 @@ import android.os.PowerManager.WakeLock;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 
 public class MoveFileService extends IntentService {
-	static final String logTag="MoveFileService";
+	final String logTag=getClass().getName();
 	public static final String NOTIFICATION = "eyes.blue.action.MoveFileService";
 	SharedPreferences runtime = null;
 	FileSysManager fsm=new FileSysManager(MoveFileService.this);
 	PowerManager powerManager=null;
 	WakeLock wakeLock = null;
 	public static int notificationId=1;	// Always update notification but create new one.
-	
+	private FirebaseAnalytics mFirebaseAnalytics;
 	
 	public MoveFileService() {
 		super("MoveFileService");
@@ -37,12 +41,13 @@ public class MoveFileService extends IntentService {
 	@Override
     public void onDestroy() {
 		if(wakeLock.isHeld())wakeLock.release();
-		removeNotification();
+	//	removeNotification();
     }
 
 	@Override
 	protected void onHandleIntent(Intent intent) {
 		Log.d(getClass().getName(), "Into onHandleIntent of Move File service");
+		mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 		
 		powerManager=(PowerManager) getSystemService(Context.POWER_SERVICE);
 		wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, getClass().getName());
@@ -53,14 +58,22 @@ public class MoveFileService extends IntentService {
 		File destFile=new File(destDir);
 		if(!wakeLock.isHeld()){wakeLock.acquire();}
 //		moveAllMediaFileToUserSpecifyDir(new File(destDir));
+		int counter=0, res=-1;
+		long startTime=System.currentTimeMillis();
 		for(String src:srcDirs){
 			File srcFile=new File(src);
-			if(!moveContentsOfDir(srcFile, destFile))
-				break;
+			if((res=moveContentsOfDir(srcFile, destFile))==-1)
+				return;
+			else counter+=res;
 		}
 		if(wakeLock.isHeld())wakeLock.release();
-		
-		AnalyticsApplication.sendEvent("statistics", "MOVE_FILE_TO_SPECIFY_FOLDER", "FINISH", 1);
+
+		int time=(int)(System.currentTimeMillis()-startTime);
+		float spend=(float)time/(float)1000;
+		String readAble=String.format(Locale.ENGLISH, "%.3f%n",spend);
+		AnalyticsApplication.sendEvent(logTag, "MOVE_FILE_TO_SPECIFY_FOLDER", "FINISH");
+		Util.fireSelectEvent(mFirebaseAnalytics, logTag, Util.STATISTICS, "MOVE_FILE_TO_SPECIFY_FOLDER_FINISH");
+		notifyMsg("檔案搬移完成","共搬移 "+counter+" 個檔案，耗時 "+readAble+" 秒。");
 		Log.d(getClass().getName(),"Move File Service terminate.");
 	}
 
@@ -75,10 +88,11 @@ public class MoveFileService extends IntentService {
     	return true;
     }
  */   
-    private boolean moveContentsOfDir(File srcDir, File destDir){
+    private int moveContentsOfDir(File srcDir, File destDir){
     	// if source folder equals destination folder, return true directly.
-    	if(srcDir.equals(destDir))return true;
-    	
+    	if(srcDir.equals(destDir))return 0;
+
+		int counter=0;
     	final File[] files=srcDir.listFiles();
     	Log.d(logTag,"There are "+files.length+" files wait for move.");
 
@@ -88,17 +102,23 @@ public class MoveFileService extends IntentService {
 			if(dist.exists()){
 				if(src.length()==dist.length()){
 					src.delete();
+					counter++;
 					continue;
 				}
 			}
 
 			/* Copy To */
 			notifyMsg("移動檔案", "移動"+src.getName()+" 到 "+dist.getAbsolutePath());
-			if(!src.renameTo(dist))
-				if(!moveFile(src, dist))
-					return false;
+			if(src.renameTo(dist)){
+				counter++;
+				continue;
+			}else if(moveFile(src, dist)){
+				counter++;
+				continue;
+			}
+			else return -1;
 		}
-		return true;
+		return counter;
     }
     
     private boolean moveFile(File from, File to){
@@ -145,7 +165,8 @@ public class MoveFileService extends IntentService {
 		bcIntent.putExtra("desc", "無法使用儲存裝置或儲存空間不足，請檢查您的儲存裝置是否正常，或磁碟已被電腦連線所獨佔！");
 		sendBroadcast(bcIntent); 
 		
-		removeNotification();
+		//removeNotification();
+		notifyMsg("檔案搬移失敗","無法使用儲存裝置或儲存空間不足，請檢查您的儲存裝置是否正常，或磁碟已被電腦連線所獨佔！");
 	}
 	
 	private void notifyMsg(String title, String contentText) {

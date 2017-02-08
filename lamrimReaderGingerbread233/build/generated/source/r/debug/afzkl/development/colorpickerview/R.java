@@ -22,13 +22,13 @@ public final class R {
 		public static final int color_panel_new = 0x7f0d0004;
 		public static final int color_panel_old = 0x7f0d0005;
 		public static final int color_picker_view = 0x7f0d0006;
-		public static final int dialog_color_picker_extra_layout_landscape = 0x7f0d0007;
-		public static final int layout1 = 0x7f0d0094;
-		public static final int preference_preview_color_panel = 0x7f0d0009;
+		public static final int dialog_color_picker_extra_layout_landscape = 0x7f0d0008;
+		public static final int layout1 = 0x7f0d00ac;
+		public static final int preference_preview_color_panel = 0x7f0d000a;
 	}
 	public static final class layout {
 		public static final int dialog_color_picker = 0x7f030022;
-		public static final int preference_preview_layout = 0x7f03003c;
+		public static final int preference_preview_layout = 0x7f03003d;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f070034;

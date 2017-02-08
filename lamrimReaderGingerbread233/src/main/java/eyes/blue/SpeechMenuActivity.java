@@ -41,8 +41,10 @@ import android.os.Handler;
 import android.support.v4.app.NavUtils;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutCompat;
 import android.text.InputType;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -58,7 +60,10 @@ import android.widget.NumberPicker;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 public class SpeechMenuActivity extends AppCompatActivity {
+	String logTag=getClass().getName();
 	FileSysManager fsm=null;
 	ImageButton btnDownloadAll, btnMaintain,  btnManageStorage;
 	TextView downloadAllTextView;
@@ -82,13 +87,15 @@ public class SpeechMenuActivity extends AppCompatActivity {
 	private DownloadAllServiceReceiver downloadAllServiceReceiver=null;
 	IntentFilter downloadAllServiceIntentFilter=null;
 	View rootView =null;
-	
+	private FirebaseAnalytics mFirebaseAnalytics;
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.speech_menu);
 		AnalyticsApplication application = (AnalyticsApplication) getApplication();
 		application.getDefaultTracker();
+		mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
 		rootView = findViewById(R.id.speechMenuRootView);
 		speechList=(ListView) findViewById(R.id.list);
@@ -109,7 +116,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 		fsm=new FileSysManager(this);
 		pd= getDlprgsDialog();
 
-		final QuickAction mQuickAction 	= new QuickAction(this);
+		final QuickAction mQuickAction = new QuickAction(this);
 		mQuickAction.addActionItem(new ActionItem(PLAY, getString(R.string.dlgManageSrcPlay), getResources().getDrawable(R.drawable.play)));
 		mQuickAction.addActionItem(new ActionItem(UPDATE, getString(R.string.dlgManageSrcUpdate), getResources().getDrawable(R.drawable.update)));
 		mQuickAction.addActionItem(new ActionItem(DELETE, getString(R.string.dlgManageSrcDel), getResources().getDrawable(R.drawable.delete)));
@@ -121,7 +128,8 @@ public class SpeechMenuActivity extends AppCompatActivity {
 				switch(actionId){
 				case PLAY:
 					resultAndPlay(manageItemIndex);
-					AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Play", null);
+					AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Play");
+					Util.fireSelectEvent(mFirebaseAnalytics, logTag, Util.BUTTON_CLICK, "QUICK_ACTION_MENU_PLAY");
 					break;
 				case UPDATE:
 					DialogInterface.OnClickListener updateListener=new DialogInterface.OnClickListener(){
@@ -133,10 +141,11 @@ public class SpeechMenuActivity extends AppCompatActivity {
 							f=fsm.getLocalSubtitleFile(manageItemIndex);
 							if(f!=null)f.delete();
 							downloadSrc(manageItemIndex);
-							AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Update", null);
+							AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Update");
+							Util.fireSelectEvent(mFirebaseAnalytics, logTag, Util.BUTTON_CLICK, "QUICK_ACTION_MENU_UPDATE");
 						}};
 
-					BaseDialogs.showDelWarnDialog(SpeechMenuActivity.this, "檔案", null, updateListener, null, null);
+					BaseDialogs.showDelWarnDialog(SpeechMenuActivity.this, "檔案", updateListener, null);
 					break;
 				case DELETE:
 					DialogInterface.OnClickListener deleteListener=new DialogInterface.OnClickListener(){
@@ -148,13 +157,15 @@ public class SpeechMenuActivity extends AppCompatActivity {
 							f=fsm.getLocalSubtitleFile(manageItemIndex);
 							if(f!=null)f.delete();
 							updateUi(manageItemIndex,true);
-							AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Delete", null);
+							AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Delete");
+							Util.fireSelectEvent(mFirebaseAnalytics, logTag, Util.BUTTON_CLICK, "QUICK_ACTION_MENU_DELETE");
 						}};
 
-					BaseDialogs.showDelWarnDialog(SpeechMenuActivity.this, "檔案", null, deleteListener, null, null);
+					BaseDialogs.showDelWarnDialog(SpeechMenuActivity.this, "檔案", deleteListener, null);
 					break;
 				case CANCEL:
-					AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Cancel", null);
+					AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "QuickActionMenu_Cancel");
+					Util.fireSelectEvent(mFirebaseAnalytics, logTag, Util.BUTTON_CLICK, "QUICK_ACTION_MENU_CANCEL");
 					break;
 				};
 			}
@@ -208,7 +219,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 					Log.d("SpeechMenuActivity","File not exist, start download.");
 					downloadSrc(position);
 				}
-				AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "select_item_"+SpeechData.getSubtitleName(position), null);
+				//AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "select_item_"+SpeechData.getSubtitleName(position));
 		}});
 
 		speechList.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener(){
@@ -219,7 +230,8 @@ public class SpeechMenuActivity extends AppCompatActivity {
 					return false;
 				manageItemIndex=position;
 				mQuickAction.show(v);
-				AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "ShowMenu", null);
+				AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "SHOW_QUICK_ACTION_MENU");
+				Util.fireSelectEvent(mFirebaseAnalytics, logTag, Util.BUTTON_CLICK, "SHOW_QUICK_ACTION_MENU");
 				//itemManageDialog=getItemManageDialog(position);
 				//itemManageDialog.show();
 	//			if(!wakeLock.isHeld()){wakeLock.acquire();}
@@ -242,7 +254,8 @@ public class SpeechMenuActivity extends AppCompatActivity {
 			public void onClick(View arg0) {
 				if(fireLock())return;
 				maintain();
-				AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "MaintainFiles", null);
+				AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "MaintainFiles");
+				Util.fireSelectEvent(mFirebaseAnalytics, logTag, Util.BUTTON_CLICK, "MAINTAIN_FILES_BUTTON_CLICK");
 			}});
 
 		btnManageStorage.setOnClickListener(new View.OnClickListener (){
@@ -252,7 +265,8 @@ public class SpeechMenuActivity extends AppCompatActivity {
 				final Intent storageManage = new Intent(SpeechMenuActivity.this, StorageManageActivity.class);
 				startActivity(storageManage);
 				buttonUpdater.cancel();
-				AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "ManageStorage", null);
+				AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "ManageStorage");
+				Util.fireSelectEvent(mFirebaseAnalytics, logTag, Util.BUTTON_CLICK, "MANAGE_STORAGE_BUTTON_CLICK");
 			}});
 
 	 }
@@ -284,6 +298,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 		if(resource == null || resource.length<=0){
 			Log.e(getClass().getName(),"Start SpeechMenuActivity with download command, but no media index extras, skip download.");
 			AnalyticsApplication.sendException("Start SpeechMenuActivity with download command, but no media index extras, skip download.", new Exception(), true);
+			Util.fireException("Start SpeechMenuActivity with download command, but no media index extras, skip download.", new Exception());
 			return;
 		}
 		downloadSrc(resource);
@@ -346,7 +361,8 @@ public class SpeechMenuActivity extends AppCompatActivity {
 			Intent playWindow = new Intent();
 			playWindow.putExtra("reloadLastState", true);
 			setResult(Activity.RESULT_OK, playWindow);
-			AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "ReloadLastState", null);
+			AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "ReloadLastState");
+			Util.fireSelectEvent(mFirebaseAnalytics, logTag, Util.BUTTON_CLICK, "RELOAD_LAST_STATE");
 			finish();
 		}
 		return true;
@@ -524,12 +540,23 @@ public class SpeechMenuActivity extends AppCompatActivity {
 	@SuppressLint("NewApi")
 	private void showThreadsSelectDialog() {
 		View selecter = null;
+		View layout=null;
 
 		if (Build.VERSION.SDK_INT >= 11) {
-			NumberPicker v = new NumberPicker(this);
+			LayoutInflater factory = (LayoutInflater) getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
+			layout = factory.inflate(R.layout.thread_num_picker, null);
+
+			NumberPicker v = (NumberPicker)layout.findViewById(R.id.numPicker);
+
+//			NumberPicker v = new NumberPicker(this);
 			v.setMinValue(1);
 			v.setMaxValue(4);
 			v.setValue(4);
+//			LinearLayoutCompat.LayoutParams layoutParam =new LinearLayoutCompat.LayoutParams(
+//					LinearLayoutCompat.LayoutParams.WRAP_CONTENT,
+//					LinearLayoutCompat.LayoutParams.WRAP_CONTENT,
+//					Gravity.CENTER);
+//			v.setLayoutParams(layoutParam);
 			selecter = v;
 		} else {
 			EditText v = new EditText(this);
@@ -541,8 +568,13 @@ public class SpeechMenuActivity extends AppCompatActivity {
 		final View v = selecter;
 
 		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		builder.setView(selecter);
-		builder.setTitle("請選擇同時下載連線數");
+		builder.setTitle("請選擇同時下載連線數(越多越快，網路越壅塞)：");
+		if (Build.VERSION.SDK_INT >= 11)builder.setView(layout);
+		else {
+			builder.setView(selecter);
+
+		}
+
 		// builder.setMessage("下載線程數高則速度較快");
 		builder.setPositiveButton(getString(R.string.dlgOk), new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int id) {
@@ -657,7 +689,8 @@ public class SpeechMenuActivity extends AppCompatActivity {
 							synchronized(btnDownloadAll){
 								if(fireLock())return;
 								downloadAllSrc();
-								AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "DownloadAll", null);
+								AnalyticsApplication.sendEvent("ui_action", "SpeechMenuActivity", "DownloadAll");
+								Util.fireSelectEvent(mFirebaseAnalytics, logTag, Util.BUTTON_CLICK, "DOWNLOAD_ALL_BUTTON_CLICK");
 							}
 						}});
 				}
@@ -939,7 +972,8 @@ public class SpeechMenuActivity extends AppCompatActivity {
 				}catch(NullPointerException npe){
 					Log.d(getClass().getName(),"The storage media has not usable, skip.");
 					Util.showErrorPopupWindow(SpeechMenuActivity.this, "儲存空間不足或無法使用儲存裝置，請檢查您的儲存裝置是否正常，或磁碟已被電腦連線所獨佔！");
-					AnalyticsApplication.sendException("There is no storage usable.", npe, true);
+					AnalyticsApplication.sendException("There is no storage available.", npe, true);
+					Util.fireException("There is no storage available.", npe);
 					unlockScreen();
 					return;
 				}
@@ -980,6 +1014,7 @@ public class SpeechMenuActivity extends AppCompatActivity {
 							dialog.show();
 						}catch(Exception e){
 							AnalyticsApplication.sendException("Error happen while show download progress dialog.", e, true);
+							Util.fireException("Error happen while show download progress dialog.", e);
 						}
 					}});
 		}
@@ -1042,11 +1077,8 @@ public class SpeechMenuActivity extends AppCompatActivity {
 						"User canceled, download procedure skip!");
 				return false;
 			}
-			AnalyticsApplication.sendTimming("download", // Timing category
-					System.currentTimeMillis() - respWaitStartTime, // Timing
-					"wait resp time", // Timing name
-					null); // Timing label
-
+			AnalyticsApplication.sendTimming("download", System.currentTimeMillis() - respWaitStartTime, "wait resp time", null);
+			Util.fireTimming(SpeechMenuActivity.this, mFirebaseAnalytics, logTag, Util.SPEND_TIME, "INITIAL_TIME_OF_MAIN_ACTIVITY", (int)(System.currentTimeMillis() - respWaitStartTime));
 			HttpEntity httpEntity = response.getEntity();
 			InputStream is = null;
 			try {

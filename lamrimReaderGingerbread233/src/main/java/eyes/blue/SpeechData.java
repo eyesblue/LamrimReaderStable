@@ -6,8 +6,9 @@ public class SpeechData {
 		try{
 			result=name[i].substring(0, 7);
 		}catch(ArrayIndexOutOfBoundsException e){
-			AnalyticsApplication.sendException("Access index of name["+i+"]", e, true);
-			throw new ArrayIndexOutOfBoundsException();
+			AnalyticsApplication.sendException("SpeechData.getNameId(MediaIndex): Access index of name["+i+"], it should not happen.", e, true);
+			Util.fireException("SpeechData.getNameId(MediaIndex): Access index of name["+i+"], it should not happen.", e);
+			throw e;
 		}
 				
 		return result;

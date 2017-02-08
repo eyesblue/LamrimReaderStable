@@ -22,6 +22,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 /*
  * The class maintain the MediaPlayer, MediaPlayController and subtitle. There are many stage of MediaPlayer while play media, all stage maintain in the class, call functions of this function Instead of the functions of MediaPlayer,
  * Then you will get the better controller of MediaPlayer.
@@ -35,13 +37,14 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 	final public static int MP_PLAYING = 5;
 	final public static int MP_PAUSE = 6;
 	final public static int MP_COMPLETE = 7;
+	final public static String[] mpStateStr={"MP_IDLE", "MP_INITING", "MP_INITED", "MP_PREPARING", "MP_PREPARED", "MP_PLAYING", "MP_PAUSE", "MP_COMPLETE"};
 	int mpState = 0;
 	
 	SharedPreferences runtime = null;
 	AudioManager audioManager=null;
 	Activity activity=null;
 	RegionableSeekBar seekBar=null;
-	String logTag=null;
+	String logTag=getClass().getName();
 	FileSysManager fsm=null;
 	MediaPlayer mediaPlayer=null;
 	MediaControllerView mediaController=null;
@@ -60,16 +63,16 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 	int regionStartMs = -1;
 	int regionEndMs = -1;
 	ViewGroup anchorView=null;
+	FirebaseAnalytics mFirebaseAnalytics;
 
 //	VideoControllerView controller;
 	public MediaPlayerController(LamrimReaderActivity activity, View anchorView, FileSysManager fsm, final MediaPlayerControllerListener changedListener){
 		this(activity, anchorView);
 		setChangeListener(changedListener);
 		this.fsm=fsm;
+		mFirebaseAnalytics = FirebaseAnalytics.getInstance(activity);
 	}
-	public void setChangeListener(MediaPlayerControllerListener changedListener) {
-		this.changedListener=changedListener;
-	}
+
 	/*
 	 * Give The constructor the Activity and changedListener for build object. You can change the LamrimReaderActivity to your activity and modify the code of UI control to meet your logic. 
 	 * */
@@ -77,7 +80,8 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 		this.activity=activity;
 		this.anchorView=(ViewGroup) anchorView;
 		logTag=getClass().getName();
-		
+		mFirebaseAnalytics = FirebaseAnalytics.getInstance(activity);
+
 		mediaController = new MediaControllerView(activity);
 		mediaController.setMediaPlayer(MediaPlayerController.this);
 		mediaController.setAnchorView(this.anchorView);
@@ -88,7 +92,11 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 		// Use for static broadcast receiver - RemoteControlReceiver
 		mpController=this;
 	}
-	
+
+	public void setChangeListener(MediaPlayerControllerListener changedListener) {
+		this.changedListener=changedListener;
+	}
+
 	private void createMediaPlayer(){
 		synchronized(mediaPlayerKey){
 			/*
@@ -152,8 +160,10 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 				     * -38: No such operation, it will happen while user fire load another media event, the media player has reseted,
 				     *      but the MediaPlayer control panel still try to get information from the media player.
 				     * */
-				    if(what!=-38)
-						AnalyticsApplication.sendException("MediaPlayer_Error: mpState="+mpState+", what="+whatStr+"("+what+"), extra="+extraStr+"("+extra+")", new Exception(), true);
+				    if(what!=-38){
+						AnalyticsApplication.sendException("MediaPlayer_Error: mpState="+mpStateStr[mpState]+", what="+whatStr+"("+what+"), extra="+extraStr+"("+extra+")", new Exception(), true);
+						Util.fireException("MediaPlayer_Error: mpState="+mpStateStr[mpState]+", what="+whatStr+"("+what+"), extra="+extraStr+"("+extra+")", new Exception());
+					}
 					return false;
 				}
 			});
@@ -312,7 +322,8 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 				
 				changedListener.onPlayerError();
 				e.printStackTrace();
-				AnalyticsApplication.sendException("mpState="+mpState, e, true);
+				AnalyticsApplication.sendException("mpState="+mpStateStr[mpState], e, true);
+				Util.fireException("Media player error in start(), mpState="+mpStateStr[mpState]+".", e);
 			}
 		}
 	}
@@ -337,7 +348,8 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 			}catch(Exception e){
 				changedListener.onPlayerError();
 				e.printStackTrace();
-				AnalyticsApplication.sendException("mpState="+mpState, e, true);
+				AnalyticsApplication.sendException("mpState="+mpStateStr[mpState], e, true);
+				Util.fireException("Media player error in getCurrentPosition(), mpState="+mpStateStr[mpState]+".", e);
 			return 0;
 			}
 		}
@@ -354,7 +366,8 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 			}catch(Exception e){
 				changedListener.onPlayerError();
 				e.printStackTrace();
-				AnalyticsApplication.sendException("mpState="+mpState, e, true);
+				AnalyticsApplication.sendException("mpState="+mpStateStr[mpState], e, true);
+				Util.fireException("Media player error in getCurrentPosition(), mpState="+mpStateStr[mpState]+".", e);
 				return 0;
 			}
 		}
@@ -372,6 +385,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 		} catch (Exception e) {
 			e.printStackTrace();
 			AnalyticsApplication.sendException(e, false);
+			Util.fireException("Media player error in isPlaying(), mpState="+mpStateStr[mpState]+".", e);
 			return false;
 		}
 	}
@@ -426,7 +440,8 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 				return;
 			}
 			if(mpState == MP_INITING){
-				AnalyticsApplication.sendException("Reset media at loading file stage, skip reset, mpState="+mpState+", mediaPlayer="+mediaPlayer, new Exception(), true);
+				AnalyticsApplication.sendException("Detected reset media at loading file stage, skip reset, mpState="+mpStateStr[mpState]+", mediaPlayer="+mediaPlayer, new Exception(), true);
+				Util.fireException("Detected reset media at loading file stage, skip reset, mpState="+mpStateStr[mpState]+", mediaPlayer="+mediaPlayer, new Exception());
 				return;
 			}
 		}
@@ -447,6 +462,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 				e.printStackTrace();
 				changedListener.onPlayerError();
 				AnalyticsApplication.sendException("mpState="+mpState, e, true);
+				Util.fireException("Media player error in reset(), mpState="+mpStateStr[mpState]+".", e);
 			}
 		}
 		synchronized(playingIndexKey){
@@ -532,7 +548,8 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 			if(mpState != MP_IDLE)reset();
 			mpState=MP_INITING;
 			if(mediaPlayer==null){
-				AnalyticsApplication.sendException("MediaPlayerController.setDataSource(): The MediaPlayer become null, memory free = "+Util.getMemInfo(activity)+"M", new Exception(), false);
+				AnalyticsApplication.sendException("MediaPlayerController.setDataSource(): The MediaPlayer become null, memory free = "+Util.getMemInfo(activity)+"M", new NullPointerException(), false);
+				Util.fireException("Media player error in setDataSource(): The MediaPlayer become null, memory free = "+Util.getMemInfo(activity)+"M", new NullPointerException());
 				Util.showInfoPopupWindow(activity, anchorView, "多媒體播放器重建中");
 				createMediaPlayer();
 			}
@@ -550,20 +567,23 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 				}
 			}
 			catch(IllegalArgumentException iae){
-				AnalyticsApplication.sendException("SetDataSource in an invalid state, mpState="+mpState+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), iae, true);
+				AnalyticsApplication.sendException("SetDataSource in an invalid state, mpState="+mpStateStr[mpState]+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), iae, true);
+				Util.fireException("SetDataSource in an invalid state, mpState="+mpStateStr[mpState]+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), iae);
 				if(!setDataSrcByFD(context, speechFile)){
 					createMediaPlayer();
 					return;
 				}
 			}
 			catch(IOException ioe){
-				AnalyticsApplication.sendException("Can't setDataSource by normal way, mpState="+mpState+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), ioe, true);
+				AnalyticsApplication.sendException("Can't setDataSource by normal way, mpState="+mpStateStr[mpState]+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), ioe, true);
+				Util.fireException("Can't setDataSource by normal way, mpState="+mpStateStr[mpState]+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), ioe);
 				if(!setDataSrcByFD(context, speechFile)){
 					createMediaPlayer();
 					return;
 				}
 			}catch(Exception e){
-				AnalyticsApplication.sendException("Error happen while load media, mpState="+mpState+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), e, true);
+				AnalyticsApplication.sendException("Error happen in SetDataSource(), mpState="+mpStateStr[mpState]+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), e, true);
+				Util.fireException("Error happen in SetDataSource(), mpState="+mpStateStr[mpState]+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), e);
 				Util.showErrorPopupWindow(activity, anchorView, "讀取音檔失敗，請重新嘗試。");
 				createMediaPlayer();
 				return;
@@ -591,7 +611,8 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 		if(!hasErr)return true;
 //		String errStr="無法正常讀取音檔，請檢查音檔是否損毀，請試著重新下載此音檔，若確定非上述問題，請回報開發者您的機型無法正常播放音檔。";
 //		Util.showErrorPopupWindow(activity, anchorView, errStr);
-		AnalyticsApplication.sendException("Can't setDataSource by FileDescriptor way, mpState="+mpState+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), e, true);
+		AnalyticsApplication.sendException("Can't setDataSource by FileDescriptor way, mpState="+mpStateStr[mpState]+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), e, true);
+		Util.fireException("Can't setDataSource by FileDescriptor way, mpState="+mpStateStr[mpState]+", mediaPlayer="+mediaPlayer+", context="+context+", speechFile="+speechFile+", is speech file exist="+((speechFile!=null)?speechFile.exists():"speechFile is null.")+", Uri="+Uri.fromFile(speechFile).toString(), e);
 		return false;
 	}
 
@@ -1027,6 +1048,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 					//release();
 				} catch (IllegalStateException e) {
 					AnalyticsApplication.sendException("AudioFocusChangeListener.AUDIOFOCUS_LOSS", e, false);
+					Util.fireException("Audio Focus Exception happen: AudioFocusChangeListener.AUDIOFOCUS_LOSS.", e);
 					e.printStackTrace();
 				}
 				// mpController.stopSubtitleTimer();
@@ -1041,6 +1063,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 					pause();
 				} catch (IllegalStateException e) {
 					AnalyticsApplication.sendException("AudioFocusChangeListener.AUDIOFOCUS_LOSS_TRANSIENT", e, false);
+					Util.fireException("Audio Focus Exception happen: AudioFocusChangeListener.AUDIOFOCUS_LOSS_TRANSIENT.", e);
 					e.printStackTrace();
 				}
 				// mpController.stopSubtitleTimer();
@@ -1057,6 +1080,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 				} catch (IllegalStateException e) {
 					e.printStackTrace();
 					AnalyticsApplication.sendException("AudioFocusChangeListener.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK", e, false);
+					Util.fireException("Audio Focus Exception happen: AudioFocusChangeListener.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK.", e);
 				}
 				// mpController.stopSubtitleTimer();
 				break;
@@ -1078,7 +1102,8 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 	        KeyEvent Xevent = (KeyEvent)intent.getParcelableExtra(Intent.EXTRA_KEY_EVENT);
 	        
 	        if(event == null || Xevent == null){
-					AnalyticsApplication.sendException("MediaPlayerRemoteController get key event but event is null.", new NullPointerException(), true);
+				AnalyticsApplication.sendException("MediaPlayerRemoteController get key event but event is null.", new NullPointerException(), true);
+				Util.fireException("MediaPlayerRemoteController get key event but event is null.", new NullPointerException());
 	        	return;
 	        }
 	        
@@ -1228,8 +1253,7 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 						 * position.
 						 */
 						if (mpState == MP_COMPLETE) {
-							Log.d(logTag,
-									"SubtitleTimer: the mpState is MP_COMPLETE, terminate subtitleTimer");
+							Log.d(logTag, "SubtitleTimer: the mpState is MP_COMPLETE, terminate subtitleTimer");
 							return;
 						}
 						// Log.d(logTag,"SubtitleTimer: the mpState is not MP_COMPLETE.");
@@ -1261,6 +1285,8 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 					// The last of subtitle has reached.
 					// if(playArrayIndex==se.length-1)return null;
 
+					LamrimReaderActivity.setInfoText(playPoint);
+
 					if (isCancelled()) {
 						Log.d(logTag, "Exit nomaly.");
 						return;
@@ -1270,24 +1296,18 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 
 				} catch (IllegalStateException e) {
 					e.printStackTrace();
-					AnalyticsApplication.sendException("SubtitleTimer_EXCEPTION: mpState="
-							+ mpState + ", playPoint=" + playPoint
-							+ ", playArrayIndex=" + playArrayIndex
-							+ ", regionEndMs=" + regionEndMs, e, true);
+					AnalyticsApplication.sendException("SubtitleTimer_EXCEPTION: mpState=" + mpStateStr[mpState] + ", playPoint=" + playPoint + ", playArrayIndex=" + playArrayIndex + ", regionEndMs=" + regionEndMs, e, true);
+					Util.fireException("SubtitleTimer_EXCEPTION: mpState=" + mpStateStr[mpState] + ", playPoint=" + playPoint + ", playArrayIndex=" + playArrayIndex + ", regionEndMs=" + regionEndMs, e);
 					return;
 				} catch (InterruptedException e) {
 					// e.printStackTrace();
-					AnalyticsApplication.sendException("SubtitleTimer_EXCEPTION: mpState="
-							+ mpState + ", playPoint=" + playPoint
-							+ ", playArrayIndex=" + playArrayIndex
-							+ ", regionEndMs=" + regionEndMs, e, true);
+					AnalyticsApplication.sendException("SubtitleTimer_EXCEPTION: mpState=" + mpStateStr[mpState] + ", playPoint=" + playPoint + ", playArrayIndex=" + playArrayIndex + ", regionEndMs=" + regionEndMs, e, true);
+					Util.fireException("SubtitleTimer_EXCEPTION: mpState=" + mpStateStr[mpState] + ", playPoint=" + playPoint + ", playArrayIndex=" + playArrayIndex + ", regionEndMs=" + regionEndMs, e);
 					return;
 				} catch (Exception e) {
 					// e.printStackTrace();
-					AnalyticsApplication.sendException("SubtitleTimer_EXCEPTION: mpState="
-							+ mpState + ", playPoint=" + playPoint
-							+ ", playArrayIndex=" + playArrayIndex
-							+ ", regionEndMs=" + regionEndMs, e, true);
+					AnalyticsApplication.sendException("SubtitleTimer_EXCEPTION: mpState=" + mpStateStr[mpState] + ", playPoint=" + playPoint + ", playArrayIndex=" + playArrayIndex + ", regionEndMs=" + regionEndMs, e, true);
+					Util.fireException("SubtitleTimer_EXCEPTION: mpState=" + mpStateStr[mpState] + ", playPoint=" + playPoint + ", playArrayIndex=" + playArrayIndex + ", regionEndMs=" + regionEndMs, e);
 					return;
 				}
 			}

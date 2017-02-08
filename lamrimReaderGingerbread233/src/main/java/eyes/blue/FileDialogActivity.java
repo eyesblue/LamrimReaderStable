@@ -111,8 +111,8 @@ public class FileDialogActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		setResult(RESULT_CANCELED, getIntent());
 
-		AnalyticsApplication application = (AnalyticsApplication) getApplication();
-		application.getDefaultTracker();
+//		AnalyticsApplication application = (AnalyticsApplication) getApplication();
+//		application.getDefaultTracker();
 
 		setContentView(R.layout.activity_file_dialog);
 		myPath = (TextView) findViewById(R.id.path);

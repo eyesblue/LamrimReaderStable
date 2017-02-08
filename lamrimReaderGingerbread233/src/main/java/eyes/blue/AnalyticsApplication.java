@@ -92,41 +92,37 @@ public class AnalyticsApplication extends Application{
 	//public static void activityStop(Activity actvity_){GoogleAnalytics.getInstance(actvity_).reportActivityStop(actvity_);}
 
 	public static void sendEvent(String category, String action, String label){
-		sendEvent(category,  action,  label,null);
+		if(mTracker==null){
+			Log.d("LamrimReader","The TRACKER of GOOGLE ANALYTICS is NULL !!!!");
+			return;
+		}
+		mTracker.send(new HitBuilders.EventBuilder()
+				.setCategory(category)
+				.setAction(action)
+				.setLabel(label)
+				.build());
 	}
-	public static void sendEvent(String category, String action, String label, Long value){
+
+/*	public static void sendEvent(String category, String action, String label, long value){
 		if(mTracker==null){
 			Log.d("LamrimReader","The TRACKER of GOOGLE ANALYTICS is NULL !!!!");
 			return;
 		}
 
-		if(value!=null)
-			mTracker.send(new HitBuilders.EventBuilder()
+		mTracker.send(new HitBuilders.EventBuilder()
 				.setCategory(category)
 				.setAction(action)
 				.setLabel(label)
 				.setValue(value)
 				.build());
-		else
-			mTracker.send(new HitBuilders.EventBuilder()
-				.setCategory(category)
-				.setAction(action)
-				.setLabel(label)
-				.build());
-
-		/*easyTracker.send(MapBuilder
-						.createEvent(category,     // Event category (required)
-								action,  // Event action (required)
-								label,   // Event label
-								value)            // Event value
-						.build()
-		);
-*/
 	}
-
+*/
 
 	public static void sendEvent(String category, String action, String label, int value){
-		if(mTracker==null)return;
+		if(mTracker==null){
+			Log.d("LamrimReader","The TRACKER of GOOGLE ANALYTICS is NULL !!!!");
+			return;
+		}
 
 		mTracker.send(new HitBuilders.EventBuilder()
 				.setCategory(category)

@@ -1,45 +1,47 @@
 {
   "project_info": {
-    "project_id": "lamrimreader",
-    "project_number": "567223067171",
-    "name": "LamrimReader"
+    "project_number": "469967435870",
+    "firebase_url": "https://lamrimreader-54d3e.firebaseio.com",
+    "project_id": "lamrimreader-54d3e",
+    "storage_bucket": "lamrimreader-54d3e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:567223067171:android:e6d09eeabb12f597",
-        "client_id": "android:eyes.blue",
-        "client_type": 1,
+        "mobilesdk_app_id": "1:469967435870:android:e6d09eeabb12f597",
         "android_client_info": {
           "package_name": "eyes.blue"
         }
       },
-      "oauth_client": [],
-      "api_key": [],
+      "oauth_client": [
+        {
+          "client_id": "469967435870-hmkgi8kub76ang39vmdle5uj44dpqgo3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3MyxSOU-j3fNi6-YBMQwWib4BXdfLiFg"
+        }
+      ],
       "services": {
         "analytics_service": {
-          "status": 2,
-          "analytics_property": {
-            "tracking_id": "UA-29343996-2"
-          }
-        },
-        "cloud_messaging_service": {
-          "status": 1,
-          "apns_config": []
+          "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "google_signin_service": {
-          "status": 1
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "469967435870-hmkgi8kub76ang39vmdle5uj44dpqgo3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
-          "status": 1
+          "status": 2
         }
       }
     }
   ],
-  "client_info": [],
-  "ARTIFACT_VERSION": "1"
+  "configuration_version": "1"
 }
