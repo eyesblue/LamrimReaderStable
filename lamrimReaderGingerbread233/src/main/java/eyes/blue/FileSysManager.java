@@ -180,7 +180,8 @@ public class FileSysManager {
         	// Check the directory by user specify.
         	boolean useThirdDir=runtime.getBoolean(context.getString(R.string.isUseThirdDir), false);
         	String userSpecDir=runtime.getString(context.getString(R.string.userSpecifySpeechDir),null);
-  
+
+			// ========== If file exist and readable then return the exist file ====================
         	File specFile=null, extF=null, intF=null;
         	if(useThirdDir && userSpecDir!=null){
         		specFile=new File(userSpecDir+File.separator+SpeechData.name[i]);
@@ -202,7 +203,7 @@ public class FileSysManager {
 //    		Log.d(logTag,"Check exist: "+intF.getAbsolutePath());
     		if(intF.exists())return intF;
 
-    		
+    		// ======== The file is not exist, the caller should ask for download and save locate ============
     		// Test is user specify locate writable.
     		if(useThirdDir){
     			File dir=new File(userSpecDir);

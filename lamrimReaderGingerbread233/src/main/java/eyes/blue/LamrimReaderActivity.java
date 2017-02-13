@@ -460,6 +460,38 @@ public class LamrimReaderActivity extends AppCompatActivity {
             }
         });
 
+        final ImageButton playBgm = (ImageButton) actionBarControlPanel.findViewById(R.id.playBgm);
+        playBgm.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Util.fireSelectEvent(mFirebaseAnalytics,logTag,Util.BUTTON_CLICK,"PLAY_SPEECH_BACKGROUND");
+                AnalyticsApplication.sendEvent("ui_action", logTag, "PLAY_SPEECH_BACKGROUND");
+
+                int position=-1;
+                if(mediaIndex<0 || mpController == null || !mpController.isPlayerReady() || (position=mpController.getCurrentPosition())<0){
+                    BaseDialogs.showSimpleErrorDialog(LamrimReaderActivity.this, "播放器狀態不明，無法判斷目前播放的音檔，請重新載入音檔。");
+                    return;
+                }
+
+                BaseDialogs.showDialog(LamrimReaderActivity.this, "背景模式", "即將關閉廣論App並切換到背景播放模式，在此模式下您可以關閉銀幕聆聽，您確定嗎？\n\n目前播放位置："+SpeechData.getNameId(mediaIndex)+" - "+Util.getMsToHMS(position,"分","秒",false), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        saveRuntime();
+
+                        Intent intent = new Intent();
+                        intent.setAction(android.content.Intent.ACTION_VIEW);
+                        File file = fsm.getLocalMediaFile(mediaIndex);
+                        intent.setDataAndType(Uri.fromFile(file), "audio/*");
+                        startActivity(intent);
+
+                        if (wakeLock.isHeld()) wakeLock.release();
+                        finish();
+                    }
+                },null,true);
+
+            }
+        });
+
         final AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
         int maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
         int curVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
@@ -470,8 +502,8 @@ public class LamrimReaderActivity extends AppCompatActivity {
             @Override
             public void onStopTrackingTouch(SeekBar arg0) {
                 volumeController.setSelected(false);
-                AnalyticsApplication.sendEvent("ui_action", logTag, "volume_control_arg1");
-                Util.fireSelectEvent(mFirebaseAnalytics, getClass().getName(), Util.BUTTON_CLICK, "VOLUME_CONTROL");
+                AnalyticsApplication.sendEvent("ui_action", logTag, "volume_control_with_SeekBar");
+                Util.fireSelectEvent(mFirebaseAnalytics, getClass().getName(), Util.BUTTON_CLICK, "VOLUME_CONTROL_WITH_SEEKBAR");
             }
 
             @Override
@@ -597,23 +629,14 @@ public class LamrimReaderActivity extends AppCompatActivity {
                             null)
                             - subtitleView.getMeasuredHeight()
                             + subtitleView.getLineHeight();
-                    Log.d(logTag,
-                            "Org Y="
-                                    + y
-                                    + "layout.height="
-                                    + subtitleView.getLayoutParams().height
-                                    + ", subtitle.height="
-                                    + subtitleView.getHeight()
-                                    + ", measureHeight="
-                                    + subtitleView.getMeasuredHeight());
+                    Log.d(logTag, "Org Y=" + y + "layout.height=" + subtitleView.getLayoutParams().height + ", subtitle.height=" + subtitleView.getHeight() + ", measureHeight=" + subtitleView.getMeasuredHeight());
                     if (y < 0)
                         y = 0;
                     if (y > bottom)
                         y = bottom;
                     // if(subtitleView.getLayoutParams().height-subtitleView.getMeasuredHeight()-y<0)y=subtitleView.getLayoutParams().height-subtitleView.getMeasuredHeight();
                     subtitleView.scrollTo(subtitleView.getScrollX(), y);
-                    Log.d(logTag, "Scroll subtitle view to "
-                            + subtitleView.getScrollX() + ", " + y);
+                    Log.d(logTag, "Scroll subtitle view to " + subtitleView.getScrollX() + ", " + y);
                 }
                 return true;
             }
@@ -656,6 +679,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 runtimeEditor.putInt(getString(R.string.subtitleFontSizeKey), (int) subtitleView.getTextSize());
                 runtimeEditor.commit();
                 Util.fireSelectEvent(mFirebaseAnalytics, logTag, Util.BUTTON_CLICK, "FINGER_SCALE_ON_SUBTITLE_VIEW");
+                AnalyticsApplication.sendEvent("ui_action", logTag, "Finger scale on subtitle view");
             }
         });
 
@@ -832,6 +856,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
     }
 
     private void shareSegment(String title, int speechStartIndex, int speechStartMs, int speechEndIndex, int speechEndMs, int theoryPageStart, int theoryStartLine, int theoryPageEnd, int theoryEndLine) {
+        boolean isOutputSecondLink=false;
         String firebase="https://xe74n.app.goo.gl/?apn=eyes.blue&afl=https://lamrimreader-cmd.eyes-blue.com/play&link=";
         String lamrimCmdUri = getString(R.string.lamrimCmdUri) + "play?";
         String queryStr = "mode=region";
@@ -841,7 +866,6 @@ public class LamrimReaderActivity extends AppCompatActivity {
         String theoryEnd = (theoryPageEnd + 1) + ":" + (theoryEndLine + 1);
 
         queryStr += "&speechStart=" + speechStart + "&speechEnd=" + speechEnd + "&theoryStart=" + theoryStart + "&theoryEnd=" + theoryEnd;
-
             try {
                 if (title != null) queryStr += "&title=" + URLEncoder.encode(title, "utf8");
                 firebase+=URLEncoder.encode(lamrimCmdUri + queryStr, "utf8");
@@ -852,11 +876,15 @@ public class LamrimReaderActivity extends AppCompatActivity {
         Util.fireSelectEvent(mFirebaseAnalytics, logTag, Util.BUTTON_CLICK, "SHARE_REGION");
 
         String msgTitle=((title.isEmpty())?"":title+" - ")+"廣論App專用連結(點擊以廣論App播放內容)：\n";
+        String secTitle="若上面的連結無法啟動，請點下面的連結啟動：\n";
+
+        String outputStr=msgTitle + firebase;
+        if(isOutputSecondLink)outputStr+="\n"+secTitle + lamrimCmdUri + queryStr;
 
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
         //sendIntent.putExtra(Intent.EXTRA_TEXT, lamrimCmdUri + queryStr);
-        sendIntent.putExtra(Intent.EXTRA_TEXT, msgTitle + firebase);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, outputStr);
         sendIntent.setType("text/plain");
         startActivity(Intent.createChooser(sendIntent, "區段分享"));
     }
@@ -1041,113 +1069,6 @@ public class LamrimReaderActivity extends AppCompatActivity {
                 }    // Don't force close if problem here.
             }
         });
-	    /*
-	    shareOpt.setOnClickListener(new View.OnClickListener(){
-			@Override
-			public void onClick(View view) {
-				if(Math.abs(regionSet[0]-regionSet[2])>1){
-					BaseDialogs.showErrorDialog(LamrimReaderActivity.this, "只能標記相鄰的音檔");
-					return;
-				}
-
-				swapRegionSet();
-				LayoutInflater factory = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			    final View v = factory.inflate(R.layout.save_region_dialog_for_share, null);
-
-			    final TextView startTime=(TextView) v.findViewById(R.id.startTime);
-			    final TextView endTime=(TextView) v.findViewById(R.id.endTime);
-			    final String startHMS=SpeechData.getSubtitleName(regionSet[0])+"  "+Util.getMsToHMS(regionSet[1], ":", "", true);
-				final String endHMS=SpeechData.getSubtitleName(regionSet[2])+"  "+Util.getMsToHMS(regionSet[3], ":", "", true);
-
-				if(theoryHighlightRegion[0] !=0 && theoryHighlightRegion[1] !=0 && theoryHighlightRegion[2] !=0 && theoryHighlightRegion[3] !=0){
-					((EditText)v.findViewById(R.id.startPage)).setText(""+(theoryHighlightRegion[0]+1));
-					((EditText)v.findViewById(R.id.startLine)).setText(""+(theoryHighlightRegion[1]+1));
-					((EditText)v.findViewById(R.id.endPage)).setText(""+(theoryHighlightRegion[2]+1));
-					((EditText)v.findViewById(R.id.endLine)).setText(""+(theoryHighlightRegion[3]+1));
-				}
-
-			    runOnUiThread(new Runnable(){
-					@Override
-					public void run() {
-						startTime.setText(startHMS);
-						endTime.setText(endHMS);
-				}});
-
-			    final AlertDialog.Builder builder = new AlertDialog.Builder(LamrimReaderActivity.this);
-			    builder.setView(v);
-			    builder.setTitle("分享區段");
-			    builder.setPositiveButton(getString(R.string.dlgOk), new DialogInterface.OnClickListener(){
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						String inPageStart=((TextView)v.findViewById(R.id.startPage)).getText().toString();
-						String inPageEnd=((TextView)v.findViewById(R.id.endPage)).getText().toString();
-						String inLineStart=((TextView)v.findViewById(R.id.startLine)).getText().toString();
-						String inLineEnd=((TextView)v.findViewById(R.id.endLine)).getText().toString();
-
-						// Check Theory page, start line and end line.
-						int theoryPageStart=-1, theoryPageEnd=-1, inStartLine=-1, inEndLine=-1;
-						try{
-							theoryPageStart=Integer.parseInt(inPageStart.trim())-1;
-							theoryPageEnd=Integer.parseInt(inPageEnd.trim())-1;
-							inStartLine=Integer.parseInt(inLineStart.trim())-1;
-							inEndLine=Integer.parseInt(inLineEnd.trim())-1;
-						}catch(NumberFormatException nfe){
-							BaseDialogs.showErrorDialog(LamrimReaderActivity.this, getString(R.string.dlgNumberFormatError));
-							try{
-								dialog.dismiss();
-							}catch(Exception e){e.printStackTrace();}	// Don't force close if problem here.
-							return;
-						}
-
-						if(theoryPageStart< 0 || theoryPageEnd< 0 || inStartLine<0 || inEndLine <0){
-							BaseDialogs.showErrorDialog(LamrimReaderActivity.this, getString(R.string.dlgPageNumOverPageCount));
-							try{
-								dialog.dismiss();
-							}catch(Exception e){e.printStackTrace();}	// Don't force close if problem here.
-							return;
-						}
-
-						if(theoryPageStart>=TheoryData.content.length ||  theoryPageEnd >= TheoryData.content.length){
-							BaseDialogs.showErrorDialog(LamrimReaderActivity.this, getString(R.string.dlgPageNumOverPageCount));
-							try{
-								dialog.dismiss();
-							}catch(Exception e){e.printStackTrace();}	// Don't force close if problem here.
-							return;
-						}
-
-						// Check if the same page, but end line greater then start line
-						if(theoryPageEnd < theoryPageStart || (theoryPageEnd == theoryPageStart && inEndLine < inStartLine)){
-							Log.d(getClass().getName(),"User input the same page, but line number end > start.");
-							BaseDialogs.showErrorDialog(LamrimReaderActivity.this, getString(R.string.dlgEndLineGreaterThenStart));
-							try{
-								dialog.dismiss();
-							}catch(Exception e){e.printStackTrace();}	// Don't force close if problem here.
-							return;
-						}
-
-						// Check if the line count over the count of page.
-						if(inStartLine<0 || inEndLine >= TheoryData.content[theoryPageEnd].length()){
-							BaseDialogs.showErrorDialog(LamrimReaderActivity.this, getString(R.string.dlgLineNumOverPageCount));
-							try{
-								dialog.dismiss();
-							}catch(Exception e){e.printStackTrace();}	// Don't force close if problem here.
-							return;
-						}
-						dialog.dismiss();
-						Log.d(getClass().getName(),"Share region: speechStartIndex="+regionSet[0]+", speechTimeMs="+regionSet[1]+", speechEndIndex="+regionSet[2]+", speechTimeMs="+regionSet[3]+", TheoryStart="+theoryPageStart+":"+inStartLine+", theoryEnd="+theoryPageEnd+":"+inEndLine);
-						shareSegment(null, regionSet[0], regionSet[1], regionSet[2], regionSet[3], theoryPageStart, inStartLine, theoryPageEnd, inEndLine);
-					}});
-
-			    builder.setNegativeButton(getString(R.string.cancel), new DialogInterface.OnClickListener(){
-					@Override
-					public void onClick(DialogInterface dialog, int which) {
-						try{
-							dialog.cancel();
-						}catch(Exception e){e.printStackTrace();}	// Don't force close if problem here.
-					}});
-			    builder.show();
-			}});
-	    */
 
         setRegionOptDialog.setView(v);
         setRegionOptDialog.setTitle("將目前播放位置設定為");
@@ -2367,6 +2288,7 @@ public class LamrimReaderActivity extends AppCompatActivity {
             final long startLoadTime=System.currentTimeMillis();
             boolean noLeak=true;
             for (int i = 0; i < 320; i++) {
+                // 若第i個字幕已經讀取到subtitleSearch物件中則不重複讀取
                 if (subtitleSearch[i] != null){
                     pd.incrementProgressBy(1);
                     noLeak=false;
@@ -2734,89 +2656,6 @@ public class LamrimReaderActivity extends AppCompatActivity {
             Util.fireSelectEvent(mFirebaseAnalytics, logTag, Util.BUTTON_CLICK, "SEARCH_LAMRIM");
         }
     }
-
-    ;
-
-/*	class SearchListener implements View.OnClickListener{
-		int index[]={-1,-1,-1};
-		EditText searchInput=null;
-		ImageButton searchBtn=null;
-
-		public void setSearchListener(EditText searchInput, ImageButton searchBtn){
-			this.searchInput=searchInput;
-			this.searchBtn=searchBtn;
-		}
-
-		@Override
-		public void onClick(View v) {
-			searchBtn.setEnabled(false);
-			if(searchInput.getText().toString().length() == 0){
-				Log.d(getClass().getName(),"User input length = 0, skip search");
-				searchBtn.setEnabled(true);
-				return;
-			}
-
-			final String str=searchInput.getText().toString();
-			String lastSearchInView=bookView.getHighlightWord();
-
-
-			if(lastSearchInView == null || !lastSearchInView.equals(str)){
-				index[0]=bookView.getFirstVisiblePosition();index[1]=0;index[2]=0;
-			}
-
-			try{
-				int result[] = bookView.searchNext(index[0], index[1], index[2], str);
-
-				if(result==null){
-					Log.d(getClass().getName(),"Not found.");
-					searchBtn.setEnabled(true);
-					return;
-				}
-				else{
-					index=result;
-					bookView.setViewToPosition(index[0],index[1]);
-					bookView.setHighlightWord(index[0], index[1], index[2],str.length());
-					index[2]++;
-
-					Log.d(getClass().getName(),"Change start word from "+index[2]);
-				}
-			}catch(Exception e){
-				e.printStackTrace();
-				AnalyticsApplication.sendException("Error happen while SEARCH "+str, e, true);
-			}
-			searchBtn.setEnabled(true);
-		}
-	};
-	*/
-/*	private void showSaveRegionDialog() {
-		int regionStartMs = mpController.getRegionStartPosition();
-		int regionEndMs = mpController.getRegionEndPosition();
-		final SubtitleElement startSubtitle = mpController.getSubtitle(regionStartMs);
-		final SubtitleElement endSubtitle = mpController.getSubtitle(regionEndMs - 1);
-		String info = startSubtitle.text + " ~ " + endSubtitle.text;
-
-		Log.d(logTag, "Check size of region list before: " + RegionRecord.records.size());
-		Runnable callBack = new Runnable() {
-			@Override
-			public void run() {
-				runOnUiThread(new Runnable() {
-					@Override
-					public void run() {
-						regionFakeList.add(fakeSample);
-						if (regionRecordAdapter != null)
-							Log.d(logTag, "Warring: the regionRecordAdapter = null !!!");
-						else
-							regionRecordAdapter.notifyDataSetChanged();
-						Log.d(logTag, "Check size of region list after: " + RegionRecord.records.size());
-					}
-				});
-			}
-		};
-
-		BaseDialogs.showEditRegionDialog(LamrimReaderActivity.this, mediaIndex,
-				regionStartMs, regionEndMs, null, info, -1, callBack);
-		AnalyticsApplication.sendEvent("ui_action", "show_dialog", "save_region", null);
-	}*/
 
     private void showRecordListPopupMenu() {
         LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);

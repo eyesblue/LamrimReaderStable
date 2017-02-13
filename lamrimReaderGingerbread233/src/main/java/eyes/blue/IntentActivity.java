@@ -94,14 +94,20 @@ public class IntentActivity  extends FragmentActivity {
 		Log.d(getClass().getName(), "LastPathSegment: " + intentPathUri.getLastPathSegment());
 		Log.d(getClass().getName(), "Path: " + intentPathUri.getPath());
 
-		if(intentPathUri.getEncodedQuery() == null) parseRest(intentPathUri);
+		if(intentPathUri.getHost().equalsIgnoreCase(getString(R.string.firebase_deeplink_host))) {
+			String link = intentPathUri.getQueryParameter("link");
+			Log.d(logTag,"Firebase link: "+link);
+			parseParam(Uri.parse(link));
+		}
+		else if(intentPathUri.getEncodedQuery() == null) parseRest(intentPathUri);
 		else parseParam(intentPathUri);
 	}
+
 
 	private void parseParam(Uri intentPathUri){
 		List<String> list = intentPathUri.getPathSegments();
 		// We just support play command now.
-		if (!list.get(0).equalsIgnoreCase("play")) {paramArgError(-1, intentPathUri.getEncodedSchemeSpecificPart());return;}
+		if (list.size()==0 || !list.get(0).equalsIgnoreCase("play")) {paramArgError(-1, "路徑[play]不存在: "+intentPathUri.getScheme()+":"+intentPathUri.getEncodedSchemeSpecificPart());return;}
 		// We just support region play now.
 		String mode = intentPathUri.getQueryParameter("mode");
 		if (mode == null || !mode.equals("region")) {paramArgError(0, list.get(0));return;}	// We just support region play mode now.
@@ -160,7 +166,7 @@ public class IntentActivity  extends FragmentActivity {
 
 	private int[] getTheoryData(String str){
 		if(str==null)return null;
-		if(!str.matches("\\d+:\\d+"))return null;
+		if(!str.matches("\\d{1,3}:\\d{1,2}"))return null;
 		String[] split=str.split(":");
 		if(split[0].length()>3 || split[1].length() > 3)return null;
 		int[] result=new int[2];
@@ -173,13 +179,12 @@ public class IntentActivity  extends FragmentActivity {
 	
 	private int[] getSpeechData(String str){
 		if(str==null)return null;
-		if(!str.matches("\\d+[AaBb]:\\d+:\\d+(\\.\\d+)?"))return null;
+		if(!str.matches("\\d{1,3}[AaBb]:\\d{1,2}:\\d{1,2}(\\.\\d{1,3})?"))return null;
 		String split[]=str.split(":");
 		if(split.length!=3)return null;
 		if(split[0].length()>4 || split[1].length()>2 || split[2].length()>6)return null;
 		int speechData[]=GlRecord.getSpeechStrToInt(str);
-		if(speechData[0]<0 || speechData[0]>=SpeechData.name.length)return null;
-//		if(speechData[1] < 0 || speechData[1]>SpeechData.length[speechData[0]])return null;
+		if(speechData==null || speechData[0]<0 || speechData[0]>=SpeechData.name.length)return null;
 		return speechData;
 	}
 

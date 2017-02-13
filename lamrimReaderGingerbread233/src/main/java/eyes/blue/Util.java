@@ -690,5 +690,54 @@ public class Util {
 		FirebaseCrash.report(e);
 	}
 
+	public static void multiThreadExec(Runnable[] tasks){
+		Executer[] executer=new Executer[tasks.length];
+		Log.d("Util","================ There are "+tasks.length+" tasks.");
+		for(int i=0;i<tasks.length;i++)
+			executer[i] = new Executer(tasks[i], executer, i);
+
+		for(Executer exe: executer)
+			exe.start();
+
+		try {
+			synchronized (executer) {
+				executer.wait();
+			}
+		}catch(InterruptedException ie){
+			Log.e("Util","The caller thread has been interrupt!");
+		}
+	}
+
+	public static class Executer extends Thread{
+		public Executer[] tasks;
+		public Runnable runnable;
+		public int index;
+		public long spendTime;
+
+		public Executer(Runnable runnable, Executer[] tasks, int index){
+//			super(runnable);
+			this.runnable=runnable;
+			this.tasks=tasks;
+			this.index=index;
+		}
+		@Override
+		public void run(){
+			long startTime=System.currentTimeMillis();
+			runnable.run();
+			spendTime=System.currentTimeMillis()-startTime;
+			synchronized (tasks){
+				for(int i=0;i<tasks.length;i++){
+					if(i==index)continue;
+					if(tasks[i].isAlive())return;
+				}
+				tasks.notify();
+			}
+
+			int i=1;String res="";
+			for(Executer exe: tasks)
+				res+="Task"+ i++ +" execute spend "+exe.spendTime+" MS.\n";
+			Log.d("MultiThreadExec",res);
+		}
+	};
 
 }

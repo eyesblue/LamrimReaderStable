@@ -21,8 +21,7 @@ public class SpeechData {
 	}
 	public static int getNameToId(String str){
 		int res=-1;
-		str=str.toUpperCase();
-		if(str.matches("\\d+A") || str.matches("\\d+B")){
+		if(str.matches("\\d{1,3}[Aa]") || str.matches("\\d{1,3}+[Bb]")){
 //			Log.d("SpeechData","Parse "+str+" to media ID");
 			res=Integer.parseInt(str.substring(0, str.length()-1));
 			res*=2;
@@ -35,7 +34,8 @@ public class SpeechData {
 		
 		return res;
 	}
-	
+
+
 	public final static String[] name={
 		"LR-001A-序.mp3",
 		"LR-001B-序.mp3",

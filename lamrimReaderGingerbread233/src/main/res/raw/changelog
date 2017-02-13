@@ -23,6 +23,13 @@
   	<div class='title'><p><a href="http://www.facebook.com/lamrimreader">執行問題反應區</a></p></div>
   	<div class='title'><p><a href="http://lamrimreader.eyes-blue.com/">計畫首頁</a></p></div>
 
+$196
+% Version 1.4.12
+  _ 2017-2-13
+  * 新增背景播放切換按鈕，使用系統所提供的音樂播放器來播放音檔。
+  * 修正無法從簡訊點選專用連結(Deep link)啟動App的錯誤。
+  * 加強專用連結的參數檢查。
+
 $195
 % Version 1.4.11
   _ 2017-2-8

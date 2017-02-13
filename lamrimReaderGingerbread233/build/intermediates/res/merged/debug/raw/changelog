@@ -23,9 +23,16 @@
   	<div class='title'><p><a href="http://www.facebook.com/lamrimreader">執行問題反應區</a></p></div>
   	<div class='title'><p><a href="http://lamrimreader.eyes-blue.com/">計畫首頁</a></p></div>
 
+$196
+% Version 1.4.12
+  _ 2017-2-9
+  * 新增背景播放切換按鈕，使用系統所提供的音樂播放器來播放音檔。
+  * 修正無法從簡訊點選專用連結(Deep link)啟動App的錯誤。
+  * 加強專用連結的參數檢查。
+
 $195
 % Version 1.4.11
-  _ 2017-1-21
+  _ 2017-2-8
   * 修正Android7.1與Chrome瀏覽器[區段分享]功能失效問題。
   * 修正在 Android 4.4 版在儲存管理頁面中，若使用指定目錄功能則無法按下確定鍵問題。
   * 修正在 Android 7 版在儲存管理頁面中，某些功能會造成強制關閉問題。

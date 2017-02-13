@@ -206,5 +206,6 @@
     <string name="dlgOptSetRegionEnd">結束位置</string>
     
     <string name="lamrimCmdUri">http://lamrimreader-cmd.eyes-blue.com/</string>
+    <string name="firebase_deeplink_host">xe74n.app.goo.gl</string>
 
 </resources>

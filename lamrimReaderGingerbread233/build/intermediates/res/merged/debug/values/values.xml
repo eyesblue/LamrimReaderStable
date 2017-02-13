@@ -1265,6 +1265,7 @@
     <string name="filePathRoot">lamrimreader</string>
     <string name="file_name">檔名:</string>
     <string name="firebase_database_url" translatable="false">https://lamrimreader-54d3e.firebaseio.com</string>
+    <string name="firebase_deeplink_host">xe74n.app.goo.gl</string>
     <string name="gcm_defaultSenderId" translatable="false">469967435870</string>
     <string name="globalLamrim">全球廣論</string>
     <string name="globalLamrimDirName">GlobalLamrim</string>

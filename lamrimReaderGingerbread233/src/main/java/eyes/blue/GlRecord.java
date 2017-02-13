@@ -22,7 +22,7 @@ public class GlRecord {
 		String[] sa={dateStart,dateEnd,speechPositionStart,speechPositionEnd,totalTime,theoryLineStart,theoryLineEnd,subtitleLineStart,subtitleLineEnd,desc};
 		return sa;
 	}
-	
+
 	// return {speechIndex, TimeMs}
 	public static int[] getSpeechStrToInt(String str){
 		if(str==null || str.length()==0)return null;
@@ -30,7 +30,8 @@ public class GlRecord {
 		if(split.length!=3)return null;
 		
 		int section[]=new int[3];
-		section[0]=SpeechData.getNameToId(split[0]);
+		section[0]=SpeechData.getNameToId(split[0]); //here passablew be -1 .
+		if(section[0]==-1)return null;
 		for(int i=1;i<section.length;i++)
 			section[i]=(int) (Float.parseFloat(split[i])*1000);
 		section[1]*=60;
@@ -38,7 +39,7 @@ public class GlRecord {
 		int res[] ={section[0],section[1]+section[2]};
 		return res;
 	}
-	
+
 	public static String getSpeechIndexToStr(int index){
 		int num=(index/2)+1;
 		int alpha=index%2;

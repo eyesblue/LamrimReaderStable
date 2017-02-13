@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:2:1-128:12
+ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:2:1-129:12
 	package
 		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:4:5-24
 		INJECTED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml
@@ -63,7 +63,7 @@ ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread2
 	android:anyDensity
 		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:15:23-48
 application
-ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:18:5-126:19
+ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:18:5-127:19
 MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.0.1\AndroidManifest.xml:26:5-19
 MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-v4-impl\10.0.1\AndroidManifest.xml:19:5-19
 MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.0.1\AndroidManifest.xml:26:5-19
@@ -180,7 +180,7 @@ ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread2
 	android:name
 		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:76:13-54
 activity#eyes.blue.IntentActivity
-ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:82:9-108:14
+ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:82:9-109:14
 	android:screenOrientation
 		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:85:13-50
 	android:configChanges
@@ -188,7 +188,7 @@ ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread2
 	android:name
 		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:83:13-52
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:86:4-95:20
+ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:86:4-96:20
 action#android.intent.action.VIEW
 ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:87:8-60
 	android:name
@@ -206,34 +206,34 @@ ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread2
 	android:scheme
 		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:90:17-38
 service#eyes.blue.DownloadAllService
-ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:109:3-111:39
+ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:110:3-112:39
 	android:exported
-		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:111:13-37
+		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:112:13-37
 	android:name
-		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:110:13-47
+		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:111:13-47
 service#eyes.blue.MoveFileService
-ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:112:3-114:39
+ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:113:3-115:39
 	android:exported
-		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:114:13-37
+		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:115:13-37
 	android:name
-		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:113:13-44
+		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:114:13-44
 activity#eyes.blue.DownloadAllServiceHandler
-ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:115:3-120:14
+ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:116:3-121:14
 	android:excludeFromRecents
-		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:119:4-37
+		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:120:4-37
 	android:launchMode
-		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:117:4-35
+		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:118:4-35
 	android:taskAffinity
-		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:118:4-27
+		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:119:4-27
 	android:name
-		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:116:4-45
+		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:117:4-45
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:122:9-124:69
+ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:123:9-125:69
 MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\AndroidManifest.xml:20:9-121
 	android:value
-		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:124:13-66
+		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:125:13-66
 	android:name
-		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:123:13-58
+		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:124:13-58
 uses-sdk
 INJECTED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [LamrimReaderStable:newQuickAction:unspecified] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\LamrimReaderStable\newQuickAction\unspecified\AndroidManifest.xml:16:5-18:41

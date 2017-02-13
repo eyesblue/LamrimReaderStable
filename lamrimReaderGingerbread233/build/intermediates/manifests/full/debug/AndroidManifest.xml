@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="eyes.blue"
-    android:versionCode="195"
-    android:versionName="1.4.11" >
+    android:versionCode="196"
+    android:versionName="1.4.12" >
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -103,6 +103,7 @@
                 <data android:scheme="https" />
                 <data android:scheme="lamrim" />
                 <data android:host="lamrimreader-cmd.eyes-blue.com" />
+                <data android:host="xe74n.app.goo.gl" />
                 <data android:pathPrefix="/" />
             </intent-filter>
             <intent-filter>

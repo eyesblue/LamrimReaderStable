@@ -88,7 +88,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="313dcb7572ae66451376d42ab084368e9899d111">
+        sha1="723c8c031f473b23aa7888ef26c1e9369994d0a2">
         <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3edede46d12bf69917d7a17ed9b457dad7a148ff\classes.dex" />
     </item>
     <item
@@ -493,7 +493,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="cc6b0a389295c2eda148dd06030560b5efcf7971">
+        sha1="523d518f3b447134f850988d2d08353ef8c68af0">
         <dex dex="C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_895d7098d1049e2f76c2854c045e9667140070c8\classes.dex" />
     </item>
     <item
