@@ -487,7 +487,12 @@ public class LamrimReaderActivity extends AppCompatActivity {
                         Intent intent = new Intent();
                         intent.setAction(android.content.Intent.ACTION_VIEW);
                         File file = fsm.getLocalMediaFile(mediaIndex);
-                        intent.setDataAndType(FileProvider.getUriForFile(LamrimReaderActivity.this, getApplicationContext().getPackageName() + ".provider", file), "audio/*"); // fix exposed beyond app through Intent.getData() @ 1.4.12
+
+                        if (Build.VERSION.SDK_INT < 24)
+                            intent.setDataAndType(Uri.fromFile(file), "audio/*");
+                        else
+                            intent.setDataAndType(FileProvider.getUriForFile(LamrimReaderActivity.this, getApplicationContext().getPackageName() + ".provider", file), "audio/*"); // fix exposed beyond app through Intent.getData() @ 1.4.12
+
                         if(intent.resolveActivity(getPackageManager()) != null)
                             startActivity(intent);
                         else{

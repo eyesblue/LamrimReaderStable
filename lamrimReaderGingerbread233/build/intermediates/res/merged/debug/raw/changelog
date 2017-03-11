@@ -25,11 +25,12 @@
 
 $197
 % Version 1.4.13
-  _ 2017-2-13
-  * 在Android 6版以後加入外部儲存檔案授權要求，以解決某些機型沒辦法正常播放問題。
+  _ 2017-3-11
+  * 在Android 6版以後加入外部儲存檔案授權要求，以解決某些機型無法正常播放問題。
   * 修正Android7版中某些裝置無法正常背景播放問題(檔案URI暴露問題)。
   * 點選背景播放鍵時，若系統中無內建的音樂播放程式，顯示對話框提示安裝播放器。
-  * 更改資源下載網站為gebis.global。
+  * 更改資源下載網站為http://lamrimreader.gebis.global/。
+  * 更改計畫網頁為http://manual.lamrimreader.gebis.global/。
 
 $196
 % Version 1.4.12
