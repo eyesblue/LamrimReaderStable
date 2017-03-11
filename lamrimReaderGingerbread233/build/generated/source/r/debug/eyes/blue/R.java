@@ -3326,39 +3326,40 @@ containing a value of this type.
         public static final int no_data=0x7f0700a9;
         public static final int playModeKey=0x7f0700aa;
         public static final int projectWebUrl=0x7f0700ab;
-        public static final int regionPlayModeRecordFile=0x7f0700ac;
-        public static final int regionRecordColumeName=0x7f0700ad;
-        public static final int regionRecordFile=0x7f0700ae;
-        public static final int regionRecordListViewPage=0x7f0700af;
-        public static final int regionRecordListViewPageShift=0x7f0700b0;
-        public static final int reloadLastState=0x7f0700b1;
-        public static final int renderImgBgColorKey=0x7f0700b2;
-        public static final int renderImgFgPathKey=0x7f0700b3;
-        public static final int renderImgScaleKey=0x7f0700b4;
-        public static final int runtimeStateFile=0x7f0700b5;
+        public static final int recommandMusicPlayerPkg=0x7f0700ac;
+        public static final int regionPlayModeRecordFile=0x7f0700ad;
+        public static final int regionRecordColumeName=0x7f0700ae;
+        public static final int regionRecordFile=0x7f0700af;
+        public static final int regionRecordListViewPage=0x7f0700b0;
+        public static final int regionRecordListViewPageShift=0x7f0700b1;
+        public static final int reloadLastState=0x7f0700b2;
+        public static final int renderImgBgColorKey=0x7f0700b3;
+        public static final int renderImgFgPathKey=0x7f0700b4;
+        public static final int renderImgScaleKey=0x7f0700b5;
+        public static final int runtimeStateFile=0x7f0700b6;
         public static final int search_menu_title=0x7f070024;
-        public static final int select=0x7f0700b6;
-        public static final int selectIndexFromMenuDesc=0x7f0700b7;
-        public static final int setupFontSizeStr=0x7f0700b8;
-        public static final int setupTextSizeSample=0x7f0700b9;
-        public static final int soundInUseError=0x7f0700ba;
-        public static final int speechModeRecordFile=0x7f0700bb;
+        public static final int select=0x7f0700b7;
+        public static final int selectIndexFromMenuDesc=0x7f0700b8;
+        public static final int setupFontSizeStr=0x7f0700b9;
+        public static final int setupTextSizeSample=0x7f0700ba;
+        public static final int soundInUseError=0x7f0700bb;
+        public static final int speechModeRecordFile=0x7f0700bc;
         public static final int status_bar_notification_info_overflow=0x7f070025;
-        public static final int subtitleAlphaKey=0x7f0700bc;
-        public static final int subtitleBgColorKey=0x7f0700bd;
-        public static final int subtitleDirName=0x7f0700be;
-        public static final int subtitleFgColorKey=0x7f0700bf;
-        public static final int subtitleFontSize=0x7f0700c0;
-        public static final int subtitleFontSizeKey=0x7f0700c1;
-        public static final int subtitleSearchCache=0x7f0700c2;
-        public static final int subtitleSign=0x7f0700c3;
-        public static final int theoryDirName=0x7f0700c4;
-        public static final int title_activity_calendar=0x7f0700c5;
-        public static final int title_activity_file_dialog=0x7f0700c6;
-        public static final int title_activity_intent=0x7f0700c7;
-        public static final int title_activity_storage_manage=0x7f0700c8;
-        public static final int userSpecifySpeechDir=0x7f0700c9;
-        public static final int versionCheckUrl=0x7f0700ca;
+        public static final int subtitleAlphaKey=0x7f0700bd;
+        public static final int subtitleBgColorKey=0x7f0700be;
+        public static final int subtitleDirName=0x7f0700bf;
+        public static final int subtitleFgColorKey=0x7f0700c0;
+        public static final int subtitleFontSize=0x7f0700c1;
+        public static final int subtitleFontSizeKey=0x7f0700c2;
+        public static final int subtitleSearchCache=0x7f0700c3;
+        public static final int subtitleSign=0x7f0700c4;
+        public static final int theoryDirName=0x7f0700c5;
+        public static final int title_activity_calendar=0x7f0700c6;
+        public static final int title_activity_file_dialog=0x7f0700c7;
+        public static final int title_activity_intent=0x7f0700c8;
+        public static final int title_activity_storage_manage=0x7f0700c9;
+        public static final int userSpecifySpeechDir=0x7f0700ca;
+        public static final int versionCheckUrl=0x7f0700cb;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f0900ad;
@@ -3377,12 +3378,6 @@ containing a value of this type.
         public static final int Animations_PopUpMenu_Right=0x7f0900ba;
         /**  API 11 theme customizations can go here. 
  API 14 theme customizations can go here. 
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-
-        
          */
         public static final int AppBaseTheme=0x7f09000c;
         public static final int AppTheme=0x7f09000d;
@@ -3765,6 +3760,7 @@ containing a value of this type.
     }
     public static final class xml {
         public static final int analytics=0x7f050000;
+        public static final int provider_paths=0x7f050001;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.

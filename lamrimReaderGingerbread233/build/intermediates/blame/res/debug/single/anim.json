@@ -1,23 +1,23 @@
 [
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\grow_from_top.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\LamrimReaderStable\\newQuickAction\\unspecified\\res\\anim\\grow_from_top.xml"
+        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\newQuickAction\\build\\intermediates\\bundles\\default\\res\\anim\\grow_from_top.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\grow_from_topleft_to_bottomright.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\LamrimReaderStable\\newQuickAction\\unspecified\\res\\anim\\grow_from_topleft_to_bottomright.xml"
+        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\newQuickAction\\build\\intermediates\\bundles\\default\\res\\anim\\grow_from_topleft_to_bottomright.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_fade_out.xml"
+        "source": "C:\\Users\\eyesblue\\.android\\build-cache\\d9d0d05afeb2e85457dd741814a0636294c1f1f9\\output\\res\\anim\\abc_fade_out.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_popup_enter.xml"
+        "source": "C:\\Users\\eyesblue\\.android\\build-cache\\d9d0d05afeb2e85457dd741814a0636294c1f1f9\\output\\res\\anim\\abc_popup_enter.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "source": "C:\\Users\\eyesblue\\.android\\build-cache\\d9d0d05afeb2e85457dd741814a0636294c1f1f9\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\out_left.xml",
@@ -25,23 +25,23 @@
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\grow_from_bottom.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\LamrimReaderStable\\newQuickAction\\unspecified\\res\\anim\\grow_from_bottom.xml"
+        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\newQuickAction\\build\\intermediates\\bundles\\default\\res\\anim\\grow_from_bottom.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\shrink_from_bottomleft_to_topright.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\LamrimReaderStable\\newQuickAction\\unspecified\\res\\anim\\shrink_from_bottomleft_to_topright.xml"
+        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\newQuickAction\\build\\intermediates\\bundles\\default\\res\\anim\\shrink_from_bottomleft_to_topright.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_popup_exit.xml"
+        "source": "C:\\Users\\eyesblue\\.android\\build-cache\\d9d0d05afeb2e85457dd741814a0636294c1f1f9\\output\\res\\anim\\abc_popup_exit.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+        "source": "C:\\Users\\eyesblue\\.android\\build-cache\\d9d0d05afeb2e85457dd741814a0636294c1f1f9\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_slide_out_bottom.xml"
+        "source": "C:\\Users\\eyesblue\\.android\\build-cache\\d9d0d05afeb2e85457dd741814a0636294c1f1f9\\output\\res\\anim\\abc_slide_out_bottom.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\out_bounce.xml",
@@ -49,35 +49,35 @@
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\grow_from_bottomright_to_topleft.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\LamrimReaderStable\\newQuickAction\\unspecified\\res\\anim\\grow_from_bottomright_to_topleft.xml"
+        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\newQuickAction\\build\\intermediates\\bundles\\default\\res\\anim\\grow_from_bottomright_to_topleft.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_slide_out_top.xml"
+        "source": "C:\\Users\\eyesblue\\.android\\build-cache\\d9d0d05afeb2e85457dd741814a0636294c1f1f9\\output\\res\\anim\\abc_slide_out_top.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_fade_in.xml"
+        "source": "C:\\Users\\eyesblue\\.android\\build-cache\\d9d0d05afeb2e85457dd741814a0636294c1f1f9\\output\\res\\anim\\abc_fade_in.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\shrink_from_top.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\LamrimReaderStable\\newQuickAction\\unspecified\\res\\anim\\shrink_from_top.xml"
+        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\newQuickAction\\build\\intermediates\\bundles\\default\\res\\anim\\shrink_from_top.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\grow_from_topright_to_bottomleft.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\LamrimReaderStable\\newQuickAction\\unspecified\\res\\anim\\grow_from_topright_to_bottomleft.xml"
+        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\newQuickAction\\build\\intermediates\\bundles\\default\\res\\anim\\grow_from_topright_to_bottomleft.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\shrink_from_bottomright_to_topleft.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\LamrimReaderStable\\newQuickAction\\unspecified\\res\\anim\\shrink_from_bottomright_to_topleft.xml"
+        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\newQuickAction\\build\\intermediates\\bundles\\default\\res\\anim\\shrink_from_bottomright_to_topleft.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\grow_from_bottomleft_to_topright.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\LamrimReaderStable\\newQuickAction\\unspecified\\res\\anim\\grow_from_bottomleft_to_topright.xml"
+        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\newQuickAction\\build\\intermediates\\bundles\\default\\res\\anim\\grow_from_bottomleft_to_topright.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\shrink_from_bottom.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\LamrimReaderStable\\newQuickAction\\unspecified\\res\\anim\\shrink_from_bottom.xml"
+        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\newQuickAction\\build\\intermediates\\bundles\\default\\res\\anim\\shrink_from_bottom.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\in_bounce.xml",
@@ -85,7 +85,7 @@
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\rail.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\LamrimReaderStable\\newQuickAction\\unspecified\\res\\anim\\rail.xml"
+        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\newQuickAction\\build\\intermediates\\bundles\\default\\res\\anim\\rail.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\rotate.xml",
@@ -93,15 +93,15 @@
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\shrink_from_topleft_to_bottomright.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\LamrimReaderStable\\newQuickAction\\unspecified\\res\\anim\\shrink_from_topleft_to_bottomright.xml"
+        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\newQuickAction\\build\\intermediates\\bundles\\default\\res\\anim\\shrink_from_topleft_to_bottomright.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_slide_in_top.xml"
+        "source": "C:\\Users\\eyesblue\\.android\\build-cache\\d9d0d05afeb2e85457dd741814a0636294c1f1f9\\output\\res\\anim\\abc_slide_in_top.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\anim\\abc_slide_in_bottom.xml"
+        "source": "C:\\Users\\eyesblue\\.android\\build-cache\\d9d0d05afeb2e85457dd741814a0636294c1f1f9\\output\\res\\anim\\abc_slide_in_bottom.xml"
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\blank.xml",
@@ -109,6 +109,6 @@
     },
     {
         "merged": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\res\\merged\\debug\\anim\\shrink_from_topright_to_bottomleft.xml",
-        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\lamrimReaderGingerbread233\\build\\intermediates\\exploded-aar\\LamrimReaderStable\\newQuickAction\\unspecified\\res\\anim\\shrink_from_topright_to_bottomleft.xml"
+        "source": "C:\\Users\\eyesblue\\Dropbox\\LamrimReaderStable\\newQuickAction\\build\\intermediates\\bundles\\default\\res\\anim\\shrink_from_topright_to_bottomleft.xml"
     }
 ]

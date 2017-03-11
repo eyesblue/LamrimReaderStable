@@ -24,7 +24,7 @@
 	
     <!-- Default Value -->
     <integer name="screenOnTime">300000</integer>
-    <string name="versionCheckUrl">http://lamrimreader.eyes-blue.com/appresources/publish/notifier.json</string>
+    <string name="versionCheckUrl">http://lamrimreader.gebis.global/appresources/publish/notifier.json</string>
     <integer name="textMaxSize">200</integer>
     <integer name="textMinSize">12</integer>
     <integer name="theorySmallTextSizePercent">90</integer>
@@ -102,7 +102,7 @@
     <string name="menuStrRenderMode">公播模式</string>
     <string name="menuStrPlayRegionRecShortName">區段</string>
     <string name="menuStrOpenProjectWeb">計劃網頁</string>
-    <string name="projectWebUrl">http://lamrimreader.eyes-blue.com/</string>
+    <string name="projectWebUrl">http://manual.lamrimreader.gebis.global/</string>
     <string name="exitApp">關閉</string>
     <string name="noSubtitleDesc">無字幕</string>
     <string name="selectIndexFromMenuDesc">請從選單選擇章節或錄音</string>
@@ -124,6 +124,7 @@
     <string name="regionRecordListViewPage">regionListPage</string>
     <string name="regionRecordListViewPageShift">regionListPageShift</string>
     <string name="lastSearchLamrimKey">lastSearchLamrimWords</string>
+    <string name="recommandMusicPlayerPkg">com.ushareit.listenit</string>
 
     
 
@@ -136,7 +137,7 @@
     <string name="dlgMsgDlNotComplete">媒體檔案  %1$s 尚未下載完成，是否再次下載？</string>
 
     <string-array name="remoteSite">
-        <item>https://sites.google.com/a/eyes-blue.com/lamrimreader/appresources/</item>
+        <item>http://lamrimreader.gebis.global/appresources/</item>
     </string-array>
 
     <!-- FileSysManager -->

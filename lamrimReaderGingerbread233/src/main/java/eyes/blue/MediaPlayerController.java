@@ -599,13 +599,9 @@ public class MediaPlayerController implements MediaControllerView.MediaPlayerCon
 		Exception e=null;
 		try{
 			mediaPlayer.setDataSource(fis.getFD());
-		}catch(IllegalArgumentException iae){
+		}catch(IllegalArgumentException | IOException iae){
 			hasErr=true;
 			e=iae;
-		}
-		catch(IOException ioe){
-			hasErr=true;
-			e=ioe;
 		}
 		
 		if(!hasErr)return true;

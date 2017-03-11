@@ -25,6 +25,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.Color;
 import android.graphics.Point;
@@ -37,6 +38,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.PowerManager;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.content.FileProvider;
 import android.support.v4.view.GestureDetectorCompat;
 
 import android.support.v7.app.AppCompatActivity;
@@ -110,6 +114,8 @@ public class LamrimReaderActivity extends AppCompatActivity {
     final String logTag = getClass().getName();
     final static String funcInto = "Function Into";
     final static String funcLeave = "Function Leave";
+
+    final static int STORAGE_ACCESS_PERMISSION_REQUEST=1;
 
     final static int SPEECH_MENU_RESULT = 0;
     final static int THEORY_MENU_RESULT = 1;
@@ -481,13 +487,41 @@ public class LamrimReaderActivity extends AppCompatActivity {
                         Intent intent = new Intent();
                         intent.setAction(android.content.Intent.ACTION_VIEW);
                         File file = fsm.getLocalMediaFile(mediaIndex);
-                        intent.setDataAndType(Uri.fromFile(file), "audio/*");
-                        startActivity(intent);
+                        intent.setDataAndType(FileProvider.getUriForFile(LamrimReaderActivity.this, getApplicationContext().getPackageName() + ".provider", file), "audio/*"); // fix exposed beyond app through Intent.getData() @ 1.4.12
+                        if(intent.resolveActivity(getPackageManager()) != null)
+                            startActivity(intent);
+                        else{
+                            BaseDialogs.showDialog(LamrimReaderActivity.this,"無播放器錯誤","您的系統中沒有內建可以播放音樂的App，請自行安裝音樂播放器，按確定開啟商城安裝建議的播放器。",
+                                    new DialogInterface.OnClickListener(){
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int val){
+                                            final String appPackageName = getString(R.string.recommandMusicPlayerPkg); // getPackageName() from Context or Activity object
+                                            try {
+                                                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
+                                            } catch (android.content.ActivityNotFoundException anfe) {
+                                                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
+                                            }
+                                        }
+                                    },
+                                    new DialogInterface.OnClickListener(){
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int val){
+                                            dialog.dismiss();
+                                        }
+                                    },
+                                    true);
+                        }
 
                         if (wakeLock.isHeld()) wakeLock.release();
                         finish();
                     }
-                },null,true);
+                },
+                        new DialogInterface.OnClickListener(){
+                            @Override
+                            public void onClick(DialogInterface dialog, int val){
+                            dialog.dismiss();
+                        }
+                },true);
 
             }
         });
@@ -1736,6 +1770,16 @@ public class LamrimReaderActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Log.d(funcInto, "****OptionsItemselected, select item=" + item.getItemId() + ", String=" + item.getTitle() + ", Order=" + item.getOrder() + " ****");
+        // Here, thisActivity is the current activity
+
+
+        if (Build.VERSION.SDK_INT >= 23)// 在點選選單的同時要求檔案授權，未授權不執行。
+            if (ContextCompat.checkSelfPermission(LamrimReaderActivity.this, android.Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
+                BaseDialogs.showSimpleErrorDialog(LamrimReaderActivity.this,"未取得存取檔案授權","您未同意廣論App存取檔案，廣論App從網路上下載音檔後無法正常儲存，也無法正常播放，若您在拒絕授權的同時點選不再詢問，您必須重新安裝廣論App，系統才會再顯示詢問授權對話框。");
+                ActivityCompat.requestPermissions(LamrimReaderActivity.this, new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, STORAGE_ACCESS_PERMISSION_REQUEST);
+                return true;
+        }
+
         String gid = (String) item.getTitle();
         AnalyticsApplication.sendEvent("ui_action", "menu_event", ((gid.length() == 0) ? "root_menu" : gid) + "_pressed");
         Util.fireSelectEvent(mFirebaseAnalytics, logTag, Util.MENU_CLICK, ((gid.length() == 0) ? "MENU_BUTTON" : gid) + "_PRESSED");
@@ -1788,6 +1832,29 @@ public class LamrimReaderActivity extends AppCompatActivity {
 		 */
         Log.d(funcLeave, "**** Into Options selected, select item=" + item.getItemId() + " ****");
         return true;
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case STORAGE_ACCESS_PERMISSION_REQUEST: {
+                // If request is cancelled, the result arrays are empty.
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+
+                    // permission was granted, yay! Do the
+                    // contacts-related task you need to do.
+
+                } else {
+
+                    // permission denied, boo! Disable the
+                    // functionality that depends on this permission.
+                }
+                return;
+            }
+
+            // other 'case' lines to check for other
+            // permissions this app might request
+        }
     }
 
     private void startSpeechMenuActivity() {

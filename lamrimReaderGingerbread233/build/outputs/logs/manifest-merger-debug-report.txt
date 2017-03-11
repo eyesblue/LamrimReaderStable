@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:2:1-129:12
+ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:2:1-138:12
 	package
 		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:4:5-24
 		INJECTED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml
@@ -19,31 +19,31 @@ ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread2
 		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:8:5-67
-MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.0.1\AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.0.1\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-crash:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.0.1\AndroidManifest.xml:18:5-66
-MERGED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.0.1\AndroidManifest.xml:18:5-66
-MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.1\AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\b7015400d2701b8bd701623dc5535af3f475691f\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\eyesblue\.android\build-cache\67c6d2ea08909c7b97d0688d59c39675997b7f8f\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-crash:10.0.1] C:\Users\eyesblue\.android\build-cache\52c7c48342d79377a2bae32b21ad3ab84f7c19bb\output\AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\.android\build-cache\e00547ddedaafc094ddaa3fd5a070f31b345c2fc\output\AndroidManifest.xml:18:5-66
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\eyesblue\.android\build-cache\a8ef1698ecad3f06e1615faad25bca04881489e7\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:20:5-66
 	android:name
 		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:8:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:9:5-79
-MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.0.1\AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.0.1\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.1\AndroidManifest.xml:21:5-78
-MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\b7015400d2701b8bd701623dc5535af3f475691f\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\eyesblue\.android\build-cache\67c6d2ea08909c7b97d0688d59c39675997b7f8f\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\eyesblue\.android\build-cache\a8ef1698ecad3f06e1615faad25bca04881489e7\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:19:5-78
 	android:name
 		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:9:22-76
 uses-permission#android.permission.WAKE_LOCK
 ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:10:5-68
-MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.0.1\AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.0.1\AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.1\AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\b7015400d2701b8bd701623dc5535af3f475691f\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\eyesblue\.android\build-cache\67c6d2ea08909c7b97d0688d59c39675997b7f8f\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\eyesblue\.android\build-cache\a8ef1698ecad3f06e1615faad25bca04881489e7\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:21:5-67
 	android:name
 		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:10:22-65
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
@@ -63,34 +63,34 @@ ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread2
 	android:anyDensity
 		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:15:23-48
 application
-ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:18:5-127:19
-MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.0.1\AndroidManifest.xml:26:5-19
-MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-v4-impl\10.0.1\AndroidManifest.xml:19:5-19
-MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.0.1\AndroidManifest.xml:26:5-19
-MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\AndroidManifest.xml:23:5-20
-MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-core\10.0.1\AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-crash:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.0.1\AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\10.0.1\AndroidManifest.xml:19:5-20:19
-MERGED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.0.1\AndroidManifest.xml:19:5-29:19
-MERGED from [com.google.firebase:firebase-config:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-config\10.0.1\AndroidManifest.xml:18:5-19
-MERGED from [com.google.firebase:firebase-invites:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-invites\10.0.1\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.0.1\AndroidManifest.xml:19:5-26:19
-MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:24:5-33:19
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.1\AndroidManifest.xml:24:5-28:19
-MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:28:5-50:19
-MERGED from [com.google.firebase:firebase-appindexing:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-appindexing\10.0.1\AndroidManifest.xml:18:5-19
-MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.firebase:firebase-common:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.1\AndroidManifest.xml:4:5-7:19
-MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\AndroidManifest.xml:25:5-20
+ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:18:5-136:19
+MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\b7015400d2701b8bd701623dc5535af3f475691f\output\AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.0.1] C:\Users\eyesblue\.android\build-cache\9bdaf93c73f58e51956812dd36e79f345c63d062\output\AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\eyesblue\.android\build-cache\67c6d2ea08909c7b97d0688d59c39675997b7f8f\output\AndroidManifest.xml:26:5-19
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\eyesblue\.android\build-cache\d9d0d05afeb2e85457dd741814a0636294c1f1f9\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\eyesblue\.android\build-cache\2789cccc0e574097934f5b8acd9c5e62bde883bf\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\eyesblue\.android\build-cache\34a958fdb5ab51f5dd71be21ce6b1367296b51cb\output\AndroidManifest.xml:23:5-20
+MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\eyesblue\.android\build-cache\e29b87172eaea5c1ff84e285849c7659f1311b3f\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-crash:10.0.1] C:\Users\eyesblue\.android\build-cache\52c7c48342d79377a2bae32b21ad3ab84f7c19bb\output\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\eyesblue\.android\build-cache\3010d509d23fa7b09cf5cb6c8d254c9d3f0b8a10\output\AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\.android\build-cache\d20d032fb765c17a754e391054e7f1df41934375\output\AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.firebase:firebase-config:10.0.1] C:\Users\eyesblue\.android\build-cache\075118df5cece668bc854b11cd8dacd0f35dbf5c\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-invites:10.0.1] C:\Users\eyesblue\.android\build-cache\d610b9009d29e205bf140c73c4d77efd91cc8a15\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\.android\build-cache\e00547ddedaafc094ddaa3fd5a070f31b345c2fc\output\AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:24:5-33:19
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\eyesblue\.android\build-cache\a8ef1698ecad3f06e1615faad25bca04881489e7\output\AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:28:5-50:19
+MERGED from [com.google.firebase:firebase-appindexing:10.0.1] C:\Users\eyesblue\.android\build-cache\717bdb5fe4429d7f692591685056aa39eccf9b1b\output\AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\eyesblue\.android\build-cache\4ae6168543b86c8c6303945f19aba0caddfc3587\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.firebase:firebase-common:10.0.1] C:\Users\eyesblue\.android\build-cache\465f291a56370d4c694c1a63b6c2341f3721332e\output\AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\eyesblue\.android\build-cache\418bcabc63d57e3d3fe6231f9e55466c2f6f089e\output\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\eyesblue\.android\build-cache\fb56236f6f5081f94cab9c7ff63e61b223b61e8e\output\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\eyesblue\.android\build-cache\354a978b54481785eca09332b7c2472e27a4dc67\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\eyesblue\.android\build-cache\d3bd411e2048af33824398a12e1eaf2ef3b46e50\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\eyesblue\.android\build-cache\50096d16ebf9cf29d3cbd68efebe988c24527434\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\eyesblue\.android\build-cache\4b89da35e7447a590e7294c7b06b2984067d9808\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\eyesblue\.android\build-cache\c271b0777f84addd2a5f125c5ab5f5cbd5f96ab1\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\eyesblue\.android\build-cache\85134b23ae9362beb0f7fd75675ca1dbf41df79d\output\AndroidManifest.xml:25:5-20
 	android:label
 		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:22:9-41
 	android:launchMode
@@ -229,50 +229,67 @@ ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread2
 		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:117:4-45
 meta-data#com.google.android.gms.version
 ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:123:9-125:69
-MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\AndroidManifest.xml:20:9-121
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\eyesblue\.android\build-cache\fb56236f6f5081f94cab9c7ff63e61b223b61e8e\output\AndroidManifest.xml:20:9-121
 	android:value
 		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:125:13-66
 	android:name
 		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:124:13-58
+provider#android.support.v4.content.FileProvider
+ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:127:9-135:20
+	android:authorities
+		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:129:13-60
+		INJECTED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml
+	android:grantUriPermissions
+		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:131:13-47
+	android:exported
+		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:130:13-37
+	android:name
+		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:128:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:132:13-134:57
+	android:resource
+		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:134:17-55
+	android:name
+		ADDED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml:133:17-67
 uses-sdk
 INJECTED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [LamrimReaderStable:newQuickAction:unspecified] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\LamrimReaderStable\newQuickAction\unspecified\AndroidManifest.xml:16:5-18:41
-MERGED from [LamrimReaderStable:robotoCalendarLibrary:unspecified] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\LamrimReaderStable\robotoCalendarLibrary\unspecified\AndroidManifest.xml:7:5-9:41
-MERGED from [LamrimReaderStable:colorPickerView:unspecified] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\LamrimReaderStable\colorPickerView\unspecified\AndroidManifest.xml:37:5-39:41
-MERGED from [LamrimReaderStable:wVersionManager:unspecified] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\LamrimReaderStable\wVersionManager\unspecified\AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.0.1\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-v4-impl\10.0.1\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.0.1\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\AndroidManifest.xml:21:5-43
-MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-core\10.0.1\AndroidManifest.xml:4:5-42
-MERGED from [com.google.firebase:firebase-database:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-database\10.0.1\AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-database-connection:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\10.0.1\AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-storage:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\10.0.1\AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-storage-common:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\10.0.1\AndroidManifest.xml:3:5-42
-MERGED from [com.google.firebase:firebase-crash:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.0.1\AndroidManifest.xml:20:5-42
-MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\10.0.1\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.0.1\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-config:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-config\10.0.1\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-invites:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-invites\10.0.1\AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.0.1\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.1\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-appindexing:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-appindexing\10.0.1\AndroidManifest.xml:17:5-42
-MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\AndroidManifest.xml:17:5-42
-MERGED from [com.google.firebase:firebase-common:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.1\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\AndroidManifest.xml:3:5-42
-MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\AndroidManifest.xml:17:5-42
-MERGED from [com.android.support:support-v4:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\AndroidManifest.xml:21:5-23:58
+MERGED from [LamrimReaderStable:newQuickAction:unspecified] C:\Users\eyesblue\Dropbox\LamrimReaderStable\newQuickAction\build\intermediates\bundles\default\AndroidManifest.xml:16:5-18:41
+MERGED from [LamrimReaderStable:robotoCalendarLibrary:unspecified] C:\Users\eyesblue\Dropbox\LamrimReaderStable\robotoCalendarLibrary\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
+MERGED from [LamrimReaderStable:colorPickerView:unspecified] C:\Users\eyesblue\Dropbox\LamrimReaderStable\colorPickerView\build\intermediates\bundles\default\AndroidManifest.xml:37:5-39:41
+MERGED from [LamrimReaderStable:wVersionManager:unspecified] C:\Users\eyesblue\Dropbox\LamrimReaderStable\wVersionManager\build\intermediates\bundles\default\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\b7015400d2701b8bd701623dc5535af3f475691f\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:10.0.1] C:\Users\eyesblue\.android\build-cache\9bdaf93c73f58e51956812dd36e79f345c63d062\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-analytics-impl:10.0.1] C:\Users\eyesblue\.android\build-cache\67c6d2ea08909c7b97d0688d59c39675997b7f8f\output\AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\eyesblue\.android\build-cache\d9d0d05afeb2e85457dd741814a0636294c1f1f9\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\eyesblue\.android\build-cache\2789cccc0e574097934f5b8acd9c5e62bde883bf\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\eyesblue\.android\build-cache\34a958fdb5ab51f5dd71be21ce6b1367296b51cb\output\AndroidManifest.xml:21:5-43
+MERGED from [com.google.firebase:firebase-core:10.0.1] C:\Users\eyesblue\.android\build-cache\e29b87172eaea5c1ff84e285849c7659f1311b3f\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.firebase:firebase-database:10.0.1] C:\Users\eyesblue\.android\build-cache\bf63688344d8aeeb55e511de5f5bece7e61815d0\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-database-connection:10.0.1] C:\Users\eyesblue\.android\build-cache\b7db30057b28b04e947ed596aaec1f4bd254817e\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-storage:10.0.1] C:\Users\eyesblue\.android\build-cache\b1ba7667b3645cc8f2ad5095039f5583462b9824\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-storage-common:10.0.1] C:\Users\eyesblue\.android\build-cache\47f1e39d77dd8015d2c3bffa7fab38d750bf68c4\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.firebase:firebase-crash:10.0.1] C:\Users\eyesblue\.android\build-cache\52c7c48342d79377a2bae32b21ad3ab84f7c19bb\output\AndroidManifest.xml:20:5-42
+MERGED from [com.google.firebase:firebase-auth:10.0.1] C:\Users\eyesblue\.android\build-cache\3010d509d23fa7b09cf5cb6c8d254c9d3f0b8a10\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\.android\build-cache\d20d032fb765c17a754e391054e7f1df41934375\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-config:10.0.1] C:\Users\eyesblue\.android\build-cache\075118df5cece668bc854b11cd8dacd0f35dbf5c\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-invites:10.0.1] C:\Users\eyesblue\.android\build-cache\d610b9009d29e205bf140c73c4d77efd91cc8a15\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\.android\build-cache\e00547ddedaafc094ddaa3fd5a070f31b345c2fc\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\eyesblue\.android\build-cache\a8ef1698ecad3f06e1615faad25bca04881489e7\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-appindexing:10.0.1] C:\Users\eyesblue\.android\build-cache\717bdb5fe4429d7f692591685056aa39eccf9b1b\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\eyesblue\.android\build-cache\4ae6168543b86c8c6303945f19aba0caddfc3587\output\AndroidManifest.xml:17:5-42
+MERGED from [com.google.firebase:firebase-common:10.0.1] C:\Users\eyesblue\.android\build-cache\465f291a56370d4c694c1a63b6c2341f3721332e\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-tasks:10.0.1] C:\Users\eyesblue\.android\build-cache\418bcabc63d57e3d3fe6231f9e55466c2f6f089e\output\AndroidManifest.xml:3:5-42
+MERGED from [com.google.android.gms:play-services-basement:10.0.1] C:\Users\eyesblue\.android\build-cache\fb56236f6f5081f94cab9c7ff63e61b223b61e8e\output\AndroidManifest.xml:17:5-42
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\eyesblue\.android\build-cache\354a978b54481785eca09332b7c2472e27a4dc67\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\eyesblue\.android\build-cache\d3bd411e2048af33824398a12e1eaf2ef3b46e50\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\eyesblue\.android\build-cache\50096d16ebf9cf29d3cbd68efebe988c24527434\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\eyesblue\.android\build-cache\4b89da35e7447a590e7294c7b06b2984067d9808\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\eyesblue\.android\build-cache\c271b0777f84addd2a5f125c5ab5f5cbd5f96ab1\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\eyesblue\.android\build-cache\85134b23ae9362beb0f7fd75675ca1dbf41df79d\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.1.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:25.2.0] C:\Users\eyesblue\.android\build-cache\d9d0d05afeb2e85457dd741814a0636294c1f1f9\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml
@@ -280,136 +297,136 @@ MERGED from [com.android.support:support-compat:25.1.1] C:\Users\eyesblue\Dropbo
 		INJECTED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\src\main\AndroidManifest.xml
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.0.1\AndroidManifest.xml:23:9-27:19
+ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\.android\build-cache\d20d032fb765c17a754e391054e7f1df41934375\output\AndroidManifest.xml:23:9-27:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.0.1\AndroidManifest.xml:23:88-111
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\.android\build-cache\d20d032fb765c17a754e391054e7f1df41934375\output\AndroidManifest.xml:23:88-111
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.0.1\AndroidManifest.xml:23:18-87
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\.android\build-cache\d20d032fb765c17a754e391054e7f1df41934375\output\AndroidManifest.xml:23:18-87
 intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.0.1\AndroidManifest.xml:24:13-26:29
+ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\.android\build-cache\d20d032fb765c17a754e391054e7f1df41934375\output\AndroidManifest.xml:24:13-26:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.0.1\AndroidManifest.xml:24:28-51
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\.android\build-cache\d20d032fb765c17a754e391054e7f1df41934375\output\AndroidManifest.xml:24:28-51
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.0.1\AndroidManifest.xml:25:17-77
+ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\.android\build-cache\d20d032fb765c17a754e391054e7f1df41934375\output\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.0.1\AndroidManifest.xml:25:25-75
+		ADDED from [com.google.firebase:firebase-messaging:10.0.1] C:\Users\eyesblue\.android\build-cache\d20d032fb765c17a754e391054e7f1df41934375\output\AndroidManifest.xml:25:25-75
 activity#com.google.android.gms.appinvite.PreviewActivity
-ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.0.1\AndroidManifest.xml:20:9-25:20
+ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\.android\build-cache\e00547ddedaafc094ddaa3fd5a070f31b345c2fc\output\AndroidManifest.xml:20:9-25:20
 	android:exported
-		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.0.1\AndroidManifest.xml:20:51-74
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\.android\build-cache\e00547ddedaafc094ddaa3fd5a070f31b345c2fc\output\AndroidManifest.xml:20:51-74
 	android:theme
-		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.0.1\AndroidManifest.xml:20:75-121
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\.android\build-cache\e00547ddedaafc094ddaa3fd5a070f31b345c2fc\output\AndroidManifest.xml:20:75-121
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.0.1\AndroidManifest.xml:20:19-50
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\.android\build-cache\e00547ddedaafc094ddaa3fd5a070f31b345c2fc\output\AndroidManifest.xml:20:19-50
 intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.0.1\AndroidManifest.xml:21:13-24:29
+ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\.android\build-cache\e00547ddedaafc094ddaa3fd5a070f31b345c2fc\output\AndroidManifest.xml:21:13-24:29
 action#com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.0.1\AndroidManifest.xml:22:17-89
+ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\.android\build-cache\e00547ddedaafc094ddaa3fd5a070f31b345c2fc\output\AndroidManifest.xml:22:17-89
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.0.1\AndroidManifest.xml:22:25-87
+		ADDED from [com.google.android.gms:play-services-appinvite:10.0.1] C:\Users\eyesblue\.android\build-cache\e00547ddedaafc094ddaa3fd5a070f31b345c2fc\output\AndroidManifest.xml:22:25-87
 receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:25:7-26:18
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.1\AndroidManifest.xml:25:7-26:18
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\eyesblue\.android\build-cache\a8ef1698ecad3f06e1615faad25bca04881489e7\output\AndroidManifest.xml:25:7-26:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:25:90-112
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:25:90-112
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:25:113-137
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:25:113-137
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:25:17-89
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:25:17-89
 receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:27:7-31:18
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:27:7-31:18
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:27:162-184
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:27:162-184
 	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:27:105-161
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:27:105-161
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:27:17-104
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:27:17-104
 intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:28:11-30:27
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:28:11-30:27
 action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:29:15-76
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:29:15-76
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:29:23-74
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:29:23-74
 service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:32:7-137
-MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.1\AndroidManifest.xml:27:7-137
+ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:10.0.1] C:\Users\eyesblue\.android\build-cache\a8ef1698ecad3f06e1615faad25bca04881489e7\output\AndroidManifest.xml:27:7-137
 	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:32:88-110
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:32:88-110
 	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:32:111-135
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:32:111-135
 	android:name
-		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\AndroidManifest.xml:32:16-87
+		ADDED from [com.google.firebase:firebase-analytics:10.0.1] C:\Users\eyesblue\.android\build-cache\67b2e3ced9ccc4c4c1b53289c7c7d6a496380c57\output\AndroidManifest.xml:32:16-87
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:22:5-81
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:22:5-81
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:22:22-79
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:22:22-79
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:24:5-109
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:24:5-109
 	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:24:72-107
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:24:72-107
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:24:17-71
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:24:17-71
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:26:5-78
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:26:5-78
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:26:22-76
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:26:22-76
 receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:30:9-36:20
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:30:9-36:20
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:30:85-108
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:30:85-108
 	android:permission
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:30:109-169
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:30:109-169
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:30:19-84
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:30:19-84
 intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:31:13-35:29
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:31:13-35:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:32:17-80
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:32:17-80
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:32:25-78
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:32:25-78
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:33:17-85
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:33:17-85
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:33:25-83
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:33:25-83
 category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:34:17-60
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:34:17-60
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:34:27-58
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:34:27-58
 receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:40:9-119
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:40:9-119
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:40:93-117
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:40:93-117
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:40:19-92
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:40:19-92
 service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:44:9-48:19
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:44:9-48:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:44:83-106
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:44:83-106
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:44:18-82
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:44:18-82
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:45:13-47:29
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:45:13-47:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:45:28-51
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:45:28-51
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:46:17-79
+ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:46:17-79
 	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\AndroidManifest.xml:46:25-77
+		ADDED from [com.google.firebase:firebase-iid:10.0.1] C:\Users\eyesblue\.android\build-cache\08296a7e2000b0f461c719db1e89e9459d03b1ed\output\AndroidManifest.xml:46:25-77
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\AndroidManifest.xml:19:9-172
+ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\eyesblue\.android\build-cache\4ae6168543b86c8c6303945f19aba0caddfc3587\output\AndroidManifest.xml:19:9-172
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\AndroidManifest.xml:19:146-170
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\eyesblue\.android\build-cache\4ae6168543b86c8c6303945f19aba0caddfc3587\output\AndroidManifest.xml:19:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\AndroidManifest.xml:19:86-145
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\eyesblue\.android\build-cache\4ae6168543b86c8c6303945f19aba0caddfc3587\output\AndroidManifest.xml:19:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\AndroidManifest.xml:19:19-85
+		ADDED from [com.google.android.gms:play-services-base:10.0.1] C:\Users\eyesblue\.android\build-cache\4ae6168543b86c8c6303945f19aba0caddfc3587\output\AndroidManifest.xml:19:19-85
 provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.1\AndroidManifest.xml:6:9-194
+ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\eyesblue\.android\build-cache\465f291a56370d4c694c1a63b6c2341f3721332e\output\AndroidManifest.xml:6:9-194
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.1\AndroidManifest.xml:6:19-78
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\eyesblue\.android\build-cache\465f291a56370d4c694c1a63b6c2341f3721332e\output\AndroidManifest.xml:6:19-78
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.1\AndroidManifest.xml:6:144-168
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\eyesblue\.android\build-cache\465f291a56370d4c694c1a63b6c2341f3721332e\output\AndroidManifest.xml:6:144-168
 	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.1\AndroidManifest.xml:6:169-192
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\eyesblue\.android\build-cache\465f291a56370d4c694c1a63b6c2341f3721332e\output\AndroidManifest.xml:6:169-192
 	android:name
-		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\eyesblue\Dropbox\LamrimReaderStable\lamrimReaderGingerbread233\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.1\AndroidManifest.xml:6:79-143
+		ADDED from [com.google.firebase:firebase-common:10.0.1] C:\Users\eyesblue\.android\build-cache\465f291a56370d4c694c1a63b6c2341f3721332e\output\AndroidManifest.xml:6:79-143
